@@ -149,7 +149,7 @@ Si B es una subclase de A, entonces A sera tipo de la subclase|F
 Si Pixel es una subclase de Punto, entonces Pixel es un Punto|V
 Si Pixel es una subclase de Punto, entonces Punto es un Pixel|F
 En Java, todas las clases son extendidas, ya sea explicitamente o indirectamente|V
-En Java, las clases son extendidas cuando se le expecifica extends |F
+En Java, las clases solamente son extendidas cuando se le expecifica extends |F
 En Java, todas las clases derivan directamente o indirectamente de la clase Object|V
 En Java, la clase Object implementa el comportamiento de todo objeto en Java|V
 En Java, se puede tener multiples herencias por clase|V
@@ -162,7 +162,7 @@ En Java, la variable miembro de una superclase es ocultada por la subclase|X
 En Java, si se declara un campo con el mismo nombre que un campo de la superclase, esta se oculta y ha de ser accedida mediante la referencia super|V
 En Java, si se declara un campo con el mismo nombre que un campo de la superclase, esta se oculta y no puede ser accedida|F
 En Java, si se declara un campo con el mismo nombre que un campo de la superclase, esta se borra|F
-En Java, se considera como redefinicion como el reemplazo de la implementacion de un metodo de superClase por una implementacion de subclase|V
+En Java, se considera como redefinicion el reemplazo de la implementacion de un metodo de superClase por una implementacion de subclase|V
 En Java, si redifinimos un metodo, se podra acceder mediante la referencia super|V
 En Java, si redifinimos un metodo, ya no se podra llamar al metodo de la superClase|F
 En Java, un metodo redefinido puede usar cualquier modificador de acceso, siempre y cuando de el mismo o mas acceso que el original|V
@@ -226,8 +226,8 @@ El metodo toString retorna la representacion del objeto en String|V
 
 Una interfaz permite definir el protocolo de comunicacion entre objetos sin necesidad de saber la clase que lo implementa|V
 Una interfaz permite definir metodos entre objetos que funcionaran de la misma manera independientemente de la clase|F
-Una interfaz permite definir metodos que podria tener o no la clase|F
-Una interfaz obliga al programador a definir los metodos en la clase|V
+Una interfaz permite definir metodos que podria tener o no la clase donde se implemento|F
+Una interfaz obliga al programador a definir los metodos en la clase donde se implemento|V
 Una clase puede implementar una o mas interfaces|V
 Una clase ha de implementar una interfaz para toda clase|F
 Una clase puede implementar, a lo mas, una interfaz|F

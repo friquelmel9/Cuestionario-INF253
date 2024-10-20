@@ -1,0 +1,19 @@
+"""
+print("Testeo Figuras (unidad 5)")
+makeFiguras(5)
+for dict_figura in figuras[5]:
+    print(dict_figuras[5][figura])
+"""
+
+"""
+print("Testeo verdaderoFalso (Unidad 5)")
+correctas = 0
+cuestionario = getVerdaderoFalso(5,10)
+for pregunta, respuesta in cuestionario:
+    usuario_respuesta = input(pregunta + "\n")
+    if usuario_respuesta.lower() == respuesta.lower():
+        print("Respuesta correcta!")
+        correctas += 1
+    else:
+        print("La respuesta correcta era "+respuesta)
+"""
