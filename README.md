@@ -8,6 +8,7 @@ De donde saieron las preguntas:
     - Certamen 1-Marti
     - Control 3-Gabriel Carmona 2022
     - Quiz 3 CC-Jose Luis Marti 2022
+    - Quiz 3 SJ-Roberto Diaz 2022
 
 
 Clases:

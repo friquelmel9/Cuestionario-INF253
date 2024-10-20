@@ -181,4 +181,53 @@ Pregunta 18:| |c
     c. Acceso a un arreglo fuera del limite
     d. Acceso con una referencia nula
 
+Pregunta 19:| |b
+    Si queremos ordenar de mayor a menor acceso considerando que toda clase es parte de un mismo paquete, como deberian de ordernase los metodos de control de acceso?
+    a. package -> public -> protected -> private
+    b. public -> package -> protected -> private
+    c. public -> protected -> package -> private
+    d. public -> package -> private -> protected
+
+Pregunta 20:| |b
+    (Quiz 3 2022 CC - Jose Luis Marti p2.1) Cual de las siguientes alternativas NO se consideraria una ventaja del control de acceso a miembros?
+    a. Simplifica la interfaz del objeto, ocultando detalles irrelevantes para el usuario
+    b. Mejora la legibilidad pues deja claro que debera ser implementado en las subclases
+    c. Mejora la confiabilidad de la clase, pues usos incorrectos accidentales seran alertados con errores de compilacion
+    d. Facilita y encauza la reutilizacion de la clase ocultando detalles no extensibles
+
+Pregunta 21:| |c
+    (Quiz 3 2022 CC - Jose Luis Marti p2.2) En Java, se debera declarar que un metodo lanza una excepcion verificada (con throws) si es que al incluir una sentencia throw esta se encuentra:
+        I. Dentro de cualquier bloque try
+        II. Dentro de cualquier bloque catch
+        III. Dentro de cualquier bloque finally
+        IV.  Fuera de los bloques previamente mencionados
+    a. Solo I
+    b. II y IV
+    c. II, III y IV
+    d. I, II, III y IV
+
+Pregunta 22:| |d
+    (Quiz 3 2022 CC - Jose Luis Marti p2.3) Sobre Java, cual de las siguientes afirmaciones son correctas?
+        I. Una clase puede contener varios metodos con el mismo nombre siempre que tengan distintos parametros
+        II. Java soporta herencia multiple para Clases
+        III. Java soporta herencia multiple para Interfaces
+    a. Solo II
+    b. Solo III
+    c. I y II
+    d. I y III
+
+Pregunta 23:| |a
+    (Quiz 3 2022 CC - Jose Luis Marti p2.4) Un tipo de dato abstracto debe satisfacer dos restricciones que son:
+    a. Encapsulamiento y Ocultamiento de la informacion
+    b. Ocultamiento de la informacion y Polimorfismo
+    c. Encapsulamiento y Modularidad
+    d. Polimorfismo y Modularidad
+
+Pregunta 24:| |b
+    (Quiz 3 2022 CC - Jose Luis Marti p2.5) Cual de las siguientes definiciones de clase esta permitida en Java?
+    a. public final abstract class ClaseA { }
+    b. final class ClaseA extends ClaseB { }
+    c. abstract class ClaseA extends ClaseB { }
+    d. class ClaseA extends ClaseB, ClaseC { }
+
 Pregunta Final:| |

@@ -10,6 +10,7 @@ Python soporta TDA Parametrizado|F
 Java soporta TDA Parametrizado|F
 En Java, se pueden definir clases genericas, que almacenan sus propios metodos y variables|F
 Ejemplos de clases genericas en Java son LinkedList y ArrayList|V
+Ejemplos de clase genericas en Java son LinkedList y API|F
 Stack es un tipo de dato abstracto|V
 
 # VerdaderoFalso 5.2: Orientacion a Objetos (OO)
@@ -19,8 +20,9 @@ Ejemplos de lenguajes con OO puros son Smalltalk y Ruby|V
 Ejemplos de lenguajes con OO puros son ADA y C++|F
 Ejemplos de lenguajes con extensiones para POO son ADA y C++|V
 Ejemplos de lenguajes con extensiones para POO son ADA y C#|F
-Ejemplos de lenguajes con POO pero poseen estructura imperativa son Java y C#|V
-Ejemplos de lenguajes con POO pero poseen estructura imperativa son Java y C++|F
+Ejemplos de lenguajes POO pero poseen estructura imperativa son Java y C#|V
+Ejemplos de lenguajes POO pero poseen estructura imperativa son Java y C++|F
+Ejemplos de lenguajes POO pero poseen estructura imperativa son Java y C|F
 Ejemplos de lenguajes que soporta POO son CLOSS|V
 En Java, un objeto corresponde a la instancia concreta de una clase|V
 Programa se define como conjunto de objectos interactuantes|V
@@ -34,7 +36,8 @@ En modelo Objetual, un mensaje corresponde a la implementacion de un metodo|F
 
 En Java, las clases contienen los metodos que definen la computacion|V
 En Java, los campos son lo mismo que variables miembro|X
-En Java, los campos o variables miembros definen el estado|V
+En Java, los campos o variables miembros definen el estado del objeto|V
+En Java, los campos o variables miembros definen el estado de la clase|F
 En Java, la implementacion define la semantica de un metodo|V
 En Java, la firma define la semantica de un metodo|F
 En Java, la creacion de un objeto tiene sus propias instancias de cada variable miembro definida|F
@@ -56,6 +59,8 @@ El operador new hace que runtime cree un objeto para luego retornarlo|F
 Los constructores han de inicializar las variables miembro de una clase|X
 Los constructores poseen el mismo nombre de la clase y pueden no recibir parametros|V
 Los constructores poseen el mismo nombre de la clase y pueden recibir parametros|V
+Para tener varios constructores es necesario tener como minimo un constructor sin parametros|X
+Para tener varios constructores, es necesario definir uno como default|F
 Los constructores son un metodo de la clase que permite inicializarla|F
 Una clase puede tener mas de un constructor|V
 Una clase debe tener, a lo mas, un constructor|F
@@ -76,16 +81,19 @@ Para llamar a un metodo, debe ser refenciado como objeto.metodo(args), siendo ob
 En Java, cualquier parametro es pasado por valor, pese a que sea una referencia previamente|V
 En Java, cualquier parametro es pasado por referencia, pese a que sea un valor previamente|F
 En Java, si el parametro recibido es una referencia, se copia la referencia, no el objeto|V
-En Java, si el parametro recibido es una referencia, se copia el objeto|F
+En Java, si el parametro recibido es una referencia, se copia el objeto, no la referencia|F
 En Java, si el parametro recibido es una referencia, hara el cambio tras el retorno|V
-En Java, si el parametro recibido es una referencia, hara el cambio directamente a este|F
+En Java, si el parametro recibido es una referencia, hara el cambio directamente durante su ejecucion|F
 Un metodo de control de acceso para metodos es private, utilizado para proteger campos de acceso externo|V
 En Java, se conocen como getters o accesor, aquel metodo que haga una lectura indirecta de una variable miembro de la clase|V
+En Java, se conocen como getters o accesor, cuando se toma una lectura directa de una variable miembro de una clase|F
 En Java, se conocen como setters aquel metodo que permite hacer un cambio al valor de una variable miembro de una clase|V
 La firma de un metodo consiste unicamente en el nombre, cantidad y tipos de parametros, y el tipo de retorno|V
 La firma de un metodo consiste unicamente en la cantidad y tipos de parametros|F
+La firma de un metodo consiste unicamente los tipos de parametros|F
 La sobrecarga de un metodo ocurre cuando se tienen varios metodos con el mismo nombre pero distintos parametros|V
 La sobrecarga de un metodo ocurre cuando se tienen varios metodos con el mismo nombre pero distinta firma|F
+La sobrecarga de un metodo ocurre cuando se tienen varios metodos con el mismo firma pero distinto parametros|F
 Para invocar un metodo sobrecargado, se decide mediante calzar la cantidad y tipo de los parametros que use|V
 Para invocar un metodo sobrecargado, se decide mediante la sintaxis metodo.metodotipo|F
 La referencia this corresponde a la referencia sobre el objeto actual en un metodo no estatico|V
@@ -143,7 +151,7 @@ Se puede cambiar a decision propia la implementacion de metodos heredados de una
 Una clase abstracta define un comportamiento generico que al ser heredado debe implementarse|V
 Si B es una subclase de A, es corrector decir que: \nA refA = new A(...)|V
 Si B es una subclase de A, es corrector decir que: \nA refA = new B(...)|V
-Si B es una subclase de A, es corrector decir que: \nA refB = new A(...)|F
+Si B es una subclase de A, es corrector decir que: \nB refB = new A(...)|F
 Si B es una subclase de A, entonces B sera tipo de la superclase|V
 Si B es una subclase de A, entonces A sera tipo de la subclase|F
 Si Pixel es una subclase de Punto, entonces Pixel es un Punto|V
@@ -163,7 +171,7 @@ En Java, si se declara un campo con el mismo nombre que un campo de la superclas
 En Java, si se declara un campo con el mismo nombre que un campo de la superclase, esta se oculta y no puede ser accedida|F
 En Java, si se declara un campo con el mismo nombre que un campo de la superclase, esta se borra|F
 En Java, se considera como redefinicion el reemplazo de la implementacion de un metodo de superClase por una implementacion de subclase|V
-En Java, si redifinimos un metodo, se podra acceder mediante la referencia super|V
+En Java, si redifinimos un metodo, se podra acceder al original mediante la referencia super|V
 En Java, si redifinimos un metodo, ya no se podra llamar al metodo de la superClase|F
 En Java, un metodo redefinido puede usar cualquier modificador de acceso, siempre y cuando de el mismo o mas acceso que el original|V
 En Java, un metodo redefinido puede usar cualquier modificador de acceso, independientemente del acceso del metodo original|F
@@ -367,3 +375,14 @@ Ejemplos de paquete en Java son java.beans, java.crypto y java.print|F
 (Quiz 3 2022 CC - Jose Luis Marti p8) Un constructor en Java es un tipo especial de metodo, que retorna una referencia a un objeto de la clase invocada|F
 (Quiz 3 2022 CC - Jose Luis Marti p9) Si dentro de un metodo se hace uso de la referencia this, esta correponde a la instancia que invoco a dicho metodo|V
 (Quiz 3 2022 CC - Jose Luis Marti p10) El recolector de basura de Java evita que se produzcan los dangling en memoria|V
+
+(Quiz 3 2022 SJ - Roberto Diaz p1) En Java no se produce dangling y nunca habra basura en memoria|F
+(Quiz 3 2022 SJ - Roberto Diaz p2) C soporta directamente el concepto de clausura pues existen los punteros a funcion|F
+(Quiz 3 2022 SJ - Roberto Diaz p3) En Java, al pasar un objeto a un metodo, el parametro es una copia de la referencia al objeto|V
+(Quiz 3 2022 SJ - Roberto Diaz p4) Una instancia de herencia multiple es cuando una clase tiene varias subclases|F
+(Quiz 3 2022 SJ - Roberto Diaz p5) Un metodo con los modificadores final o static no podran ser redefinidos|V
+(Quiz 3 2022 SJ - Roberto Diaz p6) Java solamente soporta polimorfismo dinamico, pero no polimorfismo estatico|F
+(Quiz 3 2022 SJ - Roberto Diaz p7) En Java, una referencia sera nula solo cuando se indique explicitamente asignando null a la variable|F
+(Quiz 3 2022 SJ - Roberto Diaz p8) Una clase abstracta puede contener metodos no abstractos|V
+(Quiz 3 2022 SJ - Roberto Diaz p9) Cualquier lenguaje con soporte de TDA sera inherentemente Orientado a Objeto|F
+(Quiz 3 2022 SJ - Roberto Diaz p10) Al importar las clases de un paquete con un asterisco (i.e. paquete.*) no se importaran las clases en sus subpaquetes|V

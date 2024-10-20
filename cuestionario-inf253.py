@@ -1,4 +1,5 @@
 import random
+import os
 
 dict_figuras = dict()
 
@@ -79,6 +80,7 @@ def iniciarQuiz(unidad):
         else:
             print("La respuesta correcta era "+respuesta)
         input("Pulse enter para continuar:\n")
+        os.system('cls')
 
     opcionesMultiples = getOpcionMultiple(unidad,5)
     for pregunta,figuras,respuesta in opcionesMultiples:
@@ -90,6 +92,7 @@ def iniciarQuiz(unidad):
         else:
             print("La respuesta correcta era "+respuesta)
         input("Pulse enter para continar:\n")
+        os.system('cls')
     
     nota = correctas_alt*10 + correctas_vf*5
     print("TEST TERMINADO: Resultados son:")
@@ -97,15 +100,19 @@ def iniciarQuiz(unidad):
 
 def main():
 
+    os.system('cls')
     print("Inicio Quiz: Que se desea hacer")
     decision = 0
     while(decision != 3):
         decision = input("1. Realizar Quiz (U5) | 2. Realizar Certamen | 3. Salir\n")
         decision = int(decision)
         if(decision == 1):
+            os.system('cls')
             iniciarQuiz(5)
         elif(decision == 2):
             print("No disponible Actualmente")
+            input("Pulse enter para continar:\n")
+            os.system('cls')
 
 
 
