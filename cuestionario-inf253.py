@@ -49,6 +49,8 @@ def getOpcionMultiple(unidad, cantidad):
 
     with open(nombre_arch,"r") as arch:
         for linea in arch:
+            if linea.startswith("#") or not linea.strip():
+                continue
             if linea.startswith("Pregunta") and pregunta_actual != ["","",""]:
                 list_preguntas.append(pregunta_actual)
             if linea.startswith("Pregunta"):
@@ -64,37 +66,50 @@ def getOpcionMultiple(unidad, cantidad):
 
     return random.sample(list_preguntas, cantidad)
 
-
-
-        
-
-def main():
-
-    correctas = 0
-
-    print("Testeo Multiple + Verdadero o falso (unidad 5)")
-    makeFiguras(5)
-
-    opcionesVerdaderoFalso = getVerdaderoFalso(5,10)
+def iniciarQuiz(unidad):
+    correctas_vf = 0
+    correctas_alt = 0
+    makeFiguras(unidad)
+    opcionesVerdaderoFalso = getVerdaderoFalso(unidad,10)
     for pregunta, respuesta in opcionesVerdaderoFalso:
         usuario_respuesta = input(pregunta + "\n")
         if usuario_respuesta.lower() == respuesta.lower():
             print("Respuesta correcta!")
-            correctas += 1
+            correctas_vf += 1
         else:
             print("La respuesta correcta era "+respuesta)
         input("Pulse enter para continuar:\n")
 
-    opcionesMultiples = getOpcionMultiple(5,5)
+    opcionesMultiples = getOpcionMultiple(unidad,5)
     for pregunta,figuras,respuesta in opcionesMultiples:
         pregunta = pregunta.replace('\n','\n'+figuras,1)
         usuario_respuesta = input(pregunta + "\n")
         if usuario_respuesta.lower() == respuesta.lower():
             print("Respuesta correcta!")
-            correctas += 1
+            correctas_alt += 1
         else:
             print("La respuesta correcta era "+respuesta)
-        input("Pulse enter para continar:")
+        input("Pulse enter para continar:\n")
+    
+    nota = correctas_alt*10 + correctas_vf*5
+    print("TEST TERMINADO: Resultados son:")
+    print("Correctas Verdadero y Falso: "+str(correctas_vf)+"\nCorrectas Opcion Multiple: "+str(correctas_alt)+"\nNota final: "+str(nota))
+
+def main():
+
+    print("Inicio Quiz: Que se desea hacer")
+    decision = 0
+    while(decision != 3):
+        decision = input("1. Realizar Quiz (U5) | 2. Realizar Certamen | 3. Salir\n")
+        decision = int(decision)
+        if(decision == 1):
+            iniciarQuiz(5)
+        elif(decision == 2):
+            print("No disponible Actualmente")
+
+
+
+    
 
 
 

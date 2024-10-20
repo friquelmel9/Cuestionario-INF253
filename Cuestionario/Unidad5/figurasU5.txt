@@ -55,4 +55,35 @@ figura 6:
     Interface I {...}
     Class A implements I {...}
     Class b extends A {...}
+figura 7:
+    Class A {
+        public int a;
+        public int b;
+    }
+    A(){
+        a = 0;
+        b = 0;
+    }
+    A(int a){
+        this.a = a+2;
+        b = a;
+    }
+    Class B extends A{
+        public int a;
+        B(int a){
+            super(a);
+            this.a = 2;
+            super.b = 2;
+        }
+    }
+figura 8:
+    src
+    |---Lector
+        |--- Romance.java
+        |--- Fantasia.java
+        |--- Lector.java
+    |---Jugador
+        |--- PC.java
+        |--- Consola.java
+        |--- Jugador.java
 figura final

@@ -345,3 +345,25 @@ Ejemplos de paquete en Java son java.beans, java.crypto y java.print|F
 (Certamen 1 - Marti p25) Java es un lenguaje orientado al objeto, con ciertos elementos propios de un lenguaje imperativo|V
 (Certamen 1 - Marti p29) En Java para poder acceder a las variables de clase que son definidas mediante la palabra static, no es necesario instanciar las clases|V
 (Certamen 1 - Marti p35) Un ejemplo de polimorfismo estático es la sobrecarga de operadores. donde un operador tiene exactamente el mismo comportamiento, sin importar los tipos de datos de sus operandos|F
+
+(Control 3 2022 - Gabriel Carmona p1) El concepto objeto y clase son lo mismo|F
+(Control 3 2022 - Gabriel Carmona p2) En Java, los objetos son asignados desde el heap y accedidos mediante variables de referencia|V
+(Control 3 2022 - Gabriel Carmona p3) El recolector de basura de Java evita que se produzcan los dangling en la memoria|V
+(Control 3 2022 - Gabriel Carmona p4) Las variables miembros de un objeto en Java definen su estado|V
+(Control 3 2022 - Gabriel Carmona p5) Un constructor en Java es un tipo especial de metodo, que retorna una referencia a un objeto de la clase invocada|F
+(Control 3 2022 - Gabriel Carmona p6) En Java, el acceso protegido es mas restrictivo que el de paquete|F
+(Control 3 2022 - Gabriel Carmona p7) En Java y C++, las clases funcionan exactamente igual|F
+(Control 3 2022 - Gabriel Carmona p8) Una clase abstracta solo puede tener metodos abstractos|F
+(Control 3 2022 - Gabriel Carmona p9) Si estoy dentro de un metodo y hago acceso a la referencia this corresponde a la instancia a la que llamo a un metodo|V
+(Control 3 2022 - Gabriel Carmona p10) En Java, el programa main es lo unico que puede no ser una clase|F
+
+(Quiz 3 2022 CC - Jose Luis Marti p1) Un tipo de dato abstracto es un tipo de datos que satisface las restricciones de reusabilidad y seguridad|F
+(Quiz 3 2022 CC - Jose Luis Marti p2) Python provee soporte para la definicion de clases y Objetos|V
+(Quiz 3 2022 CC - Jose Luis Marti p3) En la orientacion a objetos, una clase generica corresponde a lo que se llama tipo de datos abstraacto parametrizado en un lenguaje no objetual|V
+(Quiz 3 2022 CC - Jose Luis Marti p4) Java es un lenguaje de programacion que soporta tanto la programacion imperativa como la orientada a objeto|F
+(Quiz 3 2022 CC - Jose Luis Marti p5) En Java, los objetos son asignados desde el heap y accedidos mediante variables de referencia|V
+(Quiz 3 2022 CC - Jose Luis Marti p6) Las variables miembros de un objeto en Java definen su estado|V
+(Quiz 3 2022 CC - Jose Luis Marti p7) En Java, el acceso protegido es mas restrictivo que el del paquete|F
+(Quiz 3 2022 CC - Jose Luis Marti p8) Un constructor en Java es un tipo especial de metodo, que retorna una referencia a un objeto de la clase invocada|F
+(Quiz 3 2022 CC - Jose Luis Marti p9) Si dentro de un metodo se hace uso de la referencia this, esta correponde a la instancia que invoco a dicho metodo|V
+(Quiz 3 2022 CC - Jose Luis Marti p10) El recolector de basura de Java evita que se produzcan los dangling en memoria|V

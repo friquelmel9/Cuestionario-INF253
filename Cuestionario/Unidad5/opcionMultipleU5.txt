@@ -1,6 +1,7 @@
 # Con respecto a SuperClase, SubClase y SubSubClase
 
 Pregunta 1 |1|c
+
     Considere las figura (1):
     Si se realiza el siguiente codigo:
         SuperClase sup2 = new SuperClase(0);
@@ -9,7 +10,9 @@ Pregunta 1 |1|c
     b. SuperClase() -> SuperClase(int i)
     c. SuperClase(int i)
     d. Ninguna de las anteriores
+
 Pregunta 2 |1,2|a
+
     Considere las figuras (1,2):
     Si se realiza el siguiente codigo:
         SubClase sub1 = newSubClase();
@@ -18,7 +21,9 @@ Pregunta 2 |1,2|a
     b. SubClase()
     c. SuperClase()
     d. Ninguna de las anteriores
+
 Pregunta 3 |1,2|b
+
     Considere las figuras (1,2):
     Si se realiza el siguiente codigo:
         SubClase sub1 = newSubClase(0);
@@ -27,7 +32,9 @@ Pregunta 3 |1,2|b
     b. SuperClase() -> SubClase(int i)
     c. SuperClase(int i) -> SubClase(int i) 
     d. Ninguna de las anteriores
+
 Pregunta 4 |1,2|b
+
     Considere las figuras (1,2):
     Si se realiza el siguiente codigo:
         SubClase sub1 = new SubClase();
@@ -37,7 +44,9 @@ Pregunta 4 |1,2|b
     b. "4"
     c. "6"
     d. No se mostrara nada por pantalla o habra error
+
 Pregunta 5 |1,2|b
+
     Considere las figuras (1,2):
     Si se realiza el siguiente codigo:
         SuperClase sub3 = new Subclase();
@@ -47,7 +56,9 @@ Pregunta 5 |1,2|b
     b. "4"
     c. "6"
     d. No se mostrara nada por pantalla o habra error
+
 Pregunta 6 |1,2|a
+
     Considere las figuras (1,2):
     Si se realiza el siguiente codigo:
         SuperClase sub3 = new SubClase();
@@ -57,7 +68,9 @@ Pregunta 6 |1,2|a
     b. "SubClase"
     c. "SubSubClase"
     d. No se mostrara nada por pantalla o habra error
+
 Pregunta 7 |1,2|b
+
     Considere las figuras (1,2):
     Si se realiza el siguiente codigo:
         SubClase sub1 = new SubClase();
@@ -67,7 +80,9 @@ Pregunta 7 |1,2|b
     b. "SubClase"
     c. "SubSubClase"
     d. No se mostrara nada por pantalla o habra error
+
 Pregunta 8 |1,2|d
+
     Considere las figuras (1,2):
     Si se realiza el siguiente codigo:
         SuperClase sub3 = new SubClase();
@@ -77,7 +92,9 @@ Pregunta 8 |1,2|d
     b. "4"
     c. "8"
     d. No se mostrara nada por pantalla o habra error
+
 Pregunta 9 |1,2|c
+
     Considere las figuras (1,2):
     Si se realiza el siguiente codigo:
         SubClase sub1 = new SubClase();
@@ -87,36 +104,81 @@ Pregunta 9 |1,2|c
     b. "4"
     c. "8"
     d. No se mostrara nada por pantalla o habra error
+
 Pregunta 10: |4|b
+
     (Certamen 1 - Marti, p1) Dado el siguiente codigo en Java de la figura 4:
     ¿Como se debe invocar el constructor Base para que muestre por la salida estandar el string "base constructor"?
     a. Una linea despues de //Tres poner: Base(10)
     b. Una linea despues de //Dos poner: super(10)
     c. Una linea despues de //Uno poner: Base(10)
     d. Una linea despues de //Uno poner: super(10)
+
 Pregunta 11: |5|d
+
     (Certamen 1 - Marti, p11) Dado el siguiente codigo en Java de la figura 5:
     Una clase B que la extiende y que se encuentra en otro paquete, ¿Cual seria la visibilidad que tendria sobre los atributos miembros de A?
     a. Puede accesar a todos los atributos, menos x, w
     b. Puede accesar a todos los atributos, menos x
     c. Puede accesar a todos los atributos, menos y
     d. Puede accesar a todos los atributos, menos x, y
+
 Pregunta 12: | |a
+
     (Certamen 1 - Marti, p12) Si una subclase tiene un método sobreescrito con modificador de acceso protected, significa que el mismo método en la superclase tiene acceso:
     a. Privado o protegido
     b. Protegido o de paquete
     c. Publico o protegido
     d. Protegido
+
 Pregunta 13: | |b
+
     (Certamen 1 - Marti, p14) Cuál de los siguientes no es un uso real del modificador final de Java?
     a. Establecer que un método no puede ser sobreescrito
     b. Reforzar que se trata del último método a ejecutar por un objeto a eliminar
     c. Indicar que un atributo tendrá un valor constante, que no podrá ser modificado
     d. Señalar que una clase no puede ser extendida
+
 Pregunta 14: |6|b
+
     (Certamen 1 - Marti, p26) Dado las siguientes declaraciones de la figura 6:
     ¿Cual de las siguientes sentencias es la unica correcta?
     a. B x = new I();
     b. I x = new B();
     c. I x = new I();
     d. B x = new A();
+
+Pregunta 15: |7|c
+
+(Control 3 2022 - Gabriel Carmona p2.1) Si se tiene el siguiente codigo de la figura (7):
+    Si se crea una instancia de B de esta forma:
+        A c = new B(3);
+    Cual de las siguientes alternativas es verdadera?
+    a. c.a valdra 2
+    b. c.a valdra 4
+    c. c.b valdra 3
+    d. c.b valdra 2
+
+Pregunta 16:| |c
+    (Control 3 2022 - Gabriel Carmona p2.2) Por haber herencia, la asignacion dinamica de memoria no puede hacerse en el stack por:
+    a. Delays en el acceso a los objetos, dada la ubicacion aleatoria de estos dentro de los registros de activacion
+    b. Imposibilidad de realizar el ligado dinamico de metodos, dado que no siempre es posible que tengan la misma firma y tipo de retorno
+    c. Dificultad para analizar estaticamente el tamaño de memoria requerido en el stack, ya que a una variable de tipo base se le pueden asignar referencias de cualquier tipo derivado
+    d. Todas las anteriores
+
+Pregunta 17:|8|c
+    (Control 3 2022 - Gabriel Carmona p2.3) Considere la siguiente organizacion de archivos de la figura 8:
+    Cual de las siguientes alternativas es falso?
+    a. Lector y Fantasian heredan de Lector
+    b. Lector y Fantasia son tipos de Lector
+    c. Lector y Jugador pueden tener relacion entre ellos
+    d. PC puede tener metodos que no tiene Consola
+
+Pregunta 18:| |c
+    (Quiz 3 2022 CC - Jose Luis Marti p2.5) Cual de los siguientes errores no es del tipo RuntimeException?
+    a. Mal uso de un cast
+    b. Lectura de un archivo vacio
+    c. Acceso a un arreglo fuera del limite
+    d. Acceso con una referencia nula
+
+Pregunta Final:| |
