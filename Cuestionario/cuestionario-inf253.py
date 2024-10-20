@@ -54,9 +54,10 @@ def getOpcionMultiple(unidad, cantidad):
             if linea.startswith("Pregunta"):
                 pregunta_actual = ["[a,b,c,d]","",""]
                 linea = linea.strip().split("|")
-                figuras = linea[1].split(",")
-                for figura in figuras:
-                    pregunta_actual[1] += dict_figuras[unidad][int(figura)]
+                if linea[1] != " ":
+                    figuras = linea[1].split(",")
+                    for figura in figuras:
+                        pregunta_actual[1] += dict_figuras[unidad][int(figura)]
                 pregunta_actual[2] += linea[2]
             else:
                 pregunta_actual[0] += linea[1:]

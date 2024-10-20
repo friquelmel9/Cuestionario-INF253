@@ -313,3 +313,35 @@ Ejemplos de paquete en Java son java.beans, javax.crypto y javax.print|V
 Ejemplos de paquete en Java son javax.swing, javax.accesibility y java.sql|V
 Ejemplos de paquete en Java son java.swing, java.accesibility y java.sql|F
 Ejemplos de paquete en Java son java.beans, java.crypto y java.print|F
+
+# VerdaderoFalso 5.8: Provenientes de quices antiguos:
+
+(Compilacion Quices - Marti quiz3p1) Ejemplos de polimorfismo son la sobrecarga de metodos y los tipos parametrizados|V
+(Compilacion Quices - Marti quiz3p2) Una clase con el modificador final no puede ser instanciada|F
+(Compilacion Quices - Marti quiz3p3) Con el metodo de recoleccion de basura de Java se reduce el problema de dangling|F
+(Compilacion Quices - Marti quiz3p4) Como en Java los parametros se pasan por valor, si el parametro fuese una referencia, es esta misma la que se copia, no el objeto asociado|V
+(Compilacion Quices - Marti quiz3p5) Una interfaz es util para definir una API, sin dar indicios de las clases que le daran implementacion|V
+(Compilacion Quices - Marti quiz3p6) Una interfaz permite capturar las diferencias entre clases que estan relacionadas entre si|F
+(Compilacion Quices - Marti quiz3p7) En la invocacion de un metodo que ha sido redifinido, el ligado al metodo se hara dinamicamente|V
+(Compilacion Quices - Marti quiz3p8) finalize permite contar con un codigo para la liberacion de recursos, al momento de lanzarse una excepcion|F
+(Compilacion Quices - Marti quiz3p9) La redefinición de métodos dentro de una jerarquía de herencia da la posibilidad de que la superclase pueda saber todos los usos que se le darán en las subclases|F
+(Compilacion Quices - Marti quiz3p10) Java permite que los métodos tengan una cantidad variable de argumentos, al igual que C++|F
+(Compilacion Quices - Marti quiz3p11) Tanto Smalltalk como Ruby son lenguajes de programacion orientados al objeto puros|V
+(Compilacion Quices - Marti quiz3p12) La referencia this hace alusion al objeto sobre el que se invoco el metodo|V
+(Compilacion Quices - Marti quiz3p13) Cuando se declara una variable, se crea un objeto que toma a null como valor inicial|F
+(Compilacion Quices - Marti quiz3p14) Si ocurre una excepción del tipo IOException es debido a que el programador ha hecho algo mal|F
+(Compilacion Quices - Marti quiz3p15) En el control de acceso asociado a la herencia, una clase podría ocultar entidades a sus clientes y/o superclase.|F
+(Compilacion Quices - Marti quiz3p16) La herencia favorece la reutilización de clases que ya existen, permitiendo que desde éstas se puedan definir otras clases con las que se relacionan|V
+(Compilacion Quices - Marti quiz3p17) En el caso de que no existiera la herencia y que los objetos se comporten como un tipo abstracto de datos, se podría usar tanto la memoria stack como la de heap para crear objetos|V
+(Compilacion Quices - Marti quiz3p18) Una clase puede extender varias interfaces, pero sólo implementar una única superclase|F
+(Compilacion Quices - Marti quiz3p19) En el modelo objetual, la implementación del tipo asociado a una clase se especifica tanto por las variables como por su interfaz, donde esta última considera métodos y constantes|F
+(Compilacion Quices - Marti quiz3p20) Un método abstracto es uno que solamente tiene definido el protocolo de los mensajes|V
+
+(Certamen 1 - Marti p4) Con respecto a la redefinicion de metodos en la herencia, un metodo no se puede ocultar en una subclase|F
+(Certamen 1 - Marti p5) Las referencias a una clase hija pueden apuntar a objetos de su clase padre, pero no al reves|F
+(Certamen 1 - Marti p9) Un ejemplo de polimorfismo dinámico son los subprogramas genéricos, donde éstos utilizan un mismo código (comportamiento) para distintos tipos de parámetros|V
+(Certamen 1 - Marti p19) Una de las desventajas de la declaración implícita de los tipos de datos, es que hace más lenta la ejecución debido a la verificación dinámica de éstos|V
+(Certamen 1 - Marti p20) C es un lenguaje imperativo, que permite elementos de la programación orientada al objeto|F
+(Certamen 1 - Marti p25) Java es un lenguaje orientado al objeto, con ciertos elementos propios de un lenguaje imperativo|V
+(Certamen 1 - Marti p29) En Java para poder acceder a las variables de clase que son definidas mediante la palabra static, no es necesario instanciar las clases|V
+(Certamen 1 - Marti p35) Un ejemplo de polimorfismo estático es la sobrecarga de operadores. donde un operador tiene exactamente el mismo comportamiento, sin importar los tipos de datos de sus operandos|F

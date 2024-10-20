@@ -87,3 +87,36 @@ Pregunta 9 |1,2|c
     b. "4"
     c. "8"
     d. No se mostrara nada por pantalla o habra error
+Pregunta 10: |4|b
+    (Certamen 1 - Marti, p1) Dado el siguiente codigo en Java de la figura 4:
+    ¿Como se debe invocar el constructor Base para que muestre por la salida estandar el string "base constructor"?
+    a. Una linea despues de //Tres poner: Base(10)
+    b. Una linea despues de //Dos poner: super(10)
+    c. Una linea despues de //Uno poner: Base(10)
+    d. Una linea despues de //Uno poner: super(10)
+Pregunta 11: |5|d
+    (Certamen 1 - Marti, p11) Dado el siguiente codigo en Java de la figura 5:
+    Una clase B que la extiende y que se encuentra en otro paquete, ¿Cual seria la visibilidad que tendria sobre los atributos miembros de A?
+    a. Puede accesar a todos los atributos, menos x, w
+    b. Puede accesar a todos los atributos, menos x
+    c. Puede accesar a todos los atributos, menos y
+    d. Puede accesar a todos los atributos, menos x, y
+Pregunta 12: | |a
+    (Certamen 1 - Marti, p12) Si una subclase tiene un método sobreescrito con modificador de acceso protected, significa que el mismo método en la superclase tiene acceso:
+    a. Privado o protegido
+    b. Protegido o de paquete
+    c. Publico o protegido
+    d. Protegido
+Pregunta 13: | |b
+    (Certamen 1 - Marti, p14) Cuál de los siguientes no es un uso real del modificador final de Java?
+    a. Establecer que un método no puede ser sobreescrito
+    b. Reforzar que se trata del último método a ejecutar por un objeto a eliminar
+    c. Indicar que un atributo tendrá un valor constante, que no podrá ser modificado
+    d. Señalar que una clase no puede ser extendida
+Pregunta 14: |6|b
+    (Certamen 1 - Marti, p26) Dado las siguientes declaraciones de la figura 6:
+    ¿Cual de las siguientes sentencias es la unica correcta?
+    a. B x = new I();
+    b. I x = new B();
+    c. I x = new I();
+    d. B x = new A();

@@ -31,4 +31,28 @@ figura 3:
         public SubSubClase(){...}
         public SubSubClase(int i){...}
     }
+figura 4:
+    class Base {
+        Base (int i)
+        {Systen.out.println("base constructor");}
+    }
+    public class Sup extends Base{
+        public static void main(String argv[]){
+            Sup s = new Sup();
+            //Uno
+        }
+        Sup(){ //Dos }
+        public void derivada(){ //Tres }
+    }
+figura 5:
+    public Class A {
+        int x;
+        private int y;
+        protected int z;
+        public int w;
+    }
+figura 6:
+    Interface I {...}
+    Class A implements I {...}
+    Class b extends A {...}
 figura final
