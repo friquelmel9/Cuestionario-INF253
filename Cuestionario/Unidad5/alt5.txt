@@ -1,0 +1,34 @@
+# Preguntas obtenidas de clase
+
+begin alt
+
+answer:c
+Considere las siguientes figuras (1):
+figura:1
+Si se realiza el siguiente codigo:
+    SuperClase sup2 = new SuperClase(0);
+¿Que constructores y en que orden se llamaran?
+a. SuperClase()
+b. SuperClase() -> SuperClase(int i)
+c. SuperClase(int i)
+d. Ninguna de las anteriores
+
+end alt
+
+begin alt
+
+answer:a
+Considere las figuras (1,2):
+figura:1
+figura:2
+Si se realiza el siguiente codigo:
+    SubClase sub1 = new SubClase();
+¿Que constructores y en que orden se llamaran?
+a. SuperClase() -> SubClase()
+b. SubClase()
+c. SuperClase()
+d. Ninguna de las anteriores
+
+end alt
+
+

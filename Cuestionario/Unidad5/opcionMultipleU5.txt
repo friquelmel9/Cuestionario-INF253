@@ -15,7 +15,7 @@ Pregunta 2 |1,2|a
 
     Considere las figuras (1,2):
     Si se realiza el siguiente codigo:
-        SubClase sub1 = newSubClase();
+        SubClase sub1 = new SubClase();
     ¿Que constructores y en que orden se llamaran?
     a. SuperClase() -> SubClase()
     b. SubClase()
@@ -26,7 +26,7 @@ Pregunta 3 |1,2|b
 
     Considere las figuras (1,2):
     Si se realiza el siguiente codigo:
-        SubClase sub1 = newSubClase(0);
+        SubClase sub1 = new SubClase(0);
     Que constructores y en que orden se llamaran?
     a. SuperClase() -> SubClase() -> SubClase(int i)
     b. SuperClase() -> SubClase(int i)
@@ -182,7 +182,7 @@ Pregunta 18:| |c
     d. Acceso con una referencia nula
 
 Pregunta 19:| |b
-    Si queremos ordenar de mayor a menor acceso considerando que toda clase es parte de un mismo paquete, como deberian de ordernase los metodos de control de acceso?
+    Si queremos ordenar de mayor a menor acceso considerando que toda clase es parte de un mismo paquete, como deberian de ordernase los metodos de control de acceso? [En duda]
     a. package -> public -> protected -> private
     b. public -> package -> protected -> private
     c. public -> protected -> package -> private
@@ -229,5 +229,48 @@ Pregunta 24:| |b
     b. final class ClaseA extends ClaseB { }
     c. abstract class ClaseA extends ClaseB { }
     d. class ClaseA extends ClaseB, ClaseC { }
+
+Pregunta 25:| |a
+    (Quiz 3 P2 SJ - Jose Luis Marti p2.1) Dentro de los "sabores" de la programacion orientada objeto, cual de las siguientes afirmaciones es incorrecta?
+    a. Python es un ejemplo de lenguaje orientado al objeto puro
+    b. C++ es un ejemplo de un lenguaje que soporta tanto la progamacion imperativa como la orientada a objeto
+    c. C# es un ejemplo de lenguaje que no soporta otro paradigma que no sea el orientado al objeto, pero que usa una estructura imperativa
+    d. CLOS es un ejemplo de lenguaje funcional que soporta la orientacion a objeto
+
+Pregunta 26:| |c
+    (Quiz 3 P2 SJ - Jose Luis Marti p2.2) En Java, la palabra static no se puede usar para
+    a. Clases
+    b. Bloques de inicializacion
+    c. Parametros
+    d. Metodos
+
+Pregunta 27:| |b
+    (Quiz 3 P2 SJ - Jose Luis Marti p2.3) Sobre las reglas de herencia en Java, cual de las siguientes frases es la unica correcta?
+    a. Una subclase hereda todos los atributos miembros privados, protegidos y publicos de la superclase.
+    b. Una subclase no hereda los atributos miembros de la superclase que tienen el mismo nombre de un miembro de la subclase
+    c. Una subclase hereda todos los atributos miembros sin modificador de la superclase, no importando el paquete en que se encuentre
+    d. Una subclase hereda todos los atributos miembros de la superclase, asi como los de las interfaces que esta deba implementar
+
+Pregunta 28:| |d
+    (Quiz 3 P2 SJ - Jose Luis Marti p2.4) Cual de las siguientes funciones no esta presente en la clase Object?
+    a. clone()
+    b. equals()
+    c. getClass()
+    d. move()
+
+Pregunta 29:| |a
+    (Quiz 3 P2 SJ - Jose Luis Marti p2.5) En una interfaz en Java es falso
+    a. Puede tener algunos metodos implementados
+    b. No puede tener atributos miembros
+    c. Puede tener constantes
+    d. Puede extender multiples interfaces
+
+Pregunta 30:|9|d
+    Considere la figura (9):
+    Esta corresponde a un ejemplo de:
+    a. Creacion de nueva clase de excepciones
+    b. Jerarquia de clases para excepciones
+    c. Tipo de excepciones
+    d. Anidamiento de excepciones
 
 Pregunta Final:| |

@@ -86,4 +86,41 @@ figura 8:
         |--- PC.java
         |--- Consola.java
         |--- Jugador.java
+figura 9:
+    metodo1 {
+        try {
+            call metodo2;
+        } catch (exception) {
+            procesar excepcion
+        }
+    }
+    metodo 2 throws exception {
+        call metodo3;
+    }
+    metodo 3 throws exception {
+        call leerArchivo;
+    }
+figura 10:
+    try {
+        ...
+    } catch (Exception e) {
+        System.err.println("Capturo ArrayIndexOutOfBoundsException:"+e.getMessage());
+    } catch (IOException e) {
+        System.err.println("Capturo IOException: "+e.getMessage());
+    }
+figura 11:
+    abstract public class Figura {
+        String color = "negro";
+        void public cambiarColor();
+        abstract public perimetro();
+        abstract public area();
+    }
+    public class Triangulo extends Figura {
+        public perimetro(){...};
+        public area(){...};
+    }
+    public class Cuadrado extends Figura {
+        public perimetro(){...};
+        public area(){...};
+    }
 figura final

@@ -1,0 +1,34 @@
+begin fig1:
+
+public class SuperClase {
+    public String nombre = "SuperClase";
+    public SuperClase(){...}
+    public SuperClase(int i){...}
+    public void Saludador(){
+        System.out.println("Saludo desde SuperClase");
+    }
+    public int Suma(){return 1+1;}
+    protected void Secreto(){
+        System.out.println("Secreto desde SuperClase");
+    }
+}
+
+end fig
+begin fig2:
+
+public class SubClase extends SuperClase {
+    public String nombre = "SubClase";
+    public SubClase(){...}
+    public SubClase(int i){...}
+    public void Saludador(){
+        System.out.println("Saludo desde SubClase");
+    }
+    public int Suma(){return 2+2;}
+    protected void Secreto(){super.Secreto()}
+    public int SuperSuma{return 4+4;}
+    public void SuperSaludador(){
+        System.out.println("SuperSaludo desde SubClase");
+    }
+}
+
+end fig

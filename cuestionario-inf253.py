@@ -1,7 +1,76 @@
 import random
 import os
 
-dict_figuras = dict()
+# Para estos dict, considere key la unidad, mientras que el valor dentro una lista con todo lo necesario
+dict_vf = dict()
+dict_alt = dict()
+dict_figuras = dict() #Borrarlo despues de reinicio
+dict_fig = dict()
+
+# Sub dict con aquellas preguntas que vienen referenciadas de anteriores ejemplos
+dict_vf_test = dict()
+dict_alt_test = dict()
+
+def getFig(unidad):
+    if(unidad in dict_figuras):
+        return
+    arch_path = "Cuestionario/Unidad{}/fig{}.txt".format(unidad,unidad)
+
+    with open(arch_path,'r') as arch:
+        cont = 1
+        string_fig = ""
+        for linea in arch:
+            if linea.startswith("begin"):
+                string_fig = ""
+            if not linea.startswith("#") or not linea.strip():
+                string_fig += linea.strip()+"\n"
+            if linea.startswith("end"):
+                dict_fig[unidad][cont] = string_fig
+                cont += 1
+            
+    
+def getAlt(unidad):
+    if(unidad in dict_alt):
+        return
+    arch_path = "Cuestionario/Unidad{}/alt{}.txt".format(unidad,unidad)
+
+    with open(arch_path,'r') as arch:
+        cont = 1
+        str_ans = "x"
+        str_text = ""
+        getFig(unidad)
+        
+        for linea in arch:
+            if linea.startswith("begin"):
+                string_text = ""
+            
+            if not linea.startswith("#") or not linea.strip():
+
+                if linea.startswith("answer"):
+                    str_ans = linea.strip.split(":")
+
+                elif linea.startswith("figura"):
+                    figuras = linea.strip.split(":")[1].split(",")
+                    for fig in figuras:
+                        str_text += dict_fig[unidad][fig]
+
+                else:
+                    str_text += linea.strip()+"\n"
+
+            if linea.startswith("end"):
+                dict_alt[unidad][cont] = [str_text,str_ans]
+                cont += 1
+                
+
+def getVf(unidad):
+    if(unidad in dict_vf):
+        return
+    arch_path = "Cuestionario/Unidad{}/vf{}.txt".format(unidad,unidad)
+
+
+
+
+
 
 def makeFiguras(unidad):
     if int(unidad) not in dict_figuras:
@@ -34,7 +103,8 @@ def getVerdaderoFalso(unidad, cantidad):
                 continue
             pregunta, respuesta = linea.strip().split("|")
             pregunta = "[V-F] "+pregunta
-            list_preguntas.append([pregunta.replace("\\n","\n"), respuesta])
+            if(respuesta != "X"):
+                list_preguntas.append([pregunta.replace("\\n","\n"), respuesta])
 
     return random.sample(list_preguntas, cantidad)
 
@@ -112,15 +182,11 @@ def main():
         elif(decision == 2):
             print("No disponible Actualmente")
             input("Pulse enter para continar:\n")
-            os.system('cls')
+            os.system('cls')            
 
 
 
-    
-
-
-
-    
 
 main()
+
 

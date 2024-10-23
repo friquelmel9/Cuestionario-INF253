@@ -6,11 +6,12 @@ En Java, todos los datos son accedidos mediante variables de referencia|V
 En Java, los datos pueden ser accedidos tanto directamente como referenciado|F
 A diferencia de Java, C++ no tiene ambito de paquete|V
 En Python, todo metodo de un TDA debe poseer el argumento self|V
+En C, todo metodo de un TDA debe poseer el argumento self|F
+Python no soporta TDA|F
 Python soporta TDA Parametrizado|F
 Java soporta TDA Parametrizado|F
 En Java, se pueden definir clases genericas, que almacenan sus propios metodos y variables|F
 Ejemplos de clases genericas en Java son LinkedList y ArrayList|V
-Ejemplos de clase genericas en Java son LinkedList y API|F
 Stack es un tipo de dato abstracto|V
 
 # VerdaderoFalso 5.2: Orientacion a Objetos (OO)
@@ -92,7 +93,7 @@ La firma de un metodo consiste unicamente en el nombre, cantidad y tipos de para
 La firma de un metodo consiste unicamente en la cantidad y tipos de parametros|F
 La firma de un metodo consiste unicamente los tipos de parametros|F
 La sobrecarga de un metodo ocurre cuando se tienen varios metodos con el mismo nombre pero distintos parametros|V
-La sobrecarga de un metodo ocurre cuando se tienen varios metodos con el mismo nombre pero distinta firma|F
+La sobrecarga de un metodo ocurre cuando se tienen varios metodos con el mismo nombre pero distinta firma|V
 La sobrecarga de un metodo ocurre cuando se tienen varios metodos con el mismo firma pero distinto parametros|F
 Para invocar un metodo sobrecargado, se decide mediante calzar la cantidad y tipo de los parametros que use|V
 Para invocar un metodo sobrecargado, se decide mediante la sintaxis metodo.metodotipo|F
@@ -247,40 +248,52 @@ Una interfaz fuerza una relacion entre las clases|F
 Una interfaz declara metodos que han de implementarse, mas no el como|V
 Las constantes de una interfaz son public, static y final|V
 Las constantes de una interfaz son public y final|F
-Los metodos de una interfaz son public y abstract|V
-Los metodos de una interfaz son abstract, mas su metodo de acceso puede ser public o protected|F
+Los metodos de una interfaz son implícitamente public y abstract|V
+Los metodos de una interfaz son implícitamente abstract y protected|F
 Los modificadores tales como private o protected no son aceptados por la Interfaz|V
 Los modificadores tales como public y protected son aceptados por la Interfaz|F
+Los modificadores tales como public, protected y private puede ser usados en una interfaz, mas solo para sus constantes|F
 Una interfaz puede extender otras interfaces|V
 Una interfaz no puede extender otras interfaces|F
+Una interfaz puede ser public|V
 En Java, la diferencia entre una interfaz y una clase abstracta es que la primera permite crear metodos no abstractos|F
 En Java, la diferencia entre una interfaz y una clase abstracta es que la segunda permite crear metodos no abstractos|V
 En Java, la diferencia entre una interfaz y una clase abstracta es que la primera puede ser parte de una jerarquia de clases|F
 En Java, la diferencia entre una interfaz y una clase abstracta es que la segunda puede ser parte de una jerarquia de clases|V
-En Java, la diferencia entre una interfaz y una clase abstracta es que la primera se puede tener varias interfaces, mas no varias superClases|V
+En Java, la diferencia entre una interfaz y una clase abstracta es que la primera se puede tener varias interfaces implementadas, mas no varias superClases|V
+En Java, la diferencia entre una interfaz y una clase abstracta es que la segunda se puede tener varias superclases implementadas, mas no varias interfaces|F
+En C++, una clase no puede tener mas de un padre|F
 Existe Principio de Sustitucion en interfaces|V
-Si existe un mismo nombre en mas de una interfaz de los superTipo, habra sobrecarga siempre y cuando sus firmas no sean identicas|V
-Si existe un mismo nombre en mas de una interfaz de los superTipo, habra varios metodos que compartan la firma|F
-Si existe un mismo nombre en mas de una interfaz de los superTipo, habra unicamente un metodo con la misma firma|V
-Si existe un mismo nombre en mas de una interfaz de los superTipo, habra sobrecarga siempre y cuando sus retornos sean distintos|F
+Si existe un mismo nombre para varios métodos en mas de una interfaz implementada, habra sobrecarga siempre y cuando sus firmas no sean identicas|V
+Si existe un mismo nombre para varios métodos en mas de una interfaz implementada, habra varios metodos que compartan la firma|F
+Si existe un mismo nombre para varios métodos en mas de una interfaz implementada, habra unicamente un metodo con la misma firma|V
+Si existe un mismo nombre para varios métodos en mas de una interfaz implementada, habra sobrecarga siempre y cuando sus retornos sean distintos|F
+Si existe un mismo nombre para varios miembros en mas de una interfaz implementada, habrá únicamente un miembro accesible|F
+Si existe un mismo nombre para varios miembros en mas de una interfaz implementada, se podrán acceder mediante super|F
+Si existe un mismo nombre para varios miembros en mas de una interfaz implementada, se podrán acceder mediante la forma <NombreInterfaz>.<miembro>|V
+Probemas de la herencia multiple son que si una clase tiene de superclase a otras dos clases que comparten el método, no se sabe a cual hara referencia|V
+Problemas de la herencia multiple son que si una clase tiene implementadas varias interfaces, no se sabra cual de ellas utilizar|F
 
 # VerdaderoFalso 5.6: Manejo de Excepciones
 
 Una excepcion ocurre cuando un evento interrumpe la ejecucion|V
 Una excepcion ocurre cuando un evento termina el programa|F
-Una excepcion cuando ocurre creara un objeto cuya referencia sera utilizada para manejar esta excepcion|V
+Una excepcion ocurre cuando no se obtiene el resultado esperado de una operacion|F
+Una excepcion cuando ocurre hara un throw que creara un objeto cuya referencia sera utilizada para manejar esta excepcion|V
+Una excepcion cuando ocurre hara un objeto throw que manejara la excepcion desde el heap|F
 Una excepcion cuando ocurre cerrara el programa si no encuentra un metodo en el stack que maneje la excepcion|V
-Una excepcion es manejada mediante el Stack|F
+Una excepcion es manejada mediante el Stack directamente|F
 Una excepcion es manejada mediante el runtime|V
-Ventajas de entregan el manejo de excepciones son codigo mas legible, permite el manejo de errores y diferenciarlos, entre otros|V
+Ventajas que entregan el manejo de excepciones son codigo mas legible, permite el manejo de errores y diferenciarlos, entre otros|V
+Ventajas que entregan el manejo de excepciones es permitir un mejor manejo de errores en post de sacrificar legibilidad del codigo|F
 Las excepciones se derivan de la clase Object|F
 Las excepciones se derivan de la clase Throwable|V
 La clase Throwable tiene dos subclases, Error y Exception|V
 La subclase Error de Throwable representa a un error interno de Java, tal como agotamiento de recursos del runtime|V
-La subclase Error de Throwable representa a un error del programa|F
-La subclase Excepcion de Throwable representa a un error interno de Java, tal como agotamiento de recursos del runtime|F
-La subclase Excepcion de Throwable representa a un error del programa|V
-La subclase Excepcion de Throwable posee dos subclases, IOException y RuntimeException|V
+La subclase Error de Throwable representa a un en el programa|F
+La subclase Exception de Throwable representa a un error en el programa|V
+La subclase Exception de Throwable representa a un error interno de Java, tal como agotamiento de recursos del runtime|F
+La subclase Exception de Throwable posee dos subclases, IOException y RuntimeException|V
 La subclase Error de Throwable posee dos subclases, IOError y RunTimeError|F
 Si ocurre una RuntimeException, es porque el programador ha hecho algo mal|V
 Si ocurre una IOException, es porque el programador a hecho algo mal|F
@@ -291,8 +304,8 @@ IOException corresponde a errores de externos, tales como leer mas alla del fina
 Se pueden crear nuevas clases de expeciones derivando unicamente IOException|F
 Se pueden crear nuevas clases de expeciones derivando unicamente RuntimeException|F
 La sentencia try permite definir un manejador de excepciones mediante un bloque de sentencias|V
-La para clase de excepcion a buscar, se define un catch que buscara el tipo de error especificado|V
-Si un codigo lanza una excepcion, se detiene el metodo y se llama a la limpieza|F
+Para capturar excepciones mediante un try, se define un catch que buscara el tipo de error especificado|V
+Si un codigo lanza una excepcion, se detiene el metodo y se llama a la limpieza de Object|F
 Si un codigo lanza una excepcion, es necesario implementar un codigo de limpieza|V
 Una clausula finally se ejecuta haya o no ocurrido una excepcion|V
 Una clausula finally se ejecuta unicamente ocurrida una excepcion|F
@@ -386,3 +399,14 @@ Ejemplos de paquete en Java son java.beans, java.crypto y java.print|F
 (Quiz 3 2022 SJ - Roberto Diaz p8) Una clase abstracta puede contener metodos no abstractos|V
 (Quiz 3 2022 SJ - Roberto Diaz p9) Cualquier lenguaje con soporte de TDA sera inherentemente Orientado a Objeto|F
 (Quiz 3 2022 SJ - Roberto Diaz p10) Al importar las clases de un paquete con un asterisco (i.e. paquete.*) no se importaran las clases en sus subpaquetes|V
+
+(Quiz 3 P2 SJ - Jose Luis Marti p1) Tanto C++ como Java permiten el uso de acceso publico, privado y de paquete para la implementacion de un tipo de datos abstractos|F
+(Quiz 3 P2 SJ - Jose Luis Marti p2) En la implementacion de un tipo de dato abstracto en Python, tanto el constructor como los metodos deben llevar como primer parametro el argumento self|V
+(Quiz 3 P2 SJ - Jose Luis Marti p3) Cada objeto de una clase tiene sus propias instancias de cada variable miembro, por lo que cada objeto tiene su propio estado|V
+(Quiz 3 P2 SJ - Jose Luis Marti p4) La declaracion de una variable crea tanto el objeto como la referencia a este|F
+(Quiz 3 P2 SJ - Jose Luis Marti p5) Java provee un modificador que solo permite la lectura de un campo|F
+(Quiz 3 P2 SJ - Jose Luis Marti p6) La sobrecarga en Java considera el tener varios metodos con el mismo nombre, pero con firmas diferentes|V
+(Quiz 3 P2 SJ - Jose Luis Marti p7) Segun el principio de sustitucion, donde se espera una referencia a una superclase, en su lugar se puede tener una referencia a una interface|F
+(Quiz 3 P2 SJ - Jose Luis Marti p8) En la redefinicion de metodos por parte de una subclase, se debe respetar la firma, no asi el tipo del valor de retorno, el cual puede variar|F
+(Quiz 3 P2 SJ - Jose Luis Marti p9) Dado que las referencias a objetos apuntan al stack, es muy flexible el hecho que una referencia a un tipo base direccione a una instancia de alguna subclase|F
+(Quiz 3 P2 SJ - Jose Luis Marti p10) Al crear una instancia de una interfaz con el operador new, se ejecutara algunos de los posibles constructores que dicha interfaz tenga|F
