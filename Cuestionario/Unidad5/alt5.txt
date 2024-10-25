@@ -1,5 +1,6 @@
 begin pregunta |c|Solo se llama al constructor respectivo
 
+(Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere la figura 1:
 figura:1
 Si se realiza el siguiente codigo:
@@ -13,6 +14,7 @@ d. Ninguna de las anteriores
 end pregunta
 begin pregunta|a|
 
+(Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
 figura:1
 figura:2
@@ -27,6 +29,7 @@ d. Ninguna de las anteriores
 end pregunta
 begin pregunta|b|
 
+(Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
 figura:1
 figura:2
@@ -41,6 +44,7 @@ d. Ninguna de las anteriores
 end pregunta
 begin pregunta|b|
 
+(Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
 figura:1
 figura:2
@@ -55,6 +59,8 @@ d. No se mostrara nada por pantalla o habra error
 
 end pregunta
 begin pregunta|b|
+
+(Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
 figura:1
 figura:2
@@ -70,6 +76,7 @@ d. No se mostrara nada por pantalla o habra error
 end pregunta
 begin pregunta|b|
 
+(Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
 figura:1
 figura:2
@@ -85,6 +92,7 @@ d. No se mostrara nada por pantalla o habra error
 end pregunta
 begin pregunta|d|
 
+(Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
 figura:1
 figura:2
@@ -100,6 +108,7 @@ d. No se mostrara nada por pantalla o habra error
 end pregunta
 begin pregunta|c|
 
+(Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
 figura:1
 figura:2
