@@ -1,0 +1,266 @@
+begin pregunta|b|
+
+(Certamen 1 - Marti, p1)
+Dado el siguiente codigo en java:
+
+    class Base {
+        Base (int i)
+        {Systen.out.println("base constructor");}
+    }
+    public class Sup extends Base{
+        public static void main(String argv[]){
+            Sup s = new Sup();
+            //Uno
+        }
+        Sup(){ //Dos }
+        public void derivada(){ //Tres }
+    }
+
+¿Como se debe invocar el constructor Base para que muestre por la salida estandar el string "base constructor"?
+a. Una linea despues de //Tres poner: Base(10)
+b. Una linea despues de //Dos poner: super(10)
+c. Una linea despues de //Uno poner: Base(10)
+d. Una linea despues de //Uno poner: super(10)
+
+end pregunta
+begin pregunta|d|
+
+(Certamen 1 - Marti, p11)
+Dado el siguiente codigo en java:
+    
+    public Class A {
+        int x;
+        private int y;
+        protected int z;
+        public int w;
+    }
+
+Una clase B que la extiende y que se encuentra en otro paquete, ¿Cual seria la visibilidad que tendria sobre los atributos miembros de A?
+a. Puede accesar a todos los atributos, menos x, w
+b. Puede accesar a todos los atributos, menos x
+c. Puede accesar a todos los atributos, menos y
+d. Puede accesar a todos los atributos, menos x, y
+
+endpregunta
+begin pregunta|a|
+
+(Certamen 1 - Marti, p12)
+
+Si una subclase tiene un método sobreescrito con modificador de acceso protected, significa que el mismo método en la superclase tiene acceso:
+a. Privado o protegido
+b. Protegido o de paquete
+c. Publico o protegido
+d. Protegido
+
+endpregunta
+begin pregunta|b|
+
+(Certamen 1 - Marti, p14) 
+
+Cuál de los siguientes no es un uso real del modificador final de java?
+
+a. Establecer que un método no puede ser sobreescrito
+b. Reforzar que se trata del último método a ejecutar por un objeto a eliminar
+c. Indicar que un atributo tendrá un valor constante, que no podrá ser modificado
+d. Señalar que una clase no puede ser extendida
+
+endpregunta
+begin pregunta|b|
+
+(Certamen 1 - Marti, p26)
+
+Dado las siguientes declaraciones en java:
+    Interface I {...}
+    Class A implements I {...}
+    Class B extends A {...}
+¿Cual de las siguientes sentencias es la unica correcta?
+a. B x = new I();
+b. I x = new B();
+c. I x = new I();
+d. B x = new A();
+
+endpregunta
+begin pregunta|c|
+
+(Control 3 2022 - Gabriel Carmona p2.1)
+
+Si se tiene el siguiente codigo:
+    Class A {
+        public int a;
+        public int b;
+    }
+    A(){
+        a = 0;
+        b = 0:
+    }
+    A(int a){
+        this.a = a+2
+        b = a
+    }
+    Class B extends A {
+        public int a
+        B(int a){
+            super(a);
+            this.a = 2;
+            super.b = 2;
+        }
+    }
+Si se crea una instancia de B de esta forma:
+    A c = new B(3);
+Cual de las siguientes alternativas es verdadera?
+a. c.a valdra 2
+b. c.a valdra 4
+c. c.b valdra 3
+d. c.b valdra 2
+
+end pregunta
+begin pregunta|c|
+
+(Control 3 2022 - Gabriel Carmona p2.2) 
+
+Por haber herencia, la asignacion dinamica de memoria no puede hacerse en el stack por:
+a. Delays en el acceso a los objetos, dada la ubicacion aleatoria de estos dentro de los registros de activacion
+b. Imposibilidad de realizar el ligado dinamico de metodos, dado que no siempre es posible que tengan la misma firma y tipo de retorno
+c. Dificultad para analizar estaticamente el tamaño de memoria requerido en el stack, ya que a una variable de tipo base se le pueden asignar referencias de cualquier tipo derivado
+d. Todas las anteriores
+
+end pregunta
+begin pregunta|c|
+
+(Control 3 2022 - Gabriel Carmona p2.3) 
+
+Considere la siguiente organizacion de archivos:
+    src
+    |---Lector
+        |--- Romance.java
+        |--- Fantasia.java
+        |--- Lector.java
+    |---Jugador
+        |--- PC.java
+        |--- Consola.java
+        |--- Jugador.java
+Cual de las siguientes alternativas es falso?
+a. Lector y Fantasian heredan de Lector
+b. Lector y Fantasia son tipos de Lector
+c. Lector y Jugador pueden tener relacion entre ellos
+d. PC puede tener metodos que no tiene Consola
+
+end pregunta
+begin pregunta|b|
+
+(Quiz 3 2022 CC - Jose Luis Marti p2.1)
+
+Cual de las siguientes alternativas NO se consideraria una ventaja del control de acceso a miembros?
+a. Simplifica la interfaz del objeto, ocultando detalles irrelevantes para el usuario
+b. Mejora la legibilidad pues deja claro que debera ser implementado en las subclases
+c. Mejora la confiabilidad de la clase, pues usos incorrectos accidentales seran alertados con errores de compilacion
+d. Facilita y encauza la reutilizacion de la clase ocultando detalles no extensibles
+
+end pregunta
+begin pregunta|c|
+
+(Quiz 3 2022 CC - Jose Luis Marti p2.2) 
+
+En Java, se debera declarar que un metodo lanza una excepcion verificada (con throws) si es que al incluir una sentencia throw esta se encuentra:
+    I. Dentro de cualquier bloque try
+    II. Dentro de cualquier bloque catch
+    III. Dentro de cualquier bloque finally
+    IV.  Fuera de los bloques previamente mencionados
+a. Solo I
+b. II y IV
+c. II, III y IV
+d. I, II, III y IV
+
+end pregunta
+begin pregunta|d|
+
+(Quiz 3 2022 CC - Jose Luis Marti p2.3) 
+
+Sobre Java, cual de las siguientes afirmaciones son correctas?
+    I. Una clase puede contener varios metodos con el mismo nombre siempre que tengan distintos parametros
+    II. Java soporta herencia multiple para Clases
+    III. Java soporta herencia multiple para Interfaces
+a. Solo II
+b. Solo III
+c. I y II
+d. I y III
+
+end pregunta
+begin pregunta|a|
+
+(Quiz 3 2022 CC - Jose Luis Marti p2.4) 
+
+Un tipo de dato abstracto debe satisfacer dos restricciones que son:
+a. Encapsulamiento y Ocultamiento de la informacion
+b. Ocultamiento de la informacion y Polimorfismo
+c. Encapsulamiento y Modularidad
+d. Polimorfismo y Modularidad
+
+end pregunta
+begin pregunta|b|
+
+(Quiz 3 2022 CC - Jose Luis Marti p2.5) 
+
+Cual de las siguientes definiciones de clase esta permitida en Java?
+a. public final abstract class ClaseA { }
+b. final class ClaseA extends ClaseB { }
+c. abstract class ClaseA extends ClaseB { }
+d. class ClaseA extends ClaseB, ClaseC { }
+
+end pregunta
+begin pregunta|a|
+
+(Quiz 3 P2 SJ - Jose Luis Marti p2.1)
+
+Dentro de los "sabores" de la programacion orientada objeto, cual de las siguientes afirmaciones es incorrecta?
+a. Python es un ejemplo de lenguaje orientado al objeto puro
+b. C++ es un ejemplo de un lenguaje que soporta tanto la progamacion imperativa como la orientada a objeto
+c. C# es un ejemplo de lenguaje que no soporta otro paradigma que no sea el orientado al objeto, pero que usa una estructura imperativa
+d. CLOS es un ejemplo de lenguaje funcional que soporta la orientacion a objeto
+
+end pregunta
+begin pregunta|c|
+
+(Quiz 3 P2 SJ - Jose Luis Marti p2.2)
+
+En Java, la palabra static no se puede usar para
+a. Clases
+b. Bloques de inicializacion
+c. Parametros
+d. Metodos
+
+end pregunta
+begin pregunta|b|
+
+(Quiz 3 P2 SJ - Jose Luis Marti p2.3)
+
+Sobre las reglas de herencia en Java, cual de las siguientes frases es la unica correcta?
+a. Una subclase hereda todos los atributos miembros privados, protegidos y publicos de la superclase.
+b. Una subclase no hereda los atributos miembros de la superclase que tienen el mismo nombre de un miembro de la subclase
+c. Una subclase hereda todos los atributos miembros sin modificador de la superclase, no importando el paquete en que se encuentre
+d. Una subclase hereda todos los atributos miembros de la superclase, asi como los de las interfaces que esta deba implementar
+
+
+end pregunta
+begin pregunta|d|
+
+(Quiz 3 P2 SJ - Jose Luis Marti p2.4)
+
+Cual de las siguientes funciones no esta presente en la clase Object?
+a. clone()
+b. equals()
+c. getClass()
+d. move()
+
+end pregunta
+begin pregunta|a|
+
+(Quiz 3 P2 SJ - Jose Luis Marti p2.5)
+
+En una interfaz en Java es falso
+a. Puede tener algunos metodos implementados
+b. No puede tener atributos miembros
+c. Puede tener constantes
+d. Puede extender multiples interfaces
+
+end pregunta

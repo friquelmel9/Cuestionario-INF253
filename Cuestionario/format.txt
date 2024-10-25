@@ -1,0 +1,48 @@
+# Formato para seguir en preguntas.txt
+
+## Formato:
+
+    -<respuesta_vf>: v|f
+    -<respuesta_alt>: a|b|c|d
+    -<int>: Numero referencia para figura
+    -<referencia>: (Documento referencia - Autor)
+
+## Para vf{}.txt:
+
+Cada linea corresponde a una pregunta, que sigue el siguiente formato:
+
+pregunta | <respuesta_vf> | explicacion
+
+### Para vf{}ref.txt
+
+Sigue siendo lo mismo, pero se recomienda que el inicio incluya la referencia
+
+<referencia> pregunta | <respuesta_vf> | explicacion
+
+## Para alt{}.txt:
+
+Las preguntas necesitan empezar por begin y terminar en end en post de que el programa las accepte.
+Siguen el siguiente formato:
+
+begin pregunta | <respuesta_alt> | explicacion
+
+texto
+figura:<int>
+texto
+
+end pregunta
+
+### para alt{}ref.txt
+
+Sigue siendo lo mismo, pero se recomienda que la primera linea incluya la referencia
+
+begin pregunta | <respuesta_alt> | explicacion
+
+<referencia>
+texto
+figura:<int>
+texto
+
+end pregunta
+
+

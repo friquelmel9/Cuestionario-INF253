@@ -8,8 +8,8 @@ dict_figuras = dict() #Borrarlo despues de reinicio
 dict_fig = dict()
 
 # Sub dict con aquellas preguntas que vienen referenciadas de anteriores ejemplos
-dict_vf_test = dict()
-dict_alt_test = dict()
+dict_vf_evaluacion = dict()
+dict_alt_evaluacion = dict()
 
 def getFig(unidad):
     if(unidad in dict_figuras):
@@ -27,8 +27,7 @@ def getFig(unidad):
             if linea.startswith("end"):
                 dict_fig[unidad][cont] = string_fig
                 cont += 1
-            
-    
+
 def getAlt(unidad):
     if(unidad in dict_alt):
         return
@@ -36,29 +35,32 @@ def getAlt(unidad):
 
     with open(arch_path,'r') as arch:
         cont = 1
-        str_ans = "x"
-        str_text = ""
+
+        str_respuesta = "x"
+        str_texto = ""
+        str_explicacion = ""
+        bool_isEvaluacion = False
+
         getFig(unidad)
         
         for linea in arch:
             if linea.startswith("begin"):
-                string_text = ""
+                str_texto = ""
+                str_respuesta = linea.strip().split("|")[-1]
             
             if not linea.startswith("#") or not linea.strip():
 
-                if linea.startswith("answer"):
-                    str_ans = linea.strip.split(":")
-
-                elif linea.startswith("figura"):
+                if linea.startswith("figura"):
                     figuras = linea.strip.split(":")[1].split(",")
                     for fig in figuras:
-                        str_text += dict_fig[unidad][fig]
+                        str_texto += dict_fig[unidad][fig]
 
                 else:
-                    str_text += linea.strip()+"\n"
+                    str_texto += linea.strip()+"\n"
 
             if linea.startswith("end"):
-                dict_alt[unidad][cont] = [str_text,str_ans]
+                str_explicacion = linea.strip().split("|")[-1]
+                dict_alt[unidad][cont] = [str_texto,str_respuesta,str_explicacion]
                 cont += 1
                 
 
@@ -66,10 +68,6 @@ def getVf(unidad):
     if(unidad in dict_vf):
         return
     arch_path = "Cuestionario/Unidad{}/vf{}.txt".format(unidad,unidad)
-
-
-
-
 
 
 def makeFiguras(unidad):

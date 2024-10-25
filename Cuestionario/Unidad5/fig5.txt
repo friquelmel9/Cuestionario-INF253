@@ -1,4 +1,4 @@
-begin fig1:
+begin figura1:
 
 public class SuperClase {
     public String nombre = "SuperClase";
@@ -14,7 +14,7 @@ public class SuperClase {
 }
 
 end fig
-begin fig2:
+begin figura2:
 
 public class SubClase extends SuperClase {
     public String nombre = "SubClase";

@@ -1,9 +1,6 @@
-# Preguntas obtenidas de clase
+begin pregunta |c|Solo se llama al constructor respectivo
 
-begin alt
-
-answer:c
-Considere las siguientes figuras (1):
+Considere la figura 1:
 figura:1
 Si se realiza el siguiente codigo:
     SuperClase sup2 = new SuperClase(0);
@@ -13,22 +10,106 @@ b. SuperClase() -> SuperClase(int i)
 c. SuperClase(int i)
 d. Ninguna de las anteriores
 
-end alt
+end pregunta
+begin pregunta|a|
 
-begin alt
-
-answer:a
-Considere las figuras (1,2):
+Considere las figuras 1 y 2:
 figura:1
 figura:2
 Si se realiza el siguiente codigo:
-    SubClase sub1 = new SubClase();
+    SubClase sub1 = new SubClase()
 ¿Que constructores y en que orden se llamaran?
 a. SuperClase() -> SubClase()
 b. SubClase()
 c. SuperClase()
 d. Ninguna de las anteriores
 
-end alt
+end pregunta
+begin pregunta|b|
 
+Considere las figuras 1 y 2:
+figura:1
+figura:2
+Si se realiza el siguiente codigo:
+    SubClase sub2 = new SubClase(0)
+¿Que constructores y en que orden se llamaran?
+a. SuperClase() -> SubClase() -> SubClase(int i)
+b. SuperClase() -> SubClase(int i)
+c. SuperClase(int i) -> SubClase(int i) 
+d. Ninguna de las anteriores
 
+end pregunta
+begin pregunta|b|
+
+Considere las figuras 1 y 2:
+figura:1
+figura:2
+Si se realiza el siguiente codigo:
+    SubClase sub1 = new SubClase()
+    System.out.println(sub1.Suma());
+¿Que sera lo que se vera por pantalla?
+a. "2"
+b. "4"
+c. "6"
+d. No se mostrara nada por pantalla o habra error
+
+end pregunta
+begin pregunta|b|
+Considere las figuras 1 y 2:
+figura:1
+figura:2
+Si se realiza el siguiente codigo:
+    SuperClase sub3 = new Subclase();
+    System.out.println(sub3.Suma());
+Que sera lo que se vera por pantalla?
+a. "2"
+b. "4"
+c. "6"
+d. No se mostrara nada por pantalla o habra error
+
+end pregunta
+begin pregunta|b|
+
+Considere las figuras 1 y 2:
+figura:1
+figura:2
+Si se realiza el siguiente codigo:
+    SubClase sub1 = new SubClase();
+    System.out.println(sub1.nombre);
+Que sera lo que se vera por pantalla?
+a. "SuperClase"
+b. "SubClase"
+c. "SubSubClase"
+d. No se mostrara nada por pantalla o habra error
+
+end pregunta
+begin pregunta|d|
+
+Considere las figuras 1 y 2:
+figura:1
+figura:2
+Si se realiza el siguiente codigo:
+    SuperClase sub3 = new SubClase();
+    System.out.println(sub3.superSuma());
+Que sera lo que se vera por pantalla?
+a. "2"
+b. "4"
+c. "8"
+d. No se mostrara nada por pantalla o habra error
+
+end pregunta
+begin pregunta|c|
+
+Considere las figuras 1 y 2:
+figura:1
+figura:2
+Si se realiza el siguiente codigo:
+    SubClase sub1 = new SubClase();
+    System.out.println(sub1.superSuma());
+Que sera lo que se vera por pantalla?
+a. "2"
+b. "4"
+c. "8"
+d. No se mostrara nada por pantalla o habra error
+
+end pregunta
