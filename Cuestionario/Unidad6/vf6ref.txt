@@ -1,7 +1,14 @@
 ### 2021-2 Martí (REVISAR 2°)
 ([2021-2] - Martí Q4P1) En el momento de evaluar una expresión lambda, se ligan parámetros formales con los actuales, pudiendo ser los
 primeros una lista propia, una lista impropia o una variable única.|V|
-([2021-2] - Martí Q4P2) *** IMPLEMENTAR FIGURA ***
+begin pregunta|F|
+([2021-2] - Martí Q4P2)
+La función combinatoria(n k), definida a continuación, sólo hace uso de un registro de activación.
+(define (combinatoria n k)
+	(cond ((or (= n k) (= k 0)) 1)
+		(else (+ (combinatoria (- n 1) (- k 1))
+			(combinatoria n (- k 1))))))
+end pregunta
 ([2021-2] - Martí Q4P3) La programación funcional es una variante de los lenguajes imperativos, basada en una extensión de una máquina de von Neuman.|F|
 ([2021-2] - Martí Q4P5) Los nombres usados en Scheme tienen ámbito dinámico.|F|
 ([2021-2] - Martí Q4P7) Scheme tiene un recolector automático de basura.|V|
@@ -17,7 +24,75 @@ primeros una lista propia, una lista impropia o una variable única.|V|
 ([2021-2] - Martí Q4P18) Sólo recientemente existen arquitecturas de computadores que apoyan una ejecución eficiente de un programa funcional.|F|
 
 ### 2022-1 Jorge Díaz
-### *** IMPLEMENTAR FIGURA ***
+begin pregunta|V|
+([2022-1] - Díaz Q4P1)
+Considerando el siguiente código en Scheme:
+figura:1
+F1 tiene recursión de cola.
+end pregunta
+
+begin pregunta|F|
+([2022-1] - Díaz Q4P2)
+Considerando el siguiente código en Scheme:
+figura:1
+F2 tiene recursión de cola.
+end pregunta
+
+begin pregunta|V|
+([2022-1] - Díaz Q4P3)
+Considerando el siguiente código en Scheme:
+figura:1
+F1 tiene recursión directa.
+end pregunta
+
+begin pregunta|V|
+([2022-1] - Díaz Q4P4)
+Considerando el siguiente código en Scheme:
+figura:1
+F2 tiene recursión directa.
+end pregunta
+
+begin pregunta|F|
+([2022-1] - Díaz Q4P5)
+Considerando el siguiente código en Scheme:
+figura:1
+Contador valdrá 0 siempre.
+end pregunta
+
+begin pregunta|F|
+([2022-1] - Díaz Q4P6)
+Considerando el siguiente código en Scheme:
+figura:1
+En la función cuenta, se puede cambiar el set! por un let sin problemas.
+end pregunta
+
+begin pregunta|F|
+([2022-1] - Díaz Q4P7)
+Considerando el siguiente código en Scheme:
+figura:1
+Cuenta tiene recursión intermedia.
+end pregunta
+
+begin pregunta|F|
+([2022-1] - Díaz Q4P8)
+Considerando el siguiente código en Scheme:
+figura:1
+Suma tiene recursión de cola.
+end pregunta
+
+begin pregunta|F|
+([2022-1] - Díaz Q4P9)
+Considerando el siguiente código en Scheme:
+figura:1
+En la definición de suma, se puede cambiar el letrec por let sin problemas.
+end pregunta
+
+begin pregunta|F|
+([2022-1] - Díaz Q4P10)
+Considerando el siguiente código en Scheme:
+figura:1
+Cuenta imprimirá 0 siempre.
+end pregunta
 
 ### 2022-1 Marti (REPETIDAS 6°; REVISAR 11°, 13°, 15°)
 ([2022-1] - Martí Q4P6) En Scheme, variables de nivel superior pueden ser definidas por let y lambda.|F|
@@ -27,12 +102,19 @@ primeros una lista propia, una lista impropia o una variable única.|V|
 ([2022-1] - Martí Q4P10) La recursión de cola facilita el manejo del Stack ya que reduce el tamaño del registro de activación de cada invocación incurrida.|F|
 ([2022-1] - Martí Q4P11) El resultado de evaluar la expresión: (first (rest ( rest (rest (first (a b c (d e)) ((f g (h)))))))) es ((d e)).|F|
 ([2022-1] - Martí Q4P12) El resultado de evaluar la expresión: (cons 0 (list (cons '(1 2) (list '(3 (4 5)))))) es (0 ((1 2) (3 (4 5)))).|V|
-([2022-1] - Martí Q4P13) El resultado de evaluar la siguiente expresión es #t.
-			(or (< 6 0) (member 30 '(1 2 3)) (= (abs -6) 60) (zero? 0))|V|
-([2022-1] - Martí Q4P14) El resultado de evaluar las siguientes expresiones lambda es 12.
-			(define f (lambda (x) (g x)))
-			(define g (lambda (x) (+ x x)))
-			(f (g (f (g 3))))|F|
+
+begin pregunta|V|
+([2022-1] - Martí Q4P13) 
+El resultado de evaluar la siguiente expresión es #t.
+	(or (< 6 0) (member 30 '(1 2 3)) (= (abs -6) 60) (zero? 0))
+end pregunta
+begin pregunta|F|
+([2022-1] - Martí Q4P14) 
+El resultado de evaluar las siguientes expresiones lambda es 12.
+	(define f (lambda (x) (g x)))
+	(define g (lambda (x) (+ x x)))
+	(f (g (f (g 3))))
+end pregunta
 ([2022-1] - Martí Q4P15) El resultado de evaluar la expresión: (map (lambda (x) (* x x)) '(5 4 3)) es: ((25) (16) (9)).|V|
 
 ### 2022-2 Gabriel Carmona
@@ -70,6 +152,22 @@ primeros una lista propia, una lista impropia o una variable única.|V|
 ([2022-2] - Díaz Q4P8) Una expresión lambda es un objeto tipo procedimiento que no tiene nombre.|V|
 ([2022-2] - Díaz Q4P9) Scheme tiene un recolector automático de basura.|V|
 ([2022-2] - Díaz Q4P10) Evaluar la expresión (map (lambda x (* (car x) (cadr x))) (list 2 3 5) '(4 8 9)) arroja un error.|F|
+
+### 2023-1 Martí
+([2023-1 - Martí Q4P1]) Los programas funcionales se construyen mediante la composición de funciones.|V|
+([2023-1 - Martí Q4P2]) En la programación funcional, la evaluación de las funciones está controlada por recursión y
+condiciones.|V|
+([2023-1 - Martí Q4P3]) La programación funcional pura usa variables y asignación.|F|
+([2023-1 - Martí Q4P4]) Una expresión lambda es un objeto tipo procedimiento que tiene nombre.|F|
+([2023-1 - Martí Q4P5]) En Scheme, variables de nivel superior pueden ser definidas mediante let y lambda.|F|
+([2023-1 - Martí Q4P6]) El operador let* se asemeja a una asignación tradicional, lo que se aleja del paradigma funcional
+en cuanto a tener objetos inmutables.|V|
+([2023-1 - Martí Q4P7]) Scheme tiene un recolector automático de basura.|V|
+([2023-1 - Martí Q4P8]) Para que una lista sea evaluada se le antecede con una citación simple.|F|
+([2023-1 - Martí Q4P9]) La recursión de cola facilita el manejo del stack ya que reduce el tamaño del registro de activación de
+cada invocación.|F|
+([2023-1 - Martí Q4P10]) La evaluación perezosa es una técnica exclusiva de la programación funcional, destinada a disminuir
+la cantidad de memoria usada.|F|
 
 ### 2023-2 Martí
 ([2023-2] - Martí Q4P1) Los programas funcionales se construyen mediante la composición de funciones.|V|

@@ -1,0 +1,32 @@
+### figura verdadero/falso
+
+begin figura1:
+
+(define (f1 a)
+    (f1 (+ a (random)) )
+)
+
+(define (f2 a)
+    (+ a (f2 (random)) )
+)
+
+(define contador 0)
+
+(define cuenta
+    (lambda ()
+        (set! contador (+ contador 1))
+        contador
+    )
+)
+(cuenta)
+
+(letrec ((suma
+        (lambda [ls]
+        (if (null? ls)
+        0
+        (+ (car ls) suma (cdr ls)))
+        )
+        ))
+    (suma '(1 2 3 4 5 6))
+)
+end fig
