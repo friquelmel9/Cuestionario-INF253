@@ -92,3 +92,72 @@ Una lista propia de parametros es de la forma (var_1 var_2 ... var_n . var_r) |F
 Una lista impropia de parametros es de la forma (var_1 var_2 ... var_n . var_r) |V|
 Una lista impropia de parametros es de la forma (var_1 var_2 ... var_n ) |F|
 
+# Condicionales y Predicados
+
+En Scheme, es posible realizar condicionales |V|
+En Scheme, la unica herramienta para realizar condicionales es if |F| Tambien se puede usar cond
+En Scheme, se puede realizar multiples condicionales mediante if y elif |F| Es mediante cond
+En Scheme, se puede realizar multiple condicionales mediante cond |V|
+En Scheme, un else es equivalente a usar un #f |F| El else es equivalente a colocar #t
+En Scheme, las expresiones relacionales son =, <, >, <=, >= |V|
+El siguiente codigo en Scheme \n (= 3 4) \n Retornara #f |V|
+El siguiente codigo en Scheme \n (= 3 3.0) \n Retornara #f |F| Pese a ser representaciones distintas, son considerados el mismo numero
+El siguiente codigo en Scheme [4] entregara n en caso de que este sea menor que 0 |F| Retornara la segunda funcion
+El siguiente codigo en Scheme [4] entregara el negativo de n si es menor que 0 |V|
+El siguiente codigo en Scheme [4] Si evaluamos (abs -27), retornara 27 |V|
+Las unicas expresiones logicas son or y and |F| Tambien existe el not
+El siguiente codigo: \n (null? ()) \n Retornara #t |F| Retornara error, puesto que no se pasa la lista con '
+El siguiente codigo: \n (null? '()) \n Retornara #t |V|
+El siguiente codigo: \n (eqv? 3 3.0) \n Retornara #t |F| Retornara #f, debido a los tipos
+El siguiente codigo: \n (eqv? () '()) \n Retornara #t |F| Retornara error, puesto que no se pasa la lista con '
+El siguiente codigo: \n (pair? '(a b c)) \n Retornara #t |V|
+Verificar con pair? es verificar si es una lista? |V|
+El siguiente codigo: \n (number? '3) \n Retornara #t |V|
+El siguiente codigo: \n (number? 1.3e27) \n Retornara #f |F| Corresponde a un numero elevado a 27, por tanto es #t
+El siguiente codigo: \n (number? 3.4@-0.5) \n Retornara #t |V| Corresponde a un numero imaginario
+El siguiente codigo: \n (string? "3") \n Retornara #t |V|
+
+# Recursion
+
+Los tipos de recursion en Scheme pueden separar como directa o indirecta |V|
+En Scheme, una recursion directa ocurre cuando una funcion se llama a si misma |V|
+En Scheme, una recursion directa ocurre cuando una funcion se llama a si misma o a otras que la llamaran despues |F| Esta puede corresponder de tipo indirecto
+En Scheme, una recursion indirecta ocurre cuando una funcion puede o no llamarse a si misma |F| Si se llama a si misma, solo que puede que sea tras un monton de otras funciones
+En Scheme, una recursion indirecta ocurre cuando una funcion llama a otras funciones que terminan llamando a la primera |V|
+En Scheme, tipos de recursion pueden ser lineal, multiple y anidada |V|
+En Scheme, el tipo de recursion lineal indica que solamente existe una invocacion recursiva |V|
+En Scheme, el tipo de recursion lineal indica que las funciones se llaman una tras otra |x|
+En Scheme, el tipo de recursion multiple indica que hay mas de una funcion recursiva |V|
+En Scheme, el tipo de recursion anidada es cuando de parametro se tiene otra invocacion recursiva |V|
+En Scheme, el tipo de recursion anidada es cuando una funcion ha de hacer recursion de otra funcion |F|
+En Scheme, se separan los tipos de recursion segun cuando empiezen, siendo de Cabeza, Intermedia, o de Cola |V|
+En Scheme, el tipo de recursion De Cabeza indica que la recursion ocurre antes que se haga todo lo demas |V|
+En Scheme, el tipo de recursion De Cabeza indica que la recursion no necesita ser llamada directamente |F| Nada que ver...
+En Scheme, el tipo de recursion Intermedia indica que la recursion no se cumple en su totalidad |F| Es cuando la recursion esta entre medio de sentencias
+En Scheme, el tipo de recursion Intermedia indica que la recursion se encuentra entre medio de sentencias |V|
+En Scheme, el tipo de recursion De Cola indica que la recursion se realiza al finalizar toda las sentencias |V|
+En Scheme, el tipo de recursion De Cola indica que la recursion se realiza tras terminar otra recursion |F| No necesariamente ha de terminar una recursion para iniciar
+El siguiente codigo en Scheme: [5] corresponde a un ejemplo de Recursion Directa |V|
+El siguiente codigo en Scheme: [5] corresponde a un ejemplo de Recursion Intermedia |X| Ocurre al final la recursion
+El siguiente codigo en Scheme: [5] Si llamamos al siguiente codigo: \n (length '(a b c d)) \n Este retornara 4 |V|
+El siguiente codigo en Scheme: [6] Corresponde a un ejemplo de Recursion directa |V|
+El siguiente codigo en Scheme: [6] Si llamamos al siguiente codigo: \n (memv 'c '(a b c d e)) \n Devolvera 3 |F| Retorna el cdr desde esa posicion
+El siguiente codigo en Scheme: [6] Si llamamos al siguiente codigo: \n (memv 'c '(a b c d e)) \n Devolvera (a b) |F| Retorna el cdr desde esa posicion
+El siguiente codigo en Scheme: [6] Si llamamos al siguiente codigo: \n (memv 'c '(a b c d e)) \n Devolvera (d e) |V| 
+El siguiente codigo en Scheme: [7] Si llamamos al siguiente codigo: \n (remv 'c '(a b c d e)) \n Devolvera (d e) |F| Retornara toda la lista sin el miembro al que se llamo
+El siguiente codigo en Scheme: [7] Si llamamos al siguiente codigo: \n (remv 'c '(a b c d e)) \n Devolvera (a b d e) |V|
+El siguiente codigo en Scheme: [7] Si llamamos al siguiente codigo: \n (remv 'c '(a b c d e)) \n Devolvera 1 |F| Retornara toda la lista sin el miembro al que se llamo
+El siguiente codigo en Scheme: \n (lambda () (if (g) (f) #f)) \n Corresponde a un llamado de cola con respecto a f |V|
+El siguiente codigo en Scheme: \n (lambda () (if (g) (f) #f)) \n Corresponde a un llamado de cola con respecto a g |F| Corresponde con respecto a f
+El siguiente codigo en Scheme: \n (lambda () (if (g) (f) #f)) \n Corresponde a un llamado intermedio con respecto a f |F| Corresponde de cola
+El siguiente codigo en Scheme: \n (lambda () (or (g) (f))) \n Corresponde a un llamado de cola con respecto a f |V|
+El siguiente codigo en Scheme: \n (lambda () (or (g) (f))) \n Corresponde a un llamado de cola con respecto a g |X| ni idea
+El problema de la recursion en Scheme es que puede causar Overflow del stack |F| Debido a que funciona como goto, no se genera este problema
+El siguiente codigo en Scheme: [8] Corresponde a una implementacion de recursion simple |V|
+El siguiente codigo en Scheme: [8] Corresponde a una implementacion de recursion de Cola |F|
+El siguiente codigo en Scheme: [9] Corresponde a una implementacion de recursion simple |F|
+El siguiente codigo de Scheme: [9] Corresponde a una implementacion de recursion de cola |V|
+
+# Estaria bueno agregar los resultados en si, pero lo vere despues
+
+# Asignacion

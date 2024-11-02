@@ -56,7 +56,7 @@ def leerAlt(unidad,arch_path):
                 x,fig = linea.strip().split(":")
                 texto += dict_fig[unidad][int(fig)-1]
             elif linea.startswith("end"):
-                if respuesta != "x" or respuesta != "X":
+                if respuesta.lower() != "x":
                     list_preguntas.append([texto,respuesta,explicacion])
                 texto = ""
                 respuesta = ""
@@ -89,7 +89,7 @@ def leerVf(unidad, arch_path):
             if(figura):
                 num = int(figura[-1])
                 pregunta = re.sub(re_figvf, dict_fig[unidad][num-1], pregunta)
-            if respuesta != "x" or respuesta != "X":
+            if respuesta.lower() != "x":
                 list_preguntas.append([pregunta,respuesta,explicacion])
 
     return list_preguntas
@@ -106,7 +106,7 @@ def getVf(unidad):
 def iniciarQuiz():
 
     os.system('cls')
-    unidad = input("¿Que unidad quieres realizar? [5-6]\n")
+    unidad = int(input("¿Que unidad quieres realizar? [5-6]\n"))
 
     getFig(unidad)
     getVf(unidad)
@@ -114,11 +114,11 @@ def iniciarQuiz():
 
     list_vf = dict_vf[unidad]
     list_vf_ref = dict_vf_ref[unidad] 
-    list_vf_total = list_vf.extend(list_vf_ref)
+    list_vf_total = list_vf + list_vf_ref
 
     list_alt = dict_alt[unidad]
     list_alt_ref = dict_alt_ref[unidad]
-    list_alt_total = list_alt.extend(list_alt_ref)
+    list_alt_total = list_alt + list_alt_ref
 
     decision = int(input("¿Que tipo de test desea realizar? \n 1. Preguntas originales | 2. Preguntas test | 3. Combinacion \n"))
         
@@ -138,6 +138,7 @@ def iniciarQuiz():
     correcto_vf = 0
     correcto_alt = 0
 
+    os.system('cls')
     for pregunta,respuesta,explicacion in preguntasVf:
         usuario = input("[V-F] "+pregunta+"\n")
         if (usuario.lower() == respuesta.lower()):

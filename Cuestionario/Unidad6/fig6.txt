@@ -48,3 +48,57 @@ begin figura3:
 )
 
 end fig
+begin figura4:
+
+(define (abs n) (if (> n 0)
+        n
+        (- 0 n)))
+
+end fig
+begin figura5:
+
+(define length
+ (lambda (ls)
+        (if (null? ls)
+            0
+            (+ 1 (length (cdr ls))))))
+
+end fig
+begin figura6:
+
+(define memv
+ (lambda (x ls)
+         (cond ((null? ls) ())
+                ((eqv? x (car ls)) (cdr ls))
+                (else (memv x (cdr ls))))))
+
+end fig
+begin figura7:
+
+(define remv
+ (lambda (x ls)
+        (cond ((null? ls) ‘())
+            ((eqv? x (car ls)) (remv x (cdr ls)))
+            (else (cons (car ls) (remv x (cdr ls)))))))
+
+end fig
+begin figura8:
+
+(define factorial
+ (lambda (n)
+         (let fact ((i n))
+                  (if (= i 0)
+                             1
+                             (* i (fact (- i 1)))))))
+
+end fig
+begin figura9:
+
+(define factorial
+ (lambda (n)
+         (let fact ((i n) (a 1))
+                  (if (= i 0)
+                             a
+                             (fact (- i 1) (* a i))))))
+
+end fig
