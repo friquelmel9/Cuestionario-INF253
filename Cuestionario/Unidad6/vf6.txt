@@ -1,0 +1,94 @@
+#6.1 Paradigmas
+### Revisar como escribir notacion lambda
+
+El paradigma Funcional se basa en funciones matematicas lambda|V|
+El paradigma Funcional es equivalente al imperativo mediante funciones matematicas |F|
+El primer lenguaje funcional fue LISP, de donde derivan Scheme, Haskell, entre otros |V|
+El primer lenguaje funcional fue Scheme, de donde derivan Lisp, Haskell, entre otros |F|
+El primer lenguaje funcional fue Common LISP, de donde derivan LISP, Scheme, entre otros |F| Common LISP deriva de LISP
+La programacion funcional pura no usa variables ni asignacion |V|
+La programacion funcional pura no usa variables, pero si asignacion |F| Ninguno de las dos la usa
+En programacion funcional, un programa consiste en la defincion de funciones y su aplicacion |V|
+En programacion funcional, un programa consiste en la definicion de funciones, su aplicaciones y ejecucion |X|
+Para lograr ciclos en programacion funcional, ha de lograrse mediante recursion |V|
+La siguiente definicion corresponde a una funcion matematica: \n cubo(x) = x*x*x |V|
+La siguiente definicion corresponde a una funcion lambda: \n cubo(x) = x*x*X |F| No esta el lambda, no separa funcion de su nombre
+La siguiente definicion corresponde a una notacion lambda: \n lambda(x) x*x*x |V|
+La siguiente definicion corresponde a una notacion lambda: \n lambda(x) = x*x*x |F| Lambda no asigna nombre con =
+Las funciones en programacion funcional corresponden a un elemento de primer orden |V|
+Las funciones en programacion funcional han de ser puras, o sea, siempre devolver la misma salida para misma entrada |V|
+Las funciones en programacion funcional han de ser puras, o sea, siempre devolver la misma salida |F| Misma entrada, misma salida. No solamente la salida sin entrada.
+Las funciones en programacion funcional no han de ser putas |F| Si han de ser puras
+En programacion funcional, se consideran objetos inmutables, aquellos que no cambian de estado |V|
+En programacion funcional, la inmutabilidad libera de pensar en los cambios sufridos para un objeto a lo largo de la ejecucion |V|
+En programacion funcional, la inmutabilidad genera problemas debido a su poca seguridad para trabajar con ellos |F| Son automaticamente seguros al ser inmutables
+En programacion funcional, la inmutabilidad permite acceder a ellos sin concecuencias |V|
+La trasparencia referencial consiste en tener funciones puras y objetos inmutables |X|
+La trasparencia referencial se debe asegurar en programacion funcional |V|
+La trasparencia referencial se debe asegurar que cualquier expresion se pueda sustituir su valor, independientemente de las consecuencias |F| Tiene que asegurar que no altere el programa
+
+# Introduccion al lenguaje de programacion Scheme
+
+Caracteristicas de Scheme es que es pequeño, con sintaxis y semantica simple |V|
+Caracteristicas de Scheme es que posee recolector de basura automatico |V|
+Caracteristicas de Scheme es que es un lenguaje de programacion funcional puro |F| Es impuro, sus estructuras de datos no son inmutables
+Caracteristicas de Scheme es que sus estructuras de datos son inmutables |F|
+REPL corresponde al ciclo de leer, evaluar e imprimir |V|
+REPL corresponde al ciclo de evaluar e imprimir |F| Falta la lectura. Ha de ser leer, evaluar e imprimir
+REPL funciona como: Entrega un pronto, ingresa expresion, evalua y entrega resultado? |V|
+Caracteristicas de Scheme es que sus funciones son de primera clase, y por tanto, pueden ser tratadas como cualquier valor |V|
+Identificadores en Scheme corresponden a palabras claves, variabels o simbolos sensibles a mayusculas |F| No son sensibles a las mayusculas
+Identificadores en Scheme no pueden comenzar con un numero |V|
+Los siguientes identificadores son validos en Scheme? \n X3, ?$!!!, Abcd |V|
+Los siguientes identificadores son validos en Scheme? \n 3X, AbCd, id8 |F| 3X no es valido al empezar con un numero
+Los siguientes identificadores son validos en Scheme? \n abc "==.. !??! |X| Comillas (") no son validas para un identificador
+La siguiente constante es valida en Scheme? \n "Hola, soy un String" |V|
+La siguiente constante es valida en Scheme? \n 'Hola, soy un String' |X| Comillas simple ni idea
+La siguiente constante es valida en scheme? \n #\a |V|
+La siguiente constante es valida en scheme? \n #\hola |F| Esta corresponde a un caracter, no un string
+La siguiente constante es valida en scheme? \n 1.3e27 |V|
+La siguiente constante es valida en scheme? \n 1/4 |V|
+La siguiente constante es valida en scheme? \n 3.4@-0.5 |V|
+La siguiente constante es valida en scheme? \n 14,13 |F| El decimal debe ser punto, no coma
+La siguiente constante es valida en scheme? \n #t |V|
+En Scheme, la constante #t puede ser tanto verdadero como el caracter t? |X|
+En Scheme, los numeros complejos pueden ser representados en polares y coordenadas rectangulares? |V|
+En Scheme, los nombres +, -, * y \ son reservados para operaciones aritmeticas? |V|
+El resultado de la siguiente expresion: \n (+ 1/2 1/2) es 1? |V|
+El resultado de la siguiente expresion: \n (/ (* 6/6 6/2) (- 4.5 1.5)) es 1? |F| Es 1.0 debido a la notacion
+El resultado de la siguiente expresion: \n (- 2 (* 4 1/4)) es 0? |F| Da 1
+En Scheme, una lista puede contener cualquier elemento, incluso listas anidadas |V|
+En Scheme, una funcion se escribe como una lista, en donde el ultimo elemento corresponde a la funcion? |F| Es el primer elemento
+En Scheme, utilizar quote indica que la lista no es evaluada |V|
+En Scheme, utilizar ' es equivalente a utilizar quote para indicar que una lista no es evaluada? |X|
+El operador car en Scheme devuelve el primer elemento de la lista |V|
+El operador car en Scheme devuelve el ultimo elemento de una lista |F| Devuelve el primero, no el ultimo
+El operador cdr en Scheme devuelve el primer elemento de una lista |F| Es car el que devuelve el primero
+El operador cdr en Scheme devuelve solo el ultimo elemento de una lista |F| Devuelve todo elemento menos el primero, eso no necesariamente indica que es solo el ultimo
+El operador cdr en Scheme devuelve la lista a la que se llamo sin el primer elemento |V| 
+Un equivalente de car y cdr son first y rest, respectivamente |V|
+En una lista, cada elemento corresponde a un par, en donde el segundo apunta a otro par |X| No se si apunta se considera
+El ultimo elemento de una lista siempre es vacio |V| Notar que, incluso si la lista es (a b c), c sera un par donde el ultimo es vacio.
+Un constructor en scheme crea una lista con car como argumento |F| Posee car y cdr como argumentos
+El siguiente constructor en Scheme: \n (cons (car '(a b c))(cdr '(a b c))) \n devolvera la lista (a c) |F| Devolvera la lista (a b c)
+El siguiente constructor en Scheme: \n (cons 'a '(b c d)) \n devolvera la lista (a b c d) |X| Segun el ppt es cierto
+El siguiente comando en Scheme: \n (list 'a 'b 'c 'd) \n devolvera la lista (a b c d) |X|
+El siguiente comando en Scheme: \n (append '(a b) '(c d)) \n devolvera la lista (a b c d) |V|
+El siguiente comando en Scheme: \n (append '(a b) "c") \n devolvera la lista (a b c) |F| devolvera la lista (a b "c"). Notar que c no necesariamente es un string
+El comando let en Scheme permite definir variables ligadas a un valor en la evaluacion de expresiones |V|
+El comando let en Scheme crea variables para un ambito global |F| El ambito es local
+El comando lambda permite crear procedimientos que no poseen nombres |V|
+El comando lambda permite crear funciones para evaluar |X| si
+El siguiente codigo de Scheme: [3] entrega como resultado (4 9 16) |V|
+El siguiente codigo en Scheme: [3] corresponde a recursion simple |F| No hay recursion
+El siguiente codigo: \n (let ((var1 val1) … (var_m val_m)) exp_1 … exp_n) \n Es equivalente a \n ((lambda (var1 … var_m) exp_1 … exp_n) va1 … val_m) |V|
+El ambito por let y lambda es local, mientras que define permite un ambito global |V|
+El ambito por lambda es local, mientras que let y define permiten un ambito global |F| let posee ambito local
+Se puede realizar ocultamiento de informacion, mediante let, el cual oculta la variable con mismo nombre de orden superior |V|
+La forma: \n (define var_0 (lambda(var_1 ... var_n) e_1 ...)) \n es equivalente a (define (var_0 var_1 ... var_n) e_1 ...) |V|
+define puede ser utilizado para definir variables tales como \n (define pi 3.1415) |V|
+Una lista propia de parametros es de la forma (var_1 var_2 ... var_n ) |V|
+Una lista propia de parametros es de la forma (var_1 var_2 ... var_n . var_r) |F| Esta corresponde a una lista impropia
+Una lista impropia de parametros es de la forma (var_1 var_2 ... var_n . var_r) |V|
+Una lista impropia de parametros es de la forma (var_1 var_2 ... var_n ) |F|
+

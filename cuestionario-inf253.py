@@ -1,6 +1,8 @@
 import random
 import os
 
+import re
+
 # Para estos dict, considere key la unidad, mientras que el valor dentro una lista con todo lo necesario
 dict_vf = dict()
 dict_alt = dict()
@@ -9,6 +11,8 @@ dict_fig = dict()
 # Sub dict con aquellas preguntas que vienen referenciadas de anteriores ejemplos
 dict_vf_ref = dict()
 dict_alt_ref = dict()
+
+re_figvf = r'\[(\d+)\]'
 
 def getFig(unidad):
 
@@ -72,7 +76,7 @@ def getAlt(unidad):
     dict_alt[unidad] = leerAlt(unidad,"Cuestionario/Unidad{0}/alt{0}.txt".format(unidad))
     dict_alt_ref[unidad] = leerAlt(unidad,"Cuestionario/Unidad{0}/alt{0}ref.txt".format(unidad))
 
-def leerVf(arch_path):
+def leerVf(unidad, arch_path):
     list_preguntas = list()
     with open(arch_path,'r') as arch:
 
@@ -80,6 +84,11 @@ def leerVf(arch_path):
             if linea.startswith("#") or not linea.strip():
                 continue
             pregunta,respuesta,explicacion = linea.strip().split("|")
+            pregunta = pregunta.replace("\\n","\n")
+            figura = re.findall(re_figvf,pregunta)
+            if(figura):
+                num = int(figura[-1])
+                pregunta = re.sub(re_figvf, dict_fig[unidad][num-1], pregunta)
             if respuesta != "x" or respuesta != "X":
                 list_preguntas.append([pregunta,respuesta,explicacion])
 
@@ -91,30 +100,44 @@ def getVf(unidad):
     if(unidad in dict_vf_ref):
         return
     
-    dict_vf[unidad] = leerVf("Cuestionario/Unidad{0}/vf{0}.txt".format(unidad))
-    dict_vf_ref[unidad] = leerVf("Cuestionario/Unidad{0}/vf{0}ref.txt".format(unidad))
+    dict_vf[unidad] = leerVf(unidad, "Cuestionario/Unidad{0}/vf{0}.txt".format(unidad))
+    dict_vf_ref[unidad] = leerAlt(unidad,"Cuestionario/Unidad{0}/vf{0}ref.txt".format(unidad))
     
-def iniciarQuiz(unidad):
+def iniciarQuiz():
 
+    os.system('cls')
+    unidad = input("¿Que unidad quieres realizar? [5-6]\n")
+
+    getFig(unidad)
     getVf(unidad)
     getAlt(unidad)
-    getFig(unidad)
 
     list_vf = dict_vf[unidad]
-    list_vf2 = dict_vf_ref[unidad]
-    list_vf.extend(list_vf2)
+    list_vf_ref = dict_vf_ref[unidad] 
+    list_vf_total = list_vf.extend(list_vf_ref)
 
     list_alt = dict_alt[unidad]
     list_alt_ref = dict_alt_ref[unidad]
-    list_alt.extend(list_alt_ref)
+    list_alt_total = list_alt.extend(list_alt_ref)
 
-    preguntasVf = random.sample(list_vf,10)
-    preguntasAlt = random.sample(list_alt,5)
+    decision = int(input("¿Que tipo de test desea realizar? \n 1. Preguntas originales | 2. Preguntas test | 3. Combinacion \n"))
+        
+    if(decision == 1):
+        preguntasVf = random.sample(list_vf,10)
+        preguntasAlt = random.sample(list_alt,5)
+    
+    elif(decision == 2):
+       preguntasVf = random.sample(list_vf_ref,10)
+       preguntasAlt = random.sample(list_alt_ref,5)
+
+    elif(decision == 3):
+        preguntasVf = random.sample(list_vf_total,10)
+        preguntasAlt = random.sample(list_alt_total,5)
+    
 
     correcto_vf = 0
     correcto_alt = 0
 
-    os.system('cls')
     for pregunta,respuesta,explicacion in preguntasVf:
         usuario = input("[V-F] "+pregunta+"\n")
         if (usuario.lower() == respuesta.lower()):
@@ -149,10 +172,10 @@ def main():
     while(decision != 3):
         os.system('cls')            
         print("Bienvenido a Cuestionario.py \n ¿Que desea realizar?")
-        decision = int(input("1. Realizar Quiz (Unidad 5) | 2. Realizar Certamen | 3. Terminar \n"))
+        decision = int(input("1. Realizar Quiz | 2. Realizar Certamen | 3. Terminar \n"))
 
         if(decision == 1):
-            iniciarQuiz(5)
+            iniciarQuiz()
         
         if(decision == 2):
             print("No disponible aun")
