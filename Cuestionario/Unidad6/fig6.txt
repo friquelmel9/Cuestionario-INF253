@@ -30,3 +30,21 @@ begin figura1:
     (suma '(1 2 3 4 5 6))
 )
 end fig
+begin figura2:
+
+(define (combinatoria n k)
+	(cond ((or (= n k) (= k 0)) 1)
+		(else (+ (combinatoria (- n 1) (- k 1))
+			(combinatoria n (- k 1))))))
+
+end fig
+begin figura3:
+
+(let ((square (lambda (x) (* x x))))
+                    (list (square 2)
+                          (square 3)
+                          (square 4)
+                    )
+)
+
+end fig
