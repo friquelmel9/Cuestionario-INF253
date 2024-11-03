@@ -23,7 +23,7 @@ En relación a las listas en Scheme es falso que:
 
 a. Las funciones first y rest se utilizan para obtener el primer elemento y una lista con el resto de los elementos
 respectivamente.
-b. Las listas pueden elementos de cualquier tipo.
+b. Las listas pueden contener elementos de cualquier tipo.
 c. Una función se escribe como una lista, donde el primer elemento es la función y los
 siguientes los parámetros.
 d. Para que una lista sea evaluada, necesariamente, se debe considerar el uso de las funciones map o eval.
