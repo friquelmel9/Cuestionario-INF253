@@ -1,0 +1,47 @@
+### 2021-2 Martí 
+([2021-2] - Martí Q5P5) Unificación es el resultado de integrar hechos y reglas en una base de conocimiento centralizada.|F|
+([2021-2] - Martí Q5P6) El backtracking se aplica cuando se alcanza la satisfacción de una cláusula.|F|
+([2021-2] - Martí Q5P7) En Prolog, no hay posibilidad de evitar que se ejecute el backtracking en su totalidad.|F|
+([2021-2] - Martí Q5P8) Dentro de las reglas de calce de Prolog entre dos estructuras, es suficiente que tengan el mismo functor y el mismo número de componentes.|F|
+([2021-2] - Martí Q5P9) Suponer que se tienen x predicados a e y predicados b; luego, el número máximo de resultados que podría entregar la consulta: ?-a;b es x+y.|V|
+([2021-2] - Martí Q5P10) Las listas de Prolog permiten elementos de cualquier tipo.|V|
+([2021-2] - Martí Q5P11) Prolog corresponde a un lenguaje de programación no declarativo, donde se programa indicando cómo lograr un resultado.|F|
+([2021-2] - Martí Q5P12) Aplicaciones donde el uso de Prolog es conveniente considera los sistemas expertos (rama de la inteligencia artificial) y las aplicaciones intensivas de datos numéricos (propias de la ciencia de datos).|F|
+([2021-2] - Martí Q5P13) En cuanto al ámbito de una variable, en Prolog corresponde al de todas las cláusulas con el mismo functor.|F|
+([2021-2] - Martí Q5P14) En general, Prolog realiza el calce en la forma más general posible.|V|
+
+### 2022-2 Gabriel Carmona
+([2022-2] - Carmona Q5P1) Dos términos calzan si son idénticos o las variables en ambos términos pueden ser instanciados, sustituyendo variables, tal que los términos se hacen idénticos.|V|
+([2022-2] - Carmona Q5P2) Si S es una variable y T cualquier cosa, entonces calzan y S se instancia como T. Viceversa, si T es variable, entonces T se instancia como S.|V|
+([2022-2] - Carmona Q5P3) En Prolog las operaciones siempre son prefijos.|F|
+([2022-2] - Carmona Q5P4) Los objetos simples constan de átomos y números.|F|
+([2022-2] - Carmona Q5P5) El significado declarativo corresponde a cuando se tiene la cláusula P:-Q, R, se satisface P si es que se debe satisfacer Q y luego R.|F|
+([2022-2] - Carmona Q5P6) La expresión .(perro, gato, raton, loto, []) no tiene problema de satisfacer un matching con [X-T].|V|
+([2022-2] - Carmona Q5P7) Si Y tiene el valor 3, la expresión X = Y + 1 es equivalente con X = 4.|F|
+([2022-2] - Carmona Q5P8) Unificación es el proceso que permite inferir proposiciones de otras dadas.|F|
+([2022-2] - Carmona Q5P9) La programación lógica corresponde a un tipo de programación declarativa.|V|
+([2022-2] - Carmona Q5P10) Instanciación es la asignación temporal de valores a variables.|V|
+
+### 2022-2 Martí
+([2022-2] - Martí Q5P1) La programación lógica corresponde a un tipo programación declarativa.|V|
+([2022-2] - Martí Q5P2) Unificación es el proceso que permite inferir proposiciones de otras dadas.|F|
+([2022-2] - Martí Q5P3) En Prolog, no hay posibilidad de evitar que se ejecute el backtracking en su totalidad.|F| 
+([2022-2] - Martí Q5P4) La expresión .(perro, gato, raton, loro, [ ]) no tiene problema de satisfacer un matching con [X|T].|F|
+([2022-2] - Martí Q5P5) Si Y tiene el valor 3, la expresión X = Y + 1 es equivalente con X = 4.|F|
+([2022-2] - Martí Q5P6) Dentro de las reglas de calce de Prolog, dos estructuras lo harán si el functor de ambas coincide y tienen el mismo número de componentes.|F|
+([2022-2] - Martí Q5P7) Instanciación es la asignación temporal de valores a variables.|V|
+([2022-2] - Martí Q5P8) Unificación es el resultado de integrar hechos y reglas en una base de conocimiento centralizada.|F|
+([2022-2] - Martí Q5P9) La cláusula P :- Q, R. sólo tiene una interpretación procedural.|F|
+([2022-2] - Martí Q5P10) En Prolog, es posible definir nuevos operadores, sólo de tipo prefijo o postfijo.|F|
+
+### 2022-2 Roberto Díaz
+([2022-2] - Díaz Q5P1) Al realizarse backtracking, de ser posible, se instanciaran variables con otros valores.|V|
+([2022-2] - Díaz Q5P2) En Prolog las operaciones binarias solo se pueden escribir en notación de functor, esto es, nombre(operando1, operando2).|F|
+([2022-2] - Díaz Q5P3) Al haber una negación es posible cambiar el orden de las cláusulas sin afectar el significado declarativo.|F|
+([2022-2] - Díaz Q5P4) Prolog corresponde a un lenguaje de programación no procedural o no imperativo, donde se programa qué debe hacerse y no cómo hacerlo.|V|
+([2022-2] - Díaz Q5P5) En Prolog el backtracking es automático y no puede controlarse en código.|F|
+([2022-2] - Díaz Q5P6) Es posible que añadir un cut cambie el significado declarativo de una cláusula.|V|
+([2022-2] - Díaz Q5P7) En Prolog, al ser declarativo, no se pueden resolver los mismos problemas que en lenguajes imperativos como C.|F|
+([2022-2] - Díaz Q5P8) El siguiente calce será exitoso: pr(ma, fe, mp(A,A,B)) = pr(L, S, mp(y, C, m)).|V|
+([2022-2] - Díaz Q5P9) Se puede comparar estructuralmente si dos expresiones aritméticas son iguales con el operador "=".|V|
+([2022-2] - Díaz Q5P10) La unificación de una variable y una expresión aritmética asigna el resultado de evaluar la expresión a la variable.|F|
