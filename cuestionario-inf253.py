@@ -101,7 +101,7 @@ def getVf(unidad):
         return
     
     dict_vf[unidad] = leerVf(unidad, "Cuestionario/Unidad{0}/vf{0}.txt".format(unidad))
-    dict_vf_ref[unidad] = leerAlt(unidad,"Cuestionario/Unidad{0}/vf{0}ref.txt".format(unidad))
+    dict_vf_ref[unidad] = leerVf(unidad,"Cuestionario/Unidad{0}/vf{0}ref.txt".format(unidad))
     
 def iniciarQuiz():
 
@@ -120,21 +120,17 @@ def iniciarQuiz():
     list_alt_ref = dict_alt_ref[unidad]
     list_alt_total = list_alt + list_alt_ref
 
-    decision = int(input("¿Que tipo de test desea realizar? \n 1. Preguntas originales | 2. Preguntas test | 3. Combinacion \n"))
+    decision = int(input("¿Que tipo de test desea realizar? \n 1. Todo tipo de preguntas | 2. Preguntas de quiz/Certamenes pasados \n"))
         
     if(decision == 1):
-        preguntasVf = random.sample(list_vf,10)
-        preguntasAlt = random.sample(list_alt,5)
+        preguntasVf = random.sample(list_vf_total,10)
+        preguntasAlt = random.sample(list_alt_total,5)
     
     elif(decision == 2):
        preguntasVf = random.sample(list_vf_ref,10)
        preguntasAlt = random.sample(list_alt_ref,5)
-
-    elif(decision == 3):
-        preguntasVf = random.sample(list_vf_total,10)
-        preguntasAlt = random.sample(list_alt_total,5)
+        
     
-
     correcto_vf = 0
     correcto_alt = 0
 
@@ -180,5 +176,6 @@ def main():
         
         if(decision == 2):
             print("No disponible aun")
+            input("Pulsar enter para continuar")
 
 main()

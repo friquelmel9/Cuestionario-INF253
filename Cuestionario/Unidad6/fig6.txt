@@ -102,3 +102,25 @@ begin figura9:
                              (fact (- i 1) (* a i))))))
 
 end fig
+begin figura10:
+
+(define haga-stack
+ (lambda ()
+  (let ((st '()))
+   (lambda (op.args)
+    (cond
+     ((eqv? op 'vacio?)(null? st))
+     ((eqv? op 'push!)(null? st))
+     ((eqv? op 'pop!)(null? st))
+     ((eqv? op 'tope!)(null? st))
+     (else "operacion no valida")
+    )))))
+
+end fig
+begin figura 11:
+
+((lambda (x y) (+ x y)) 3 4)
+((lambda (x . y) (list x y)) 3 4)
+((lambda x x ) 3 4)
+
+end fig

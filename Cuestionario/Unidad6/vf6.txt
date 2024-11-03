@@ -161,3 +161,57 @@ El siguiente codigo de Scheme: [9] Corresponde a una implementacion de recursion
 # Estaria bueno agregar los resultados en si, pero lo vere despues
 
 # Asignacion
+
+En Scheme, el comando let es equivalente al comando define |F| Let es local, mientras que define permite ligar a nivel superior
+En Scheme, el comando let permite ligar un valor a una nueva variable en ambito local |V|
+En Scheme, el comando let permite ligar un valor a una nueva variable en un ambito superior |F| Es un ambito local
+En Scheme, los comando let y define permite definir variables y cdambiar su ligado |F| No permite el cambio de ligado como asignacion
+En Scheme, el comando set! permite re-ligar una variable existente a un nuevo valor, tal como una asignacion |V|
+En Scheme, el comando set! corresponde a uno de la programacion funcional |F| Permite asignacion, por tanto, es como de programacion imperativa
+En Scheme, el comando set! establece un nuevo ligado a una variable existente |F| No establece uno nuevo, si no que lo reasigna
+En Scheme, el comando set! cambia el ligado existente al que se llamo |V|
+
+# Ligado de variables
+
+El siguiente codigo en Scheme: [11] El primer codigo corresponde a un parametro de lista propia? |V|
+El siguiente codigo en Scheme: [11] El segundo codigo corresponde a un parametro de lista propia? |F| Corresponde a un parametro de lista impropia
+El siguiente codigo en Scheme: [11] El tercer codigo corresponde a un parametro de lista propia? |F| Corresponde a un parametro de variable unica
+El siguiente codigo en Scheme: [11] El primer codigo corresponde a un parametro de lista impropia? |F| Corresponde a un parametro de lista propia
+El siguiente codigo en Scheme: [11] El segundo codigo corresponde a un parametro de lista impropia? |V| 
+El siguiente codigo en Scheme: [11] El tercer codigo corresponde a un parametro de lista impropia? |F| Corresponde a un parametro de variable unica
+El siguiente codigo en Scheme: [11] El segundo codigo devolvera la lista (3 4) |F| Devolvera la lista (3 (4))
+El siguiente codigo en Scheme: [11] El segundo codigo devolvera la lista (3 (4)) |V|
+El siguiente codigo en Scheme: [11] El tercer codigo devolvera la lista (3 4) |V|
+El comando let en Scheme permite ligado de valor local |X| Segun yo si
+El comando let en Scheme debe ser usado para valores independientes en donde no importe el orden de evaluacion |V|
+El comando let en Scheme debe ser usado si hay una dependencia entre los valores, donde importe el de evaluacion |F| Esta descripcion corresponde al comando let*
+El comando let y let* son equivalentes, solo que cambia que uno permite ligado a una variable local, mientras que el otro a variables globales |F| Su diferencia radica en la dependencia entre valores
+El comando let* en Scheme debe ser usado para valores independientes en donde no importe el orden de evaluacion |F| Esta descripcion corresponde al comando let
+El comando let* en Scheme debe ser usado si hay una dependencia entre los valores, donde importe el de evaluacion |V|
+El comando let* asegura que las expresiones se evaluen de derecha a izquierda |F| Es de izquierda a derecha
+El comando let* asegura que las expresiones se evaluen de izquierda a derecha |V|
+El comando let* corresponde a uno relacionado con la programacion funcional |V|
+El comando let* corresponde a uno relacionado con la programacion imperativa |F| No asigna nada, no es imperativo (no es unica razon)
+El comando letrec en Scheme es equivalente a let |F| No funcionan de igual manera, no son equivalentes
+El comando letrec en Scheme permite que todos los valores estan dentro del ambito, o sea, permite definir procesos mutualmente recursivos |V|
+El comando letrec en Scheme debe ser usado para valores independientes en donde no importe el orden de evaluacion |F| Esta descripcion corresponde al comando let
+El comando letrec en Scheme debe ser usado para valores y variables que posean una dependencia circular entre ellos, sin importar el orden de evaluacion |V|
+El comando letrec en Scheme debe ser usado para valores y variables que posean una dependencia circular entre ellos, y donde el orden de evaluacion importa |F| El orden de evaluacion no deberia de importar si usas letrec
+El comando letrec en Scheme permite que cada valor pueda ser evaluable dependiendo obligatoriamente de los valores previamente definidos |F| La restriccion exige que no debe haber esta necesidad
+El comando letrec en Scheme permite que cada valor pueda ser evaluable sin necesidad de evaluar otros valores |V|
+El comando letrec corresponde a uno relacionado con la programacion imperativa |F| No es imperativo, cuenta para funcional
+
+# Otras operaciones en Scheme
+
+Utilizar eq? eqv? o equal? en Scheme es practicamente hacer lo mismo, ya que son equivalentes |F| No son equivalentes, pequeñas diferencias
+El comando eqv? es similar a eq? solo que no depende de la implementacion, a costa de ser mas costoso |V|
+El comando eqv? es similar a eq? solo que eqv? depende de la implementacion |F| Es eq? el que depende de la implementacion
+El comando eq? no permite comparar numeros de manera fiable |V|
+El comando eqv? no permite comparar numeros de manera fiable |F| Es eq? el que no permite
+El comando equal? es similar a eqv?, solo que equal? funciona tambien con strings, pares y vectores |V|
+El comando equal? es similar a eqv?, solo que eqv? funciona tambien con strings, pares y vectores |F| Es equal el que puede trabajar con estos
+
+# Ejercicios de clase
+
+([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Scheme: \n (eqv? (cons '(a b) '(c)) (list '(a b) '(c))) \n Retornara #f |V| Las listas son generadas de distinta manera
+([2024-2] Wladimir Ejercicios de clase) Los comandos (cdr '(a b)) y (cdr '(a.b)) daran la misma salida |F| El primero devuelve (b), mientras que el segundo b.
