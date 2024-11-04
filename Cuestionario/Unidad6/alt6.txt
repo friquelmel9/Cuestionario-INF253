@@ -1,6 +1,6 @@
 ## Ejercicios de clases
 
-begin pregunta|a|
+begin alt|a|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -11,8 +11,8 @@ b. 1
 c. 1.0+0i
 d. Dara error
 
-end pregunta
-begin pregunta|c|
+end alt
+begin alt|c|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -23,8 +23,8 @@ b. 1
 c. 1.0+0i
 d. Dara error
 
-end pregunta
-begin pregunta|a|
+end alt
+begin alt|a|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -35,12 +35,12 @@ b. 1e0
 c. 1
 d. Dara error
 
-end pregunta
+end alt
 
 ## Operaciones sobre listas, ejemplo2.scm
 ### Operaciones cons
 
-begin pregunta|b|
+begin alt|b|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -51,8 +51,8 @@ b. ((a b c) 1 2)
 c. (a b c 1 2)
 d. Dara error
 
-end pregunta
-begin pregunta|a|
+end alt
+begin alt|a|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -63,8 +63,8 @@ b. (a b c)
 c. ()
 d. Dara error
 
-end pregunta
-begin pregunta|c|
+end alt
+begin alt|c|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -75,8 +75,8 @@ b. (1 2)
 c. (() 1 2)
 d. Dara error
 
-end pregunta
-begin pregunta|c|
+end alt
+begin alt|c|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -87,11 +87,11 @@ b. (1 2)
 c. (() 1 2)
 d. Dara error
 
-end pregunta
+end alt
 
 ### Operaciones list
 
-begin pregunta|a|
+begin alt|a|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -102,9 +102,9 @@ b. ((a b c) 1 2)
 c. (a b c 1 2)
 d. (a b c (1 2))
 
-end pregunta
+end alt
 
-begin pregunta|d|
+begin alt|d|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -115,9 +115,9 @@ b. (a b c)
 c. (a b c ())
 d. ((a b c) ())
 
-end pregunta
+end alt
 
-begin pregunta|c|
+begin alt|c|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -128,11 +128,11 @@ b. (() 1 2)
 c. (() (1 2))
 d. ()
 
-end pregunta
+end alt
 
 ### Operaciones append
 
-begin pregunta|c|
+begin alt|c|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -143,8 +143,8 @@ b. ((a b c) 1 2)
 c. (a b c 1 2)
 d. Dara error
 
-end pregunta
-begin pregunta|b|
+end alt
+begin alt|b|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -155,11 +155,11 @@ b. (a b c)
 c. (a b c ())
 d. ((a b c) ())
 
-end pregunta
+end alt
 
 ## Tipos de listas
 
-begin pregunta|d|
+begin alt|d|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -170,8 +170,8 @@ b. b
 c. (a)
 d. (b)
 
-end pregunta
-begin pregunta |c|
+end alt
+begin alt |c|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -182,8 +182,8 @@ b. (b)
 c. ()
 d. Dara error
 
-end pregunta
-begin pregunta |a|
+end alt
+begin alt |a|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -194,11 +194,11 @@ b. (b)
 c. ()
 d. Dara error
 
-end pregunta
+end alt
 
 ### Cons 
 
-begin pregunta |a|
+begin alt |a|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -209,8 +209,8 @@ b. (a (b))
 c. (a . b)
 d. (a . (b))
 
-end pregunta
-begin pregunta |c|
+end alt
+begin alt |c|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -221,8 +221,8 @@ b. (a (b))
 c. (a . b)
 d. (a . (b))
 
-end pregunta
-begin pregunta |a|
+end alt
+begin alt |a|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -233,11 +233,11 @@ b. (a (b))
 c. (a . b)
 d. (a . (b))
 
-end pregunta
+end alt
 
 # Ejemplos let ejemplo3.scm
 
-begin pregunta |c|
+begin alt |c|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -251,8 +251,8 @@ b. 9
 c. 36
 d. 81
 
-end pregunta
-begin pregunta |c|
+end alt
+begin alt |c|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -266,11 +266,11 @@ b. 0
 c. 1
 d. Dara error, puesto que no podemos asignar este tipo de operaciones a otras
 
-end pregunta
+end alt
 
 # Ejemplos lambda ejemplo4.scm
 
-begin pregunta |c|
+begin alt |c|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere los siguientes comandos en Scheme:
@@ -285,8 +285,8 @@ b. I y II
 c. I y III
 d. Todas las anteriores
 
-end pregunta
-begin pregunta |a|
+end alt
+begin alt |a|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere los siguientes comandos en Scheme:
@@ -298,8 +298,8 @@ b. '((1 2 3)) | '((1 2 3))
 c. Error | '((1 2 3))
 d. Error | Error
 
-end pregunta
-begin pregunta |b|
+end alt
+begin alt |b|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere los siguientes comandos en Scheme:
@@ -317,8 +317,273 @@ b. Retornara la lista '(4 6 8), puesto que se llaman individualmente y se unen e
 c. Retornara las listas '(4), '(6) y '(8), puesto que list crea una lista para cada resultado
 d. Ninguna de las anteriores
 
-end pregunta
+end alt
 
-# Ejemplos ejemplo5.scm
+# Ejemplos ejemplo6.scm
 ## Relacionales
 
+begin alt |c|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere los siguientes comandos en Scheme:
+    (define (length ls)
+            (if (null? ls)
+                0
+                (+ 1 (length (cdr ls)))
+            )
+    )
+Cual de las siguientes comandos son validos para el codigo (o sea, que no retornaran error)?
+    I. (length '())
+    II. (length '(1 2))
+    III. (length '(1 . 2))
+a. Solo I
+b. Solo II
+c. I y II
+d. II y III 
+
+end alt
+
+# Ejemplo8.scm
+
+begin alt |d|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (define lista '(a b c d e))
+Cual de estas operaciones hara un cambio a la asignacion de lista?
+    I. (assign lista '(a b))
+    II. (cdr lista)
+    III. (set! lista)
+a. Solo I
+b. Solo II
+c. I y III
+d. Solo III
+
+end alt
+begin alt |a|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (+ x x) ;Linea1
+    (define x 10) ;Linea2
+    (+ x x) ;Linea3
+Que se puede deducir sobre este codigo?
+    I. Habra un error en la Linea1, al no definirse x previamente
+    II. Si cambiamos Linea1 y Linea2, el resultado que nos dara la suma en la linea3 sera 30, mas no quedara asignado
+    III. Si cambiamos Linea1 y Linea2, el x quedara asignado como 30.
+a. Solo I
+b. I y II
+c. I y III
+d. Ninguna de las anteriores
+
+end alt
+begin alt |d|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (define duplicador_2 (lambda (x) (duplicador x))) ;Linea1
+    (duplicador_2 2) ;Linea2
+    (define duplicador (lambda (x) (* 2 x))) ;Linea3
+Que se puede deducir sobre este codigo?
+    I. Habra un error en la linea1 ya que duplicador no esta definido
+    II. Para que el codigo funcione, la Linea2 ha de estar antes de la Linea1
+    III. Como duplicador esta dentro de duplicador2, solo se puede llamar si se llama a duplicador2
+a. Solo I
+b. I y II
+c. I y III
+d. Ninguna de las anteriores
+
+end alt
+
+# alcance de las asignaciones
+
+begin alt |d|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (let ((x 1) (y 2));
+        (let ((x y) (y x));
+            (list x y)
+        )
+    )
+El valor que retornara este let sera;
+a. (1 2)
+b. (1 1)
+c. (2 2)
+d. (2 1)
+
+end alt
+begin alt |c|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (let ((x 1) (y 2));
+        (let* ((x y) (y x));
+            (list x y)
+        )
+    )
+El valor que retornara este let sera;
+a. (1 2)
+b. (1 1)
+c. (2 2)
+d. (2 1)
+
+end alt
+begin alt |c|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (let ((suma (lambda (ls)
+                    (if (null? ls)
+                    0
+                    (+ (car ls) (suma (cdr ls)))
+                    )
+                )
+            ))
+        (suma '(1 2 3 4 5 6))
+    )
+Que es cierto sobre este programa?
+a. Se recibe una lista y se suma todos los numeros en orden. Retorna el numero
+b. El programa se cae si recibe una lista vacia
+c. El codigo no funciona debido a que suma no esta definido para el procedimiento
+d. Ninguna de las anteriores
+
+end alt
+begin alt |a|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (letrec ((suma (lambda (ls)
+                    (if (null? ls)
+                    0
+                    (+ (car ls) (suma (cdr ls)))
+                    )
+                )
+            ))
+        (suma '(1 2 3 4 5 6))
+    )
+Que es cierto sobre este programa?
+a. Se recibe una lista y se suma todos los numeros en orden. Retorna el numero
+b. El programa se cae si recibe una lista vacia
+c. El codigo no funciona debido a que suma no esta definido para el procedimiento
+d. Ninguna de las anteriores
+
+end alt
+begin alt |d|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (letrec ((y (+ x 2)) 
+            (x 1)
+            )
+    y)
+Que es cierto sobre este programa?
+a. El programa retorna la suma de y + 2
+b. El programa utiliza variables que han de ser evaluadas de izquierda a derecha, ya que importa el orden de evaluacion
+c. El programa no funciona, debido a que y no esta definido previamente
+d. Ninguna de las anteriores
+
+end alt
+begin alt |a|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (letrec ((f (lambda () (+ x 2)));
+            (x 1)
+            )
+    (f)
+    )
+Que es cierto sobre este programa?
+a. El programa retorna la suma de x + 2
+b. El programa no devuelve nada puesto que no se llama a nada.
+c. El programa no funciona, debido a que x no esta definido previamente
+d. Ninguna de las anteriores
+
+end alt
+
+#ejemplo9.scm
+
+begin alt |b|
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (eq? '(a b c) '(a b c . ())) ; Retorno1
+    (eqv? '(a b c) '(a b c . ())) ; retorno2
+    (equal? '(a b c) '(a b c . ())) ; Retorno3
+Que sera lo que retornara cada funcion? Considere el orden retorno1, retorno2 y retorno3
+a. #t #f #t
+b. #f #f #t
+c. #t #t #f
+d. #t #t #t
+
+end alt
+begin alt |c|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (apply + '(5 -1 3 5)) ;Linea1
+    (+ 5 -1 3 5) ;Linea2
+Cual de los siguientes procedimientos devolvera #t al tener de argumentos linea1 y linea2?
+    I. (eq? (+ 5 -1 3 5) (apply + '(5 -1 3 5)))
+    II. (eqv? (+ 5 -1 3 5) (apply + '(5 -1 3 5)))
+    III. (equal? (+ 5 -1 3 5) (apply + '(5 -1 3 5)))
+a. I y II
+b. I y III
+c. Todas las anteriores
+d. Ninguna de las anteriores
+
+end alt
+begin alt |b|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (map (lambda (x y z) (+ y x z))
+        '(1 2 -1)
+        '(0 2 -1)
+        '(0 2 -1)
+    )
+Cual sera el resultado que va a entregar?
+a. (1 6 6)
+b. (1 6 -3)
+c. (1 1 1)
+d. Ninguna de las anteriores
+
+end alt
+
+## Evaluacion perezosa
+
+begin alt |d|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (define (plus1 n)
+            (delay (+ 1 n) ))
+
+    (define prom1 (plus1 1))
+    (define prom2 (plus1 -1))
+Que se vera en pantalla cuando se llame:
+    (display prom1)
+    (display prom2)
+a. 2 0
+b. 2 1
+c. #<promise:plus1>
+d. #<promise:plus1>#<promise:plus1>
+
+end alt
+begin alt |a|
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere el siguiente codigo en Scheme:
+    (define (plus1 n)
+            (delay (+ 1 n) ))
+
+    (define prom1 (plus1 1))
+    (define prom2 (plus1 -1))
+Que se vera en pantalla cuando se llame:
+    (force prom1)
+    (force prom2)
+a. 2 0
+b. 2 1
+c. #<promise:plus1>
+d. #<promise:plus1>#<promise:plus1>
+
+end alt

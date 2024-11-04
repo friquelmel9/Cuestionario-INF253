@@ -124,3 +124,27 @@ begin figura 11:
 ((lambda x x ) 3 4)
 
 end fig
+begin figura 12:
+
+(define factorial
+   (lambda (n)
+	    (let fact ((i n))
+		          (if (= i 0)
+			       1
+			       (* i (fact (- i 1)))
+                   )
+        )
+    )
+)
+
+(define factorial2
+   (lambda (n)
+	    (let fact ((i n) (a 1))
+		   (if (= i 0)
+			a
+			(fact (- i 1) (* a i)))
+        )
+    )
+)
+
+end fig

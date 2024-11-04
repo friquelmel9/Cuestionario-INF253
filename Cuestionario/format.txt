@@ -19,6 +19,10 @@ Sigue siendo lo mismo, pero se recomienda que el inicio incluya la referencia
 
 <referencia> pregunta | <respuesta_vf> | explicacion
 
+## Figuras para cualquier vf
+
+Si se quiere agregar figuras, realizarlo mediante [x], con x el numero de la figura
+
 ## Para alt{}.txt:
 
 Las preguntas necesitan empezar por begin y terminar en end en post de que el programa las accepte.

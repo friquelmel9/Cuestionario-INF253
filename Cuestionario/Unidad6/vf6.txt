@@ -215,3 +215,12 @@ El comando equal? es similar a eqv?, solo que eqv? funciona tambien con strings,
 
 ([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Scheme: \n (eqv? (cons '(a b) '(c)) (list '(a b) '(c))) \n Retornara #f |V| Las listas son generadas de distinta manera
 ([2024-2] Wladimir Ejercicios de clase) Los comandos (cdr '(a b)) y (cdr '(a.b)) daran la misma salida |F| El primero devuelve (b), mientras que el segundo b.
+([2024-2] Wladimir Ejercicios de clase) El comando (eqv? 1 '1) retornara #t |V|
+([2024-2] Wladimir Ejercicios de clase) El comando (number? '1) retornara #f |F|
+([2024-2] Wladimir Ejercicios de clase) El comando (pair? '(1 2 3)) retornara #t |V|
+([2024-2] Wladimir Ejercicios de clase) El comando (eqv? '(1 2 3) '(1 2 3)) retornara #t |F| Por alguna razon, devuelve falso
+([2024-2] Wladimir Ejercicios de clase) La diferencia entre recursion de pila y de cola es que en el de cola no queda nada pendiente tras la recursion |V|
+([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se puede decir que factorial corresponde a una funcion que posee recursion directa? |V|
+([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se puede decir que factorial2 corresponde a una funcion que posee recursion directa? |F| Corresponde a recursion de cola
+([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se podria decir que ambas funciones trabajan en el paradigma funcional? |V|
+([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se podria decir que ambas funciones trabajan en el paradigma imperativo? |F| Ambas trabajan en el funcional
