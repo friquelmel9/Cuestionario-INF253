@@ -226,4 +226,3 @@ El comando assoc recibe un simbolo y una lista, para luego buscar en la lista su
 ([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se puede decir que factorial2 corresponde a una funcion que posee recursion directa? |F| Corresponde a recursion de cola
 ([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se podria decir que ambas funciones trabajan en el paradigma funcional? |V|
 ([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se podria decir que ambas funciones trabajan en el paradigma imperativo? |F| Ambas trabajan en el funcional
-([2024-2] Wladimir Ejercicios de clase)
