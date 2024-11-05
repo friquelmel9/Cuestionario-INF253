@@ -18,7 +18,7 @@ La siguiente definicion corresponde a una notacion lambda: \n lambda(x) = x*x*x 
 Las funciones en programacion funcional corresponden a un elemento de primer orden |V|
 Las funciones en programacion funcional han de ser puras, o sea, siempre devolver la misma salida para misma entrada |V|
 Las funciones en programacion funcional han de ser puras, o sea, siempre devolver la misma salida |F| Misma entrada, misma salida. No solamente la salida sin entrada.
-Las funciones en programacion funcional no han de ser putas |F| Si han de ser puras
+Las funciones en programacion funcional no han de ser puras |F| Si han de ser puras
 En programacion funcional, se consideran objetos inmutables, aquellos que no cambian de estado |V|
 En programacion funcional, la inmutabilidad libera de pensar en los cambios sufridos para un objeto a lo largo de la ejecucion |V|
 En programacion funcional, la inmutabilidad genera problemas debido a su poca seguridad para trabajar con ellos |F| Son automaticamente seguros al ser inmutables
