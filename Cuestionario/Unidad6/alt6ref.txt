@@ -75,7 +75,7 @@ c. #F
 d. Ninguna de las anteriores.
 end pregunta
 
-begin pregunta|a|
+begin pregunta|x| No sabemos cual es la verdadera expresion
 ([2022-1] - Salas Q4P2)
 ¿Cuál es el resultado de la siguiente expresión?:
     (display (* (+ (+ 4 ((*2 1)(/6 2))(-1(+(- 1 5)(* 2 5)))))))
@@ -133,7 +133,7 @@ d. (c b a b)
 e. Ninguna de las anteriores.
 end pregunta
 
-begin pregunta|c|
+begin pregunta|d|
 ([2022-1] - Salas Q4P6)
 6. ¿Cuál es el resultado de la siguiente expresión?
     (define neg-relu 

@@ -76,15 +76,15 @@ c. (() 1 2)
 d. Dara error
 
 end alt
-begin alt|c|
+begin alt|b|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
-    (cons '() '(1 2))
+    (cons '() '())
 Que sera lo que retornara?
-a. (() (1 2)) 
-b. (1 2)
-c. (() 1 2)
+a. (() ()) 
+b. (())
+c. ()
 d. Dara error
 
 end alt
@@ -183,7 +183,7 @@ c. ()
 d. Dara error
 
 end alt
-begin alt |a|
+begin alt |b|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -293,8 +293,8 @@ Considere los siguientes comandos en Scheme:
     ((lambda x (list x)) 1 2 3) ; Funcion1
     ((lambda (x y) (list x y)) 1 2 3) ; Funcion2 
 Cual de los siguientes retornos es el correcto?
-a. '((1 2 3)) | Error
-b. '((1 2 3)) | '((1 2 3))
+a. ((1 2 3)) | Error
+b. ((1 2 3)) | ((1 2 3))
 c. Error | '((1 2 3))
 d. Error | Error
 
@@ -318,6 +318,34 @@ c. Retornara las listas '(4), '(6) y '(8), puesto que list crea una lista para c
 d. Ninguna de las anteriores
 
 end alt
+begin alt |c| Note que al ser impropia los parametros en lambda2, considera x como el primer elemento recibido e y como todos los demas, uniendolos en una lista
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere los siguientes codigos en Scheme:
+    ((lambda (x y) (list x y)) 1 2 3) ; lambda1
+    ((lambda (x . y) (list x y)) 1 2 3) ;lambda2
+Que se puede decir sobre ambas funciones lambda?
+a. Ninguna funcionara puesto que recibe 3 parametros cuando se piden 2.
+b. Ambas retornaran la misma lista si se les entregara la cantidad de parametros correctos
+c. Solo lambda2 es capaz de devolver un resultado, ya que lambda1 da error
+d. Solo lambda1 es capaz de devolver un resultado, ya que lambda2 da error
+
+end alt
+begin alt |a|
+(Ejercicios de clases Wladimir 2024-2)
+Considere los siguientes codigos en Scheme:
+    ((lambda (x y) (list x y)) 1 2) ; lambda1
+    ((lambda (x . y) (list x y)) 1 2) ; lambda2
+    ((lambda x (list x)) 1 2) ;  lambda3
+Cuales seran los resultados de las funciones lambda? Considere el orden lambda1 / lambda2 / lambda3
+a. (1 2) / (1 (2)) / ((1 2))
+b. ((1) (2)) / (1 2) / ((1) (2))
+c. (1 2) / (1 2) / ((1) (2))
+d. (1 2) / (1 (2)) / (1 2)
+e. ((1) (2)) / (1 (2)) / ((1 2))
+
+end alt
+
 
 # Ejemplos ejemplo6.scm
 ## Relacionales
@@ -429,7 +457,7 @@ c. (2 2)
 d. (2 1)
 
 end alt
-begin alt |c|
+begin alt |c| El problema es que let no deja que suma se defina previo  a la definicion del lambda
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -449,7 +477,7 @@ c. El codigo no funciona debido a que suma no esta definido para el procedimient
 d. Ninguna de las anteriores
 
 end alt
-begin alt |a|
+begin alt |a| Letrec si permite que suma se refiera a si misma dentro de la definicion
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -532,7 +560,7 @@ c. Todas las anteriores
 d. Ninguna de las anteriores
 
 end alt
-begin alt |b|
+begin alt |b| Notar que pese a que este escrito con enter, las listas son (1 2 -1) (0 2 -1) y (0 2 -1), el map evaluara por indice, o sea, x,y,z = 1,0,0 / 2,2,2 / -1,-1,-1 para cada caso
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -542,10 +570,10 @@ Considere el siguiente codigo en Scheme:
         '(0 2 -1)
     )
 Cual sera el resultado que va a entregar?
-a. (1 6 6)
+a. (2 1 1)
 b. (1 6 -3)
 c. (1 1 1)
-d. Ninguna de las anteriores
+d. (2 3 4)
 
 end alt
 
@@ -585,5 +613,30 @@ a. 2 0
 b. 2 1
 c. #<promise:plus1>
 d. #<promise:plus1>#<promise:plus1>
+
+end alt
+
+## Otras preguntas no inplicitas en los archivos del profesor
+
+begin alt |d| Considera que (pair? '()) dara #f, mientras que (list '()) dara #t
+
+Con respecto a pair?, se puede decir que...
+a. Recibe una lista y devuelve #t si esta contiene un numero par de elementos contenidos en ella
+b. (pair? (cons 1 2)) dara #f ya que no se le especifico con que elemento termina la lista
+c. Como las listas estan hechas de pares, entregarle argumentos como '(a b c) y '() dara #t, ya que son listas y por tanto, contienen pares
+d. pair? no es equivalente a list? debido a que hay casos donde algo es una lista pero no es par
+
+end alt
+begin alt |b|
+
+Con respecto al siguiente codigo en Scheme:
+    (cdr '(a b)) ; Linea1
+    (cdr '(b)) ; Linea2
+    (cdr '(a . b)) ; Linea3
+Que sera lo que se imprimira cuando se ande el codigo? Cosnidere el orden Linea1 / Linea2 / Linea3
+a. (b) | b | ()
+b. (b) | () | b
+c. (b) | (b) | b
+d. (b) | () | (b)
 
 end alt

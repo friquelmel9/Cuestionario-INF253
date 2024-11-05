@@ -1,0 +1,6 @@
+([2024-2] Wladimir Ejercicios de clase) Para finalizar una sentencia, se debe utilizar . |V|
+([2024-2] Wladimir Ejercicios de clase) Toda sentencia en Prolog ha de empezar con un . |F| Ha de terminar con un punto
+([2024-2] Wladimir Ejercicios de clase) Toda linea en prolog termina con un . |F| Puede terminar con una , para continuat algun proceso
+([2024-2] Wladimir Ejercicios de clase) Las hechos son considerados verdaderos
+
+# Diferencia entre definir una regla fuera y adentro (assertz)

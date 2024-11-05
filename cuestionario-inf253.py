@@ -85,6 +85,8 @@ def leerVf(unidad, arch_path):
                 continue
             pregunta,respuesta,explicacion = linea.strip().split("|")
             pregunta = pregunta.replace("\\n","\n")
+            if(explicacion == ""):
+                explicacion = "No explicacion entregada"
             figura = re.findall(re_figvf,pregunta)
             if(figura):
                 num = int(figura[-1])
@@ -134,6 +136,8 @@ def iniciarQuiz():
     correcto_vf = 0
     correcto_alt = 0
 
+    input("Pulsar enter para continuar")
+
     os.system('cls')
     for pregunta,respuesta,explicacion in preguntasVf:
         usuario = input("[V-F] "+pregunta+"\n")
@@ -147,7 +151,7 @@ def iniciarQuiz():
         os.system('cls')
 
     for pregunta,respuesta,explicacion in preguntasAlt:
-        usuario = input("[a,b,c,d] "+pregunta+"\n")
+        usuario = input("[a,b,c,d,e] "+pregunta+"\n")
         if (usuario.lower() == respuesta.lower()):
             print("Respuesta correcta!")
             correcto_alt += 1

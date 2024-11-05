@@ -39,7 +39,7 @@
 ([2022-1] - Martí Q4P12) El resultado de evaluar la expresión: (cons 0 (list (cons '(1 2) (list '(3 (4 5)))))) es (0 ((1 2) (3 (4 5)))).|V|
 ([2022-1] - Martí Q4P13) El resultado de evaluar la siguiente expresión es #t \n (or (< 6 0) (member 30 '(1 2 3)) (= (abs -6) 60) (zero? 0)) |V|
 ([2022-1] - Martí Q4P14) El resultado de evaluar las siguientes expresiones lambda es 12. \n (define f (lambda (x) (g x))) \n (define g (lambda (x) (+ x x))) \n (f (g (f (g 3)))) |F|
-([2022-1] - Martí Q4P15) El resultado de evaluar la expresión: (map (lambda (x) (* x x)) '(5 4 3)) es: ((25) (16) (9)). |V|
+([2022-1] - Martí Q4P15) El resultado de evaluar la expresión: (map (lambda (x) (* x x)) '(5 4 3)) es: ((25) (16) (9)). |F| Es (25 16 9)
 
 ### 2022-2 Gabriel Carmona
 ([2022-2] - Carmona Q4P1) El ciclo de Scheme corresponde a: Leer, Evaluar e Imprimir.|V|

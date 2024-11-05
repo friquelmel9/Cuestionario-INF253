@@ -111,7 +111,7 @@ El siguiente codigo: \n (null? '()) \n Retornara #t |V|
 El siguiente codigo: \n (eqv? 3 3.0) \n Retornara #t |F| Retornara #f, debido a los tipos
 El siguiente codigo: \n (eqv? () '()) \n Retornara #t |F| Retornara error, puesto que no se pasa la lista con '
 El siguiente codigo: \n (pair? '(a b c)) \n Retornara #t |V|
-Verificar con pair? es verificar si es una lista? |V|
+Usar pair? es equivalente a usar list? |F| pair? comprueba si esta construido con cons, o sea, que posea un algo ligado al final. En cambio list verifica si esta termina en lista vacia
 El siguiente codigo: \n (number? '3) \n Retornara #t |V|
 El siguiente codigo: \n (number? 1.3e27) \n Retornara #f |F| Corresponde a un numero elevado a 27, por tanto es #t
 El siguiente codigo: \n (number? 3.4@-0.5) \n Retornara #t |V| Corresponde a un numero imaginario
@@ -210,17 +210,20 @@ El comando eq? no permite comparar numeros de manera fiable |V|
 El comando eqv? no permite comparar numeros de manera fiable |F| Es eq? el que no permite
 El comando equal? es similar a eqv?, solo que equal? funciona tambien con strings, pares y vectores |V|
 El comando equal? es similar a eqv?, solo que eqv? funciona tambien con strings, pares y vectores |F| Es equal el que puede trabajar con estos
+El comando assoc recibe un simbolo y una lista, para luego buscar en la lista sublistas que tengan el simbolo entregado? |X|
 
 # Ejercicios de clase
 
-([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Scheme: \n (eqv? (cons '(a b) '(c)) (list '(a b) '(c))) \n Retornara #f |V| Las listas son generadas de distinta manera
+([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Scheme: \n (eqv? (cons '(a b) '(c)) (list '(a b) '(c))) \n Retornara #f |V| Las listas son generadas de distinta manera y dan distinto resultado
 ([2024-2] Wladimir Ejercicios de clase) Los comandos (cdr '(a b)) y (cdr '(a.b)) daran la misma salida |F| El primero devuelve (b), mientras que el segundo b.
 ([2024-2] Wladimir Ejercicios de clase) El comando (eqv? 1 '1) retornara #t |V|
 ([2024-2] Wladimir Ejercicios de clase) El comando (number? '1) retornara #f |F|
 ([2024-2] Wladimir Ejercicios de clase) El comando (pair? '(1 2 3)) retornara #t |V|
-([2024-2] Wladimir Ejercicios de clase) El comando (eqv? '(1 2 3) '(1 2 3)) retornara #t |F| Por alguna razon, devuelve falso
+([2024-2] Wladimir Ejercicios de clase) El comando (pair? '(1 2 3 4)) retornara (2 4) |F| Retorna true, indicando que hay pair
+([2024-2] Wladimir Ejercicios de clase) El comando (eqv? '(1 2 3) '(1 2 3)) retornara #t |F| Devuelve falso ya que eqv compara el espacio de memoria utilizado. Como son dos listas distintas, dos espacios de memoria distintos
 ([2024-2] Wladimir Ejercicios de clase) La diferencia entre recursion de pila y de cola es que en el de cola no queda nada pendiente tras la recursion |V|
 ([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se puede decir que factorial corresponde a una funcion que posee recursion directa? |V|
 ([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se puede decir que factorial2 corresponde a una funcion que posee recursion directa? |F| Corresponde a recursion de cola
 ([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se podria decir que ambas funciones trabajan en el paradigma funcional? |V|
 ([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se podria decir que ambas funciones trabajan en el paradigma imperativo? |F| Ambas trabajan en el funcional
+([2024-2] Wladimir Ejercicios de clase)
