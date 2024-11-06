@@ -1,8 +1,10 @@
+# -*- coding: utf-8 -*-
+
+
 import random
 import os
 
 import re
-
 # Para estos dict, considere key la unidad, mientras que el valor dentro una lista con todo lo necesario
 dict_vf = dict()
 dict_alt = dict()

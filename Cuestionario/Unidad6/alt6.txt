@@ -252,7 +252,7 @@ c. 36
 d. 81
 
 end alt
-begin alt |c|
+begin alt |a|
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -638,5 +638,32 @@ a. (b) | b | ()
 b. (b) | () | b
 c. (b) | (b) | b
 d. (b) | () | (b)
+
+end alt
+begin alt |x|
+
+Con respecto a los comparadores (eq?, eqv? y equal?), es cierto decir que...
+    I. El mas restrictivo de los 3 es equal?
+    II. eq? compara si dos objetos comparten memoria (y por tanto son identicos)
+    III. (eqv? "a" "a") y (eqv? 2 2) retornaran #t
+    IV. equal? es el unico que permite comparar dos listas de manera correcta
+a. Solo II
+b. II y III
+c. II y IV
+d. III y IV
+e. Todas las anteriores
+
+end alt
+begin alt |c|
+
+Si consideramos las siguientes lineas de codigo en Scheme:
+    (define lista '(1 2 3)) ; Linea1
+    (append lista '(4 5)) ; Linea2
+    (display lista) ; Linea3
+Que ocurre en la ejecucion del codigo?
+a. Ocurre un error en la linea2, puesto que append no puede modificar un define
+b. La linea3 mostrara por pantalla (1 2 3 4 5)
+c. La linea3 mostrara por pantalla (1 2 3)
+d. Ocurre un error en la linea2, puesto que necesita tener un set! para funcionar
 
 end alt

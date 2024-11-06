@@ -4,7 +4,7 @@
 El paradigma Funcional se basa en funciones matematicas lambda|V|
 El paradigma Funcional es equivalente al imperativo mediante funciones matematicas |F|
 El primer lenguaje funcional fue LISP, de donde derivan Scheme, Haskell, entre otros |V|
-El primer lenguaje funcional fue Scheme, de donde derivan Lisp, Haskell, entre otros |F|
+El primer lenguaje funcional fue Scheme, de donde derivan LISP, Haskell, entre otros |F| Scheme deriva de LISP
 El primer lenguaje funcional fue Common LISP, de donde derivan LISP, Scheme, entre otros |F| Common LISP deriva de LISP
 La programacion funcional pura no usa variables ni asignacion |V|
 La programacion funcional pura no usa variables, pero si asignacion |F| Ninguno de las dos la usa
@@ -14,7 +14,7 @@ Para lograr ciclos en programacion funcional, ha de lograrse mediante recursion 
 La siguiente definicion corresponde a una funcion matematica: \n cubo(x) = x*x*x |V|
 La siguiente definicion corresponde a una funcion lambda: \n cubo(x) = x*x*X |F| No esta el lambda, no separa funcion de su nombre
 La siguiente definicion corresponde a una notacion lambda: \n lambda(x) x*x*x |V|
-La siguiente definicion corresponde a una notacion lambda: \n lambda(x) = x*x*x |F| Lambda no asigna nombre con =
+La siguiente definicion corresponde a una notacion lambda: \n lambda(x) = x*x*x |F| Lambda no asigna nombre con = (que imperativo de tu parte...)
 Las funciones en programacion funcional corresponden a un elemento de primer orden |V|
 Las funciones en programacion funcional han de ser puras, o sea, siempre devolver la misma salida para misma entrada |V|
 Las funciones en programacion funcional han de ser puras, o sea, siempre devolver la misma salida |F| Misma entrada, misma salida. No solamente la salida sin entrada.
@@ -22,7 +22,7 @@ Las funciones en programacion funcional no han de ser puras |F| Si han de ser pu
 En programacion funcional, se consideran objetos inmutables, aquellos que no cambian de estado |V|
 En programacion funcional, la inmutabilidad libera de pensar en los cambios sufridos para un objeto a lo largo de la ejecucion |V|
 En programacion funcional, la inmutabilidad genera problemas debido a su poca seguridad para trabajar con ellos |F| Son automaticamente seguros al ser inmutables
-En programacion funcional, la inmutabilidad permite acceder a ellos sin concecuencias |V|
+En programacion funcional, la inmutabilidad permite acceder a ellos sin consecuencias |V|
 La trasparencia referencial consiste en tener funciones puras y objetos inmutables |X|
 La trasparencia referencial se debe asegurar en programacion funcional |V|
 La trasparencia referencial se debe asegurar que cualquier expresion se pueda sustituir su valor, independientemente de las consecuencias |F| Tiene que asegurar que no altere el programa
@@ -35,9 +35,9 @@ Caracteristicas de Scheme es que es un lenguaje de programacion funcional puro |
 Caracteristicas de Scheme es que sus estructuras de datos son inmutables |F|
 REPL corresponde al ciclo de leer, evaluar e imprimir |V|
 REPL corresponde al ciclo de evaluar e imprimir |F| Falta la lectura. Ha de ser leer, evaluar e imprimir
-REPL funciona como: Entrega un pronto, ingresa expresion, evalua y entrega resultado? |V|
+REPL funciona como: Entrega un pronto, ingresa expresion, evalua y entrega resultado? |X|
 Caracteristicas de Scheme es que sus funciones son de primera clase, y por tanto, pueden ser tratadas como cualquier valor |V|
-Identificadores en Scheme corresponden a palabras claves, variabels o simbolos sensibles a mayusculas |F| No son sensibles a las mayusculas
+Identificadores en Scheme corresponden a palabras claves, variables o simbolos sensibles a mayusculas |F| No son sensibles a las mayusculas
 Identificadores en Scheme no pueden comenzar con un numero |V|
 Los siguientes identificadores son validos en Scheme? \n X3, ?$!!!, Abcd |V|
 Los siguientes identificadores son validos en Scheme? \n 3X, AbCd, id8 |F| 3X no es valido al empezar con un numero
@@ -184,10 +184,10 @@ El siguiente codigo en Scheme: [11] El segundo codigo devolvera la lista (3 (4))
 El siguiente codigo en Scheme: [11] El tercer codigo devolvera la lista (3 4) |V|
 El comando let en Scheme permite ligado de valor local |X| Segun yo si
 El comando let en Scheme debe ser usado para valores independientes en donde no importe el orden de evaluacion |V|
-El comando let en Scheme debe ser usado si hay una dependencia entre los valores, donde importe el de evaluacion |F| Esta descripcion corresponde al comando let*
+El comando let en Scheme debe ser usado si hay una dependencia entre los valores, donde importe el orden de evaluacion |F| Esta descripcion corresponde al comando let*
 El comando let y let* son equivalentes, solo que cambia que uno permite ligado a una variable local, mientras que el otro a variables globales |F| Su diferencia radica en la dependencia entre valores
 El comando let* en Scheme debe ser usado para valores independientes en donde no importe el orden de evaluacion |F| Esta descripcion corresponde al comando let
-El comando let* en Scheme debe ser usado si hay una dependencia entre los valores, donde importe el de evaluacion |V|
+El comando let* en Scheme debe ser usado si hay una dependencia entre los valores, donde importe el orden de evaluacion |V|
 El comando let* asegura que las expresiones se evaluen de derecha a izquierda |F| Es de izquierda a derecha
 El comando let* asegura que las expresiones se evaluen de izquierda a derecha |V|
 El comando let* corresponde a uno relacionado con la programacion funcional |V|
