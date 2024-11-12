@@ -26,7 +26,7 @@
 ([2022-2] - Martí Q5P1) La programación lógica corresponde a un tipo programación declarativa.|V|
 ([2022-2] - Martí Q5P2) Unificación es el proceso que permite inferir proposiciones de otras dadas.|F|
 ([2022-2] - Martí Q5P3) En Prolog, no hay posibilidad de evitar que se ejecute el backtracking en su totalidad.|F| 
-([2022-2] - Martí Q5P4) La expresión .(perro, gato, raton, loro, [ ]) no tiene problema de satisfacer un matching con [X|T].|F|
+([2022-2] - Martí Q5P4) La expresión .(perro, gato, raton, loro, [ ]) no tiene problema de satisfacer un matching con [X palito T].|F|
 ([2022-2] - Martí Q5P5) Si Y tiene el valor 3, la expresión X = Y + 1 es equivalente con X = 4.|F|
 ([2022-2] - Martí Q5P6) Dentro de las reglas de calce de Prolog, dos estructuras lo harán si el functor de ambas coincide y tienen el mismo número de componentes.|F|
 ([2022-2] - Martí Q5P7) Instanciación es la asignación temporal de valores a variables.|V|

@@ -1,137 +1,137 @@
 ### 2021-2 Martí
 
-begin pregunta
+begin pregunta | |
 ([2021-2] - Martí Q5P5)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2021-2] - Martí Q5P6)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2021-2] - Martí Q5P7)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2021-2] - Martí Q5P8)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2021-2] - Martí Q5P9) 
 
 end prgunta
 
-begin pregunta
+begin pregunta | |
 ([2021-2] - Martí Q5P10) 
 
 end pregunta
 
 ### 2022-1 Rodrigo Salas
 
-begin pregunta
+begin pregunta | |
 ([2022-1] - Salas Q5P1)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-1] - Salas Q5P2)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-1] - Salas Q5P3)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-1] - Salas Q5P4)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-1] - Salas Q5P5)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-1] - Salas Q5P6)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-1] - Salas Q5P7)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-1] - Salas Q5P8)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-1] - Salas Q5P9)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-1] - Salas Q5P10)
 
 end pregunta
 
 ### 2022-2 Gabriel Carmona
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Carmona Q5P1)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Carmona Q5P2)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Carmona Q5P3)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Carmona Q5P4)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Carmona Q5P5) 
 
 end prgunta
 
 ### 2022-2 Martí
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Martí Q5P1)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Martí Q5P2)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Martí Q5P3)
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Martí Q5P4) 
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Martí Q5P5) 
 
 end pregunta
@@ -139,27 +139,27 @@ end pregunta
 
 ### 2022-2 Roberto Díaz
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Díaz Q5P1) 
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Díaz Q5P2) 
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Díaz Q5P3) 
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Díaz Q5P4) 
 
 end pregunta
 
-begin pregunta
+begin pregunta | |
 ([2022-2] - Díaz Q5P5) 
 
 end pregunta

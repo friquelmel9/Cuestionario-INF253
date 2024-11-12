@@ -640,12 +640,12 @@ c. (b) | (b) | b
 d. (b) | () | (b)
 
 end alt
-begin alt |x|
+begin alt |x| Depende la implementacion en II
 
 Con respecto a los comparadores (eq?, eqv? y equal?), es cierto decir que...
     I. El mas restrictivo de los 3 es equal?
     II. eq? compara si dos objetos comparten memoria (y por tanto son identicos)
-    III. (eqv? "a" "a") y (eqv? 2 2) retornaran #t
+    III. (eqv? "a" "a") y (eqv? 2 2) retornaran #t para todo programa
     IV. equal? es el unico que permite comparar dos listas de manera correcta
 a. Solo II
 b. II y III
