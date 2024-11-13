@@ -1,0 +1,12 @@
+begin figura1:
+
+    vertical(seg(punto(X,Y),punto(X,Y1))).
+    horizontal(seg(punto(X,Y),punto(X,Y1))).
+
+    ?- vertical(seg(punto(1,1),punto(1,2))). % Consulta1
+    ?- vertical(seg(punto(1,1),punto(2,Y))). % Consulta2
+    ?- horizontal(seg(punto(1,1),punto(2,Y))). % Consulta3
+    ?- vertical(seg(punto(2,3),Y)). % Consulta4
+    ?- vertical(S),horizontal(S). % Consulta5
+
+end fig

@@ -7,7 +7,7 @@ La idea de la programacion imperativa es que se especifica el que debe lograrse 
 La idea de la programacion imperativa es que como se debe hacer algo y no que debe lograr |F| Es al revez
 Aplicaciones de Lenguaje Prolog son pruebas Matematicas, Inteligencia Artificial y consultas a bases de datos |V|
 Aplicaciones de Lenguaje Prolog son funciones lambda, Inteligencia Artificial, y consultas a bases de datos |F|
-Aplicaciones de Lenguaje Prolog son pruebas Matematicas, Inteligencia Artificial, y creacion de bases de datos |F| Es consultar, mas no crear
+Aplicaciones de Lenguaje Prolog son pruebas Matematicas, Inteligencia Artificial, y creacion de bases de datos |X| Es consultar, mas no crear
 El siguiente codigo en Prolog: \n    progenitor(maria,carola). \n   Corresponde a un hecho |V|
 El siguiente codigo en Prolog: \n    progenitor(maria,pedro). \n    Corresponde a una consulta |F| Corresponde a la definicion de un hecho
 El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Corresponde a una consulta |V|
@@ -92,6 +92,62 @@ El siguiente codigo en Prolog: \n     T = triangulo(punto(4,2), punto(6,4), punt
 
 # 7.3 Calce de Terminos en Prolog
 
+El calce en Prolog corresponde a la unificacion de calculo de predicados |V|
+El calce en Prolog corresponde al proceso de varias funciones conectadas |F|
+El calce en Prolog corresponde al proceso de unificacion de varios predicados |X|
+En Prolog, dos terminos calzan si son identicos y ambas variables han de ser instaciadas para ellos |F| No es necesario instanciarlas para que sean identicas
+En Prolog, dos terminos calzan si son identicos o, si es que son variables, al instanciarse sean identicos |V|
+En Prolog, dos terminos calzan si son identicos, unicamente si son variables |F| No han de ser obligatoriamente variables
+El siguiente codigo en Prolog: \n   ?-fecha(D,M,2000)=fecha(D1,mayo,A1). \n hace que D = D1, M = mayo y 2000 = A1 |V|
+En Prolog, dos terminos calzan si son el mismo objeto, en el caso de constantes |V|
+En Prolog, dos terminos calzan si son el mismo objeto, en el caso de variables |F| Ha de ser instaciado, no ser el mismo objeto
+En Prolog, si S es una variable y T cualquier cosa, entonces calzan unicamente si S es instaciado como T |V|
+En Prolog, si S es una variable y T cualquier cosa, entonces calzan unicamente si T se instancia como S |F| T puede ser cualquier cosa, no necesariamente una variable
+En Prolog, dos estructuras calzan si tienen el mismo functor y todos sus correspondientes calzan |V|
+En Prolog, dos estructuras calzan si tiene el mismo functor o todos sus correspondientes calzan |F| Ambas condiciones han de cumplirse
+En Prolog, dos estructuras calzan unicamente si sus elementos calzan entre ellos |F| Han de tener el mismo functor
+El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Hara que la variable A se instancia como punto(4,H193) |V|
+El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Hara que la variable X se instancia como punto(4,H193) |F| Es la variable A
+El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Hara que la variable Z se instancia como punto(4,H193) |F| Falso
+El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Dara False si las variables X,Y,Z no estan instanciadas |F|
+El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Dara False si la variable A no esta instanciada |F|7
+Considerando los siguientes hechos: \n [1] \n La consulta1 devolvera yes |V|
+Considerando los siguientes hechos: \n [1] \n La consulta1 devolvera no |F| Devolvera yes
+Considerando los siguientes hechos: \n [1] \n La consulta2 devolvera yes |F| Devolvera no
+Considerando los siguientes hechos: \n [1] \n La consulta2 devolvera no |V|
+Considerando los siguientes hechos: \n [1] \n La consulta3 devolvera yes |F| Devolvera Y = 1
+Considerando los siguientes hechos: \n [1] \n La consulta3 devolvera Y=1 |V|
+Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera Y=punto(2,H561) |V|
+Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera Y=(2,H561) |F| devolvera Y=punto(2,H561).
+Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera error |F| devolvera Y=punto(2,H561).
+
+La clausula P :- Q,R. se interpreta declarativamente como "P es verdadero si Q y R son verdaderos" |V|
+La clausula P :- Q,R. se interpreta declarativamente como "P es verdadero si Q o R son verdaderos" |F| Ambas han de ser verdadero
+La clausula P :- Q,R. se interpreta proceduralmente como "P es verdadero si Q y R son verdaderos" |F| Es declarativo esta interpretacion
+La clausula P :- Q,R se interpreta declarativamente como "De Q y R se deriva P" |V|
+La clausula P :- Q,R se interpreta declarativamente como "De P deriva Q y R" |F| Es al revez, "Q y R se deriva P"
+La clausula P :- Q,R se interpreta proceduralmente como "Para resolver P, se debe resolver Q y luego R" |V|
+La clausula P :- Q,R se interpreta declarativamente como "Para resolver P, se debe resolver Q y luego R" |F| Es proceduralmente
+La clausula P :- Q,R se interpreta proceduralmente como "Para resolver Q y R, ha de resolverse P" |F| es al revez
+
+La clausula P :- Q;R. se interpreta como \n     P :- Q. \n  P :- R. \n |V|
+La clausula P :- Q;R. dara error |F| No dara error, pese al ;
+
+La clausula P :- Q,R; \n    S,T,U. \n Se interpreta como: P :- Q,R. y P :- S,T,U. |V|
+La clausula P :- Q,R; \n    S,T,U. \n Se interpreta como: P :- Q,R,S,T,U |F|  Se interpreta como P :- Q,R. y P :- S,T,U. 
+
+El significado procedural (En Prolog) se especifica como se ha de responder a una pregunta |V|
+Para obtener una respuesta en Prolog, es necesario satisfacer una lista de metas |V|
+
+# 7.4 Listas y Operadores
+
+Un ejemplo de lista en Prolog se puede escribir como: [perro,gato,raton,loro] |V|
+Un ejemplo de lista en Prolog se puede escribir como: (list x y) |F| Es scheme
+Un ejemplo de lista en Prolog se puede escribir como: arr[5]; |F| Nada que verdadero
+Una lista en Prolog corresponde de la forma .(Cabeza,Cola) |V|
+La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro,gato,raton,loro,()) |F| Nada que verdadero
+La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro, .(gato, .(raton, .(loro)))) |F| Le falta la lista vacia del final
+La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro, .(gato, .(raton, .(loro, [])))) |V|
 
 # Preguntas
 
