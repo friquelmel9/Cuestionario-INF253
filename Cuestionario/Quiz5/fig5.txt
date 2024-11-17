@@ -10,3 +10,13 @@ begin figura1:
     ?- vertical(S),horizontal(S). % Consulta5
 
 end fig
+begin figura2:
+
+    progenitor(maria, pedro).
+    progenitor(juan, pedro).
+    progenitor(juan, carola).
+    progenitor(pedro, ana).
+    progenitor(pedro, paty).
+    progenitor(paty, aldo).
+
+end fig

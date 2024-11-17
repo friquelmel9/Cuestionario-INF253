@@ -16,6 +16,10 @@ dict_alt_ref = dict()
 
 re_figvf = r'\[(\d+)\]'
 
+listVf_All = []
+listAlt_All = []
+isCertamen = False
+
 def getFig(unidad):
 
     if(unidad in dict_fig):
@@ -170,6 +174,61 @@ def iniciarQuiz():
     print("Puntaje obtenido: "+str(puntaje))
     input("Pulsar enter para continuar")
 
+def iniciarCertamen():
+    
+    global isCertamen
+    global listVf_All
+    global listAlt_All
+    
+    if isCertamen == False:
+        
+        for i in range(3,5):
+            getFig(i)
+            
+            getVf(i)
+            listVf_All = listVf_All + dict_vf[i]
+            listVf_All = listVf_All + dict_vf_ref[i]
+            
+            getAlt(i)
+            listAlt_All = listAlt_All + dict_alt[i]
+            listAlt_All = listAlt_All + dict_alt_ref[i]
+        
+        isCertamen = True
+    
+    preguntasVf = random.sample(listVf_All,25)
+    preguntasAlt = random.sample(listAlt_All,15)
+    
+    correctas = 0
+    
+    input("Pulsar enter para continuar")
+    os.system('cls')
+    
+    for pregunta,respuesta,explicacion in preguntasVf:
+        usuario = input("[V-F] "+pregunta+"\n")
+        if (usuario.lower() == respuesta.lower()):
+            print("Respuesta correcta!")
+            correctas += 1
+        else:
+            print("La respuesta correcta era: "+respuesta+"\n Explicacion: "+explicacion)
+
+        input("Pulsar enter para continuar")
+        os.system('cls')
+    
+    for pregunta,respuesta,explicacion in preguntasAlt:
+        usuario = input("[a,b,c,d,e] "+pregunta+"\n")
+        if (usuario.lower() == respuesta.lower()):
+            print("Respuesta correcta!")
+            correctas += 1
+        else:
+            print("La respuesta correcta era: "+respuesta+"\n Explicacion: "+explicacion)
+
+        input("Pulsar enter para continuar")
+        os.system('cls')
+        
+    print("Certamen terminado")
+    print("Numero de correctas: "+str(correctas))
+    input("Pulse enter para continuar")
+
 def main():
     decision = 0
     while(decision != 3):
@@ -181,7 +240,6 @@ def main():
             iniciarQuiz()
         
         if(decision == 2):
-            print("No disponible aun")
-            input("Pulsar enter para continuar")
+            iniciarCertamen()
 
 main()

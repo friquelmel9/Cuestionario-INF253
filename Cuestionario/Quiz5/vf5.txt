@@ -158,4 +158,19 @@ La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro, .(gato, .(
 ([2024-2] Wladimir Ejercicios de clase) Para finalizar una sentencia, se debe utilizar . -|-V-|-
 ([2024-2] Wladimir Ejercicios de clase) Toda sentencia en Prolog ha de empezar con un . -|-F-|- Ha de terminar con un punto
 ([2024-2] Wladimir Ejercicios de clase) Toda linea en prolog termina con un . -|-F-|- Puede terminar con una , para continuat algun proceso
-# ([2024-2] Wladimir Ejercicios de clase) Las hechos son considerados verdaderos
+
+# Preguntas de clase
+
+([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Prolog: \n assertz(tiene(puerta,ventana)) \n Es una forma de definir un hecho -|-V-|-
+([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Prolog: \n assertz(tiene(puerta,ventana)) \n Es una forma de eliminar un hecho -|-F-|- Es una forma de definirlo
+([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Prolog: \n assertz(tiene(puerta,ventana)) \n Es una forma de saber si este hecho existe -|-F-|- Es una forma de definirlo
+([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Prolog: \n retract(tiene(cabeza,cola)) \n Elimina un hecho previamente definido -|-V-|-
+([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Prolog: \n retract(tiene(cabeza,cola)) \n Crea un hecho nuevo -|-F-|- Elimina un hecho definido previamente
+([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Prolog: \n retractall(tiene(_,_)). \n Elimina todos los hechos definidos previamente-|-F-|- Elimina solo los hechos "tiene". Pregunta trampa
+([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Prolog: \n retractall(tiene(_,_)). \n Elimina todos los hechos definididos como tiene-|-V-|-
+
+([2024-2] Wladimir Ejercicios de clase) Considerando los siguientes hechos: [2] La siguiente pregunta: \n progenitor(pedro,ana) \n Retornara true -|-V-|-
+([2024-2] Wladimir Ejercicios de clase) Considerando los siguientes hechos: [2] La siguiente pregunta: \n progenitor(pedro,ana) \n Retornara #t -|-F-|- El retorono #t es de scheme, no de Prolog
+([2024-2] Wladimir Ejercicios de clase) Considerando los siguientes hechos: [2] La siguiente pregunta: \n progenitor(X,aldo) \n Retornara true -|-F-|- Retornara los valores de X que cumplen el hecho
+([2024-2] Wladimir Ejercicios de clase) Considerando los siguientes hechos: [2] La siguiente pregunta: \n progenitor(X,aldo) \n Retornara X = paty -|-V-|- 
+([2024-2] Wladimir Ejercicios de clase) Considerando los siguientes hechos: [2] La siguiente pregunta: \n progenitor(X,aldo) \n Retornara paty -|-F-|- Retornara los valores de X que cumplen el hecho, no solo paty. Retornara X = paty
