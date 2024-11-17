@@ -1,0 +1,161 @@
+# 7.1 Introducción a Prolog
+
+Prolog es un lenguaje basado en logica simbolica y programacion declarativa. -|-V-|-
+Prolog es un lenguaje basado en logica simbolica y programacion funcional. -|-F-|- Es programacion declarativa, no funcional
+Prolog es un lenguaje basado en logica simbolica y programacion imperativa. -|-F-|- Es programacion declarativa, no imperativa
+La idea de la programacion imperativa es que se especifica el que debe lograrse y no el como debe hacerse -|-V-|-
+La idea de la programacion imperativa es que como se debe hacer algo y no que debe lograr -|-F-|- Es al revez
+Aplicaciones de Lenguaje Prolog son pruebas Matematicas, Inteligencia Artificial y consultas a bases de datos -|-V-|-
+Aplicaciones de Lenguaje Prolog son funciones lambda, Inteligencia Artificial, y consultas a bases de datos -|-F-|-
+Aplicaciones de Lenguaje Prolog son pruebas Matematicas, Inteligencia Artificial, y creacion de bases de datos -|-X-|- Es consultar, mas no crear
+El siguiente codigo en Prolog: \n    progenitor(maria,carola). \n   Corresponde a un hecho -|-V-|-
+El siguiente codigo en Prolog: \n    progenitor(maria,pedro). \n    Corresponde a una consulta -|-F-|- Corresponde a la definicion de un hecho
+El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Corresponde a una consulta -|-V-|-
+El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Corresponde a una hecho -|-F-|- Esta realizadno una Preguntas
+El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Corresponde a una consulta -|-V-|-
+El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Entregara yes si Maria es progenitor de Pedro -|-V-|-
+El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Entregara true si Maria es progenitor de Pedro -|-F-|- Entregara "yes". Pregunta trampa...
+El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Entregara true si Pedro es progenitor de Maria -|-F-|- Entregara si es Maria progenitor. Esta escrito al revez.
+El siguiente codigo en Prolog: \n    ?- progenitor(X,carola). \n    Entregara todos los progenitores de Carola -|-V-|-
+El siguiente codigo en Prolog: \n    ?- progenitor(X,carola). \n    Entregara solo un progenitor de Carola -|-F-|- Si Carola posee mas de uno, tambien lo Entregara
+El siguiente codigo en Prolog: \n    ?- progenitor(X,carola). \n    Entregara todos los que tenga de progenitor a Carola -|-F-|- Entregara los progenitores de Carola, no sus hijos.
+El siguiente codigo en Prolog: \n    ?- progenitor(pedro,X). \n     Entregara todos los que tenga de progenitor a Pedro -|-V-|-
+El siguiente codigo en Prolog: \n    ?- progenitor(X,Y),progenitor(Y,aldo). \n  Entregara todos los progenitores de los progenitores de Aldo -|-V-|-
+El siguiente codigo en Prolog: \n    ?- progenitor(X,Y),progenitor(Y,aldo). \n  Entregara todos los que tengan de progenitor a progenitores de Aldo -|-F-|- Entregara todos los progenitores de los progenitores de Aldo
+El siguiente codigo en Prolog: \n    ?- progenitor(X,Y),progenitor(Y,aldo). \n  Es equivalente a decir \n    Existe un X,Y tal que (X es progenitor de Y) interseccion (Y es progenitor de aldo) -|-V-|-
+El siguiente codigo en Prolog: \n    ?- progenitor(X,Y),progenitor(Y,aldo). \n  Es equivalente a decir \n    Existe un X,Y tal que (X es progenitor de Y) union (Y es progenitor de aldo) -|-F-|- Es interseccion, no union
+El siguiente codigo en Prolog: \n    ?- progenitor(X,Y),progenitor(Y,aldo). \n  Es equivalente a decir \n    Existe un X,Y tal que (Y es progenitor de X) interseccion (Y es progenitor de aldo) -|-F-|- Es (X es progenitor de Y)
+
+El siguiente codigo en Prolog: \n    ?- progenitor(juan,X),progenitor(X,Y). \n  Es equivalente a decir \n    Existe un X,Y tal que (juan es progenitor de X) interseccion (X es progenitor de Y) -|-V-|-
+El siguiente codigo en Prolog: \n    ?- progenitor(juan,X),progenitor(X,Y). \n  Es equivalente a decir \n    Existe un X,Y tal que (juan es progenitor de X) interseccion (Y es progenitor de X) -|-F-|- Es (X es progenitor de Y)
+El siguiente codigo en Prolog: \n    ?- progenitor(juan,X),progenitor(X,Y). \n  Es equivalente a decir \n    Existe un X,Y tal que (juan es progenitor de X) iunion (X es progenitor de Y) -|-F-|- Es interseccion, no union
+El siguiente codigo en Prolog: \n    ?- progenitor(juan,X),progenitor(X,Y). \n  Entregara los X e Y que cumplan ambos progenitores -|-V-|-
+El siguiente codigo en Prolog: \n    ?- progenitor(juan,X),progenitor(X,Y). \n  Entregara solo los Y que cumplan ambos progenitores -|-F-|- Entregara los X y los Y. Ambos
+El siguiente codigo en Prolog: \n    ?- progenitor(juan,X),progenitor(X,Y). \n  Entregara solo los X que cumplan ambos progenitores -|-F-|- Entregara los X y los Y. Ambos
+
+El siguiente codigo en Prolog: \n    ?- progenitor(X,ana),progenitor(X,paty). \n    Es equivalente a decir \n  Existe un X tal que (X es progenitor de ana) interseccion (X es progenitor de paty) -|-V-|-
+El siguiente codigo en Prolog: \n    ?- progenitor(X,ana),progenitor(X,paty). \n    Es equivalente a decir \n  Existe un X tal que (ana es progenitor de X) interseccion (paty es progenitor de X) -|-F-|- Es al revez, si X es progenitor de ambas...
+El siguiente codigo en Prolog: \n    ?- progenitor(X,ana),progenitor(X,paty). \n    Es equivalente a decir \n  Existe un X tal que (X es progenitor de ana) union (X es progenitor de paty) -|-F-|- Es interseccion, no union
+
+En Prolog, decir que a es subconjunto de b, se expresa como: \n  a :- b -|-V-|-
+En Prolog, decir que a es subconjunto de b, se expresa como: \n  a :=: b -|-F-|- Es :-, no :=:
+En Prolog, decir que a es subconjunto de b, se expresa como: \n  a ;- b -|-F-|- Es :-, no ;-
+En Prolog, una clausula del tipo "a subconjunto de b" se les denomina reglas -|-V-|-
+En Prolog, previo a un :- corresponde a la cabeza (conclusion) de la regla, mientras que a su derecha se encuentra el cuerpo (proposicion definida) -|-V-|-
+En Prolog, previo a un :- corresponde al cuerpo (conclusion) de la regla, mientras que a su derecha se encuentra la cabeza (proposicion definida) -|-F-|- Cuerpo y cabeza estan intercambiados
+En Prolog, previo a un :- corresponde a la cabeza (proposicion) de la regla, mientras que a su derecha se encuentra el cuerpo (conclusion) -|-F-|- Conclusion y proposicion estan intercambiados
+
+En Prolog, se pueden realizar tanto como relaciones unarias, como binarias -|-V-|-
+En Prolog, el numero de relaciones definidas en un hecho pueden ser ilimitados -|-X-|- Ni idea...
+
+En Prolog, el siguiente codigo: \n   antepasado(X,Z) :- progenitor (X,Z). \n   antepasado(X,Z) :- progenitor(X,Y),antepasado(Y,Z). \n    Corresponde a un ejemplo de Reglas Recursivas -|-V-|-
+En Prolog, el siguiente codigo: \n   antepasado(X,Z) :- progenitor (X,Z). \n   antepasado(X,Z) :- progenitor(X,Y),antepasado(Y,Z). \n    No funcionara porque la regla se define dos veces -|-F-|- Prolog permite esto.
+En Prolog, el siguiente codigo: \n   antepasado(X,Z) :- progenitor (X,Z). \n   antepasado(X,Z) :- progenitor(X,Y),antepasado(Y,Z). \n    Revisara primero si existe un antepasado de los progenitores, y luego si es directo -|-X-|- Ni idea...
+En Prolog, el siguiente codigo: \n   antepasado(X,Z) :- progenitor (X,Z). \n   antepasado(X,Z) :- progenitor(X,Y),antepasado(Y,Z). \n    antepasado (maria,X). \n   Devolvera todo aquel que tenga de progenitor a maria -|-F-|- No solo progenitor, incluye progenitores que tiene de progenitor a Maria, o sea, no tan directo.
+En Prolog, el siguiente codigo: \n   antepasado(X,Z) :- progenitor (X,Z). \n   antepasado(X,Z) :- progenitor(X,Y),antepasado(Y,Z). \n    antepasado (maria,X). \n   Devolvera todo aquel que tenga de progenitor a maria, directamente o por medio de otros progenitores -|-V-|-
+
+# 7.2 Tipos de Datos en Prolog.
+
+En Prolog, todo tipo de datos nace de la categoria "Objetos de datos" -|-X-|- No se si esto sea valido de alguna manera
+En Prolog, Las variables y constantes son consideradas derivados de Objetos simples -|-V-|-
+En Prolog, los atomos y numeros son considerados derivados de Constantes -|-V-|-
+En Prolog, los atomos y numeros son considerados derivados de Variables -|-F-|- Son derivados de Constantes, no Variables
+En Prolog, los atomos son considerados derivados de Numeros -|-F-|- Ambos derivan de Constantes
+En Prolog, los objetos estructurados son considerados derivados de objetos simples -|-F-|- Ambos se derivan de Objetos de Datos
+En Prolog, los objetso estructurados son considerados derivados de Objetos de datos -|-V-|-
+
+En Prolog, las variables siempre han de comenzar en mayuscula -|-F-|- Pueden empezar con _, lo cual no es mayuscula
+En Prolog, las variables siempre han de comenzar con mayuscula si empieza con un caracter -|-V-|- 
+En Prolog, las variables siempre han de escribirse en mayuscula -|-F-|- Solo han de empezar en mayuscula
+En Prolog, los atomos siempre han de comenzar en minuscula -|-V-|-
+En Prolog, los atomos siempre han de comenzar en mayuscula -|-F-|- Las variables empiezan con mayuscula
+En Prolog, los atomos siempre han de escribirse en minuscula -|-X-|- Ni idea...
+Los siguientes nombres de variables son validos en Prolog: \n    X, _X1, _x1 -|-V-|- En teoria, Ni idea... Verificar.
+Los siguientes nombres de variables son validos en Prolog: \n    X, _X2, x1 -|-F-|- x1 no empieza con Mayus.
+Los siguientes nombres de variables son validos en Prolog: \n    Resultado, X, _1_2_ -|-V-|- 
+Los siguientes nombres de variables son validos en Prolog: \n    _XXX -x X1 -|-F-|-  -x no es valido (entiendo)
+
+De las caracteristicas de Prolog, uno de sus fuertes son la utilizacion de numeros -|-F-|-
+De las caracteristicas de Prolog, uno de sus debilidades es que los numeros no los computa muy bien -|-V-|-
+De las caracteristicas de Prolog, se puede decir que sus variables son todas globales -|-F-|- Depende de la clausula de donde las contiene
+De las caracteristicas de Prolog, se puede decir que sus variables poseen ambitos -|-V-|-
+
+En Prolog, objetos estructurados son aquellos objetos que tienen varias componentes, pero son tratadas como un unico objeto -|-V-|-
+En Prolog, objetos estructurados son aquellos parecidos a las listas -|-F-|- 
+En Prolog, objetos estructurados son aquellos que poseen relaciones entre ellos -|-F-|-
+En Prolog, para construir un objeto estructurado se utiliza el comando List -|-F-|-
+En Prolog, para construir un objeto estructurado se utiliza un functor -|-V-|-
+El siguiente codigo en Prolog: \n     triangulo(punto(4,2), punto(6,4), punto(7,1)) \n  Corresponde a un ejemplo de Objeto Estructurado -|-V-|-
+El siguiente codigo en Prolog: \n     triangulo(punto(4,2), punto(6,4), punto(7,1)) \n  No funciona porque esta siendo definido como un hecho -|-F-|- De igual manera puede funcionar
+El siguiente codigo en Prolog: \n     T = triangulo(punto(4,2), punto(6,4), punto(7,1)) \n  Funcionara sin errores -|-V-|-
+El siguiente codigo en Prolog: \n     T = triangulo(punto(4,2), punto(6,4), punto(7,1)) \n  No funcionara debido a que es necesario definirlo con "T is" -|-X-|- Ni idea
+
+# 7.3 Calce de Terminos en Prolog
+
+El calce en Prolog corresponde a la unificacion de calculo de predicados -|-V-|-
+El calce en Prolog corresponde al proceso de varias funciones conectadas -|-F-|-
+El calce en Prolog corresponde al proceso de unificacion de varios predicados -|-X-|-
+En Prolog, dos terminos calzan si son identicos y ambas variables han de ser instaciadas para ellos -|-F-|- No es necesario instanciarlas para que sean identicas
+En Prolog, dos terminos calzan si son identicos o, si es que son variables, al instanciarse sean identicos -|-V-|-
+En Prolog, dos terminos calzan si son identicos, unicamente si son variables -|-F-|- No han de ser obligatoriamente variables
+El siguiente codigo en Prolog: \n   ?-fecha(D,M,2000)=fecha(D1,mayo,A1). \n hace que D = D1, M = mayo y 2000 = A1 -|-V-|-
+En Prolog, dos terminos calzan si son el mismo objeto, en el caso de constantes -|-V-|-
+En Prolog, dos terminos calzan si son el mismo objeto, en el caso de variables -|-F-|- Ha de ser instaciado, no ser el mismo objeto
+En Prolog, si S es una variable y T cualquier cosa, entonces calzan unicamente si S es instaciado como T -|-V-|-
+En Prolog, si S es una variable y T cualquier cosa, entonces calzan unicamente si T se instancia como S -|-F-|- T puede ser cualquier cosa, no necesariamente una variable
+En Prolog, dos estructuras calzan si tienen el mismo functor y todos sus correspondientes calzan -|-V-|-
+En Prolog, dos estructuras calzan si tiene el mismo functor o todos sus correspondientes calzan -|-F-|- Ambas condiciones han de cumplirse
+En Prolog, dos estructuras calzan unicamente si sus elementos calzan entre ellos -|-F-|- Han de tener el mismo functor
+El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Hara que la variable A se instancia como punto(4,H193) -|-V-|-
+El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Hara que la variable X se instancia como punto(4,H193) -|-F-|- Es la variable A
+El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Hara que la variable Z se instancia como punto(4,H193) -|-F-|- Falso
+El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Dara False si las variables X,Y,Z no estan instanciadas -|-F-|-
+El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Dara False si la variable A no esta instanciada -|-F-|-7
+Considerando los siguientes hechos: \n [1] \n La consulta1 devolvera yes -|-V-|-
+Considerando los siguientes hechos: \n [1] \n La consulta1 devolvera no -|-F-|- Devolvera yes
+Considerando los siguientes hechos: \n [1] \n La consulta2 devolvera yes -|-F-|- Devolvera no
+Considerando los siguientes hechos: \n [1] \n La consulta2 devolvera no -|-V-|-
+Considerando los siguientes hechos: \n [1] \n La consulta3 devolvera yes -|-F-|- Devolvera Y = 1
+Considerando los siguientes hechos: \n [1] \n La consulta3 devolvera Y=1 -|-V-|-
+Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera Y=punto(2,H561) -|-V-|-
+Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera Y=(2,H561) -|-F-|- devolvera Y=punto(2,H561).
+Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera error -|-F-|- devolvera Y=punto(2,H561).
+
+La clausula P :- Q,R. se interpreta declarativamente como "P es verdadero si Q y R son verdaderos" -|-V-|-
+La clausula P :- Q,R. se interpreta declarativamente como "P es verdadero si Q o R son verdaderos" -|-F-|- Ambas han de ser verdadero
+La clausula P :- Q,R. se interpreta proceduralmente como "P es verdadero si Q y R son verdaderos" -|-F-|- Es declarativo esta interpretacion
+La clausula P :- Q,R se interpreta declarativamente como "De Q y R se deriva P" -|-V-|-
+La clausula P :- Q,R se interpreta declarativamente como "De P deriva Q y R" -|-F-|- Es al revez, "Q y R se deriva P"
+La clausula P :- Q,R se interpreta proceduralmente como "Para resolver P, se debe resolver Q y luego R" -|-V-|-
+La clausula P :- Q,R se interpreta declarativamente como "Para resolver P, se debe resolver Q y luego R" -|-F-|- Es proceduralmente
+La clausula P :- Q,R se interpreta proceduralmente como "Para resolver Q y R, ha de resolverse P" -|-F-|- es al revez
+
+La clausula P :- Q;R. se interpreta como \n     P :- Q. \n  P :- R. \n -|-V-|-
+La clausula P :- Q;R. dara error -|-F-|- No dara error, pese al ;
+
+La clausula P :- Q,R; \n    S,T,U. \n Se interpreta como: P :- Q,R. y P :- S,T,U. -|-V-|-
+La clausula P :- Q,R; \n    S,T,U. \n Se interpreta como: P :- Q,R,S,T,U -|-F-|-  Se interpreta como P :- Q,R. y P :- S,T,U. 
+
+El significado procedural (En Prolog) se especifica como se ha de responder a una pregunta -|-V-|-
+Para obtener una respuesta en Prolog, es necesario satisfacer una lista de metas -|-V-|-
+
+# 7.4 Listas y Operadores
+
+Un ejemplo de lista en Prolog se puede escribir como: [perro,gato,raton,loro] -|-V-|-
+Un ejemplo de lista en Prolog se puede escribir como: (list x y) -|-F-|- Es scheme
+Un ejemplo de lista en Prolog se puede escribir como: arr[5]; -|-F-|- Nada que verdadero
+Una lista en Prolog corresponde de la forma .(Cabeza,Cola) -|-V-|-
+La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro,gato,raton,loro,()) -|-F-|- Nada que verdadero
+La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro, .(gato, .(raton, .(loro)))) -|-F-|- Le falta la lista vacia del final
+La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro, .(gato, .(raton, .(loro, [])))) -|-V-|-
+
+# Preguntas
+
+## Diferencia entre definir una regla fuera y adentro (assertz)
+
+## Atomo, variable, o estrcturas dentro de estructuras
+
+([2024-2] Wladimir Ejercicios de clase) Para finalizar una sentencia, se debe utilizar . -|-V-|-
+([2024-2] Wladimir Ejercicios de clase) Toda sentencia en Prolog ha de empezar con un . -|-F-|- Ha de terminar con un punto
+([2024-2] Wladimir Ejercicios de clase) Toda linea en prolog termina con un . -|-F-|- Puede terminar con una , para continuat algun proceso
+# ([2024-2] Wladimir Ejercicios de clase) Las hechos son considerados verdaderos

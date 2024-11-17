@@ -22,7 +22,7 @@ def getFig(unidad):
         return
 
     dict_fig[unidad] = list()
-    arch_path = "Cuestionario/Unidad{0}/fig{0}.txt".format(unidad)
+    arch_path = "Cuestionario/Quiz{0}/fig{0}.txt".format(unidad)
 
     with open(arch_path,'r') as arch:
         texto = ""
@@ -51,7 +51,7 @@ def leerAlt(unidad,arch_path):
             if linea.startswith("#") or not linea.strip:
                 continue
             if linea.startswith("begin"):
-                x,respuesta,explicacion = linea.strip().split("|")
+                x,respuesta,explicacion = linea.strip().split("-|-")
                 if explicacion == "":
                     explicacion = "No explicacion entregada"
             elif linea.startswith("figura"):
@@ -75,8 +75,8 @@ def getAlt(unidad):
         return
     
     getFig(unidad)
-    dict_alt[unidad] = leerAlt(unidad,"Cuestionario/Unidad{0}/alt{0}.txt".format(unidad))
-    dict_alt_ref[unidad] = leerAlt(unidad,"Cuestionario/Unidad{0}/alt{0}ref.txt".format(unidad))
+    dict_alt[unidad] = leerAlt(unidad,"Cuestionario/Quiz{0}/alt{0}.txt".format(unidad))
+    dict_alt_ref[unidad] = leerAlt(unidad,"Cuestionario/Quiz{0}/alt{0}ref.txt".format(unidad))
 
 def leerVf(unidad, arch_path):
     list_preguntas = list()
@@ -85,7 +85,7 @@ def leerVf(unidad, arch_path):
         for linea in arch:
             if linea.startswith("#") or not linea.strip():
                 continue
-            pregunta,respuesta,explicacion = linea.strip().split("|")
+            pregunta,respuesta,explicacion = linea.strip().split("-|-")
             pregunta = pregunta.replace("\\n","\n")
             if(explicacion == ""):
                 explicacion = "No explicacion entregada"
@@ -104,13 +104,13 @@ def getVf(unidad):
     if(unidad in dict_vf_ref):
         return
     
-    dict_vf[unidad] = leerVf(unidad, "Cuestionario/Unidad{0}/vf{0}.txt".format(unidad))
-    dict_vf_ref[unidad] = leerVf(unidad,"Cuestionario/Unidad{0}/vf{0}ref.txt".format(unidad))
+    dict_vf[unidad] = leerVf(unidad, "Cuestionario/Quiz{0}/vf{0}.txt".format(unidad))
+    dict_vf_ref[unidad] = leerVf(unidad,"Cuestionario/Quiz{0}/vf{0}ref.txt".format(unidad))
     
 def iniciarQuiz():
 
     os.system('cls')
-    unidad = int(input("¿Que unidad quieres realizar? [5-6]\n"))
+    unidad = int(input("¿Que unidad quieres realizar? [3-4-5]\n"))
 
     getFig(unidad)
     getVf(unidad)

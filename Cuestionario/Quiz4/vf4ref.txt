@@ -1,0 +1,102 @@
+### 2021-2 Martí (REVISAR 2°)
+([2021-2] - Martí Q4P1) En el momento de evaluar una expresión lambda, se ligan parámetros formales con los actuales, pudiendo ser los primeros una lista propia, una lista impropia o una variable única.-|-V-|-
+([2021-2] - Martí Q4P2) La función combinatoria(n k), definida a continuación, sólo hace uso de un registro de activación[2]-|-F-|-
+([2021-2] - Martí Q4P3) La programación funcional es una variante de los lenguajes imperativos, basada en una extensión de una máquina de von Neuman.-|-F-|-
+([2021-2] - Martí Q4P5) Los nombres usados en Scheme tienen ámbito dinámico.-|-F-|-
+([2021-2] - Martí Q4P7) Scheme tiene un recolector automático de basura.-|-V-|-
+([2021-2] - Martí Q4P8) En Scheme, variables de nivel superior pueden ser definidas mediante let y lambda.-|-F-|-
+([2021-2] - Martí Q4P9) Una función se escribe como una lista, donde el primer elemento es el nombre de la función y los siguientes los parámetros.-|-V-|-
+([2021-2] - Martí Q4P10) La característa exclusiva de los lenguajes funcionales de contar con recursión de cola, ha hecho que éstos se utilicen fuertemente en aplicaciones matemáticas y similares.-|-F-|-
+([2021-2] - Martí Q4P11) La programación funcional pura no usa variales ni asignación.-|-V-|-
+([2021-2] - Martí Q4P12) La recursión de cola facilita el manejo del stack ya que reduce el tamaño del registro de activación de cada invocación.-|-F-|-
+([2021-2] - Martí Q4P13) En la programación funcional pura, la repetición debe lograrse con recursión.-|-V-|-
+([2021-2] - Martí Q4P14) Para que una lista sea evaluada se le antecede con una citación simple.-|-F-|-
+([2021-2] - Martí Q4P16) En la programación funcional, la evaluación de las funciones está controlada por secuencias e iteraciones.-|-F-|-
+([2021-2] - Martí Q4P17) Una expresión lambda es un objeto tipo procedimiento que no tiene nombre.-|-V-|-
+([2021-2] - Martí Q4P18) Sólo recientemente existen arquitecturas de computadores que apoyan una ejecución eficiente de un programa funcional.-|-F-|-
+
+### 2022-1 Jorge Díaz
+
+([2022-1] - Diaz Q4P1) Considerando el siguiente codigo en Scheme: [1] F1 tiene recursion de cola-|-V-|-
+([2022-1] - Diaz Q4P2) Considerando el siguiente codigo en Scheme: [1] F2 tiene recursion de cola-|-F-|-
+([2022-1] - Diaz Q4P3) Considerando el siguiente codigo en Scheme: [1] F1 tiene recursion directa-|-V-|-
+([2022-1] - Diaz Q4P4) Considerando el siguiente codigo en Scheme: [1] F2 tiene recursion directa-|-V-|-
+([2022-1] - Diaz Q4P5) Considerando el siguiente codigo en Scheme: [1] Contador valdra 0 siempre -|-F-|-
+([2022-1] - Diaz Q4P6) Considerando el siguiente codigo en Scheme: [1] En la funcion cuenta, se puede cambiar el set! por un let sin problemas -|-F-|-
+([2022-1] - Diaz Q4P7) Considerando el siguiente codigo en Scheme: [1] Cuenta tiene recursion intermedia -|-F-|-
+([2022-1] - Diaz Q4P8) Considerando el siguiente codigo en Scheme: [1] Suma tiene recursion de cola -|-F-|-
+([2022-1] - Diaz Q4P9) Considerando el siguiente codigo en Scheme: [1] En la definicion de suma, se puede cambiar letrec por let sin problemas -|-F-|-
+([2022-1] - Diaz Q4P10) Considerando el siguiente codigo en Scheme: [1] Cuenta imprimira 0 siempre -|-F-|-
+
+
+### 2022-1 Marti (REPETIDAS 6°; REVISAR 11°, 13°, 15°)
+([2022-1] - Martí Q4P6) En Scheme, variables de nivel superior pueden ser definidas por let y lambda.-|-F-|-
+([2022-1] - Martí Q4P7) En Scheme, los nombres solo tienen ámbito dinámico.-|-F-|-
+([2022-1] - Martí Q4P8) Las definiciones de nivel superior permiten visibilidad en cada expresión donde no sean escondidas por otro ligado.-|-V-|-
+([2022-1] - Martí Q4P9) En Scheme, una función se escribe como una lista en notación prefija, siendo el primer elemento el nombre de la función.-|-V-|-
+([2022-1] - Martí Q4P10) La recursión de cola facilita el manejo del Stack ya que reduce el tamaño del registro de activación de cada invocación incurrida.-|-F-|-
+([2022-1] - Martí Q4P11) El resultado de evaluar la expresión: (first (rest ( rest (rest (first (a b c (d e)) ((f g (h)))))))) es ((d e)).-|-F-|-
+([2022-1] - Martí Q4P12) El resultado de evaluar la expresión: (cons 0 (list (cons '(1 2) (list '(3 (4 5)))))) es (0 ((1 2) (3 (4 5)))).-|-V-|-
+([2022-1] - Martí Q4P13) El resultado de evaluar la siguiente expresión es #t \n (or (< 6 0) (member 30 '(1 2 3)) (= (abs -6) 60) (zero? 0)) -|-V-|-
+([2022-1] - Martí Q4P14) El resultado de evaluar las siguientes expresiones lambda es 12. \n (define f (lambda (x) (g x))) \n (define g (lambda (x) (+ x x))) \n (f (g (f (g 3)))) -|-F-|-
+([2022-1] - Martí Q4P15) El resultado de evaluar la expresión: (map (lambda (x) (* x x)) '(5 4 3)) es: ((25) (16) (9)). -|-F-|- Es (25 16 9)
+
+### 2022-2 Gabriel Carmona
+([2022-2] - Carmona Q4P1) El ciclo de Scheme corresponde a: Leer, Evaluar e Imprimir.-|-V-|-
+([2022-2] - Carmona Q4P2) Las expresiones se escriben según la notación post-fija.-|-F-|-
+([2022-2] - Carmona Q4P3) Una función de Scheme se escribe como una lista en notación pre-fija.-|-V-|-
+([2022-2] - Carmona Q4P4) La recursión de cola es menos eficiente en memoria que la recursión intermedia simple.-|-F-|-
+([2022-2] - Carmona Q4P5) Scheme utiliza el Heap para almacenar objetos (por ejemplo, las funciones lambda).-|-V-|-
+([2022-2] - Carmona Q4P6) En Scheme, los nombres solo tiene ámbito dinámico.-|-F-|-
+([2022-2] - Carmona Q4P7) La recursión de cola facilita el manejo del Stack ya que reduce el tamaño del registro de activación de cada invocación.-|-F-|-
+([2022-2] - Carmona Q4P8) En el momento de evaluar una expresión lambda, se ligan parámetros formales con los actuales pudiendo ser los primeros una lista propia, una lista impropia o una variable única.-|-V-|-
+([2022-2] - Carmona Q4P9) La programación funcional es una variante de los lenguajes imperativos, basada en una extensión de una máquina de Von Neuman.-|-F-|-
+([2022-2] - Carmona Q4P10) Una expresión lambda es un objeto tipo procedimiento que no tiene nombre.-|-V-|-
+
+### 2022-2 Martí
+([2022-2] - Martí Q4P1) La programación funcional corresponde a un tipo de programación declarativa.-|-V-|-
+([2022-2] - Martí Q4P2) La notación lambda permite separar la definición de una función de su nombre.-|-V-|-
+([2022-2] - Martí Q4P3) En la programación funcional, los programas se construyen sobre la base de funciones anidadas.-|-F-|-
+([2022-2] - Martí Q4P4) Al ser elementos de segundo orden, las funciones se pueden guardar en estructuras de datos, pasarse como argumentos e incluso ser devueltas sobre otras funciones.-|-F-|-
+([2022-2] - Martí Q4P5) El código de la programación funcional debe asegurar que la transparencia referencial esté presente en lo menos posible.-|-F-|-
+([2022-2] - Martí Q4P6) Scheme permite el manejo de diferentes tipos de números como enteros, en notación científica y complejos.-|-V-|-
+([2022-2] - Martí Q4P7) En Scheme, las variables tienen ámbito local si están dentro de una expresión let, y ámbito global si es dentro de una expresión define.-|-V-|-
+([2022-2] - Martí Q4P8) El resultado de evaluar la consulta (pair? 2) es verdadero.-|-F-|-
+([2022-2] - Martí Q4P9) La ausencia de un recolector automático de basura en Scheme incentiva el uso de recursión de cola.-|-F-|-
+([2022-2] - Martí Q4P10) El uso de letrec asemeja a una programación de tipo imperativa, dado que establece una dependencia lineal entre las variables y los valores.-|-F-|-
+
+### 2022-2 Roberto Díaz
+([2022-2] - Díaz Q4P1) En Scheme, los booleanos se representan por los valores #t y #f.-|-V-|-
+([2022-2] - Díaz Q4P2) En Scheme, los números complejos solo pueden ser representados en coordenadas rectangulares.-|-F-|-
+([2022-2] - Díaz Q4P3) La recursión de cola es exclusiva de lenguajes funcionales (o aquellos principalmente funcionales).-|-F-|-
+([2022-2] - Díaz Q4P4) En Scheme, una expresión lambda siempre recibirá un número fijo de parámetros.-|-F-|-
+([2022-2] - Díaz Q4P5) En Scheme, la expresión let* asegura orden de evaluación de las expresiones de variables a diferencia de let.-|-V-|-
+([2022-2] - Díaz Q4P6) La recursión mutua se puede considerar como tipo de recursión indirecta.-|-V-|-
+([2022-2] - Díaz Q4P7) En Scheme, las variables de nivel superior pueden ser definidas mediante let y lambda.-|-F-|-
+([2022-2] - Díaz Q4P8) Una expresión lambda es un objeto tipo procedimiento que no tiene nombre.-|-V-|-
+([2022-2] - Díaz Q4P9) Scheme tiene un recolector automático de basura.-|-V-|-
+([2022-2] - Díaz Q4P10) Evaluar la expresión (map (lambda x (* (car x) (cadr x))) (list 2 3 5) '(4 8 9)) arroja un error.-|-F-|-
+
+### 2023-1 Martí
+([2023-1 - Martí Q4P1]) Los programas funcionales se construyen mediante la composición de funciones.-|-V-|-
+([2023-1 - Martí Q4P2]) En la programación funcional, la evaluación de las funciones está controlada por recursión y condiciones.-|-V-|-
+([2023-1 - Martí Q4P3]) La programación funcional pura usa variables y asignación.-|-F-|-
+([2023-1 - Martí Q4P4]) Una expresión lambda es un objeto tipo procedimiento que tiene nombre.-|-F-|-
+([2023-1 - Martí Q4P5]) En Scheme, variables de nivel superior pueden ser definidas mediante let y lambda.-|-F-|-
+([2023-1 - Martí Q4P6]) El operador let* se asemeja a una asignación tradicional, lo que se aleja del paradigma funcional en cuanto a tener objetos inmutables.-|-V-|-
+([2023-1 - Martí Q4P7]) Scheme tiene un recolector automático de basura.-|-V-|-
+([2023-1 - Martí Q4P8]) Para que una lista sea evaluada se le antecede con una citación simple.-|-F-|-
+([2023-1 - Martí Q4P9]) La recursión de cola facilita el manejo del stack ya que reduce el tamaño del registro de activación de cada invocación.-|-F-|-
+([2023-1 - Martí Q4P10]) La evaluación perezosa es una técnica exclusiva de la programación funcional, destinada a disminuir la cantidad de memoria usada.-|-F-|-
+
+### 2023-2 Martí
+([2023-2] - Martí Q4P1) Los programas funcionales se construyen mediante la composición de funciones.-|-V-|-
+([2023-2] - Marti Q4P2) En la programación funcional, la evaluación de las funciones está controlada por recursión y condiciones.-|-V-|-
+([2023-2] - Martí Q4P3) La programación funcional pura usa variables y asignación.-|-F-|-
+([2023-2] - Martí Q4P4) Una expresión lambda es un objeto tipo procedimiento que tiene nombre.-|-F-|-
+([2023-2] - Martí Q4P5) En Scheme, variables de nivel superior pueden ser definidas mediante let y lambda.-|-F-|-
+([2023-2] - Martí Q4P6) El operador let* se asemeja a una asignación tradicional, lo que se aleja del paradigma funcional en cuanto a tener objetos inmutables.-|-V-|-
+([2023-2] - Martí Q4P7) Scheme tiene un recolector automático de basura.-|-V-|-
+([2023-2] - Martí Q4P8) Para que una lista sea evaluada se le antecede con una citación simple.-|-F-|-
+([2023-2] - Martí Q4P9) La recursión de cola facilita el manejo del Stack ya que reduce el tamaño del registro de activación de cada invocación.-|-F-|-
+([2023-2] - Martí Q4P10) La evaluación perezosa es una técnica exclusiva de la programación funcional, destinada a disminuir la cantidad de memoria usada.-|-V-|-

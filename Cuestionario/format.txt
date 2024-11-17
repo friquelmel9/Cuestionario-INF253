@@ -11,13 +11,13 @@
 
 Cada linea corresponde a una pregunta, que sigue el siguiente formato:
 
-pregunta | <respuesta_vf> | explicacion
+pregunta -|- <respuesta_vf> -|- explicacion
 
 ### Para vf{}ref.txt
 
 Sigue siendo lo mismo, pero se recomienda que el inicio incluya la referencia
 
-<referencia> pregunta | <respuesta_vf> | explicacion
+<referencia> pregunta -|- <respuesta_vf> -|- explicacion
 
 ## Figuras para cualquier vf
 
@@ -28,7 +28,7 @@ Si se quiere agregar figuras, realizarlo mediante [x], con x el numero de la fig
 Las preguntas necesitan empezar por begin y terminar en end en post de que el programa las accepte.
 Siguen el siguiente formato:
 
-begin pregunta | <respuesta_alt> | explicacion
+begin pregunta -|- <respuesta_alt> -|- explicacion
 
 texto
 figura:<int>
@@ -40,7 +40,7 @@ end pregunta
 
 Sigue siendo lo mismo, pero se recomienda que la primera linea incluya la referencia
 
-begin pregunta | <respuesta_alt> | explicacion
+begin pregunta -|- <respuesta_alt> -|- explicacion
 
 <referencia>
 texto

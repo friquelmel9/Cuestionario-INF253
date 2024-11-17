@@ -1,0 +1,228 @@
+#6.1 Paradigmas
+### Revisar como escribir notacion lambda
+
+El paradigma Funcional se basa en funciones matematicas lambda-|-V-|-
+El paradigma Funcional es equivalente al imperativo mediante funciones matematicas -|-F-|-
+El primer lenguaje funcional fue LISP, de donde derivan Scheme, Haskell, entre otros -|-V-|-
+El primer lenguaje funcional fue Scheme, de donde derivan LISP, Haskell, entre otros -|-F-|- Scheme deriva de LISP
+El primer lenguaje funcional fue Common LISP, de donde derivan LISP, Scheme, entre otros -|-F-|- Common LISP deriva de LISP
+La programacion funcional pura no usa variables ni asignacion -|-V-|-
+La programacion funcional pura no usa variables, pero si asignacion -|-F-|- Ninguno de las dos la usa
+En programacion funcional, un programa consiste en la defincion de funciones y su aplicacion -|-V-|-
+En programacion funcional, un programa consiste en la definicion de funciones, su aplicaciones y ejecucion -|-X-|-
+Para lograr ciclos en programacion funcional, ha de lograrse mediante recursion -|-V-|-
+La siguiente definicion corresponde a una funcion matematica: \n cubo(x) = x*x*x -|-V-|-
+La siguiente definicion corresponde a una funcion lambda: \n cubo(x) = x*x*X -|-F-|- No esta el lambda, no separa funcion de su nombre
+La siguiente definicion corresponde a una notacion lambda: \n lambda(x) x*x*x -|-V-|-
+La siguiente definicion corresponde a una notacion lambda: \n lambda(x) = x*x*x -|-F-|- Lambda no asigna nombre con = (que imperativo de tu parte...)
+Las funciones en programacion funcional corresponden a un elemento de primer orden -|-V-|-
+Las funciones en programacion funcional han de ser puras, o sea, siempre devolver la misma salida para misma entrada -|-V-|-
+Las funciones en programacion funcional han de ser puras, o sea, siempre devolver la misma salida -|-F-|- Misma entrada, misma salida. No solamente la salida sin entrada.
+Las funciones en programacion funcional no han de ser puras -|-F-|- Si han de ser puras
+En programacion funcional, se consideran objetos inmutables, aquellos que no cambian de estado -|-V-|-
+En programacion funcional, la inmutabilidad libera de pensar en los cambios sufridos para un objeto a lo largo de la ejecucion -|-V-|-
+En programacion funcional, la inmutabilidad genera problemas debido a su poca seguridad para trabajar con ellos -|-F-|- Son automaticamente seguros al ser inmutables
+En programacion funcional, la inmutabilidad permite acceder a ellos sin consecuencias -|-V-|-
+La trasparencia referencial consiste en tener funciones puras y objetos inmutables -|-X-|-
+La trasparencia referencial se debe asegurar en programacion funcional -|-V-|-
+La trasparencia referencial se debe asegurar que cualquier expresion se pueda sustituir su valor, independientemente de las consecuencias -|-F-|- Tiene que asegurar que no altere el programa
+
+# Introduccion al lenguaje de programacion Scheme
+
+Caracteristicas de Scheme es que es pequeño, con sintaxis y semantica simple -|-V-|-
+Caracteristicas de Scheme es que posee recolector de basura automatico -|-V-|-
+Caracteristicas de Scheme es que es un lenguaje de programacion funcional puro -|-F-|- Es impuro, sus estructuras de datos no son inmutables
+Caracteristicas de Scheme es que sus estructuras de datos son inmutables -|-F-|-
+REPL corresponde al ciclo de leer, evaluar e imprimir -|-V-|-
+REPL corresponde al ciclo de evaluar e imprimir -|-F-|- Falta la lectura. Ha de ser leer, evaluar e imprimir
+REPL funciona como: Entrega un pronto, ingresa expresion, evalua y entrega resultado? -|-X-|-
+Caracteristicas de Scheme es que sus funciones son de primera clase, y por tanto, pueden ser tratadas como cualquier valor -|-V-|-
+Identificadores en Scheme corresponden a palabras claves, variables o simbolos sensibles a mayusculas -|-F-|- No son sensibles a las mayusculas
+Identificadores en Scheme no pueden comenzar con un numero -|-V-|-
+Los siguientes identificadores son validos en Scheme? \n X3, ?$!!!, Abcd -|-V-|-
+Los siguientes identificadores son validos en Scheme? \n 3X, AbCd, id8 -|-F-|- 3X no es valido al empezar con un numero
+Los siguientes identificadores son validos en Scheme? \n abc "==.. !??! -|-X-|- Comillas (") no son validas para un identificador
+La siguiente constante es valida en Scheme? \n "Hola, soy un String" -|-V-|-
+La siguiente constante es valida en Scheme? \n 'Hola, soy un String' -|-X-|- Comillas simple ni idea
+La siguiente constante es valida en scheme? \n #\a -|-V-|-
+La siguiente constante es valida en scheme? \n #\hola -|-F-|- Esta corresponde a un caracter, no un string
+La siguiente constante es valida en scheme? \n 1.3e27 -|-V-|-
+La siguiente constante es valida en scheme? \n 1/4 -|-V-|-
+La siguiente constante es valida en scheme? \n 3.4@-0.5 -|-V-|-
+La siguiente constante es valida en scheme? \n 14,13 -|-F-|- El decimal debe ser punto, no coma
+La siguiente constante es valida en scheme? \n #t -|-V-|-
+En Scheme, la constante #t puede ser tanto verdadero como el caracter t? -|-X-|-
+En Scheme, los numeros complejos pueden ser representados en polares y coordenadas rectangulares? -|-V-|-
+En Scheme, los nombres +, -, * y \ son reservados para operaciones aritmeticas? -|-V-|-
+El resultado de la siguiente expresion: \n (+ 1/2 1/2) es 1? -|-V-|-
+El resultado de la siguiente expresion: \n (/ (* 6/6 6/2) (- 4.5 1.5)) es 1? -|-F-|- Es 1.0 debido a la notacion
+El resultado de la siguiente expresion: \n (- 2 (* 4 1/4)) es 0? -|-F-|- Da 1
+En Scheme, una lista puede contener cualquier elemento, incluso listas anidadas -|-V-|-
+En Scheme, una funcion se escribe como una lista, en donde el ultimo elemento corresponde a la funcion? -|-F-|- Es el primer elemento
+En Scheme, utilizar quote indica que la lista no es evaluada -|-V-|-
+En Scheme, utilizar ' es equivalente a utilizar quote para indicar que una lista no es evaluada? -|-X-|-
+El operador car en Scheme devuelve el primer elemento de la lista -|-V-|-
+El operador car en Scheme devuelve el ultimo elemento de una lista -|-F-|- Devuelve el primero, no el ultimo
+El operador cdr en Scheme devuelve el primer elemento de una lista -|-F-|- Es car el que devuelve el primero
+El operador cdr en Scheme devuelve solo el ultimo elemento de una lista -|-F-|- Devuelve todo elemento menos el primero, eso no necesariamente indica que es solo el ultimo
+El operador cdr en Scheme devuelve la lista a la que se llamo sin el primer elemento -|-V-|- 
+Un equivalente de car y cdr son first y rest, respectivamente -|-V-|-
+En una lista, cada elemento corresponde a un par, en donde el segundo apunta a otro par -|-X-|- No se si apunta se considera
+El ultimo elemento de una lista siempre es vacio -|-V-|- Notar que, incluso si la lista es (a b c), c sera un par donde el ultimo es vacio.
+Un constructor en scheme crea una lista con car como argumento -|-F-|- Posee car y cdr como argumentos
+El siguiente constructor en Scheme: \n (cons (car '(a b c))(cdr '(a b c))) \n devolvera la lista (a c) -|-F-|- Devolvera la lista (a b c)
+El siguiente constructor en Scheme: \n (cons 'a '(b c d)) \n devolvera la lista (a b c d) -|-X-|- Segun el ppt es cierto
+El siguiente comando en Scheme: \n (list 'a 'b 'c 'd) \n devolvera la lista (a b c d) -|-X-|-
+El siguiente comando en Scheme: \n (append '(a b) '(c d)) \n devolvera la lista (a b c d) -|-V-|-
+El siguiente comando en Scheme: \n (append '(a b) "c") \n devolvera la lista (a b c) -|-F-|- devolvera la lista (a b "c"). Notar que c no necesariamente es un string
+El comando let en Scheme permite definir variables ligadas a un valor en la evaluacion de expresiones -|-V-|-
+El comando let en Scheme crea variables para un ambito global -|-F-|- El ambito es local
+El comando lambda permite crear procedimientos que no poseen nombres -|-V-|-
+El comando lambda permite crear funciones para evaluar -|-X-|- si
+El siguiente codigo de Scheme: [3] entrega como resultado (4 9 16) -|-V-|-
+El siguiente codigo en Scheme: [3] corresponde a recursion simple -|-F-|- No hay recursion
+El siguiente codigo: \n (let ((var1 val1) … (var_m val_m)) exp_1 … exp_n) \n Es equivalente a \n ((lambda (var1 … var_m) exp_1 … exp_n) va1 … val_m) -|-V-|-
+El ambito por let y lambda es local, mientras que define permite un ambito global -|-V-|-
+El ambito por lambda es local, mientras que let y define permiten un ambito global -|-F-|- let posee ambito local
+Se puede realizar ocultamiento de informacion, mediante let, el cual oculta la variable con mismo nombre de orden superior -|-V-|-
+La forma: \n (define var_0 (lambda(var_1 ... var_n) e_1 ...)) \n es equivalente a (define (var_0 var_1 ... var_n) e_1 ...) -|-V-|-
+define puede ser utilizado para definir variables tales como \n (define pi 3.1415) -|-V-|-
+Una lista propia de parametros es de la forma (var_1 var_2 ... var_n ) -|-V-|-
+Una lista propia de parametros es de la forma (var_1 var_2 ... var_n . var_r) -|-F-|- Esta corresponde a una lista impropia
+Una lista impropia de parametros es de la forma (var_1 var_2 ... var_n . var_r) -|-V-|-
+Una lista impropia de parametros es de la forma (var_1 var_2 ... var_n ) -|-F-|-
+
+# Condicionales y Predicados
+
+En Scheme, es posible realizar condicionales -|-V-|-
+En Scheme, la unica herramienta para realizar condicionales es if -|-F-|- Tambien se puede usar cond
+En Scheme, se puede realizar multiples condicionales mediante if y elif -|-F-|- Es mediante cond
+En Scheme, se puede realizar multiple condicionales mediante cond -|-V-|-
+En Scheme, un else es equivalente a usar un #f -|-F-|- El else es equivalente a colocar #t
+En Scheme, las expresiones relacionales son =, <, >, <=, >= -|-V-|-
+El siguiente codigo en Scheme \n (= 3 4) \n Retornara #f -|-V-|-
+El siguiente codigo en Scheme \n (= 3 3.0) \n Retornara #f -|-F-|- Pese a ser representaciones distintas, son considerados el mismo numero
+El siguiente codigo en Scheme [4] entregara n en caso de que este sea menor que 0 -|-F-|- Retornara la segunda funcion
+El siguiente codigo en Scheme [4] entregara el negativo de n si es menor que 0 -|-V-|-
+El siguiente codigo en Scheme [4] Si evaluamos (abs -27), retornara 27 -|-V-|-
+Las unicas expresiones logicas son or y and -|-F-|- Tambien existe el not
+El siguiente codigo: \n (null? ()) \n Retornara #t -|-F-|- Retornara error, puesto que no se pasa la lista con '
+El siguiente codigo: \n (null? '()) \n Retornara #t -|-V-|-
+El siguiente codigo: \n (eqv? 3 3.0) \n Retornara #t -|-F-|- Retornara #f, debido a los tipos
+El siguiente codigo: \n (eqv? () '()) \n Retornara #t -|-F-|- Retornara error, puesto que no se pasa la lista con '
+El siguiente codigo: \n (pair? '(a b c)) \n Retornara #t -|-V-|-
+Usar pair? es equivalente a usar list? -|-F-|- pair? comprueba si esta construido con cons, o sea, que posea un algo ligado al final. En cambio list verifica si esta termina en lista vacia
+El siguiente codigo: \n (number? '3) \n Retornara #t -|-V-|-
+El siguiente codigo: \n (number? 1.3e27) \n Retornara #f -|-F-|- Corresponde a un numero elevado a 27, por tanto es #t
+El siguiente codigo: \n (number? 3.4@-0.5) \n Retornara #t -|-V-|- Corresponde a un numero imaginario
+El siguiente codigo: \n (string? "3") \n Retornara #t -|-V-|-
+
+# Recursion
+
+Los tipos de recursion en Scheme pueden separar como directa o indirecta -|-V-|-
+En Scheme, una recursion directa ocurre cuando una funcion se llama a si misma -|-V-|-
+En Scheme, una recursion directa ocurre cuando una funcion se llama a si misma o a otras que la llamaran despues -|-F-|- Esta puede corresponder de tipo indirecto
+En Scheme, una recursion indirecta ocurre cuando una funcion puede o no llamarse a si misma -|-F-|- Si se llama a si misma, solo que puede que sea tras un monton de otras funciones
+En Scheme, una recursion indirecta ocurre cuando una funcion llama a otras funciones que terminan llamando a la primera -|-V-|-
+En Scheme, tipos de recursion pueden ser lineal, multiple y anidada -|-V-|-
+En Scheme, el tipo de recursion lineal indica que solamente existe una invocacion recursiva -|-V-|-
+En Scheme, el tipo de recursion lineal indica que las funciones se llaman una tras otra -|-x-|-
+En Scheme, el tipo de recursion multiple indica que hay mas de una funcion recursiva -|-V-|-
+En Scheme, el tipo de recursion anidada es cuando de parametro se tiene otra invocacion recursiva -|-V-|-
+En Scheme, el tipo de recursion anidada es cuando una funcion ha de hacer recursion de otra funcion -|-F-|-
+En Scheme, se separan los tipos de recursion segun cuando empiezen, siendo de Cabeza, Intermedia, o de Cola -|-V-|-
+En Scheme, el tipo de recursion De Cabeza indica que la recursion ocurre antes que se haga todo lo demas -|-V-|-
+En Scheme, el tipo de recursion De Cabeza indica que la recursion no necesita ser llamada directamente -|-F-|- Nada que ver...
+En Scheme, el tipo de recursion Intermedia indica que la recursion no se cumple en su totalidad -|-F-|- Es cuando la recursion esta entre medio de sentencias
+En Scheme, el tipo de recursion Intermedia indica que la recursion se encuentra entre medio de sentencias -|-V-|-
+En Scheme, el tipo de recursion De Cola indica que la recursion se realiza al finalizar toda las sentencias -|-V-|-
+En Scheme, el tipo de recursion De Cola indica que la recursion se realiza tras terminar otra recursion -|-F-|- No necesariamente ha de terminar una recursion para iniciar
+El siguiente codigo en Scheme: [5] corresponde a un ejemplo de Recursion Directa -|-V-|-
+El siguiente codigo en Scheme: [5] corresponde a un ejemplo de Recursion Intermedia -|-X-|- Ocurre al final la recursion
+El siguiente codigo en Scheme: [5] Si llamamos al siguiente codigo: \n (length '(a b c d)) \n Este retornara 4 -|-V-|-
+El siguiente codigo en Scheme: [6] Corresponde a un ejemplo de Recursion directa -|-V-|-
+El siguiente codigo en Scheme: [6] Si llamamos al siguiente codigo: \n (memv 'c '(a b c d e)) \n Devolvera 3 -|-F-|- Retorna el cdr desde esa posicion
+El siguiente codigo en Scheme: [6] Si llamamos al siguiente codigo: \n (memv 'c '(a b c d e)) \n Devolvera (a b) -|-F-|- Retorna el cdr desde esa posicion
+El siguiente codigo en Scheme: [6] Si llamamos al siguiente codigo: \n (memv 'c '(a b c d e)) \n Devolvera (d e) -|-V-|- 
+El siguiente codigo en Scheme: [7] Si llamamos al siguiente codigo: \n (remv 'c '(a b c d e)) \n Devolvera (d e) -|-F-|- Retornara toda la lista sin el miembro al que se llamo
+El siguiente codigo en Scheme: [7] Si llamamos al siguiente codigo: \n (remv 'c '(a b c d e)) \n Devolvera (a b d e) -|-V-|-
+El siguiente codigo en Scheme: [7] Si llamamos al siguiente codigo: \n (remv 'c '(a b c d e)) \n Devolvera 1 -|-F-|- Retornara toda la lista sin el miembro al que se llamo
+El siguiente codigo en Scheme: \n (lambda () (if (g) (f) #f)) \n Corresponde a un llamado de cola con respecto a f -|-V-|-
+El siguiente codigo en Scheme: \n (lambda () (if (g) (f) #f)) \n Corresponde a un llamado de cola con respecto a g -|-F-|- Corresponde con respecto a f
+El siguiente codigo en Scheme: \n (lambda () (if (g) (f) #f)) \n Corresponde a un llamado intermedio con respecto a f -|-F-|- Corresponde de cola
+El siguiente codigo en Scheme: \n (lambda () (or (g) (f))) \n Corresponde a un llamado de cola con respecto a f -|-V-|-
+El siguiente codigo en Scheme: \n (lambda () (or (g) (f))) \n Corresponde a un llamado de cola con respecto a g -|-X-|- ni idea
+El problema de la recursion en Scheme es que puede causar Overflow del stack -|-F-|- Debido a que funciona como goto, no se genera este problema
+El siguiente codigo en Scheme: [8] Corresponde a una implementacion de recursion simple -|-V-|-
+El siguiente codigo en Scheme: [8] Corresponde a una implementacion de recursion de Cola -|-F-|-
+El siguiente codigo en Scheme: [9] Corresponde a una implementacion de recursion simple -|-F-|-
+El siguiente codigo de Scheme: [9] Corresponde a una implementacion de recursion de cola -|-V-|-
+
+# Estaria bueno agregar los resultados en si, pero lo vere despues
+
+# Asignacion
+
+En Scheme, el comando let es equivalente al comando define -|-F-|- Let es local, mientras que define permite ligar a nivel superior
+En Scheme, el comando let permite ligar un valor a una nueva variable en ambito local -|-V-|-
+En Scheme, el comando let permite ligar un valor a una nueva variable en un ambito superior -|-F-|- Es un ambito local
+En Scheme, los comando let y define permite definir variables y cdambiar su ligado -|-F-|- No permite el cambio de ligado como asignacion
+En Scheme, el comando set! permite re-ligar una variable existente a un nuevo valor, tal como una asignacion -|-V-|-
+En Scheme, el comando set! corresponde a uno de la programacion funcional -|-F-|- Permite asignacion, por tanto, es como de programacion imperativa
+En Scheme, el comando set! establece un nuevo ligado a una variable existente -|-F-|- No establece uno nuevo, si no que lo reasigna
+En Scheme, el comando set! cambia el ligado existente al que se llamo -|-V-|-
+
+# Ligado de variables
+
+El siguiente codigo en Scheme: [11] El primer codigo corresponde a un parametro de lista propia? -|-V-|-
+El siguiente codigo en Scheme: [11] El segundo codigo corresponde a un parametro de lista propia? -|-F-|- Corresponde a un parametro de lista impropia
+El siguiente codigo en Scheme: [11] El tercer codigo corresponde a un parametro de lista propia? -|-F-|- Corresponde a un parametro de variable unica
+El siguiente codigo en Scheme: [11] El primer codigo corresponde a un parametro de lista impropia? -|-F-|- Corresponde a un parametro de lista propia
+El siguiente codigo en Scheme: [11] El segundo codigo corresponde a un parametro de lista impropia? -|-V-|- 
+El siguiente codigo en Scheme: [11] El tercer codigo corresponde a un parametro de lista impropia? -|-F-|- Corresponde a un parametro de variable unica
+El siguiente codigo en Scheme: [11] El segundo codigo devolvera la lista (3 4) -|-F-|- Devolvera la lista (3 (4))
+El siguiente codigo en Scheme: [11] El segundo codigo devolvera la lista (3 (4)) -|-V-|-
+El siguiente codigo en Scheme: [11] El tercer codigo devolvera la lista (3 4) -|-V-|-
+El comando let en Scheme permite ligado de valor local -|-X-|- Segun yo si
+El comando let en Scheme debe ser usado para valores independientes en donde no importe el orden de evaluacion -|-V-|-
+El comando let en Scheme debe ser usado si hay una dependencia entre los valores, donde importe el orden de evaluacion -|-F-|- Esta descripcion corresponde al comando let*
+El comando let y let* son equivalentes, solo que cambia que uno permite ligado a una variable local, mientras que el otro a variables globales -|-F-|- Su diferencia radica en la dependencia entre valores
+El comando let* en Scheme debe ser usado para valores independientes en donde no importe el orden de evaluacion -|-F-|- Esta descripcion corresponde al comando let
+El comando let* en Scheme debe ser usado si hay una dependencia entre los valores, donde importe el orden de evaluacion -|-V-|-
+El comando let* asegura que las expresiones se evaluen de derecha a izquierda -|-F-|- Es de izquierda a derecha
+El comando let* asegura que las expresiones se evaluen de izquierda a derecha -|-V-|-
+El comando let* corresponde a uno relacionado con la programacion funcional -|-V-|-
+El comando let* corresponde a uno relacionado con la programacion imperativa -|-F-|- No asigna nada, no es imperativo (no es unica razon)
+El comando letrec en Scheme es equivalente a let -|-F-|- No funcionan de igual manera, no son equivalentes
+El comando letrec en Scheme permite que todos los valores estan dentro del ambito, o sea, permite definir procesos mutualmente recursivos -|-V-|-
+El comando letrec en Scheme debe ser usado para valores independientes en donde no importe el orden de evaluacion -|-F-|- Esta descripcion corresponde al comando let
+El comando letrec en Scheme debe ser usado para valores y variables que posean una dependencia circular entre ellos, sin importar el orden de evaluacion -|-V-|-
+El comando letrec en Scheme debe ser usado para valores y variables que posean una dependencia circular entre ellos, y donde el orden de evaluacion importa -|-F-|- El orden de evaluacion no deberia de importar si usas letrec
+El comando letrec en Scheme permite que cada valor pueda ser evaluable dependiendo obligatoriamente de los valores previamente definidos -|-F-|- La restriccion exige que no debe haber esta necesidad
+El comando letrec en Scheme permite que cada valor pueda ser evaluable sin necesidad de evaluar otros valores -|-V-|-
+El comando letrec corresponde a uno relacionado con la programacion imperativa -|-F-|- No es imperativo, cuenta para funcional
+
+# Otras operaciones en Scheme
+
+Utilizar eq? eqv? o equal? en Scheme es practicamente hacer lo mismo, ya que son equivalentes -|-F-|- No son equivalentes, pequeñas diferencias
+El comando eqv? es similar a eq? solo que no depende de la implementacion, a costa de ser mas costoso -|-V-|-
+El comando eqv? es similar a eq? solo que eqv? depende de la implementacion -|-F-|- Es eq? el que depende de la implementacion
+El comando eq? no permite comparar numeros de manera fiable -|-V-|-
+El comando eqv? no permite comparar numeros de manera fiable -|-F-|- Es eq? el que no permite
+El comando equal? es similar a eqv?, solo que equal? funciona tambien con strings, pares y vectores -|-V-|-
+El comando equal? es similar a eqv?, solo que eqv? funciona tambien con strings, pares y vectores -|-F-|- Es equal el que puede trabajar con estos
+El comando assoc recibe un simbolo y una lista, para luego buscar en la lista sublistas que tengan el simbolo entregado? -|-X-|-
+
+# Ejercicios de clase
+
+([2024-2] Wladimir Ejercicios de clase) El siguiente comando en Scheme: \n (eqv? (cons '(a b) '(c)) (list '(a b) '(c))) \n Retornara #f -|-V-|- Las listas son generadas de distinta manera y dan distinto resultado
+([2024-2] Wladimir Ejercicios de clase) Los comandos (cdr '(a b)) y (cdr '(a.b)) daran la misma salida -|-F-|- El primero devuelve (b), mientras que el segundo b.
+([2024-2] Wladimir Ejercicios de clase) El comando (eqv? 1 '1) retornara #t -|-V-|-
+([2024-2] Wladimir Ejercicios de clase) El comando (number? '1) retornara #f -|-F-|-
+([2024-2] Wladimir Ejercicios de clase) El comando (pair? '(1 2 3)) retornara #t -|-V-|-
+([2024-2] Wladimir Ejercicios de clase) El comando (pair? '(1 2 3 4)) retornara (2 4) -|-F-|- Retorna true, indicando que hay pair
+([2024-2] Wladimir Ejercicios de clase) El comando (eqv? '(1 2 3) '(1 2 3)) retornara #t -|-F-|- Devuelve falso ya que eqv compara el espacio de memoria utilizado. Como son dos listas distintas, dos espacios de memoria distintos
+([2024-2] Wladimir Ejercicios de clase) La diferencia entre recursion de pila y de cola es que en el de cola no queda nada pendiente tras la recursion -|-V-|-
+([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se puede decir que factorial corresponde a una funcion que posee recursion directa? -|-V-|-
+([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se puede decir que factorial2 corresponde a una funcion que posee recursion directa? -|-F-|- Corresponde a recursion de cola
+([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se podria decir que ambas funciones trabajan en el paradigma funcional? -|-V-|-
+([2024-2] Wladimir Ejercicios de clase) Considere el siguiente codigo en Scheme: [12] Se podria decir que ambas funciones trabajan en el paradigma imperativo? -|-F-|- Ambas trabajan en el funcional

@@ -1,6 +1,6 @@
 ### 2021-2 Martí
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2021-2] - Martí Q4P4)
 ¿Qué tipos de recursión se tiene en el siguiente código?:
     (define maximo
@@ -17,7 +17,7 @@ d. Recursión no directa, de árbol, de cola.
 
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2021-2] - Martí Q4P6)
 En relación a las listas en Scheme es falso que:
 
@@ -30,7 +30,7 @@ d. Para que una lista sea evaluada, necesariamente, se debe considerar el uso de
 
 end pregunta
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2021-2] - Martí Q4P15)
 ¿Cuál de las siguientes funciones siempre usará la cantidad mínima de memoria en el stack?:
 
@@ -61,7 +61,7 @@ end pregunta
 
 ### 2022-1 Rodrigo Salas
 
-begin pregunta|b|
+begin pregunta-|-b-|-
 ([2022-1] - Salas Q4P1)
 Dado el siguiente código, indique cuál es la salida:
     (let ([x 2] [y 3]) (if (> x y)
@@ -75,7 +75,7 @@ c. #F
 d. Ninguna de las anteriores.
 end pregunta
 
-begin pregunta|x| No sabemos cual es la verdadera expresion
+begin pregunta-|-x-|- No sabemos cual es la verdadera expresion
 ([2022-1] - Salas Q4P2)
 ¿Cuál es el resultado de la siguiente expresión?:
     (display (* (+ (+ 4 ((*2 1)(/6 2))(-1(+(- 1 5)(* 2 5)))))))
@@ -85,7 +85,7 @@ c. 9.
 d. 10.
 end pregunta
 
-begin pregunta|e|
+begin pregunta-|-e-|-
 ([2022-1] - Salas Q4P3)
 Dada la siguiente ecuación matemática, cuál sería el código correcto para realizar el cálculo?
     (4 + (5 * ((6/2)-5))) - 2
@@ -97,7 +97,7 @@ d. (-(+ 4 (* 5 (- (/ 2 6) 5))) 2)
 e. Ninguna de las anteriores.
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2022-1] - Salas Q4P4)
 ¿Cuál es el resultado de la siguiente expresión?
     (display (let ([list1 '(a b c)] [list 2(d e f)])
@@ -113,7 +113,7 @@ d. (a b c d e f)
 e. Ninguna de las anteriores.
 end pregunta
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2022-1] - Salas Q4P5)
 ¿Cuál es el resultado de la siguiente expresión?
     (display (let ([x '((ab) c)])
@@ -133,7 +133,7 @@ d. (c b a b)
 e. Ninguna de las anteriores.
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2022-1] - Salas Q4P6)
 6. ¿Cuál es el resultado de la siguiente expresión?
     (define neg-relu 
@@ -151,7 +151,7 @@ e. Ninguna de las anteriores.
 
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2022-1] - Salas Q4P7)
 ¿Cuál es el resultado de la siguiente expresión?
     (define funcion 
@@ -168,7 +168,7 @@ d. (infinito 2/3 no es numero)
 e. Ninguna de las anteriores.
 end pregunta
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2022-1] - Salas Q4P8)
 ¿Cuál es el resultado de la siguiente expresión?
     (define calcular (lambda (ls)
@@ -184,7 +184,7 @@ d. 30
 e. Ninguna de los anteriores.
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2022-1] - Salas Q4P9)
 La siguiente expresión:
     (define (hacer-algo lista)
@@ -203,7 +203,7 @@ d. Retorna 15 y es recursión de cola.
 e. Ninguna de los anteriores.
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2022-1] - Salas Q4P10)
 ¿Cuál es el resultado de la siguiente expresión?
     (define tic (let p ([x 1])
@@ -221,7 +221,7 @@ end pregunta
 
 ### 2022-1 Martí
 
-begin pregunta|b|
+begin pregunta-|-b-|-
 ([2022-1] - Martí Q4P1)
 Una de las siguientes frases sobre la Programación Funcional y/o Scheme no es cierta:
 a. La programación funcional pura no usa variables ni asignación.
@@ -230,7 +230,7 @@ c. En Scheme, las funciones son entidades de primera clase.
 d. Scheme tiene recolección automática de basura.
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2022-1] - Martí Q4P2)
 ¿Cual de las siguientes expresiones lambda no entrega el resultado asociado?
 a. ((lambda (x y z) (+ x y z)) 3 4 5) --> resultado: 12
@@ -239,7 +239,7 @@ c. ((lambda x x) 3 4) --> resultado: (3 4)
 d. ((lambda (x y) (- xy)) (3 4)) --> resultado: (-1)
 end pregunta
 
-begin pregunta|b|
+begin pregunta-|-b-|-
 ([2022-1] - Martí Q4P3)
 ¿Qué tipos de recursión se tiene en el siguiente código?
     (define maximo
@@ -255,7 +255,7 @@ c. Recursión no directa, lineal, no de cola.
 d. Recursión no directa, de árbol, de cola.
 end pregunta
 
-begin pregunta|a|
+begin pregunta-|-a-|-
 ([2022-1] - Martí Q4P4)
 ¿Cuál es la salida que entrega la ejecución de los siguientes códigos?
     (let ((x 3) (y 2) (z 1))
@@ -272,7 +272,7 @@ c. (2 1 3) | (2 2 2)
 d. (2 1 3) | (3 3 3)
 end pregunta
 
-begin pregunta|b|
+begin pregunta-|-b-|-
 ([2022-1] - Martí Q4P5)
 ¿Cuál de las siguientes funciones usará la menor cantidad de memoria en el stack?
 
@@ -298,7 +298,7 @@ end pregunta
 
 ### 2022-1 Díaz 17°
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2022-1] - Díaz Q4P16)
 En relación a lo visto sobre predicados en Scheme, se puede afirmar que:
 
@@ -309,7 +309,7 @@ d. number? verifica si un número es flotante.
 end pregunta
 
 # ¿?
-begin pregunta|b|
+begin pregunta-|-b-|-
 ([2022-1] - Díaz Q4P17)
 Respecto a recursión de cola, es incorrecto decir que:
 
@@ -321,7 +321,7 @@ end pregunta
 
 ### 2022-2 Carmona
 
-begin pregunta|b|
+begin pregunta-|-b-|-
 ([2022-2] - Carmona Q4P11)
 ¿Cuál es el resultado del siguiente programa?
     (define sumar (lambda (x y) (+ x y)))
@@ -337,7 +337,7 @@ c. 7
 d. Error en tiempo de ejecución.
 end pregunta
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2022-2] - Carmona Q4P12)
 ¿Cuáles de los siguientes principios no corresponde a la Programación Funcional?
 
@@ -347,7 +347,7 @@ c. Las funciones pueden ser puras.
 d. Programar considerando objetos inmutables.
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2022-2] - Carmona Q4P13)
 El siguiente código corresponde a un lenguaje desconocido. ¿Qué línea le indica que no es funcional y por qué?
 
@@ -367,7 +367,7 @@ c. La línea 8, porque las funciones no son puras.
 d. Ninguna línea puede indicar que el paradigma no es funcional.
 end pregunta
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2022-2] - Carmona Q4P14)
 En relación a las listas de Scheme es falso que:
 
@@ -379,7 +379,7 @@ end pregunta
 
 ### 2022-2 Martí
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2022-2] - Martí Q4P11)
 ¿Cuál es el resultado de evaluar las siguientes dos expresiones?
     (define e '((a 1) (b 2) (c 3)))
@@ -391,7 +391,7 @@ c. ()
 d. 1
 end pregunta
 
-begin pregunta|a|
+begin pregunta-|-a-|-
 ([2022-2] - Martí Q4P12)
 Al intentar ejecutar las siguientes dos expresiones:
     (apply min '(1 3 5 5 -1 3 5))
@@ -404,7 +404,7 @@ c. Solo se puede ejecutar la expresión min.
 d. Ninguna se puede ejecutar.
 end pregunta
 
-begin pregunta|b|
+begin pregunta-|-b-|-
 ([2022-2] - Martí Q4P13)
 La ejecución de la siguiente expresión:
     (map (lambda (x y) (sqrt (+(* x x)(* y y))))
@@ -418,7 +418,7 @@ c. Un error, dado que solo puede tener sublistas de largo 2 para ligar a x e y.
 d. Un error, dado que no es posible mapear una expresión lambda a un código.
 end pregunta
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2022-2] - Martí Q4P14)
 ¿Cuál de las siguientes expresiones no entregará una lista vacía en su ejecución?
 
@@ -428,7 +428,7 @@ c. (filter odd? '(1 2 3 4 5 6))
 d. (filter null? '(1 2 3 4 5 6))
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2022-2] - Martí Q4P15)
 ¿Cuál es el objetivo de la evaluación perezosa?
 
@@ -440,7 +440,7 @@ end pregunta
 
 ### 2022-2 Díaz
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2022-2] - Díaz Q4P11)
 En relación a las listas en Scheme es falso que:
 
@@ -450,7 +450,7 @@ c. Para que una lista sea evaluada se le antecede con una citación simple.
 d. Las funciones car y cdr se utilizan para obtener el primer elemento y una lista sin el primer elemento respectivamente.
 end pregunta
 
-begin pregunta|a|
+begin pregunta-|-a-|-
 ([2022-2] - Martí Q4P12)
 ¿Cuál es el resultado de evaluar la siguiente expresión en Scheme?
     (list 1 2 (list 3 (cons 4 (list 5 6))) (list 7 (cons 8 '()) 9) 0)
@@ -461,7 +461,7 @@ c. (1 2 (3 4 (5 6)) (7 (8) 9 ) 0)
 d. (1 2 3 (4 5 6) 7 (8) 9 0)
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2022-2] - Martí Q4P13)
 Sobre recursión en Scheme es falso que:
 
@@ -471,7 +471,7 @@ c. Se puede hacer un número indefinido de llamados de recursión de cola sin ca
 d. Una función no puede poseer recursión de cola a la vez que otro tipo.
 end pregunta
 
-begin pregunta|b|
+begin pregunta-|-b-|-
 ([2022-2] - Martí Q4P14)
 Scheme no es un lenguaje funcional puro. Esto se debe a que:
 
@@ -481,7 +481,7 @@ c. Las funciones son entidades de primera clase y se tratan como cualquier valor
 d. A diferencia de LISP, los nombres tienen ámbito estático.
 end pregunta
 
-begin pregunta|b|
+begin pregunta-|-b-|-
 ([2022-2] - Martí Q4P15)
 Considere la función combinatoria definida a continuación:
     (define (combinatoria n k)
@@ -500,7 +500,7 @@ end pregunta
 
 ### 2023-2 Martí
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2023-2] - Martí Q4P11)
 Dada la siguiente expresión: (define e '((a 1) (b 2) (c 3))), y la consulta (assq 'b e), ¿Cuál es el resultado correcto?
 
@@ -510,7 +510,7 @@ c. (b 2)
 d. Ninguna de las anteriores.
 end pregunta
 
-begin pregunta|a|
+begin pregunta-|-a-|-
 ([2023-2] - Martí Q4P12)
 ¿Cuál es el resultado de ejecutar: (apply min 5 1 3 (5 -1 3 5))?
 
@@ -520,7 +520,7 @@ c. -1
 d. Ninguna de las anteriores.
 end pregunta
 
-begin pregunta|b|
+begin pregunta-|-b-|-
 ([2023-2] - Martí Q4P13)
 ¿Por qué no se puede ejecutar el siguiente código?
     (map (lambda (x y) (sqrt (+(* x x)(* y y))))
@@ -532,7 +532,7 @@ c. Porque estar dentro de un define y der ejecutada en una expresión aparte (co
 d. Todas las anteriores.
 end pregunta
 
-begin pregunta|d|
+begin pregunta-|-d-|-
 ([2023-2] - Martí Q4P14)
 ¿Cuál es el resultado de ejecutar: (filter odd? '(1 2 3 4 5 6))?
 
@@ -542,7 +542,7 @@ c. 1 3 5
 d. (1 3 5)
 end pregunta
 
-begin pregunta|c|
+begin pregunta-|-c-|-
 ([2023-2] - Martí Q4P15)
 ¿Cuál es el resultado de evaluar la siguiente expresión en Scheme?
     (append '(1 2)(list 3 (cons 4 (list 5 6)))(list 7 8 9))

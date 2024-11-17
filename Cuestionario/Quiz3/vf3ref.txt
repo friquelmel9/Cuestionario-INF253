@@ -1,0 +1,73 @@
+(Compilacion Quices - Marti quiz3p1) Ejemplos de polimorfismo son la sobrecarga de metodos y los tipos parametrizados-|-V-|-
+(Compilacion Quices - Marti quiz3p2) Una clase con el modificador final no puede ser instanciada-|-F-|-
+(Compilacion Quices - Marti quiz3p3) Con el metodo de recoleccion de basura de Java se reduce el problema de dangling-|-F-|-
+(Compilacion Quices - Marti quiz3p4) Como en Java los parametros se pasan por valor, si el parametro fuese una referencia, es esta misma la que se copia, no el objeto asociado-|-V-|-
+(Compilacion Quices - Marti quiz3p5) Una interfaz es util para definir una API, sin dar indicios de las clases que le daran implementacion-|-V-|-
+(Compilacion Quices - Marti quiz3p6) Una interfaz permite capturar las diferencias entre clases que estan relacionadas entre si-|-F-|-
+(Compilacion Quices - Marti quiz3p7) En la invocacion de un metodo que ha sido redifinido, el ligado al metodo se hara dinamicamente-|-V-|-
+(Compilacion Quices - Marti quiz3p8) finalize permite contar con un codigo para la liberacion de recursos, al momento de lanzarse una excepcion-|-F-|-
+(Compilacion Quices - Marti quiz3p9) La redefinición de métodos dentro de una jerarquía de herencia da la posibilidad de que la superclase pueda saber todos los usos que se le darán en las subclases-|-F-|-
+(Compilacion Quices - Marti quiz3p10) Java permite que los métodos tengan una cantidad variable de argumentos, al igual que C++-|-F-|-
+(Compilacion Quices - Marti quiz3p11) Tanto Smalltalk como Ruby son lenguajes de programacion orientados al objeto puros-|-V-|-
+(Compilacion Quices - Marti quiz3p12) La referencia this hace alusion al objeto sobre el que se invoco el metodo-|-V-|-
+(Compilacion Quices - Marti quiz3p13) Cuando se declara una variable, se crea un objeto que toma a null como valor inicial-|-F-|-
+(Compilacion Quices - Marti quiz3p14) Si ocurre una excepción del tipo IOException es debido a que el programador ha hecho algo mal-|-F-|-
+(Compilacion Quices - Marti quiz3p15) En el control de acceso asociado a la herencia, una clase podría ocultar entidades a sus clientes y/o superclase.-|-F-|-
+(Compilacion Quices - Marti quiz3p16) La herencia favorece la reutilización de clases que ya existen, permitiendo que desde éstas se puedan definir otras clases con las que se relacionan-|-V-|-
+(Compilacion Quices - Marti quiz3p17) En el caso de que no existiera la herencia y que los objetos se comporten como un tipo abstracto de datos, se podría usar tanto la memoria stack como la de heap para crear objetos-|-V-|-
+(Compilacion Quices - Marti quiz3p18) Una clase puede extender varias interfaces, pero sólo implementar una única superclase-|-F-|-
+(Compilacion Quices - Marti quiz3p19) En el modelo objetual, la implementación del tipo asociado a una clase se especifica tanto por las variables como por su interfaz, donde esta última considera métodos y constantes-|-F-|-
+(Compilacion Quices - Marti quiz3p20) Un método abstracto es uno que solamente tiene definido el protocolo de los mensajes-|-V-|-
+
+(Certamen 1 - Marti p4) Con respecto a la redefinicion de metodos en la herencia, un metodo no se puede ocultar en una subclase-|-F-|-
+(Certamen 1 - Marti p5) Las referencias a una clase hija pueden apuntar a objetos de su clase padre, pero no al reves-|-F-|-
+(Certamen 1 - Marti p9) Un ejemplo de polimorfismo dinámico son los subprogramas genéricos, donde éstos utilizan un mismo código (comportamiento) para distintos tipos de parámetros-|-V-|-
+(Certamen 1 - Marti p19) Una de las desventajas de la declaración implícita de los tipos de datos, es que hace más lenta la ejecución debido a la verificación dinámica de éstos-|-V-|-
+(Certamen 1 - Marti p20) C es un lenguaje imperativo, que permite elementos de la programación orientada al objeto-|-F-|-
+(Certamen 1 - Marti p25) Java es un lenguaje orientado al objeto, con ciertos elementos propios de un lenguaje imperativo-|-V-|-
+(Certamen 1 - Marti p29) En Java para poder acceder a las variables de clase que son definidas mediante la palabra static, no es necesario instanciar las clases-|-V-|-
+(Certamen 1 - Marti p35) Un ejemplo de polimorfismo estático es la sobrecarga de operadores. donde un operador tiene exactamente el mismo comportamiento, sin importar los tipos de datos de sus operandos-|-F-|-
+
+(Control 3 2022 - Gabriel Carmona p1) El concepto objeto y clase son lo mismo-|-F-|-
+(Control 3 2022 - Gabriel Carmona p2) En Java, los objetos son asignados desde el heap y accedidos mediante variables de referencia-|-V-|-
+(Control 3 2022 - Gabriel Carmona p3) El recolector de basura de Java evita que se produzcan los dangling en la memoria-|-V-|-
+(Control 3 2022 - Gabriel Carmona p4) Las variables miembros de un objeto en Java definen su estado-|-V-|-
+(Control 3 2022 - Gabriel Carmona p5) Un constructor en Java es un tipo especial de metodo, que retorna una referencia a un objeto de la clase invocada-|-F-|-
+(Control 3 2022 - Gabriel Carmona p6) En Java, el acceso protegido es mas restrictivo que el de paquete-|-F-|-
+(Control 3 2022 - Gabriel Carmona p7) En Java y C++, las clases funcionan exactamente igual-|-F-|-
+(Control 3 2022 - Gabriel Carmona p8) Una clase abstracta solo puede tener metodos abstractos-|-F-|-
+(Control 3 2022 - Gabriel Carmona p9) Si estoy dentro de un metodo y hago acceso a la referencia this corresponde a la instancia a la que llamo a un metodo-|-V-|-
+(Control 3 2022 - Gabriel Carmona p10) En Java, el programa main es lo unico que puede no ser una clase-|-F-|-
+
+(Quiz 3 2022 CC - Jose Luis Marti p1) Un tipo de dato abstracto es un tipo de datos que satisface las restricciones de reusabilidad y seguridad-|-F-|-
+(Quiz 3 2022 CC - Jose Luis Marti p2) Python provee soporte para la definicion de clases y Objetos-|-V-|-
+(Quiz 3 2022 CC - Jose Luis Marti p3) En la orientacion a objetos, una clase generica corresponde a lo que se llama tipo de datos abstraacto parametrizado en un lenguaje no objetual-|-V-|-
+(Quiz 3 2022 CC - Jose Luis Marti p4) Java es un lenguaje de programacion que soporta tanto la programacion imperativa como la orientada a objeto-|-F-|-
+(Quiz 3 2022 CC - Jose Luis Marti p5) En Java, los objetos son asignados desde el heap y accedidos mediante variables de referencia-|-V-|-
+(Quiz 3 2022 CC - Jose Luis Marti p6) Las variables miembros de un objeto en Java definen su estado-|-V-|-
+(Quiz 3 2022 CC - Jose Luis Marti p7) En Java, el acceso protegido es mas restrictivo que el del paquete-|-F-|-
+(Quiz 3 2022 CC - Jose Luis Marti p8) Un constructor en Java es un tipo especial de metodo, que retorna una referencia a un objeto de la clase invocada-|-F-|-
+(Quiz 3 2022 CC - Jose Luis Marti p9) Si dentro de un metodo se hace uso de la referencia this, esta correponde a la instancia que invoco a dicho metodo-|-V-|-
+(Quiz 3 2022 CC - Jose Luis Marti p10) El recolector de basura de Java evita que se produzcan los dangling en memoria-|-V-|-
+
+(Quiz 3 2022 SJ - Roberto Diaz p1) En Java no se produce dangling y nunca habra basura en memoria-|-F-|-
+(Quiz 3 2022 SJ - Roberto Diaz p2) C soporta directamente el concepto de clausura pues existen los punteros a funcion-|-F-|-
+(Quiz 3 2022 SJ - Roberto Diaz p3) En Java, al pasar un objeto a un metodo, el parametro es una copia de la referencia al objeto-|-V-|-
+(Quiz 3 2022 SJ - Roberto Diaz p4) Una instancia de herencia multiple es cuando una clase tiene varias subclases-|-F-|-
+(Quiz 3 2022 SJ - Roberto Diaz p5) Un metodo con los modificadores final o static no podran ser redefinidos-|-V-|-
+(Quiz 3 2022 SJ - Roberto Diaz p6) Java solamente soporta polimorfismo dinamico, pero no polimorfismo estatico-|-F-|-
+(Quiz 3 2022 SJ - Roberto Diaz p7) En Java, una referencia sera nula solo cuando se indique explicitamente asignando null a la variable-|-F-|-
+(Quiz 3 2022 SJ - Roberto Diaz p8) Una clase abstracta puede contener metodos no abstractos-|-V-|-
+(Quiz 3 2022 SJ - Roberto Diaz p9) Cualquier lenguaje con soporte de TDA sera inherentemente Orientado a Objeto-|-F-|-
+(Quiz 3 2022 SJ - Roberto Diaz p10) Al importar las clases de un paquete con un asterisco (i.e. paquete.*) no se importaran las clases en sus subpaquetes-|-V-|-
+
+(Quiz 3 P2 SJ - Jose Luis Marti p1) Tanto C++ como Java permiten el uso de acceso publico, privado y de paquete para la implementacion de un tipo de datos abstractos-|-F-|-
+(Quiz 3 P2 SJ - Jose Luis Marti p2) En la implementacion de un tipo de dato abstracto en Python, tanto el constructor como los metodos deben llevar como primer parametro el argumento self-|-V-|-
+(Quiz 3 P2 SJ - Jose Luis Marti p3) Cada objeto de una clase tiene sus propias instancias de cada variable miembro, por lo que cada objeto tiene su propio estado-|-V-|-
+(Quiz 3 P2 SJ - Jose Luis Marti p4) La declaracion de una variable crea tanto el objeto como la referencia a este-|-F-|-
+(Quiz 3 P2 SJ - Jose Luis Marti p5) Java provee un modificador que solo permite la lectura de un campo-|-F-|-
+(Quiz 3 P2 SJ - Jose Luis Marti p6) La sobrecarga en Java considera el tener varios metodos con el mismo nombre, pero con firmas diferentes-|-V-|-
+(Quiz 3 P2 SJ - Jose Luis Marti p7) Segun el principio de sustitucion, donde se espera una referencia a una superclase, en su lugar se puede tener una referencia a una interface-|-F-|-
+(Quiz 3 P2 SJ - Jose Luis Marti p8) En la redefinicion de metodos por parte de una subclase, se debe respetar la firma, no asi el tipo del valor de retorno, el cual puede variar-|-F-|-
+(Quiz 3 P2 SJ - Jose Luis Marti p9) Dado que las referencias a objetos apuntan al stack, es muy flexible el hecho que una referencia a un tipo base direccione a una instancia de alguna subclase-|-F-|-
+(Quiz 3 P2 SJ - Jose Luis Marti p10) Al crear una instancia de una interfaz con el operador new, se ejecutara algunos de los posibles constructores que dicha interfaz tenga-|-F-|-

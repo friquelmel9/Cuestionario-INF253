@@ -1,4 +1,4 @@
-begin pregunta|b|
+begin pregunta-|-b-|-
 
 (Certamen 1 - Marti, p1)
 Dado el siguiente codigo en java:
@@ -23,7 +23,7 @@ c. Una linea despues de //Uno poner: Base(10)
 d. Una linea despues de //Uno poner: super(10)
 
 end pregunta
-begin pregunta|d|
+begin pregunta-|-d-|-
 
 (Certamen 1 - Marti, p11)
 Dado el siguiente codigo en java:
@@ -42,7 +42,7 @@ c. Puede accesar a todos los atributos, menos y
 d. Puede accesar a todos los atributos, menos x, y
 
 endpregunta
-begin pregunta|a|
+begin pregunta-|-a-|-
 
 (Certamen 1 - Marti, p12)
 
@@ -53,7 +53,7 @@ c. Publico o protegido
 d. Protegido
 
 endpregunta
-begin pregunta|b|
+begin pregunta-|-b-|-
 
 (Certamen 1 - Marti, p14) 
 
@@ -65,7 +65,7 @@ c. Indicar que un atributo tendrá un valor constante, que no podrá ser modific
 d. Señalar que una clase no puede ser extendida
 
 endpregunta
-begin pregunta|b|
+begin pregunta-|-b-|-
 
 (Certamen 1 - Marti, p26)
 
@@ -80,7 +80,7 @@ c. I x = new I();
 d. B x = new A();
 
 endpregunta
-begin pregunta|c|
+begin pregunta-|-c-|-
 
 (Control 3 2022 - Gabriel Carmona p2.1)
 
@@ -114,7 +114,7 @@ c. c.b valdra 3
 d. c.b valdra 2
 
 end pregunta
-begin pregunta|c|
+begin pregunta-|-c-|-
 
 (Control 3 2022 - Gabriel Carmona p2.2) 
 
@@ -125,7 +125,7 @@ c. Dificultad para analizar estaticamente el tamaño de memoria requerido en el 
 d. Todas las anteriores
 
 end pregunta
-begin pregunta|c|
+begin pregunta-|-c-|-
 
 (Control 3 2022 - Gabriel Carmona p2.3) 
 
@@ -146,7 +146,7 @@ c. Lector y Jugador pueden tener relacion entre ellos
 d. PC puede tener metodos que no tiene Consola
 
 end pregunta
-begin pregunta|b|
+begin pregunta-|-b-|-
 
 (Quiz 3 2022 CC - Jose Luis Marti p2.1)
 
@@ -157,7 +157,7 @@ c. Mejora la confiabilidad de la clase, pues usos incorrectos accidentales seran
 d. Facilita y encauza la reutilizacion de la clase ocultando detalles no extensibles
 
 end pregunta
-begin pregunta|c|
+begin pregunta-|-c-|-
 
 (Quiz 3 2022 CC - Jose Luis Marti p2.2) 
 
@@ -172,7 +172,7 @@ c. II, III y IV
 d. I, II, III y IV
 
 end pregunta
-begin pregunta|d|
+begin pregunta-|-d-|-
 
 (Quiz 3 2022 CC - Jose Luis Marti p2.3) 
 
@@ -186,7 +186,7 @@ c. I y II
 d. I y III
 
 end pregunta
-begin pregunta|a|
+begin pregunta-|-a-|-
 
 (Quiz 3 2022 CC - Jose Luis Marti p2.4) 
 
@@ -197,7 +197,7 @@ c. Encapsulamiento y Modularidad
 d. Polimorfismo y Modularidad
 
 end pregunta
-begin pregunta|b|
+begin pregunta-|-b-|-
 
 (Quiz 3 2022 CC - Jose Luis Marti p2.5) 
 
@@ -208,7 +208,7 @@ c. abstract class ClaseA extends ClaseB { }
 d. class ClaseA extends ClaseB, ClaseC { }
 
 end pregunta
-begin pregunta|a|
+begin pregunta-|-a-|-
 
 (Quiz 3 P2 SJ - Jose Luis Marti p2.1)
 
@@ -219,7 +219,7 @@ c. C# es un ejemplo de lenguaje que no soporta otro paradigma que no sea el orie
 d. CLOS es un ejemplo de lenguaje funcional que soporta la orientacion a objeto
 
 end pregunta
-begin pregunta|c|
+begin pregunta-|-c-|-
 
 (Quiz 3 P2 SJ - Jose Luis Marti p2.2)
 
@@ -230,7 +230,7 @@ c. Parametros
 d. Metodos
 
 end pregunta
-begin pregunta|b|
+begin pregunta-|-b-|-
 
 (Quiz 3 P2 SJ - Jose Luis Marti p2.3)
 
@@ -242,7 +242,7 @@ d. Una subclase hereda todos los atributos miembros de la superclase, asi como l
 
 
 end pregunta
-begin pregunta|d|
+begin pregunta-|-d-|-
 
 (Quiz 3 P2 SJ - Jose Luis Marti p2.4)
 
@@ -253,7 +253,7 @@ c. getClass()
 d. move()
 
 end pregunta
-begin pregunta|a|
+begin pregunta-|-a-|-
 
 (Quiz 3 P2 SJ - Jose Luis Marti p2.5)
 

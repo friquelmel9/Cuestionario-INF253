@@ -1,4 +1,4 @@
-begin pregunta |c|Solo se llama al constructor respectivo
+begin pregunta -|-c-|- Solo se llama al constructor respectivo
 
 (Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere la figura 1:
@@ -12,7 +12,7 @@ c. SuperClase(int i)
 d. Ninguna de las anteriores
 
 end pregunta
-begin pregunta|a|
+begin pregunta-|-a-|-
 
 (Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
@@ -27,7 +27,7 @@ c. SuperClase()
 d. Ninguna de las anteriores
 
 end pregunta
-begin pregunta|b|
+begin pregunta-|-b-|-
 
 (Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
@@ -42,7 +42,7 @@ c. SuperClase(int i) -> SubClase(int i)
 d. Ninguna de las anteriores
 
 end pregunta
-begin pregunta|b|
+begin pregunta-|-b-|-
 
 (Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
@@ -58,7 +58,7 @@ c. "6"
 d. No se mostrara nada por pantalla o habra error
 
 end pregunta
-begin pregunta|b|
+begin pregunta-|-b-|-
 
 (Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
@@ -74,7 +74,7 @@ c. "6"
 d. No se mostrara nada por pantalla o habra error
 
 end pregunta
-begin pregunta|b|
+begin pregunta-|-b-|-
 
 (Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
@@ -90,7 +90,7 @@ c. "SubSubClase"
 d. No se mostrara nada por pantalla o habra error
 
 end pregunta
-begin pregunta|d|
+begin pregunta-|-d-|-
 
 (Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:
@@ -106,7 +106,7 @@ c. "8"
 d. No se mostrara nada por pantalla o habra error
 
 end pregunta
-begin pregunta|c|
+begin pregunta-|-c-|-
 
 (Ejemplo visto en clases 2024-2, W. Ormazábal)
 Considere las figuras 1 y 2:

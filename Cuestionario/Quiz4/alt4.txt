@@ -1,6 +1,6 @@
 ## Ejercicios de clases
 
-begin alt|a|
+begin alt-|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -12,7 +12,7 @@ c. 1.0+0i
 d. Dara error
 
 end alt
-begin alt|c|
+begin alt-|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -24,7 +24,7 @@ c. 1.0+0i
 d. Dara error
 
 end alt
-begin alt|a|
+begin alt-|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -40,7 +40,7 @@ end alt
 ## Operaciones sobre listas, ejemplo2.scm
 ### Operaciones cons
 
-begin alt|b|
+begin alt-|-b-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -52,7 +52,7 @@ c. (a b c 1 2)
 d. Dara error
 
 end alt
-begin alt|a|
+begin alt-|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -64,7 +64,7 @@ c. ()
 d. Dara error
 
 end alt
-begin alt|c|
+begin alt-|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -76,7 +76,7 @@ c. (() 1 2)
 d. Dara error
 
 end alt
-begin alt|b|
+begin alt-|-b-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -91,7 +91,7 @@ end alt
 
 ### Operaciones list
 
-begin alt|a|
+begin alt-|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -104,7 +104,7 @@ d. (a b c (1 2))
 
 end alt
 
-begin alt|d|
+begin alt-|-d-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -117,7 +117,7 @@ d. ((a b c) ())
 
 end alt
 
-begin alt|c|
+begin alt-|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -132,7 +132,7 @@ end alt
 
 ### Operaciones append
 
-begin alt|c|
+begin alt-|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -144,7 +144,7 @@ c. (a b c 1 2)
 d. Dara error
 
 end alt
-begin alt|b|
+begin alt-|-b-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -159,7 +159,7 @@ end alt
 
 ## Tipos de listas
 
-begin alt|d|
+begin alt-|-d-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -171,7 +171,7 @@ c. (a)
 d. (b)
 
 end alt
-begin alt |c|
+begin alt -|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -183,7 +183,7 @@ c. ()
 d. Dara error
 
 end alt
-begin alt |b|
+begin alt -|-b-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -198,7 +198,7 @@ end alt
 
 ### Cons 
 
-begin alt |a|
+begin alt -|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -210,7 +210,7 @@ c. (a . b)
 d. (a . (b))
 
 end alt
-begin alt |c|
+begin alt -|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -222,7 +222,7 @@ c. (a . b)
 d. (a . (b))
 
 end alt
-begin alt |a|
+begin alt -|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -237,7 +237,7 @@ end alt
 
 # Ejemplos let ejemplo3.scm
 
-begin alt |c|
+begin alt -|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -252,7 +252,7 @@ c. 36
 d. 81
 
 end alt
-begin alt |a|
+begin alt -|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente comando en Scheme:
@@ -270,7 +270,7 @@ end alt
 
 # Ejemplos lambda ejemplo4.scm
 
-begin alt |c|
+begin alt -|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere los siguientes comandos en Scheme:
@@ -286,7 +286,7 @@ c. I y III
 d. Todas las anteriores
 
 end alt
-begin alt |a|
+begin alt -|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere los siguientes comandos en Scheme:
@@ -299,7 +299,7 @@ c. Error | '((1 2 3))
 d. Error | Error
 
 end alt
-begin alt |b|
+begin alt -|-b-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere los siguientes comandos en Scheme:
@@ -318,7 +318,7 @@ c. Retornara las listas '(4), '(6) y '(8), puesto que list crea una lista para c
 d. Ninguna de las anteriores
 
 end alt
-begin alt |c| Note que al ser impropia los parametros en lambda2, considera x como el primer elemento recibido e y como todos los demas, uniendolos en una lista
+begin alt -|-c-|- Note que al ser impropia los parametros en lambda2, considera x como el primer elemento recibido e y como todos los demas, uniendolos en una lista
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere los siguientes codigos en Scheme:
@@ -331,7 +331,7 @@ c. Solo lambda2 es capaz de devolver un resultado, ya que lambda1 da error
 d. Solo lambda1 es capaz de devolver un resultado, ya que lambda2 da error
 
 end alt
-begin alt |a|
+begin alt -|-a-|-
 (Ejercicios de clases Wladimir 2024-2)
 Considere los siguientes codigos en Scheme:
     ((lambda (x y) (list x y)) 1 2) ; lambda1
@@ -350,7 +350,7 @@ end alt
 # Ejemplos ejemplo6.scm
 ## Relacionales
 
-begin alt |c|
+begin alt -|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere los siguientes comandos en Scheme:
@@ -373,7 +373,7 @@ end alt
 
 # Ejemplo8.scm
 
-begin alt |d|
+begin alt -|-d-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -388,7 +388,7 @@ c. I y III
 d. Solo III
 
 end alt
-begin alt |a|
+begin alt -|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -405,7 +405,7 @@ c. I y III
 d. Ninguna de las anteriores
 
 end alt
-begin alt |d|
+begin alt -|-d-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -425,7 +425,7 @@ end alt
 
 # alcance de las asignaciones
 
-begin alt |d|
+begin alt -|-d-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -441,7 +441,7 @@ c. (2 2)
 d. (2 1)
 
 end alt
-begin alt |c|
+begin alt -|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -457,7 +457,7 @@ c. (2 2)
 d. (2 1)
 
 end alt
-begin alt |c| El problema es que let no deja que suma se defina previo  a la definicion del lambda
+begin alt -|-c-|- El problema es que let no deja que suma se defina previo  a la definicion del lambda
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -477,7 +477,7 @@ c. El codigo no funciona debido a que suma no esta definido para el procedimient
 d. Ninguna de las anteriores
 
 end alt
-begin alt |a| Letrec si permite que suma se refiera a si misma dentro de la definicion
+begin alt -|-a-|- Letrec si permite que suma se refiera a si misma dentro de la definicion
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -497,7 +497,7 @@ c. El codigo no funciona debido a que suma no esta definido para el procedimient
 d. Ninguna de las anteriores
 
 end alt
-begin alt |d|
+begin alt -|-d-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -512,7 +512,7 @@ c. El programa no funciona, debido a que y no esta definido previamente
 d. Ninguna de las anteriores
 
 end alt
-begin alt |a|
+begin alt -|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -531,7 +531,7 @@ end alt
 
 #ejemplo9.scm
 
-begin alt |b|
+begin alt -|-b-|-
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
     (eq? '(a b c) '(a b c . ())) ; Retorno1
@@ -544,7 +544,7 @@ c. #t #t #f
 d. #t #t #t
 
 end alt
-begin alt |c|
+begin alt -|-c-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -560,7 +560,7 @@ c. Todas las anteriores
 d. Ninguna de las anteriores
 
 end alt
-begin alt |b| Notar que pese a que este escrito con enter, las listas son (1 2 -1) (0 2 -1) y (0 2 -1), el map evaluara por indice, o sea, x,y,z = 1,0,0 / 2,2,2 / -1,-1,-1 para cada caso
+begin alt -|-b-|- Notar que pese a que este escrito con enter, las listas son (1 2 -1) (0 2 -1) y (0 2 -1), el map evaluara por indice, o sea, x,y,z = 1,0,0 / 2,2,2 / -1,-1,-1 para cada caso
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -579,7 +579,7 @@ end alt
 
 ## Evaluacion perezosa
 
-begin alt |d|
+begin alt -|-d-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -597,7 +597,7 @@ c. #<promise:plus1>
 d. #<promise:plus1>#<promise:plus1>
 
 end alt
-begin alt |a|
+begin alt -|-a-|-
 
 (Ejercicios de clases Wladimir 2024-2)
 Considere el siguiente codigo en Scheme:
@@ -618,7 +618,7 @@ end alt
 
 ## Otras preguntas no inplicitas en los archivos del profesor
 
-begin alt |d| Considera que (pair? '()) dara #f, mientras que (list '()) dara #t
+begin alt -|-d-|- Considera que (pair? '()) dara #f, mientras que (list '()) dara #t
 
 Con respecto a pair?, se puede decir que...
 a. Recibe una lista y devuelve #t si esta contiene un numero par de elementos contenidos en ella
@@ -627,20 +627,20 @@ c. Como las listas estan hechas de pares, entregarle argumentos como '(a b c) y 
 d. pair? no es equivalente a list? debido a que hay casos donde algo es una lista pero no es par
 
 end alt
-begin alt |b|
+begin alt -|-b-|-
 
 Con respecto al siguiente codigo en Scheme:
     (cdr '(a b)) ; Linea1
     (cdr '(b)) ; Linea2
     (cdr '(a . b)) ; Linea3
 Que sera lo que se imprimira cuando se ande el codigo? Cosnidere el orden Linea1 / Linea2 / Linea3
-a. (b) | b | ()
-b. (b) | () | b
-c. (b) | (b) | b
-d. (b) | () | (b)
+a. (b) -|- b -|- ()
+b. (b) -|- () -|- b
+c. (b) -|- (b) -|- b
+d. (b) -|- () -|- (b)
 
 end alt
-begin alt |x| Depende la implementacion en II
+begin alt -|-x-|- Depende la implementacion en II
 
 Con respecto a los comparadores (eq?, eqv? y equal?), es cierto decir que...
     I. El mas restrictivo de los 3 es equal?
@@ -654,7 +654,7 @@ d. III y IV
 e. Todas las anteriores
 
 end alt
-begin alt |c|
+begin alt -|-c-|-
 
 Si consideramos las siguientes lineas de codigo en Scheme:
     (define lista '(1 2 3)) ; Linea1
