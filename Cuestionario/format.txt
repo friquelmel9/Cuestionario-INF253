@@ -1,4 +1,5 @@
 # Formato para seguir en preguntas.txt
+# Recordar que va por quices ahora, inclusive los certamenes separarlo por su tema de quiz
 
 ## Formato:
 
