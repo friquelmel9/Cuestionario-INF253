@@ -1,0 +1,99 @@
+begin alt-|-b-|-
+
+(Ejercicios de clases Wladimir 2024-2)
+Asuma que los siguientes hechos y reglas existen en Prolog:
+figura:2
+Si se llama a la regla papa(X,Y), con X personas. Que condiciones deben cumplirse para que devuelva true?
+
+a. X ha de ser hijo de Y e X ha de ser masculino
+b. X ha de ser padre de Y e X ha de ser masculino
+c. X ha de ser padre de Y o ser masculino
+d. X ha de ser hijo de Y 
+
+end alt
+begin alt-|-c-|- En estricto rigor, la d podria ser, pero habla de un "hermano", cuando no tiene nada que ver
+
+(Ejercicios de clases Wladimir 2024-2)
+Asuma que los siguientes hechos y reglas existen en Prolog:
+figura:2
+Si se llama a la regla hermana(X,Y), habra algo que no deberia de hacer. Cual de las siguientes es el error que posee la funcion?
+
+a. La regla hermana no esta bien definida, puesto que Z no fue definida previamente
+b. La regla hermana tiene definido el Z como X, tendria que darse vuelta para de verdad devolver un hermana
+c. La regla hermana no se asegura que si misma sea hermana de si misma, puesto que ella misma cumple sus propias condiciones
+d. La regla hermana no se asegura que compartan padre y madre, pueden ser medios hermanos y no contaria como hermano
+
+end alt
+
+begin alt-|-d-|- Cuidado con el false y como la funcion no revisa si hermana y la buscada son distintos
+
+(Ejercicios de clases Wladimir 2024-2)
+Asuma que los siguientes hechos y reglas existen en Prolog:
+figura:2
+Y considere los siguientes hechos:
+figura:3
+
+Si se llama a hermana(X, paty), que sera lo que devolvera? (asumiendo que nombre femenino se asocia al hecho femenino)
+a. X = ana;
+b. X = ana; false.
+c. X = ana; X = paty.
+d. X = ana; X = paty; false.
+
+end alt
+
+begin alt-|-a-|- Notar que = indica que va a ser explicitamente lo dicho
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere la siguiente operacion en Prolog:
+    X = 3 + 5
+
+Cual sera el resultado que retornara?
+a. X = 3 + 5
+b. X = 8
+c. true.
+d. Error
+
+end alt
+
+begin alt-|-b-|- Notar que el is realiza la operacion
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere la siguiente operacion en Prolog:
+    X is 3 + 5
+
+Cual sera el resultado que retornara?
+a. X = 3 + 5
+b. X = 8
+c. true.
+d. Error
+
+end alt
+
+begin alt-|-b-|- El comparador = revisa si son exactamente iguales, mientras que =:= revisa su evaluacion (pendiente de revision esta explicacion)
+
+(Ejercicios de clases Wladimir 2024-2)
+Considere los siguientes codigos en Prolog:
+    I. [1,2] = [1,2]
+    II. [1,2] =:= [1,2]
+    III. 3 + 5 = 5 + 3
+    IV.  3 + 5 =:= 5 +3
+
+Cual de aquellos retornara true=
+a. I y III
+b. I y IV
+c. II y III
+d. II y IV
+
+end alt
+
+begin alt-|-c-|- Notar que a c usa constructor pero le falta la lista vacia al final de esta
+
+(Ejercicios de clases Wladimir 2024-2)
+Cual de estas listas no es una definicion correcta? (En Prolog):
+a. L1 = [perro,gato,rata,loro]
+b. L2 = .(perro, .(gato, .(rata, .(loro, []))))
+c. L3 = [perro | [gato | [raton | [loro]]]]
+d. L4 = cons(perro, cons(gato, cons(raton, cons(loro, nil))))
+
+end alt
+

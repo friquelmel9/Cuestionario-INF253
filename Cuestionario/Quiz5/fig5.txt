@@ -20,3 +20,13 @@ begin figura2:
     progenitor(paty, aldo).
 
 end fig
+begin figura3:
+
+    progenitor(X,Y). % Linea1
+    masculino(X). % Linea2
+    femenino(Y). % Linea3
+    papa(X,Y) :- progenitor(X,Y), masculino(X). % Linea4
+    mama(X,Y) :- progenitor(X,Y), femenino(Y). % Linea5
+    hermana(X,Y) :- progenitor(Z,X), progenitor(Z,Y), femenino(X). % Linea6
+    
+end fig

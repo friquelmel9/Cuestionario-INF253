@@ -143,7 +143,6 @@ Para obtener una respuesta en Prolog, es necesario satisfacer una lista de metas
 
 Un ejemplo de lista en Prolog se puede escribir como: [perro,gato,raton,loro] -|-V-|-
 Un ejemplo de lista en Prolog se puede escribir como: (list x y) -|-F-|- Es scheme
-Un ejemplo de lista en Prolog se puede escribir como: arr[5]; -|-F-|- Nada que verdadero
 Una lista en Prolog corresponde de la forma .(Cabeza,Cola) -|-V-|-
 La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro,gato,raton,loro,()) -|-F-|- Nada que verdadero
 La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro, .(gato, .(raton, .(loro)))) -|-F-|- Le falta la lista vacia del final
@@ -174,3 +173,5 @@ La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro, .(gato, .(
 ([2024-2] Wladimir Ejercicios de clase) Considerando los siguientes hechos: [2] La siguiente pregunta: \n progenitor(X,aldo) \n Retornara true -|-F-|- Retornara los valores de X que cumplen el hecho
 ([2024-2] Wladimir Ejercicios de clase) Considerando los siguientes hechos: [2] La siguiente pregunta: \n progenitor(X,aldo) \n Retornara X = paty -|-V-|- 
 ([2024-2] Wladimir Ejercicios de clase) Considerando los siguientes hechos: [2] La siguiente pregunta: \n progenitor(X,aldo) \n Retornara paty -|-F-|- Retornara los valores de X que cumplen el hecho, no solo paty. Retornara X = paty
+([2024-2] Wladimir Ejercicios de clase) Considerando los sigueintes hechos: [2] La siguiente regla: \n hijo(X,Y) :- progenitor(X, Y). \n Retornara todos los que son hijos de alguien -|-X-|-
+([2024-2] Wladimir Ejercicios de clase) En prolog, los hechos no pueden ser definidos dinamicante -|-F-|- El comando assertz permite definir hechos y reglas dinamicamente
