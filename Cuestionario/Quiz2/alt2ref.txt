@@ -1,0 +1,260 @@
+### 2023-2 Martí
+
+begin alt-|-d-|-Ni yo sabia de la III... 
+([2023-2] - Martí Q2P11) En el lenguaje de programacion C, dado un arreglo A de 10 enteros, ¿cual(es) de los siguientes expresiones es(son) equivalente(s) para obtener el elemento ubicado en la quinta posicion?
+    I. A[5]
+    II. A[4]
+    III. *(A+4)
+    IV.  *(A+5)
+a. Solo I
+b. Solo II
+c. Solo I y IV
+d. Solo II y III
+
+end alt
+begin alt-|-c-|-
+
+([2023-2] - Martí Q2P12) Un metodo de recoleccion de basura impaciente:
+    I. Acumula basura hasta que se agota la memoria. x
+    II. Us aun contador de referencias
+    III. Se decrementa un contador cuando se pierde una referencia
+    IV. Puede producir tiempos muertos significativos que afectan al funcionamiento del programa
+    
+a. Solo I y II
+b. Solo I, II y III
+c. Solo II y III
+d. Solo II, III y IV
+
+end alt
+begin alt-|-a-|-
+
+([2023-2] - Martí Q2P13) Se produce dangling cuando una celda en el heap:
+a. Tiene referencias y esta marcada correctamente como libre por el administrador de memoria.
+b. Tiene al menos una referencia y esta asignada, es decir, marcada correctamente por el administrador como ocupada
+c. No tiene referencia y no esta marcada como libre, por ende, el administrador no la puede reasignar
+d. Tiene alguna referencia y esta marcada como libre, luego el administrador la podria reasignar
+
+end alt
+begin alt-|-b-|- Recordar que la sobrecarga es funcion con mismo nombre pero recibe distinta cantidad de parametross
+
+([2023-2] - Martí Q2P14) Cual de los siguientes pares de funciones en C++ son un ejemplo de sobrecargar de funciones?
+
+a. {
+    int f(int a, int b){...}
+    int f(int x, int y){...}
+}
+b. {
+    int f(int a, int b){...}
+    int f(int a, int b, int c){...}
+}
+c. {
+    int f(int a, int b){...}
+    int g(int a, int b){...}
+}
+d. {
+    int f(int a, int b){...}
+    int g(int a, int b, int c){...}
+}
+
+end alt
+begin alt-|-d-|-
+
+([2023-2] - Martí Q2P15) Dado el siguiente codigo en C:
+
+    int x;
+    void f(int a)
+    {
+        a = 2;
+        x++;
+    }
+    void main()
+    {
+        x = 1;
+        f(x);
+        printf("%d",x);
+    }
+    
+¿Cual sera el resultado del printf() si el parametro hubiera sido pasado por valor-resultado y por referencia, respectivamente?
+a. por Valor-resultado; 2, por Referencia; 1.
+b. por Valor-resultado; 3, por Referencia; 3.
+c. por Valor-resultado; 2, por Referencia; 2.
+d. por Valor-resultado; 2, por Referencia; 3.
+
+end alt
+
+## ([2022-1] - Salas)
+
+begin alt -|-a-|-
+([2022-1] - Salas Q2P19) La siguiente definicion...
+    "Es un tipo estructurado de elementos de datos posiblemente heterogeno, donde cada elemento individual es identificado con un nombre".
+
+Corresponde a una definicion de:
+a. Registro
+b. Enumerado
+c. Diccionario
+d. Array
+
+end alt
+begin alt -|-b-|-
+([2022-1] - Salas Q2P20) La siguiente definicion...
+    "Es un tipo estructurado que permite almacenar diferentes tipos de datos en diferentes tiempo de una misma variable".
+
+Corresponde a una definicion de:
+a. Lista
+b. Uniones
+c. Subrango
+d. Arreglo
+
+end alt
+begin alt -|-c-|-
+([2022-1] - Salas Q2P21) La siguiente definicion...
+    "Es un tipo de dato ordinal definido por el usuario que consiste en una subsecuencia contigua de un tipo ordinal ya definido".
+
+Corresponde a una definicion de:
+a. Lista
+b. Arreglo
+c. Subrango
+d. Diccionario
+
+end alt
+begin alt -|-X-|- Lista y arreglo caen bajo la misma definicion?
+([2022-1] - Salas Q2P22) La siguiente definicion...
+    "Es un tipo estructurado que consiste en un conjunto homogeno y ordenado de elementos que se identifican por su posicion relativa mediante un indice".
+
+Corresponde a una definicion de:
+a. Lista
+b. Arreglo
+c. Subrango
+d. Diccionario
+
+end alt
+begin alt -|-d-|- 
+([2022-1] - Salas Q2P23) La siguiente definicion...
+    "Corresponde a tipos de datos que no estan definidos en terminos de otros tipos".
+
+Corresponde a una definicion de:
+a. Caracter
+b. Ordinal
+c. Estructurado
+d. Primitivo
+
+end alt
+begin alt -|-d-|- 
+([2022-1] - Salas Q2P23) Tipos de datos ordinales son...
+    I. Caracter
+    II. Booleano
+    III. Numerico
+a. Solo I
+b. Solo I y III
+c. Solo II y III
+d. Todas las anteriores    
+
+
+end alt
+begin alt -|-X-|- En estricto rigor, arreglo asociativo y diccionario la cumplen
+([2022-1] - Salas Q2P24) La siguiente definicion...
+    "Es un tipo de dato estructurado que consiste en un conjunto no ordenado de elementos de datos que son indexados por un igual numero de valores llamados claves".
+
+Corresponde a una definicion de:
+a. Arreglo asociativo
+b. Diccionario
+c. Lista
+d. Stack
+
+end alt
+begin alt -|-b-|- 
+([2022-1] - Salas Q2P25) La siguiente definicion...
+    "Es un tipo de dato estructurado que corresponde a una secuencia de caracteres usado para procesamiento de texto y para E/S".
+
+Corresponde a una definicion de:
+a. UTF-8
+b. String
+c. Arreglo
+d. punto flotante
+
+end alt
+begin alt -|-c-|- 
+([2022-1] - Salas Q2P26) La siguiente definicion...
+    "Es un tipo de dato ordinal definido por el usuario donde se enumeran todos los posibles valores a traves de constantes literales. Se establece una relacion de orden".
+
+Corresponde a una definicion de:
+a. Diccionario
+b. Hash
+c. Enumerado
+d. Arreglo
+
+end alt
+begin alt -|-d-|- 
+([2022-1] - Salas Q2P26) La siguiente definicion...
+    "Es un tipo de dato estructurado que agrupa conjunto de elementos (que pueden ser de diferentes tipos), con operadores para construirlos y acceder a sus elementos. Existen de dos tipos: Ordenadas y No Ordenadas".
+
+Corresponde a una definicion de:
+a. Enumerados
+b. Relaciones de orden
+c. Lista
+d. Colecciones
+
+end alt
+
+## [2022-1] - Jorge Diaz
+
+begin alt -|-x-|-
+
+([2022-1] - Diaz Q2P1 alt) Cual elemento puede ser parte de la interfaz de un subprograma?
+
+a. Direccion en stack.
+b. Variable local.
+c. Valor de retorno
+d. Enlace dinamico
+
+end alt
+begin alt -|-b-|- Caracter es primitivo, no string
+
+([2022-1] - Diaz Q2P2 alt) Cual de los siguientes tipos de datos esta mal clasificado?
+
+a. Arreglo: tipo estructurado
+b. String: tipo primitivos
+c. Enumerado: tipo definido por el usuario
+d. Conjunto: tipo estructurado
+
+end alt
+begin alt -|-c-|- 
+
+([2022-1] - Diaz Q2P3 alt) Una variable declarada como int a[20] dentro de una funcion C, corresponde a un arreglo:
+
+a. Estatico
+b. Dinamico de heap.
+c. Dinamico fijo de stack.
+d. Fijo de heap
+
+end alt
+begin alt -|-a-|- 
+
+([2022-1] - Diaz Q2P4 alt) ¿Cual de los sigientes elementos no es parte de la estructura de registro de activacion de un subprograma?
+
+a. Variables globales
+b. Variables locales
+c. Direccion de retorno
+d. Enlace dinamico
+
+end alt
+begin alt -|-c-|- Alternativa no es algo bien definido. Por estructura de datos si se puede, considere el for x in lista de python
+
+([2022-1] - Diaz Q2P5 alt) Al clasificar las sentencias de iteracion, una de las siguientes posibilidades no es una forma real de controlar un ciclo... ¿Cual es?
+
+a. Por contador
+b. Por condicion
+c. Por alternativa
+d. Por estructura de datos
+
+end alt
+begin alt -|-b-|- 
+
+([2022-1] - Diaz Q2P6 alt) Un arreglo asociativo es...
+
+a. Conjunto ordenado de elementos de datos, que son accesados via referencias
+b. Conjunto no ordenado de elementos de datos, que son indexados por igual numero de valores, llamados "claves".
+c. Conjunto no ordenado de elementos de datos, que se identifican por su posicion relativa mediante un indice.
+d. Conjunto ordenado de elementos de datos, donde el tamaño permanece fijo una vez creado.
+
+end alt

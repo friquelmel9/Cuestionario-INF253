@@ -1,0 +1,38 @@
+### 2023-2 Martí
+
+([2023-2] - Martí Q2P1) Un tipo de datos define el conjunto de valores de datos y de operaciones predefinidas sobre los objetos de datos -|-V-|-
+([2023-2] - Martí Q2P2) Un conjunto es un tipo de datos definido por el usuario -|-F-|-
+([2023-2] - Martí Q2P3) Se llama coercion a la conversion automatica de tipos -|-V-|-
+([2023-2] - Martí Q2P4) En una tipificacion estatica, los tipos solo pueden ser determinados explicitamente (declarados). -|-F-|-
+([2023-2] - Martí Q2P5) En una tipificacion implicita, los tipos de datos no se declaran, y se pueden inferir a traves de reglas tal como nombre de variables a usar -|-V-|-
+([2023-2] - Martí Q2P6) Un arreglo es una coleccion ordenada de datos, mientras que los arreglos asociativos no lo son -|-V-|-
+([2023-2] - Martí Q2P7) La tecnica por expansion convierte un objeto a un tipo que no puede incluir todos los valores del tipo original -|-F-|- Esto es estrechamiento
+([2023-2] - Martí Q2P8) Tanto una expresion relacional como una booleana entregan un resultado booleano, cuando el lenguaje de programacion tiene este tipo de datos -|-V-|-
+([2023-2] - Martí Q2P9) En el paso de parametros por valor-resultado, el valor de la variable se copia al heap al momento de la invocacion y desde esta la variable al retornar -|-F-|- No hay uso del Heap
+([2023-2] - Martí Q2P10) En Java, todos los objetos son asignados desde el heap y accedidos mediante variables de referencia -|-V-|-
+
+## [2022-1] - Salas
+
+([2022-1] - Salas Q2P4) El ambito de una variable corresponde al tiempo de vida de una variable desde el momento que se realiza el ligado hasta el momento que se destruye o termina la variable -|-F-|-
+([2022-1] - Salas Q2P5) Las variables dinamicas de la memoria Heap pueden ser asignadas y liberadas en forma explicita por el programador, lo que se realiza usando un operador del lenguaje o una llamada del sistema -|-V-|-
+([2022-1] - Salas Q2P6) La lapida sepulcral es un mecanismo para gestionar los punteros de la memoria Heap con el fin de evitar punteros a memoria que fue ya liberada. El acceso se realiza indirectamente a traves de una lapida y si un objeto es liberado, la lapida permanece.-|-V-|-
+([2022-1] - Salas Q2P7) En el codigo ASCII de 1Byte, la letra "A" tiene el valor entero de 65 y la letra "a" tiene el valor entero "97". Por lo cual, el resultado de la comparacion "F">"f" es -|-F-|-
+([2022-1] - Salas Q2P8) Un nombre puede ser asociado con diferentes direcciones de memoria en ambitos y tiempos de ejecucuion diferentes. Ejemplos de tipos de datos con estas caracteristicas son las uniones y los punteros en C y C++ -|-V-|-
+([2022-1] - Salas Q2P9) El l-value indica el contenido de la variable en memoria, mientras que el r-value indica donde esta localizada la variable -|-F-|- Es al revez, l-value indica localizacion y r-value el contenido
+([2022-1] - Salas Q2P10) Antes de usar una variable, se debe realizar una asociacion a un tipo de dato, proceso que se conoce como ligado de tipo -|-V-|-
+([2022-1] - Salas Q2P11) En la tipificacion estatica, el chequeo de tipo se realiza en tiempo de compilacion y se aplica solo si todos los tipos son ligados estaticamente -|-V-|-
+([2022-1] - Salas Q2P12) Los contadores de referencias son un mecanismo de recoleccion de basura que consiste en marcar todos los objetos de memoria que no estan siendo utilizados y luego se libera la memoria asignada -|-F-|- Toma conteo solo de los punteros, no los objetos en si
+([2022-1] - Salas Q2P13) El puntero es un tipo de dato estructurado que direcciona un espacio de memoria -|-F-|- No es un tipo de dato estructurado
+([2022-1] - Salas Q2P14) El ligado se puede realizar de forma estatica o dinamica, dependiendo si se realiza en tiempo de compilacion (linking) o en tiempo de ejecucion (runtime), respectivamente. -|-V-|-
+([2022-1] - Salas Q2P15) Las variables son una abstraccion de un objeto de memoria que tienen los siguientes atributos: Nombre, Direccion, Valor, Tipo, Tiempo de Vida y Ambito -|-V-|-
+([2022-1] - Salas Q2P16) Una mala gestion de memoria podria generar una perdida de acceso a un objeto de memoria asignado en el heap, o podria generar punteros que apuntan a una localizacion de memoria del heap que ha sido liberada. Estos problemas se conocen como Basura y Danglin, respectivamente -|-V-|-
+([2022-1] - Salas Q2P17) Acorde a la taxonomia de los tipos de datos, los tipos de datos ordinal pueden ser primitivos o definidos por el usuario. Los tipos de datos primitivos corresponden a los numericos, booleanos y caracter; mientras que los definidos por el usuario estan el subrango y el enumerado -|-V-|-
+([2022-1] - Salas Q2P18) La memoria se clasifica en: Memoria Estatica, Memoria de Stack y Memoria de Heap. En las memorias estaticas y de Stack el ligado es estatico, mientras que en la memoria heap el ligado es dinamico -|-F-|-
+
+## [2022-1] - Jorge Diaz
+
+([2022-1] - Diaz Q2P1) La tipificacion fuerte ocurre cuando se determina el tipo de todas las variables antes de la ejecucion, y luego permanece fijo -|-F-|-
+([2022-1] - Diaz Q2P2) En python, los enteros y strings son pasados por paso valor. -F-
+([2022-1] - Diaz Q2P3) Las colas, stacks y diccionarios corresponden a tipos de datos de la categoria colecciones ordenadas -|-F-|-
+([2022-1] - Diaz Q2P4) La definicion de trasparencia referencial es: "dos tipos de datos son equivalentes si el operando de un tipo en una expresion puede ser sustituido por otro de manera explicita -|-F-|-
+([2022-1] - Diaz Q2P5) El for en C es un eje,plo de bucles controlados por condicion -|-F-|-
