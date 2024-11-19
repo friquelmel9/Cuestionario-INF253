@@ -13,8 +13,8 @@ El siguiente codigo en Prolog: \n    progenitor(maria,pedro). \n    Corresponde 
 El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Corresponde a una consulta -|-V-|-
 El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Corresponde a una hecho -|-F-|- Esta realizadno una Preguntas
 El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Corresponde a una consulta -|-V-|-
-El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Entregara yes si Maria es progenitor de Pedro -|-V-|-
-El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Entregara true si Maria es progenitor de Pedro -|-F-|- Entregara "yes". Pregunta trampa...
+El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Entregara yes si Maria es progenitor de Pedro -|-F-|- Entrega true. Pregunta trampa
+El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Entregara true si Maria es progenitor de Pedro -|-V-|- 
 El siguiente codigo en Prolog: \n    ?- progenitor(maria,pedro). \n     Entregara true si Pedro es progenitor de Maria -|-F-|- Entregara si es Maria progenitor. Esta escrito al revez.
 El siguiente codigo en Prolog: \n    ?- progenitor(X,carola). \n    Entregara todos los progenitores de Carola -|-V-|-
 El siguiente codigo en Prolog: \n    ?- progenitor(X,carola). \n    Entregara solo un progenitor de Carola -|-F-|- Si Carola posee mas de uno, tambien lo Entregara
@@ -111,15 +111,15 @@ El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = trian
 El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Hara que la variable Z se instancia como punto(4,H193) -|-F-|- Falso
 El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Dara False si las variables X,Y,Z no estan instanciadas -|-F-|-
 El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Dara False si la variable A no esta instanciada -|-F-|-7
-Considerando los siguientes hechos: \n [1] \n La consulta1 devolvera yes -|-V-|-
-Considerando los siguientes hechos: \n [1] \n La consulta1 devolvera no -|-F-|- Devolvera yes
-Considerando los siguientes hechos: \n [1] \n La consulta2 devolvera yes -|-F-|- Devolvera no
-Considerando los siguientes hechos: \n [1] \n La consulta2 devolvera no -|-V-|-
-Considerando los siguientes hechos: \n [1] \n La consulta3 devolvera yes -|-F-|- Devolvera Y = 1
-Considerando los siguientes hechos: \n [1] \n La consulta3 devolvera Y=1 -|-V-|-
-Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera Y=punto(2,H561) -|-V-|-
-Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera Y=(2,H561) -|-F-|- devolvera Y=punto(2,H561).
-Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera error -|-F-|- devolvera Y=punto(2,H561).
+#Considerando los siguientes hechos: \n [1] \n La consulta1 devolvera yes -|-V-|-
+#Considerando los siguientes hechos: \n [1] \n La consulta1 devolvera no -|-F-|- Devolvera yes
+#Considerando los siguientes hechos: \n [1] \n La consulta2 devolvera yes -|-F-|- Devolvera no
+#Considerando los siguientes hechos: \n [1] \n La consulta2 devolvera no -|-V-|-
+#Considerando los siguientes hechos: \n [1] \n La consulta3 devolvera yes -|-F-|- Devolvera Y = 1
+#Considerando los siguientes hechos: \n [1] \n La consulta3 devolvera Y=1 -|-V-|-
+#Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera Y=punto(2,H561) -|-V-|-
+#Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera Y=(2,H561) -|-F-|- devolvera Y=punto(2,H561).
+#Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera error -|-F-|- devolvera Y=punto(2,H561).
 
 La clausula P :- Q,R. se interpreta declarativamente como "P es verdadero si Q y R son verdaderos" -|-V-|-
 La clausula P :- Q,R. se interpreta declarativamente como "P es verdadero si Q o R son verdaderos" -|-F-|- Ambas han de ser verdadero
@@ -160,8 +160,8 @@ El comando member(X,L) en Prolog recibe una variable X, y busca si esta es parte
 El comando member(X,L) devolvera todos los miembros de L en la variable X -|-V-|-
 El comando append(L1,L2) concatenara la lista L1 a la lista L2 -|-F-|- El comando append necesita de un tercer elemento
 El comando append(L1,L2) concatenara la lista L2 a la lista L1 -|-F-|- El comando append necesita de un tercer elemento
-El comando append(L1,L2,L3) concatenara la lista L1 a L2, y lo guardara en L3 -|-V-|
-El comando append(L1,L2,L3) concatenara la lista L2 a L3, y lo guardara en L1 -|-F-| La definicion lo guarda en L3.
+El comando append(L1,L2,L3) concatenara la lista L1 a L2, y lo guardara en L3 -|-V-|-
+El comando append(L1,L2,L3) concatenara la lista L2 a L3, y lo guardara en L1 -|-F-|- La definicion lo guarda en L3.
 El comando delete(L,X,L1) borrara el elemento X de la lista L1, devolviendo la nueva lista en L -|-F-|- L1 y L estan intercambiados en la definicion
 El comando delete(L,X,L1) borrara el elemento X de la lista L, devolviendo la nueva lista en L1 -|-V-|-
 La siguiente defincion de regla: \n ?????(S,L) :- append(L1,L2,L), append(S,L3,L2). \n Corresponde a una definicion de una regla que entrega una sublista S -|-X-|-
@@ -178,7 +178,6 @@ Prolog realiza Backtracking automatico en caso que falle una de las reglas defin
 Prolog realiza Backtracking automatico a todas las reglas definidas, independientemente del codigo al interior -|-F-|- Comando cut si puede afectar a esto
 El comando cut o ! modifica el significado procedural del programa -|-V-|-
 El comando cut o ! modifica el significado declarativo del programa -|-F-|- Cambia el procedural, no el declarativo.
-Considerando las siguientes reglas en Prolog: [4] Si hacemos un llamado f(1,Y), 2<Y. retornara que no, puesto que 
 
 ## Diferencia entre definir una regla fuera y adentro (assertz)
 

@@ -85,7 +85,6 @@ def getAlt(unidad):
 def leerVf(unidad, arch_path):
     list_preguntas = list()
     with open(arch_path,'r') as arch:
-
         for linea in arch:
             if linea.startswith("#") or not linea.strip():
                 continue

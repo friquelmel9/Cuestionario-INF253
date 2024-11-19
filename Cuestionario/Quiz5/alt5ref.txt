@@ -5,7 +5,7 @@ begin pregunta-|-a-|-
 En Prolog, una de las siguientes expresiones no es equivalente al resto.
 
 a. .(perro, gato, raton, loro, [])
-b. [perro, gato, raton loro]
+b. [perro, gato, raton, loro]
 c. [perro | [gato, raton, loro]]
 d. .(perro,.(gato,.(raton,.(loro,[]))))
 end pregunta
@@ -24,16 +24,18 @@ char codigo(int x)
     }
 }
 
+Cual es la version equivalente en el lenguaje Prolog?
+
 a. codigo(_,'z').
    codigo(4,'x').
    codigo(8,'y').
 b. codigo(_,'z'):-!.
    codigo(4,'x').
    codigo(8,'y').
-a. codigo(4,'x'):-!.
+c. codigo(4,'x'):-!.
    codigo(8,'y'):-!.
    codigo(_,'z').
-a. codigo(4,'x').
+d. codigo(4,'x').
    codigo(8,'y').
    codigo(_,'z').
 end pregunta
