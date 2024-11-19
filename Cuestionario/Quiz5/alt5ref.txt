@@ -1,165 +1,514 @@
 ### 2021-2 Martí
 
-begin pregunta -|- -|-
-([2021-2] - Martí Q5P5)
+begin pregunta-|-a-|-
+([2021-2] - Martí Q5P1)
+En Prolog, una de las siguientes expresiones no es equivalente al resto.
 
+a. .(perro, gato, raton, loro, [])
+b. [perro, gato, raton loro]
+c. [perro | [gato, raton, loro]]
+d. .(perro,.(gato,.(raton,.(loro,[]))))
 end pregunta
 
-begin pregunta -|- -|-
-([2021-2] - Martí Q5P6)
+begin pregunta-|-c-|-
+([2021-2] - Martí Q5P2)
+Dado el siguiente código C:
 
+char codigo(int x)
+{
+    switch(x)
+    {
+        case 4: return('x'); break;
+        case 8: return('y'); break;
+        default: return('z'):
+    }
+}
+
+a. codigo(_,'z').
+   codigo(4,'x').
+   codigo(8,'y').
+b. codigo(_,'z'):-!.
+   codigo(4,'x').
+   codigo(8,'y').
+a. codigo(4,'x'):-!.
+   codigo(8,'y'):-!.
+   codigo(_,'z').
+a. codigo(4,'x').
+   codigo(8,'y').
+   codigo(_,'z').
 end pregunta
 
-begin pregunta -|- -|-
-([2021-2] - Martí Q5P7)
+begin pregunta-|-a-|-
+([2021-2] - Martí Q5P3)
+Considerando los siguientes predicados sobre activades:
+    comienzo(Actividad, Tiempo)
+    duracion(Actividad, Duracion)
+¿Cuál de las siguientes definiciones es la correcta para el predicado fin(Actividad, Tiempo), que permite saber
+cuándo terminará una actividad?
 
+a. fin(Actividad, Tiempo):-
+    comienzo(Actividad, Tiempo1),
+    duracion(Actividad, Duracion),
+    Tiempo is Tiempo1 + Duracion.
+b. fin(Actividad, Tiempo):-
+    comienzo(Actividad, tiempo),
+    duracion(Actividad, duracion),
+    Tiempo is tiempo + duracion.
+a. fin(Actividad, Tiempo):-
+    comienzo(Actividad, Tiempo),
+    duracion(Actividad, Duracion),
+    Tiempo += Duracion.
+a. fin(Actividad, Tiempo):-
+    comienzo(Actividad1, Tiempo),
+    duracion(Actividad1, Duracion),
+    Tiempo is Tiempo + Duracion.
 end pregunta
 
-begin pregunta -|- -|-
-([2021-2] - Martí Q5P8)
+begin pregunta-|-a-|-
+([2021-2] - Martí Q5P4)
+Cuántos llamados recursivos y qué tipo de resultado queda en el parámetro R, al ejecutar el siguiente programa
+Prolog, para una lista de N números enteros?
 
-end pregunta
+queHago([], R):- R is 0, !, fail.
+queHago([X | Z ] , R):-queHago(Z, R1), R is (X + R1).
 
-begin pregunta -|- -|-
-([2021-2] - Martí Q5P9) 
-
-end prgunta
-
-begin pregunta -|- -|-
-([2021-2] - Martí Q5P10) 
-
+a. N llamadas, false.
+b. N llamadas, R = 0.
+c. 1 llamada, true.
+d. 1 llamada, R = 0.
 end pregunta
 
 ### 2022-1 Rodrigo Salas
 
-begin pregunta -|- -|-
+begin pregunta-|-d-|-
 ([2022-1] - Salas Q5P1)
+figura:4
 
+¿Cuál es el resultado de la siguiente consulta?
+
+?- br(X,c).
+
+a. true
+b. false
+c. X = a
+   false
+d. X = b
+   false
+e. X = c
+   false
+f. X = d
+   False
+g. X = e
+   False
+h. X = f
+   false
 end pregunta
 
-begin pregunta -|- -|-
+begin pregunta-|-h-|-
 ([2022-1] - Salas Q5P2)
+figura:4
 
+¿Cuál es el resultado de la siguiente consulta?
+
+?- co(d,Y).
+
+a. true
+b. false
+c. Y = a
+d. Y = b
+e. Y = c
+f. Y = d
+g. Y = e
+h. Y = f
 end pregunta
 
-begin pregunta -|- -|-
+begin pregunta-|-b-|-
 ([2022-1] - Salas Q5P3)
+figura:4
 
+¿Cuál es el resultado de la siguiente consulta?
+
+?- gr(X,c).
+
+a. true
+b. false
+c. X = b, Y = a
+d. X = d, Y = b
+e. X = e, Y = c
+f. X = f, Y = a
+g. X = c, Y = d
+h. X = a, Y = f
 end pregunta
 
-begin pregunta -|- -|-
+begin pregunta -|-d-|-
 ([2022-1] - Salas Q5P4)
+figura:4
 
+¿Cuál es el resultado de la siguiente consulta?
+
+?- de(e,X).
+
+a. true
+b. false
+c. X = b; X = a
+d. X = b; X = c
+e. X = d; X = e; X = f
+f. X = b; X = c
+g. X = c
+h. X = a, X = b; X = c; X = d; X = f
 end pregunta
 
-begin pregunta -|- -|-
+begin pregunta-|-a-|-
 ([2022-1] - Salas Q5P5)
+figura:4
 
+¿Cuál es el resultado de la siguiente consulta?
+
+?- br(b,c).
+
+a. true
+b. false
 end pregunta
 
-begin pregunta -|- -|-
+begin pregunta-|-d-|-
 ([2022-1] - Salas Q5P6)
+figura:4
 
+¿Cuál es el resultado de la siguiente consulta?
+
+?- de(e,a).
+
+a. true
+b. false
+c. true, true
+d. true, false
 end pregunta
 
-begin pregunta -|- -|-
+begin pregunta-|-b-|-
 ([2022-1] - Salas Q5P7)
 
+¿Cuál es el resultado de la siguiente consulta?
+
+?- f1(f2(f3(a1,a2,a3))) = f1(f3(f3(a1,a2,a3)))
+
+a. true
+b. false
 end pregunta
 
-begin pregunta -|- -|-
+begin pregunta-|-b-|-
 ([2022-1] - Salas Q5P8)
 
+¿Cuál es el resultado de la siguiente consulta?
+
+?- 5 + 3 = 2 + 6.
+
+a. true
+b. false
 end pregunta
 
-begin pregunta -|- -|-
+begin pregunta-|-d-|-
 ([2022-1] - Salas Q5P9)
 
+Dado los siguientes predicados:
+
+sl([], 0).
+sl([H|T], Sum):- sl(T, Rest), Sum is H + Rest.
+
+¿Cuál es el resultado de la siguiente consulta?
+
+?- sl([3,2,4], N).
+
+a. True
+b. false
+c. 3
+d. 9
+e. 4
 end pregunta
 
-begin pregunta -|- -|-
+begin pregunta-|-a-|-
 ([2022-1] - Salas Q5P10)
 
+Dados los siguientes predicados:
+
+dj([],_).
+dj([X|L],K):- not(member(X,K)), dj(L,K).
+
+¿Cuál es el resultado de la siguiente consulta?
+
+?- dj([a, c, e, f], [b, d]).
+
+a. true
+b. false
 end pregunta
+
+begin pregunta-|-b-|-
+([2022-1] - Salas Q5P11)
+
+Dados los siguientes predicados:
+
+occ(1,[X|_],X):-!.
+occ(N,[_|L],X):- N > 1, M is N-1, occ(M,L,X).
+
+¿Cuál es el resultado de la siguiente consulta?
+
+?- occ(3,[a, c, e, f],X).
+
+a. true
+b. false
+c. X = a
+d. X = e
+e. X = f
+f. X = a; false
+g. X = e; false
+h. X = f; false
+end pregunta
+
 
 ### 2022-2 Gabriel Carmona
 
-begin pregunta -|- -|-
-([2022-2] - Carmona Q5P1)
+begin pregunta-|-d-|-
+([2022-2] - Carmona Q5P11)
+
+Dado el siguiente código, ¿Cuáles serán las respuestas a la consulta
+codigo([1, 2, 3, 4, 5], X)?
+
+codigo([X], X).
+codigo([X|_],X).
+codigo([_|R],X):-
+    codigo(R,X).
+
+a. X = 5
+b. X = 1
+c. X = 1;
+   X = 2;
+   X = 3;
+   X = 4;
+   X = 5
+d. X = 1;
+   X = 2;
+   X = 3;
+   X = 4;
+   X = 5;
+   X = 5
+end pregunta
+
+begin pregunta-|-d-|-
+([2022-2] - Carmona Q5P12 (MOD))
+
+Con respecto al operador cut en Prolog, su uso puede:
+(1) Disminuir el tiempo de ejecución.
+(2) Expresar reglas mutuamente excluyentes.
+(3) Permitir la reducción de código.
+¿Cuáles de estas sentencias son verdaderas?
+
+a. 1 y 3.
+b. 2 y 3.
+c. Solo 2.
+d. Ninguna de las anteriores.
+end pregunta
+
+begin pregunta-|-a-|-
+([2022-2] - Carmona Q5P13)
+
+Si la cláusula de convergencia (o condición de término) del predicado
+largo(Lista, Largo) fuera largo([], 0), ¿Cuál sería la definición correcta
+de la cláusula recursiva?
+
+a. largo([H|T], Largo):- largo(T, LargoT), Largo is LargoT + 1.
+b. largo([H|T], Largo):- largo(T, Largo), Largo = Largo + 1.
+c. largo([H|T], Largo):- largo(T, LargoT), Largo = LargoT + 1.
+d. largo([H|T], Largo):- largo(T, LargoT), return(LargoT + 1).
+end pregunta
+
+begin pregunta-|-d-|-
+([2022-2] - Carmona Q5P14)
+
+¿Cuál de las siguientes definiciones permite chequear si el argumento recibido es una lista,
+incluyendo la posibilidad de que sea una lista vacía?
+
+a. esLista(L, resultado):-
+   append(L/2, L/2, L),
+   resultado = true.
+b. esLista(L, Resultado):-
+   append([H1|T1], [H2|T2], L),
+   Resultado = true.
+c. esLista(L, Resultado):-
+   L = [H|T],
+   true.
+d. esLista(L):-
+   append(_, _, L).
 
 end pregunta
 
-begin pregunta -|- -|-
-([2022-2] - Carmona Q5P2)
+begin pregunta-|-a-|-
+([2022-2] - Carmona Q5P15) 
 
+Dada la siguiente base de conocimiento, ¿Cuál es la tercera
+salida que entrega la consulta: ?- b(M,N).?
+
+a(0,1).
+a(2,2).
+a(2,1).
+b(3,1).
+b(1,1):− !.
+b(1,2):− !, fail.
+b(X,Y):−
+    !, a(X,Y1), a(Y,X), not(b(Y1,X)).
+b(X,Y):−
+    b(A,B), b(B,A), X is A−1, Y is B + 1 .
+
+a. No hay.
+b. M = 1, N = 2
+c. false.
+d. No alcanza a generarse, pues se cae en un ciclo
+infinito producto de la recursividad mal controlada.
 end pregunta
-
-begin pregunta -|- -|-
-([2022-2] - Carmona Q5P3)
-
-end pregunta
-
-begin pregunta -|- -|-
-([2022-2] - Carmona Q5P4)
-
-end pregunta
-
-begin pregunta -|- -|-
-([2022-2] - Carmona Q5P5) 
-
-end prgunta
 
 ### 2022-2 Martí
 
-begin pregunta -|- -|-
-([2022-2] - Martí Q5P1)
+begin pregunta-|-b-|-
+([2022-2] - Martí Q5P11)
 
+¿Cuál es la salida de la siguiente consulta?
+
+?. [1, 2, [], 4, [5, 6, [7]]] = [_,_,_|[H,_|T]].
+
+a. false
+b. H = 4, T = []
+c. H = [4], t = [5, 6, [7]]
+d. H = 4, T = [[5, 6, [7]]]
 end pregunta
 
-begin pregunta -|- -|-
-([2022-2] - Martí Q5P2)
+begin pregunta-|-a-|-
+([2022-2] - Martí Q5P12)
 
+Si la cláusula de convergencia (o condición de término) del predicado
+largo(Lista, Largo), fuera largo([], 0), ¿Cuál sería la definición
+correcta de la cláusula recursiva?
+
+a. largo([H|T], Largo):- largo(T, LargoT), Largo is LargoT + 1.
+b. largo([H|T], Largo):- largo(T, Largo), Largo = Largo + 1.
+c. largo([H|T], Largo):- largo(T, LargoT), Largo = LargoT + 1.
+d. largo([H|T], Largo):- largo(T, LargoT), return(LargoT + 1).
 end pregunta
 
-begin pregunta -|- -|-
-([2022-2] - Martí Q5P3)
+begin pregunta-|-d-|-
+([2022-2] - Martí Q5P13)
 
+¿Cuál de las siguientes definiciones permite chequear si el argumento
+recibido es una lista, incluyendo la posibilidad de que sea una lista vacía?
+
+a. esLista(L, resultado):- append(L/2, L/2, L), resultado = true.
+b. esLista(L, Resultado):- append([H1|T1], [H2|T2], L), Resultado = true.
+c. esLista(L, Resultado):- L = [H|T], true.
+d. esLista(L) :- append(_,_,L).
 end pregunta
 
-begin pregunta -|- -|-
-([2022-2] - Martí Q5P4) 
+begin pregunta-|-c-|-
+([2022-2] - Martí Q5P14) 
 
+Dados hechos del tipo: cargo(nombreCargo, jefatura), para saber si dos cargos distintos
+tienen misma jefatura, la consulta correcta debe ser:
+
+a. ?- cargo(C, J), cargo(C1, J).
+b. ?- cargo(_,J), cargo(_,J).
+c. ?- cargo(C, J), cargo(C1, J), not(C = C1).
+d. ?- cargo(c, J), cargo(c1, J)
 end pregunta
 
-begin pregunta -|- -|-
-([2022-2] - Martí Q5P5) 
+begin pregunta-|-a-|-
+([2022-2] - Martí Q5P15) 
 
+Dada la siguiente base de conocimiento, ¿Cuál es la tercera
+salida que entrega la consulta: ?- b(M,N).?
+
+a(0,1).
+a(2,2).
+a(2,1).
+b(3,1).
+b(1,1):− !.
+b(1,2):− !, fail.
+b(X,Y):−
+    !, a(X,Y1), a(Y,X), not(b(Y1,X)).
+b(X,Y):−
+    b(A,B), b(B,A), X is A−1, Y is B + 1 .
+
+a. No hay.
+b. M = 1, N = 2
+c. false.
+d. No alcanza a generarse, pues se cae en un ciclo
+infinito producto de la recursividad mal controlada.
 end pregunta
 
 
 ### 2022-2 Roberto Díaz
 
-begin pregunta -|- -|-
-([2022-2] - Díaz Q5P1) 
+begin pregunta -|-a-|-
+([2022-2] - Díaz Q5P11)
 
+Usando solo un predicado append, una definición correcta de ultimo(L, U) es:
+
+a. ultimo(Lista, Ultimo):- append(_, [Ultimo], Lista).
+b. ultimo(Lista, Ultimo):- append(_, [Ultimo|_], Lista).
+c. ultimo(Lista, Ultimo):- append([Ultimo|_], _, Lista).
+d. ultimo(Lista, Ultimo):- append([Ultimo|_], _, Lista).
 end pregunta
 
-begin pregunta -|- -|-
-([2022-2] - Díaz Q5P2) 
+begin pregunta-|-d-|-
+([2022-2] - Díaz Q5P12) 
 
+Considere la siguiente consulta:
+
+?- mascota(A, A, macho) = mascota(canada, gato, X).
+
+El resultado de esta consulta será:
+
+a. true, ya que ambas tienen el mismo functor y número de componentes.
+b. false, debido a que hay una variable repetida.
+c. false, pues no es posible que hayan dos variables a cada lado de la unificación.
+d. false, puesto que no es posible calzar A con los átomos canada y gato a la vez.
 end pregunta
 
-begin pregunta -|- -|-
-([2022-2] - Díaz Q5P3) 
+begin pregunta -|-b-|-
+([2022-2] - Díaz Q5P13)
 
+Considere las siguientes reglas en Prolog:
+
+delit(0, [_|L1], L1).
+delit(S, [A|L1], [A|L2]):- S1 is S-1, delit(S1,L1,L2), !.
+
+Se puede interpretar declarativamente la consulta delit(S, L1, L2) como:
+
+a. L2 es la lista L1 sin el elemento S.
+b. L2 es la lista L1 sin el elemento en la posición S.
+c. L2 es la lista L1 sin las instancias que están en la lista S.
+d. L2 es la lista L1 con cada elemento decrementado en uno.
 end pregunta
 
-begin pregunta -|- -|-
-([2022-2] - Díaz Q5P4) 
+begin pregunta-|-c-|-
+([2022-2] - Díaz Q5P14) 
 
+Considere la siguiente consulta:
+
+?- transportarse(paris, roma, Costo), alojamiento(roma, hotel, Costo).
+
+¿Cuál de las siguientes corresponde a una interpretación procedural de esta consulta?
+
+a. Calcular el valor del Costo de transportarse de paris a roma y alojarse en un hotel.
+b. ¿Cuál es el Costo de transportarse de parís a roma si me alojo en un hotel?
+c. Se debe encontrar un valor para Costo tal que se satisface transportarse entre paris y roma
+alojamiento en un hotel en roma.
+d. Existe un Costo tal que es posible transportarse entre paris y toma y alojarse en un hotel.
 end pregunta
 
-begin pregunta -|- -|-
-([2022-2] - Díaz Q5P5) 
+begin pregunta-|-c-|-
+([2022-2] - Díaz Q5P15)
+
+¿Cuál de las siguientes listas no es equivalente al resto?
+
+a. [comun|[raro, epico, legendario]].
+b. [comun|[raro|[epico][legendario|[]]]].
+c. [comun[raro, epico, legendario, []]].
+d. [comun, raro, epico, legendario].
 
 end pregunta

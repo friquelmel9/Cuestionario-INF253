@@ -30,3 +30,19 @@ begin figura3:
     hermana(X,Y) :- progenitor(Z,X), progenitor(Z,Y), femenino(X). % Linea6
     
 end fig
+
+### REFS
+
+begin figura4
+
+    fa(a,b).
+    fa(a,c).
+    fa(b,d).
+    fa(b,e).
+    fa(c,f).
+    br(X,Y):- fa(Z,X), fa(Z,Y), not(X=Y).
+    co(X,Y):- fa(Z,X), fa(W,Y), br(Z,W).
+    gr(X,Y):- fa(Z,X), fa(Y,Z).
+    de(X,Y):- fa(Y,X).
+    de(X,Y):- fa(Z,X), de(Z,Y).
+end fig
