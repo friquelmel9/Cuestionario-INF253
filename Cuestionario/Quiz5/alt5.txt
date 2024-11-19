@@ -96,4 +96,3 @@ c. L3 = [perro | [gato | [raton | [loro]]]]
 d. L4 = cons(perro, cons(gato, cons(raton, cons(loro, nil))))
 
 end alt
-

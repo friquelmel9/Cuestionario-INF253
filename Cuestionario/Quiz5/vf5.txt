@@ -147,8 +147,38 @@ Una lista en Prolog corresponde de la forma .(Cabeza,Cola) -|-V-|-
 La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro,gato,raton,loro,()) -|-F-|- Nada que verdadero
 La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro, .(gato, .(raton, .(loro)))) -|-F-|- Le falta la lista vacia del final
 La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro, .(gato, .(raton, .(loro, [])))) -|-V-|-
+La lista de Prolog son parecidas a la de Scheme, en el sentido que el primer elemento es una funcion a evaluar -|-F-|-
+La lista de Prolog son parecidos a la de Scheme, en el sentido que la lista el ultimo elemento es una lista vacia -|-V-|-
+Una lista en Prolog puede escribirse como [perro,gato,raton,loro], lo cual corresponde a un sabor sintatico -|-X-|-
+Una lista en Prolog son parecidos a la listas propias de Scheme, en el sentido que se definen como arbol binario -|-V-|-
+La definicion L = [a | b] corresponde a una lista en donde a es el elemento inicial, y b el elemento final -|-F-|- b ha de ser una lista, no elemento
+La definicion L = [a | b] corresponde a una lista en donde a es el elemento inicial, y b la cola de la lista -|-V-|-
+La definicion L = [a | b] dara error puesto que L no es asignado mediante "is" -|-F-|-
+La definicion L = [a | b] dara error si a es una lista -|-F-|-
 
-# Preguntas
+El comando member(X,L) en Prolog recibe una variable X, y busca si esta es parte de la lista L -|-F-|- Devuelve todos los elementos de X como X=a, X=b...
+El comando member(X,L) devolvera todos los miembros de L en la variable X -|-V-|-
+El comando append(L1,L2) concatenara la lista L1 a la lista L2 -|-F-|- El comando append necesita de un tercer elemento
+El comando append(L1,L2) concatenara la lista L2 a la lista L1 -|-F-|- El comando append necesita de un tercer elemento
+El comando append(L1,L2,L3) concatenara la lista L1 a L2, y lo guardara en L3 -|-V-|
+El comando append(L1,L2,L3) concatenara la lista L2 a L3, y lo guardara en L1 -|-F-| La definicion lo guarda en L3.
+El comando delete(L,X,L1) borrara el elemento X de la lista L1, devolviendo la nueva lista en L -|-F-|- L1 y L estan intercambiados en la definicion
+El comando delete(L,X,L1) borrara el elemento X de la lista L, devolviendo la nueva lista en L1 -|-V-|-
+La siguiente defincion de regla: \n ?????(S,L) :- append(L1,L2,L), append(S,L3,L2). \n Corresponde a una definicion de una regla que entrega una sublista S -|-X-|-
+
+La expresion +(*(2,a),*(b,c)) es equivalente a escribir 2*a+b*c (En Prolog) -|-V-|-
+La expresion +(*(2,a),*(b,c)) es una expresion en Prolog que devolvera error por mala sintaxis -|-F-|-
+La expresion en Prolog: \n X = +(*(2,3),*(4,5)). \n dara como resultado X = 26 -|-F-|- No esta siendo evaluado
+La expresion en Prolog: \n X = +(*(2,3),*(4,5)). \n dara como resultado X = 2 * 3 + 4 * 5 -|-V-|-
+La expresion en Prolog: \n X is +(*(2,3),*(4,5)). \n dara como resultado X = 26 -|-V-|-
+La expresion en Prolog: \n X is +(*(2,3),*(4,5)). \n dara como resultado X = 2 * 3 + 4 * 5 -|-F-|- is esta siendo evaluado
+
+# 7.6 Backtracking
+Prolog realiza Backtracking automatico en caso que falle una de las reglas definidas -|-V-|-
+Prolog realiza Backtracking automatico a todas las reglas definidas, independientemente del codigo al interior -|-F-|- Comando cut si puede afectar a esto
+El comando cut o ! modifica el significado procedural del programa -|-V-|-
+El comando cut o ! modifica el significado declarativo del programa -|-F-|- Cambia el procedural, no el declarativo.
+Considerando las siguientes reglas en Prolog: [4] Si hacemos un llamado f(1,Y), 2<Y. retornara que no, puesto que 
 
 ## Diferencia entre definir una regla fuera y adentro (assertz)
 
@@ -157,6 +187,7 @@ La lista de Prolog: [perro,gato,raton,loro] es equivalente a .(perro, .(gato, .(
 ([2024-2] Wladimir Ejercicios de clase) Para finalizar una sentencia, se debe utilizar . -|-V-|-
 ([2024-2] Wladimir Ejercicios de clase) Toda sentencia en Prolog ha de empezar con un . -|-F-|- Ha de terminar con un punto
 ([2024-2] Wladimir Ejercicios de clase) Toda linea en prolog termina con un . -|-F-|- Puede terminar con una , para continuat algun proceso
+([2024-2] Wladimir Ejercicios de clase) En Prolog, no hay manerea de definir un hecho dinamicamente -|-F-|- Se utiliza el comando assertz
 
 # Preguntas de clase
 
