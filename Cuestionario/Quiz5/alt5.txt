@@ -3,6 +3,7 @@ begin alt-|-b-|-
 (Ejercicios de clases Wladimir 2024-2)
 Asuma que los siguientes hechos y reglas existen en Prolog:
 figura:2
+figura:3
 Si se llama a la regla papa(X,Y), con X personas. Que condiciones deben cumplirse para que devuelva true?
 
 a. X ha de ser hijo de Y e X ha de ser masculino
@@ -16,6 +17,7 @@ begin alt-|-c-|- En estricto rigor, la d podria ser, pero habla de un "hermano",
 (Ejercicios de clases Wladimir 2024-2)
 Asuma que los siguientes hechos y reglas existen en Prolog:
 figura:2
+figura:3
 Si se llama a la regla hermana(X,Y), habra algo que no deberia de hacer. Cual de las siguientes es el error que posee la funcion?
 
 a. La regla hermana no esta bien definida, puesto que Z no fue definida previamente
@@ -30,7 +32,6 @@ begin alt-|-d-|- Cuidado con el false y como la funcion no revisa si hermana y l
 (Ejercicios de clases Wladimir 2024-2)
 Asuma que los siguientes hechos y reglas existen en Prolog:
 figura:2
-Y considere los siguientes hechos:
 figura:3
 
 Si se llama a hermana(X, paty), que sera lo que devolvera? (asumiendo que nombre femenino se asocia al hecho femenino)
@@ -94,5 +95,22 @@ a. L1 = [perro,gato,rata,loro]
 b. L2 = .(perro, .(gato, .(rata, .(loro, []))))
 c. L3 = [perro | [gato | [raton | [loro]]]]
 d. L4 = cons(perro, cons(gato, cons(raton, cons(loro, nil))))
+
+end alt
+
+begin alt-|-a-|-
+
+Cual de las siguientes frases son correctas respecto al operador de Corte?
+    I. Una ventaja es que la operacion es util para aumentar la eficiencia
+    II. Una desventaja es que se pueden expresar reglas mutuamente excluyentes
+    III. Una desventaja es que el significado declarativo y procedural se pierde en cierta parte
+a. Solo I
+b. Solo II
+c. Solo III
+d. Solo I y II
+e. Solo II y III
+f. Solo I y III
+g. Solo I, II y III
+h. Ninguna de las anteriores
 
 end alt

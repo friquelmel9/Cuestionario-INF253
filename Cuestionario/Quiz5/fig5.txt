@@ -2,12 +2,12 @@ begin figura1:
 
     vertical(seg(punto(X,Y),punto(X,Y1))).
     horizontal(seg(punto(X,Y),punto(X,Y1))).
-
-    ?- vertical(seg(punto(1,1),punto(1,2))). % Consulta1
-    ?- vertical(seg(punto(1,1),punto(2,Y))). % Consulta2
-    ?- horizontal(seg(punto(1,1),punto(2,Y))). % Consulta3
-    ?- vertical(seg(punto(2,3),Y)). % Consulta4
-    ?- vertical(S),horizontal(S). % Consulta5
+    
+    ?- vertical(seg(punto(1,1),punto(1,2))). %Linea1
+    ?- vertical(seg(punto(1,1),punto(2,Y))). %Linea2
+    ?- horizontal(seg(punto(1,1),punto(2,Y))). %Linea3
+    ?- vertical(seg(punto(2,3),Y)). %Linea4
+    ?- vertical(S), horizontal(S). %Linea5
 
 end fig
 begin figura2:
@@ -45,4 +45,12 @@ begin figura4
     gr(X,Y):- fa(Z,X), fa(Y,Z).
     de(X,Y):- fa(Y,X).
     de(X,Y):- fa(Z,X), de(Z,Y).
+
+end fig
+begin figura5:
+
+    f(X, 0) :- X < 3. %linea1
+    f(X, 2) :- X >= 3, X < 6, !. %linea2
+    f(X, 4) :- X >= 6. %linea3
+    
 end fig

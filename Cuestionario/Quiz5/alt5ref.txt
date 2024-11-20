@@ -352,18 +352,17 @@ a(0,1).
 a(2,2).
 a(2,1).
 b(3,1).
-b(1,1):− !.
-b(1,2):− !, fail.
-b(X,Y):−
+b(1,1):- !.
+b(1,2):- !, fail.
+b(X,Y):-
     !, a(X,Y1), a(Y,X), not(b(Y1,X)).
-b(X,Y):−
+b(X,Y):-
     b(A,B), b(B,A), X is A−1, Y is B + 1 .
 
 a. No hay.
 b. M = 1, N = 2
 c. false.
-d. No alcanza a generarse, pues se cae en un ciclo
-infinito producto de la recursividad mal controlada.
+d. No alcanza a generarse, pues se cae en un ciclo infinito producto de la recursividad mal controlada.
 end pregunta
 
 ### 2022-2 Martí

@@ -106,20 +106,16 @@ En Prolog, si S es una variable y T cualquier cosa, entonces calzan unicamente s
 En Prolog, dos estructuras calzan si tienen el mismo functor y todos sus correspondientes calzan -|-V-|-
 En Prolog, dos estructuras calzan si tiene el mismo functor o todos sus correspondientes calzan -|-F-|- Ambas condiciones han de cumplirse
 En Prolog, dos estructuras calzan unicamente si sus elementos calzan entre ellos -|-F-|- Han de tener el mismo functor
-El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Hara que la variable A se instancia como punto(4,H193) -|-V-|-
-El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Hara que la variable X se instancia como punto(4,H193) -|-F-|- Es la variable A
-El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Hara que la variable Z se instancia como punto(4,H193) -|-F-|- Falso
-El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Dara False si las variables X,Y,Z no estan instanciadas -|-F-|-
-El siguiente codigo en Prolog: \n   ?-triangulo(punto(1,1),A,punto(2,3)) = triangulo(X,punto(4,Y),punto(2,Z)) \n Dara False si la variable A no esta instanciada -|-F-|-7
-#Considerando los siguientes hechos: \n [1] \n La consulta1 devolvera yes -|-V-|-
-#Considerando los siguientes hechos: \n [1] \n La consulta1 devolvera no -|-F-|- Devolvera yes
-#Considerando los siguientes hechos: \n [1] \n La consulta2 devolvera yes -|-F-|- Devolvera no
-#Considerando los siguientes hechos: \n [1] \n La consulta2 devolvera no -|-V-|-
-#Considerando los siguientes hechos: \n [1] \n La consulta3 devolvera yes -|-F-|- Devolvera Y = 1
-#Considerando los siguientes hechos: \n [1] \n La consulta3 devolvera Y=1 -|-V-|-
-#Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera Y=punto(2,H561) -|-V-|-
-#Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera Y=(2,H561) -|-F-|- devolvera Y=punto(2,H561).
-#Considerando los siguientes hechos: \n [1] \n La consulta4 devolvera error -|-F-|- devolvera Y=punto(2,H561).
+El siguiente codigo en Prolog: [1] La linea1 devolvera false -|-F-|-
+El siguiente codigo en Prolog: [1] La linea1 devolvera true -|-V-|-
+El siguiente codigo en Prolog: [1] La linea2 devolvera false -|-V-|-
+El siguiente codigo en Prolog: [1] La linea2 devolvera true -|-F-|-
+El siguiente codigo en Prolog: [1] La linea3 devolvera true -|-F-|- Devolvera una asociacion Y = algo
+El siguiente codigo en Prolog: [1] La linea3 devolvera Y = 1 -|-V-|-
+El siguiente codigo en Prolog: [1] La linea3 devolvera 1 -|-F-|- Devuelve este valor asociado a Y, o sea, Y=1
+El siguiente codigo en Prolog: [1] La linea4 devolvera error -|-F-|-
+El siguiente codigo en Prolog: [1] La linea4 devolvera Y = (2,H561) -|-F-|- Devuelve el hecho, no una lista (o lo que sea que entrege)
+El siguiente codigo en Prolog: [1] La linea4 devolvera Y = punto(2,H561) -|-V-|-
 
 La clausula P :- Q,R. se interpreta declarativamente como "P es verdadero si Q y R son verdaderos" -|-V-|-
 La clausula P :- Q,R. se interpreta declarativamente como "P es verdadero si Q o R son verdaderos" -|-F-|- Ambas han de ser verdadero
@@ -205,3 +201,10 @@ El comando cut o ! modifica el significado declarativo del programa -|-F-|- Camb
 ([2024-2] Wladimir Ejercicios de clase) Considerando los siguientes hechos: [2] La siguiente pregunta: \n progenitor(X,aldo) \n Retornara paty -|-F-|- Retornara los valores de X que cumplen el hecho, no solo paty. Retornara X = paty
 ([2024-2] Wladimir Ejercicios de clase) Considerando los sigueintes hechos: [2] La siguiente regla: \n hijo(X,Y) :- progenitor(X, Y). \n Retornara todos los que son hijos de alguien -|-X-|-
 ([2024-2] Wladimir Ejercicios de clase) En prolog, los hechos no pueden ser definidos dinamicante -|-F-|- El comando assertz permite definir hechos y reglas dinamicamente
+
+([2024-2] Wladimir Ejercicios de clase) El siguiente codigo en Prolog: \n /(5,3) =:= 5/3 \n Dara error puesto que la operacion /(5,3) no tiene sentido en Prolog -|-F-|- Si funciona, es valida
+([2024-2] Wladimir Ejercicios de clase) El siguiente codigo en Prolog: \n /(5,3) =:= 5/3 \n Retornara true -|-V-|-
+([2024-2] Wladimir Ejercicios de clase) El siguiente codigo en Prolog: \n /(5,3) = 5/3 \n Retornara false -|-F-|- Son considerados la misma expresion
+
+([2024-2] Wladimir Ejercicios de clase) El siguiente codigo en Prolog: [5] EL significado procedural de f no es afectado por el cut -|-F-|- Si es afectado, el declarativo no
+([2024-2] Wladimir Ejercicios de clase) El siguiente codigo en Prolog: [5] EL significado declarativo de f no es afectado por el cut -|-V-|-
