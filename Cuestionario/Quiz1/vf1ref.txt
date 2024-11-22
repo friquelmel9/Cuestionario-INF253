@@ -1,0 +1,35 @@
+([2021-2] - Martí Q1P1) Un ámbito estático es determinado analizando código fuente. -|-V-|-
+([2021-2] - Martí Q1P2) Prolog es un lenguaje funcional, que incorpora elementos de programación imperativa. -|-F-|-
+([2021-2] - Martí Q1P3) Uno de los tipos de ámbitos para subprogramas es permitir el anidamiento de éstos, definiendo una ascendencia de tipo dinámico en tiempo de ejecución. -|-F-|-
+([2021-2] - Martí Q1P4) Una definición especifica el nombre de la variable y liga tipo, entre otros atributos, pero no asigna memoria. -|-F-|-
+([2021-2] - Martí Q1P5) Las variables dinámicas de heap pueden ser manipuladas en forma implícita o explícita, dependiendo del lenguaje. -|-V-|-
+([2021-2] - Martí Q1P6) C es un lenguaje imperativo, que permite elementos de la programación lógica. -|-F-|-
+([2021-2] - Martí Q1P8) Un ámbito global define una estructura del programa como una secuencia de definiciones de funciones, donde las variables pueden aparecer definidas fuera de ellas. -|-V-|-
+([2021-2] - Martí Q1P9) El proceso de compilación sigue las siguientes etapas: Análisis Léxico --> Análisis Semántico --> Análisis Sintáctico --> Generación de Código -|-F-|-
+([2021-2] - Martí Q1P10) Python es un lenguaje scripting, que permite la orientación a objetos. -|-V-|-
+([2021-2] - Martí Q1P11) En la modalidad de compilación separada, las unidades de programas pueden compilarse en diferentes tiempos, pero considerando las dependencias entre ellas. -|-V-|-
+([2021-2] - Martí Q1P13) La memoria del heap permite mantener objetos que se asignan y liberar automáticamente al activar o desactivar un ambiente de ejecución. -|-F-|-
+([2021-2] - Martí Q1P15) Java y C# son lenguajes de programación que usan una máquina virtual para interpretar directamente el código fuente durante su ejecución. -|-F-|-
+([2021-2] - Martí Q1P16) Las variables dinámicas de stack son ligadas a memoria en el momento que la ejecución alcanza el código ligado a la declaración. -|-V-|-
+([2021-2] - Martí Q1P17) Las variables estáticas soportan recursión. -|-F-|-
+([2021-2] - Martí Q1P18) En ámbitos anidados, la correspondencia entre una referencia a un nombre y su declaración se busca desde el ámbito más cercano al más externo. -|-V-|-
+([2022-1] - Rodrigo S. Q1P1) Dada una gramática dada por un EBNF, el árbol sintáctico resultante es único. -|-F-|-
+([2022-1] - Rodrigo S. Q1P2) La expresión regular [a-fA-F0-9]+ permite identificar números hexadecimales. -|-V-|-
+([2022-1] - Rodrigo S. Q1P3) Los Tokens corresponden solo a palabras claves y reservadas. -|-F-|-
+([2022-1] - Rodrigo S. Q1P4) La semántica revisa el significado un programa o sentencia. La semántica puede ser del tipo denotacional o dinámica. -|-F-|-
+([2022-1] - Rodrigo S. Q1P5) Un ejemplo de análisis sintáctico consiste en revisar si una variable fue previamente declarada antes de usarla. -|-F-|-
+([2022-1] - Rodrigo S. Q1P8) La siguiente expresión regular 0[a|b](0|1)* no puede ser representado en un autómata finito. -|-F-|-
+([2022-1] - Rodrigo S. Q1P9) El árbol sintáctico o Parse Tree es el resultado del analizador sintáctico donde se representa la estructura sintáctica de una cadena de acuerdo a una gramática libre de contexto -|-V-|-
+([2022-1] - Rodrigo S. Q1P10) Los lenguajes de alto nivel corresponden a los lenguajes que permiten crear programas manipulando objetos gráficos. -|-F-|-
+([2022-1] - Rodrigo S. Q1P11) Para reconocer los Tokens el analizador semántico utiliza expresiones regulares. -|-F-|-
+([2022-1] - Rodrigo S. Q1P13) El analizador sintáctico de un lenguaje es un reconocedor de que un programa esté correctamente escrito. -|-V-|-
+([2022-1] - Jorge D. Q1P1) En un proceso de compilacion, la tabla de simbolos ayuda a resolver las ambiguedades en los arboles sintacticos. -|-F-|-
+([2022-1] - Jorge D. Q1P2) Durante la etapa de analisis sintactico, un error sintactico se produce porque es posible construir mas de un parse-tree para una misma expresion. -|-F-|-
+([2022-1] - Jorge D. Q1P3) En ambitos anidados, la correspondencia entre una referencia a un nombre y su declaracion se busca desde el ambito mas cercano al mas externo. -|-V-|-
+([2022-1] - Jorge D. Q1P4) En la compilacion separada, las unidades del programa pueden compilarse en diferentes tiempos, pero se consideran las dependencias entre si. -|-V-|-
+([2022-1] - Jorge D. Q1P5) En BNF se puede describir alteracion(opciones) y en EBNF alternacion, agrupacion, elementos opcionales y repeticion. -|-V-|-
+([2022-1] - Jorge D. Q1P6) Una gramática ambigua se produce cuando el ligado de memoria se hace de manera implicita. -|-F-|-
+([2022-1] - Jorge D. Q1P7) Una expresion regular permite describir patrones de cadenas de caracteres teniendo asociado un arbol sintactico. -|-F-|-
+([2022-1] - Jorge D. Q1P8) La sintaxis de un lenguaje de programacion se puede describir usando una gramatica libre de contexto. -|-V-|-
+([2022-1] - Jorge D. Q1P9) El orden de las etapas de compilacion es: Análisis Lexico -> Analisis Semanticos -> Anilisis Sintactico -> Generacion de cosdigo. -|-F-|-
+([2022-1] - Jorge D. Q1P10) C es un lenguaje de scripting, de ligado de memoria implicito, y ambito dinamico. -|-F-|-

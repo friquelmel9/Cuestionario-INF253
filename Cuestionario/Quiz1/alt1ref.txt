@@ -1,0 +1,131 @@
+begin pregunta-|-a-|-
+([2021-2] - Martí Q1P7)
+A partir de las siguientes reglas de precedencia para operadores:
+
+Mayor Precedencia   , /, not
+                    +, &, mod
+                    -, - (unario)
+                    =, /=, <, <=, >=, >
+                    and
+Menor Precedencia   or, xor
+
+Y considerando asociatividad de izquierda a derecha, ¿cuál es el orden correcto de evaluación de la expresión: a * b – 1 + c?
+Seleccione una:
+a. ((a * b )1 – (1 + c)2 )3
+b. (((a * (b - 1)1 )2 + c)3)
+c. (((a * b )1 - 1)2 + c)3
+d. ((a * (b – (1 + c)1)2)3)
+
+*Los numeros son el orden en la cual  se evalua la expresion que tiene a la izquierda en parentsis*
+end pregunta
+
+begin pregunta-|-d-|-
+([2021-2] - Martí Q1P12)
+
+Tomar en cuenta el siguiente programa, escrito en sintaxis tipo Javascript:
+
+    // main
+    var x, y, z;
+    function sub1() {
+        var a, y, z;
+        …
+    }
+    function sub2() {
+        var a, b, z;
+        …
+    }
+    function sub3() {
+        var a, x, w;
+        …
+    }
+
+Dada la siguiente secuencia de llamadas en un ámbito dinámico: main --> sub1() --> sub3() --> sub2(), ¿cuáles
+son todas las variables visibles durante la ejecución de sub2()?
+
+a. a local, b local, x de main, y de sub1(), z local
+b. a local, b local, x de main, y de main, z local
+c. a local, b local, z local
+d. a local, b local, w de sub3(), x de sub3(), y de sub1(), z local
+end pregunta
+
+begin pregunta-|-e-|-
+([2021-2] - Martí Q1P14 - PREGUNTA ADAPTADA)
+
+Dada la siguiente BNF:
+
+    Sentencia :: = ( [Operador] Sentencia [Expresion] ) | Constante | Reservada
+    Expresion :: = Sentencia | ( Expresion [Expresion] Operador )
+    Operador :: = + | *
+    Constante :: = 0 | 1 | 2 | 3 | 4 | 5
+    Reservada :: = if | else | while
+
+¿Cuáles dos de las siguientes expresiones no son válidas para esta gramática?
+
+I)   ( + 4 5)
+II)  (* (0 1 +)) 
+III) (else if)
+IV)  (* if (4 + else))
+
+a. Solo I
+b. Solo II
+c. Solo III
+d. Solo IV
+d. I y III
+e. II y IV
+end pregunta
+
+begin pregunta-|-a-|-
+([2022-1] - Rodrigo S.  Q1P6)
+
+Dado el siguiente EBNF
+
+    <inicio> ::= <variable> = <expresion>
+    <variable> ::= x|y|z
+    <expresion> ::= <expresion> @ <termino> | <termino>
+    <termino> ::= <termino> # <expresion> | <variable>
+
+¿Cuál de las siguientes expresiones no es válida para la gramática?
+
+a. todas son válidas
+b. x = x@y#z 
+c. z = x@y@z#z
+d. y = y#z@x
+
+end pregunta
+
+begin pregunta-|-a-|-
+([2022-1] - Rodrigo S.  Q1P12)
+
+La siguiente BNF genera árboles sintácticos ambiguos:
+
+    <inicio> ::= <variable> = <expresion>
+    <variable> ::= x|y|z
+    <expresion> ::= <expresion> @ <termino> | <termino>
+    <termino> ::= <termino> # <expresion> | <variable>
+
+Seleccione la respuesta correcta:
+
+a. Falso, el # tiene mayor precedencia que el @
+b. Verdadero
+c. Falso, el @ tiene mayor precedencia que el # 
+end pregunta
+
+begin pregunta-|-c-|-
+([2022-1] - Rodrigo S.  Q1P14)
+
+La secuencia principal de compilación de un programa es la siguiente:
+
+a. Programa fuente, Generador de código intermedio, analizador léxico, analizador sintáctico, Generador de Código, Lenguaje de Máquina.
+b. Programa fuente, analizados semántico, analizador sintáctico, Generador de código y analizador léxico, Lenguaje de Máquina.
+c. Programa fuente, analizados léxico, analizador sintáctico, Generador de código intermedio y analizador semántico, Generador de Código, Lenguaje de Máquina.
+d. Programa fuente, analizados léxico, analizador semántico, Generador de código intermedio y analizador sintáctico, Generador de Código, Lenguaje de Máquina.
+end pregunta
+
+begin pregunta-|-b-|-
+([2022-1] - Rodrigo S.  Q1P15)
+
+Los lenguajes de programación pueden ser categorizado acorde a uno de los siguientes paradigmas:
+a. Puede ser sólo Imperativo o Funcional
+b. Puede ser sólo Imperativo, o funcional, o declarativo, u orientado a objetos. 
+c. Puede incorporar múltiples paradigmas end pregunta
+end pregunta
