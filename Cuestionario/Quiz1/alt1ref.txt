@@ -125,6 +125,7 @@ begin pregunta-|-b-|-
 ([2022-1] - Rodrigo S.  Q1P15)
 
 Los lenguajes de programación pueden ser categorizado acorde a uno de los siguientes paradigmas:
+
 a. Puede ser sólo Imperativo o Funcional
 b. Puede ser sólo Imperativo, o funcional, o declarativo, u orientado a objetos. 
 c. Puede incorporar múltiples paradigmas end pregunta

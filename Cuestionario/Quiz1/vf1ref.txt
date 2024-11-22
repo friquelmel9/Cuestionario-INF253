@@ -1,3 +1,5 @@
+### 2021-2 Martí
+
 ([2021-2] - Martí Q1P1) Un ámbito estático es determinado analizando código fuente. -|-V-|-
 ([2021-2] - Martí Q1P2) Prolog es un lenguaje funcional, que incorpora elementos de programación imperativa. -|-F-|-
 ([2021-2] - Martí Q1P3) Uno de los tipos de ámbitos para subprogramas es permitir el anidamiento de éstos, definiendo una ascendencia de tipo dinámico en tiempo de ejecución. -|-F-|-
@@ -13,6 +15,9 @@
 ([2021-2] - Martí Q1P16) Las variables dinámicas de stack son ligadas a memoria en el momento que la ejecución alcanza el código ligado a la declaración. -|-V-|-
 ([2021-2] - Martí Q1P17) Las variables estáticas soportan recursión. -|-F-|-
 ([2021-2] - Martí Q1P18) En ámbitos anidados, la correspondencia entre una referencia a un nombre y su declaración se busca desde el ámbito más cercano al más externo. -|-V-|-
+
+### 2022-1 Rodrigo S.
+
 ([2022-1] - Rodrigo S. Q1P1) Dada una gramática dada por un EBNF, el árbol sintáctico resultante es único. -|-F-|-
 ([2022-1] - Rodrigo S. Q1P2) La expresión regular [a-fA-F0-9]+ permite identificar números hexadecimales. -|-V-|-
 ([2022-1] - Rodrigo S. Q1P3) Los Tokens corresponden solo a palabras claves y reservadas. -|-F-|-
@@ -23,6 +28,9 @@
 ([2022-1] - Rodrigo S. Q1P10) Los lenguajes de alto nivel corresponden a los lenguajes que permiten crear programas manipulando objetos gráficos. -|-F-|-
 ([2022-1] - Rodrigo S. Q1P11) Para reconocer los Tokens el analizador semántico utiliza expresiones regulares. -|-F-|-
 ([2022-1] - Rodrigo S. Q1P13) El analizador sintáctico de un lenguaje es un reconocedor de que un programa esté correctamente escrito. -|-V-|-
+
+### Jorge D. 
+
 ([2022-1] - Jorge D. Q1P1) En un proceso de compilacion, la tabla de simbolos ayuda a resolver las ambiguedades en los arboles sintacticos. -|-F-|-
 ([2022-1] - Jorge D. Q1P2) Durante la etapa de analisis sintactico, un error sintactico se produce porque es posible construir mas de un parse-tree para una misma expresion. -|-F-|-
 ([2022-1] - Jorge D. Q1P3) En ambitos anidados, la correspondencia entre una referencia a un nombre y su declaracion se busca desde el ambito mas cercano al mas externo. -|-V-|-
@@ -33,3 +41,16 @@
 ([2022-1] - Jorge D. Q1P8) La sintaxis de un lenguaje de programacion se puede describir usando una gramatica libre de contexto. -|-V-|-
 ([2022-1] - Jorge D. Q1P9) El orden de las etapas de compilacion es: Análisis Lexico -> Analisis Semanticos -> Anilisis Sintactico -> Generacion de cosdigo. -|-F-|-
 ([2022-1] - Jorge D. Q1P10) C es un lenguaje de scripting, de ligado de memoria implicito, y ambito dinamico. -|-F-|-
+
+### No se quien lo hizo ayuda
+
+([2024-2] - Q1P1) Una de las pricipales características de los lenguajes imperativos es que se declara lo qué se quiere hacer, no el cómo. -|-F-|-
+([2024-2] - Q1P2) Dentro de los lenguajes declarativos podemos encontrar a C, C++ y Java (entre otros). -|-F-|-
+([2024-2] - Q1P3) Los lenguajes funcionales son aquellos que se basan en el cálculo Lambda. -|-V-|-
+([2024-2] - Q1P4) Si bien la semántica implica el significado, esta se puede ver influenciada por la sintaxis. -|-V-|-
+([2024-2] - Q1P5) La sintaxis corresponde al proceso de dotar de un significado no ambiguo a la gramática. -|-F-|-
+([2024-2] - Q1P6) La Jerarquía de Chomsky ilustra como el aprender nuevos paradigmas nos puede llevar al nivel 3 del programador: poder escribir expresiones regulares. -|-F-|-
+([2024-2] - Q1P7) A diferencia C o C++, en Python se interpreta directamente el código fuente durante la ejecución. -|-V-|-
+([2024-2] - Q1P8) Una característica de la gramática libre de contexto es que debe ser representado por un automata finito. -|-F-|-
+([2024-2] - Q1P9) En las gramáticas libres de contexto el simbolo  representa representa una cadena vacía. -|-V-|-
+([2024-2] - Q1P10) Lenguajes orientados a objeto, como Java y C, son claros ejemplos de lenguajes imperativos. -|-F-|-
