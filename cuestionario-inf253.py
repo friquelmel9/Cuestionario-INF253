@@ -109,7 +109,7 @@ def getVf(unidad):
     
     dict_vf[unidad] = leerVf(unidad, "Cuestionario/Quiz{0}/vf{0}.txt".format(unidad))
     dict_vf_ref[unidad] = leerVf(unidad,"Cuestionario/Quiz{0}/vf{0}ref.txt".format(unidad))
-    
+
 def iniciarQuiz():
 
     os.system('cls')
@@ -175,49 +175,47 @@ def iniciarQuiz():
 
 def iniciarCertamen():
     
-    global isCertamen
-    global listVf_All
-    global listAlt_All
+    listVf = []
+    listAlt = []
     
-    if isCertamen == False:
+    for i in range(1,6):
+        print("unidad actual: "+str(i))
+        getFig(i)
+        getVf(i)
+        getAlt(i)
         
-        for i in range(3,5):
-            getFig(i)
-            
-            getVf(i)
-            listVf_All = listVf_All + dict_vf[i]
-            listVf_All = listVf_All + dict_vf_ref[i]
-            
-            getAlt(i)
-            listAlt_All = listAlt_All + dict_alt[i]
-            listAlt_All = listAlt_All + dict_alt_ref[i]
+        listVf_helper = []
+        listVf_helper = listVf_helper + dict_vf[i]
+        listVf_helper = listVf_helper + dict_vf_ref[i]
+        listVf = listVf + random.sample(listVf_helper,4)
         
-        isCertamen = True
-    
-    preguntasVf = random.sample(listVf_All,25)
-    preguntasAlt = random.sample(listAlt_All,15)
-    
-    correctas = 0
+        listAlt_helper = []
+        listAlt_helper = listAlt_helper + dict_alt[i]
+        listAlt_helper = listAlt_helper + dict_alt_ref[i]
+        listAlt = listAlt + random.sample(listAlt_helper,3)
+        
+    correctasVf = 0
+    correctasAlt = 0
     
     input("Pulsar enter para continuar")
     os.system('cls')
     
-    for pregunta,respuesta,explicacion in preguntasVf:
+    for pregunta,respuesta,explicacion in listVf:
         usuario = input("[V-F] "+pregunta+"\n")
-        if (usuario.lower() == respuesta.lower()):
+        if(usuario.lower() == respuesta.lower()):
             print("Respuesta correcta!")
-            correctas += 1
+            correctasVf += 1
         else:
             print("La respuesta correcta era: "+respuesta+"\n Explicacion: "+explicacion)
-
+        
         input("Pulsar enter para continuar")
         os.system('cls')
-    
-    for pregunta,respuesta,explicacion in preguntasAlt:
+        
+    for pregunta,respuesta,explicacion in listAlt:
         usuario = input("[a,b,c,d,e] "+pregunta+"\n")
         if (usuario.lower() == respuesta.lower()):
             print("Respuesta correcta!")
-            correctas += 1
+            correctasAlt += 1
         else:
             print("La respuesta correcta era: "+respuesta+"\n Explicacion: "+explicacion)
 
@@ -225,7 +223,7 @@ def iniciarCertamen():
         os.system('cls')
         
     print("Certamen terminado")
-    print("Numero de correctas: "+str(correctas))
+    print("Calculo de la nota no disponible")
     input("Pulse enter para continuar")
 
 def main():

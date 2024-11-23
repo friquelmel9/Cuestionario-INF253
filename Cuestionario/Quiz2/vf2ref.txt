@@ -32,7 +32,7 @@
 ## [2022-1] - Jorge Diaz
 
 ([2022-1] - Diaz Q2P1) La tipificacion fuerte ocurre cuando se determina el tipo de todas las variables antes de la ejecucion, y luego permanece fijo -|-F-|-
-([2022-1] - Diaz Q2P2) En python, los enteros y strings son pasados por paso valor. -F-
+([2022-1] - Diaz Q2P2) En python, los enteros y strings son pasados por paso valor. -|-F-|-
 ([2022-1] - Diaz Q2P3) Las colas, stacks y diccionarios corresponden a tipos de datos de la categoria colecciones ordenadas -|-F-|-
 ([2022-1] - Diaz Q2P4) La definicion de trasparencia referencial es: "dos tipos de datos son equivalentes si el operando de un tipo en una expresion puede ser sustituido por otro de manera explicita -|-F-|-
 ([2022-1] - Diaz Q2P5) El for en C es un eje,plo de bucles controlados por condicion -|-F-|-
