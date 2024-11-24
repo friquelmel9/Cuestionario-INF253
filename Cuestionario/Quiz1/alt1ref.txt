@@ -59,7 +59,7 @@ Dada la siguiente BNF:
     Constante :: = 0 | 1 | 2 | 3 | 4 | 5
     Reservada :: = if | else | while
 
-¿Cuáles dos de las siguientes expresiones no son válidas para esta gramática?
+¿Cuáles de las siguientes expresiones no son válidas para esta gramática?
 
 I)   ( + 4 5)
 II)  (* (0 1 +)) 
@@ -70,8 +70,8 @@ a. Solo I
 b. Solo II
 c. Solo III
 d. Solo IV
-d. I y III
-e. II y IV
+d. I, II y III
+e. II, III y IV
 end pregunta
 
 begin pregunta-|-a-|-
@@ -128,7 +128,7 @@ Los lenguajes de programación pueden ser categorizado acorde a uno de los sigui
 
 a. Puede ser sólo Imperativo o Funcional
 b. Puede ser sólo Imperativo, o funcional, o declarativo, u orientado a objetos. 
-c. Puede incorporar múltiples paradigmas end pregunta
+c. Puede incorporar múltiples paradigmas
 end pregunta
 
 begin pregunta-|-c-|-
