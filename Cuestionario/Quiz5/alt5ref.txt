@@ -513,3 +513,15 @@ c. [comun[raro, epico, legendario, []]].
 d. [comun, raro, epico, legendario].
 
 end pregunta
+begin pregunta -|-a-|-
+
+([2024-2] - Jose Luis Marti. Q5P11)
+Usando solo un predicado append, ¿el codigo correcto para insertar un nuevo elemento al final de una lista?
+a. insertarAlFinal(Ultimo,Lista,ListaconUltimo) :- append(Lista,[Ultimo],ListaconUltimo)
+b. insertarAlFinal(Ultimo,Lista,ListaconUltimo) :- append(Lista,Ultimo,ListaconUltimo)
+c. insertarAlFinal(Ultimo,Lista,[Lista | Ultimo]) :- append(Lista,[Ultimo],[Lista | Ultimo])
+d. insertarAlFinal(Ultimo,Lista,[Lista , Ultimo]) :- append(Lista,Ultimo,[Lista , Ultimo])
+
+end pregunta
+
+Cual f

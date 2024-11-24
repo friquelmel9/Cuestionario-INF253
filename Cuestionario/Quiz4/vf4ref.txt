@@ -100,3 +100,14 @@
 ([2023-2] - Martí Q4P8) Para que una lista sea evaluada se le antecede con una citación simple.-|-F-|-
 ([2023-2] - Martí Q4P9) La recursión de cola facilita el manejo del Stack ya que reduce el tamaño del registro de activación de cada invocación.-|-F-|-
 ([2023-2] - Martí Q4P10) La evaluación perezosa es una técnica exclusiva de la programación funcional, destinada a disminuir la cantidad de memoria usada.-|-V-|-
+
+([2024-2] - Jose Luis Marti. Q4P1) La programacion funcional pura no utiliza asignaciones, dado que se basa en la composicion de funciones -|-V-|-
+([2024-2] - Jose Luis Marti. Q4P2) En la programacion funcional pura, se trabaja solo con recursion de cola y condicionales -|-F-|-
+([2024-2] - Jose Luis Marti. Q4P3) En la programacion funcional, daod que las funciones son objeto de tercer orden dentro del lenguaje, pueden guardarse en estructuras de datos, pasarse como argumentos y devolverse desde otras funciones -|-F-|- No son de tercer orden, son primer
+([2024-2] - Jose Luis Marti. Q4P4) Scheme no es un lenguaje funcional puro,  de ahi la necesidad de eliminar manualmente la basura que vaya quedando en el heap -|-F-|-  No es manual, es automatico
+([2024-2] - Jose Luis Marti. Q4P5) Los tres constructores de listas en Scheme son cons, list, append -|-V-|-
+([2024-2] - Jose Luis Marti. Q4P6) En Scheme, las variables definidas con let y lambda tienen un ambito local, mientras que con set! se tiene ambito global -|-F-|- 
+([2024-2] - Jose Luis Marti. Q4P7) Los predicados de Scheme para determinar si un numero es par o impar son pair? y odd? -|-F-|- pair? indica si es una lista, puesto que estan compuesta de cabeza - cola, un par
+([2024-2] - Jose Luis Marti. Q4P8) Con la recursion de cola, es posible que el heap reutilice el mismo registro de activacion. de modo de disminuir el tiempo de ejecucion -|-F-|-
+([2024-2] - Jose Luis Marti. Q4P9) Las listas de asociacion de Scheme son listas propias, cuyos elementos son todos de la forma clave - valor -|-V-|-
+([2024-2] - Jose Luis Marti. Q4P10) La evaluacion perezosa se usa para ahorrar computacion, es decir, evitar calculos que no son necesarios de momento -|-V-|-

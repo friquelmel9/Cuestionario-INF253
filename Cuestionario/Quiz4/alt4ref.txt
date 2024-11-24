@@ -553,3 +553,57 @@ c. (1 2 3 (4 5 6) 7 8 9)
 d. (1 2 3 4 5 6 7 8 9)
 end pregunta
 
+begin pregunta -|-c-|-
+
+([2024-2] - Jose Luis Marti. Q4P11)
+En la programacion funcional pura, valga la redundancia, las funciones deben ser puras, es decir:
+a. Deben hacer uso de la recursion, en cualquiera de sus tipos.
+b. Tienen que considerar una composicion de dos o mas funciones.
+c. Siempre deben devolver las mismas salidas para las mismas entradas y no tener efectos secundarios
+d. Deben considerar objetos inmutables, es decir, objetos que no cambian de estado.
+([2024-2] - Jose Luis Marti. Q4P11)
+
+end pregunta
+begin pregunta -|-c-|-
+
+([2024-2] - Jose Luis Marti. Q4P12)
+Cual de las siguientes consultas en Scheme fallara?
+a. (list)
+b. (list '())
+c. (list '() a)
+d. Ninguna
+
+end pregunta
+begin pregunta -|-a-|-
+
+([2024-2] - Jose Luis Marti. Q4P13)
+Cual de los siguientes operadores de Scheme se acerca a la logica de un lenguaje imperativo?
+a. let*
+b. aplly
+c. map
+d. assoc
+
+end alt 
+begin pregunta -|-b-|-
+
+Cual es el resultado de la ejecucion del siguiente codigo?
+(define a (lambda (x) (b x)))
+(define b (lambda (y) (+ y y)))
+(a 4)
+
+a. 4
+b. 8
+c. 16
+d. Error
+
+end alt
+begin alt -|-d-|-
+
+([2024-2] - Jose Luis Marti. Q4P15) 
+Cual de las siguientes definiciones es incorrecta?
+a. El operador let se recomeienda cuando no importa el orden de evaluacion de las operaciones, o sea, no hay dependencia
+b. El operador let* se recomienda cuando hay una dependiencia lineal entre los valores de las operaciones asociadas
+c. El operador letrec se recomienda cuando hay una dependencia circular entre las operaciones
+d. Ninguna de las anteriores
+
+end alt

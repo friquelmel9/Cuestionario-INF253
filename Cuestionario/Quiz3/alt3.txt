@@ -122,3 +122,56 @@ c. "8"
 d. No se mostrara nada por pantalla o habra error
 
 end pregunta
+begin alt -|-a-|-
+
+([2024-2] - Jose Luis Marti. Q3P1)
+Al usar el operador new, cual de las siguientes acciones no se llevan a cabo?
+a. Lanza una excepcion para activar el runtime
+b. El runtime crea un objeto
+c. Se asigna suficiente memoria en el heap
+d. Se invoca un constructor para inicializar un objeto
+
+end alt
+begin alt -|-b-|-
+
+([2024-2] - Jose Luis Marti. Q3P2)
+Cual de los siguientes operadores o funcionalidades no esta bien definido?
+
+a. super: para acceder a un atributo de la superclase cuando el modificador de acceso lo permita
+b. Modificador de acceso protected, que permite a un objeto de una clase, por ejemplo, acceder directamente a un atributo definido en otro paquete
+c. Ligado dinamico de metodos: Variable del tipo base que pueden referenciar objetos de alguna clase descendiente, y asi ejectuar el metodo redefinido es esta
+d. this: permite pasar una referencia del objeto actual como parametro a otro metodo.
+
+end alt
+begin alt -|-b-|-
+
+([2024-2] - Jose Luis Marti. Q3P3)
+Cual de las siguientes formas de polimorfismo no se encuentran en Java?
+a. Sobrecarga de metodos
+b. Punteros a void
+c. Clases genericas
+d. Ligado dinamico de metodos
+
+end alt
+begin alt -|-c-|-
+
+([2024-2] - Jose Luis Marti. Q3P4)
+
+En relación al uso de la memoria para implantar la herencia, es necesario el heap porque:
+a La sobrecarga de métodos hace variaciones en el código que no se pueden guardar en el stack.
+b El tamaño de las referencias mismas puede cambiar dependiendo de la clase del objeto a la que se haga alusión.
+c El que una referencia a una clase pueda ser reemplazada constantemente por otra a una subclase, conlleva el acceso a objetos de tamaño variable, lo que no es manejable directamente en el stack.
+d Las continuas invocaciones a métodos pueden afectar el rendimiento si los registros de activación se crearan en el stack, en lugar del heap.
+
+end alt
+begin alt -|-d-|-
+
+([2024-2] - Jose Luis Marti. Q3P5)
+
+En relación a la redefinición de métodos dentro de una jerarquía de herencia, ¿cuál de las siguientes afirmaciones es la única verdadera?
+a. Los métodos de la superclase y subclase sólo pueden diferir en el tipo de retorno.
+b. Se puede invocar el método redefinido desde la subclase con la referencia this.
+c. Un método final de la superclase se puede redefinir por última vez en la subclase que la extiende.
+d. Un método redefinido puede tener modificadores de acceso, pero sólo puede entregar mayor acceso, no restringirlo.
+
+end alt

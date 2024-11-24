@@ -258,3 +258,66 @@ c. Conjunto no ordenado de elementos de datos, que se identifican por su posicio
 d. Conjunto ordenado de elementos de datos, donde el tamaño permanece fijo una vez creado.
 
 end alt
+
+begin alt -|-a-|-
+
+([2024-2] - Jose Luis Marti. Q2P11)
+En Java, que tipo de strings se manejan?
+a. Estaticos
+b. Dinamicos limitados
+c. Dinamicos
+d. Todos los anteriores
+
+end alt
+begin alt -|-b-|-
+
+([2024-2] - Jose Luis Marti. Q2P12)
+En el lenguaje de programacion C, dado un arreglo A de 10 enteros, cual(es) de las siguientes expresiones es(son) equivalente(s) para obtener el elemento ubicado en la quinta posicion?
+    I. A[5]
+    II. A[4]
+    III. *A+4
+    IV. *A+5
+a. Solo I
+b. Solo II
+c. Solo I y IV
+d. Solo II y III
+
+end alt
+begin alt -|-d-|-
+
+([2024-2] - Jose Luis Marti. Q2P13)
+Cual de los siguientes operaciones no es permitida en Python, sobre la base de que a y b son del tipo conjunto?
+a. c = a|b 
+b. c = a&b 
+c. c = a-b
+d. c = a*b
+
+end alt
+begin alt -|- -|-
+
+([2024-2] - Jose Luis Marti. Q2P14)
+A partir del siguiente codigo en C:
+    int *p, *q;
+    
+    p = (int *) malloc(sizeoff(p));
+    *p = 10;
+    q = p;
+    // sentencia
+    *q = 20;
+    
+Que sentencia ubicar en la linea indicada, para evitar el dangling?
+a. delete(p);
+b. free(q);
+c. new(q);
+d. dispose(p);
+
+end alt
+begin alt -|-b-|-
+
+En la conversion de tipos, se pueden presentar diversos errores, siendo uno de ellos:
+a. Efecto lateral.
+b. Division por cero.
+c. dangling
+d. Ambiguedad
+
+end alt

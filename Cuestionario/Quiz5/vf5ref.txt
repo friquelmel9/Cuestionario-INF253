@@ -45,3 +45,14 @@
 ([2022-2] - Díaz Q5P8) El siguiente calce será exitoso: pr(ma, fe, mp(A,A,B)) = pr(L, S, mp(y, C, m)).-|-V-|-
 ([2022-2] - Díaz Q5P9) Se puede comparar estructuralmente si dos expresiones aritméticas son iguales con el operador "=".-|-V-|-
 ([2022-2] - Díaz Q5P10) La unificación de una variable y una expresión aritmética asigna el resultado de evaluar la expresión a la variable.-|-F-|-
+
+([2024-2] - Jose Luis Marti. Q5P1) La programacion logica se puede ver como un estilo de programacion orientado a las metas -|-V-|-
+([2024-2] - Jose Luis Marti. Q5P2) Aplicaciones tipicas de la programacion logica han sido la demostracion de teoremas, calculos cientificos y sistemas expertos -|-F-|-
+([2024-2] - Jose Luis Marti. Q5P3) La estructura de una regla considera una proposicion en el lado izquierdo (cabeza de la regla), cuyo valor depende de una conclusion a validar -|-F-|- 
+([2024-2] - Jose Luis Marti. Q5P4) Formalmente, en la programacion logicas, las unicas respuestas son verdadero y falso -|-V-|-
+([2024-2] - Jose Luis Marti. Q5P5) En Prolog, el tipo de datos se reconoce por su forma sintatica, por ejemplo, los atomos comienzan con minuscula -|-V-|-
+([2024-2] - Jose Luis Marti. Q5P6) En Prolog, el ambito de una variable es global -|-F-|-
+([2024-2] - Jose Luis Marti. Q5P7) La operacion mas importatnte sobre terminos en la instanciacion que corresponde a la unificacion propia del calculo de predicados -|-F-|-
+([2024-2] - Jose Luis Marti. Q5P8) En Prolog, es posible la definicion de nuevos operadores, cada uno de los cuales tendra asociado un nombre, precedencia, asociativa, y tipo de notacion (prefija, postfija, infija) -|-V-|-
+([2024-2] - Jose Luis Marti. Q5P9) En algunas situaciones, el backtracking automatico es ineficiente, de ahi la conveniencia de usar el operador de corte en cierto casos -|-V-|-
+([2024-2] - Jose Luis Marti. Q5P10) El uso del operador de corte puede influir solo en el significado declarativo -|-F-|-

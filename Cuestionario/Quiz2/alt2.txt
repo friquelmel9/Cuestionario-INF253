@@ -1,0 +1,28 @@
+begin alt -|-c-|-
+
+Considerando la Taxonomia de tipos de datos, se pueden clasificar segun:
+    I. Estatica o dinamica
+    II. Explicita o implicita
+    III- Primitivos o operadores
+    IV. Fuerte o debil
+    
+a. Solo III
+b. Solo I y II
+c. Solo I, II y III
+d. Todas las anteriores.
+
+end alt
+begin alt -|-d-|- Notar que, no es obligatorio. Generalmente se apoyan
+
+Considerando la Taxonomia de tipo de datos, cuales de las siguientes son verdad
+    I. Estatica es cuando se declara el tipo de dato de las variables, mientras que dinamico se determina en la ejecucion
+    II. Explicita indica que todo se debe declarar, mientras que implicita no se requiere declaracion
+    III. Tipificacion fuerte es generealmente mas restrictiva, a diferencia de la debil que permite mas flexibilidad
+    IV. Es obligatorio que el sistema sea: Estatico, explicito y fuerte, o dinamico, implicito, y debil.
+a. Solo I, II
+b. Solo II y III
+c. Solo I, II, y III
+d. Todas las anteriores
+
+end alt
+begin alt -|-c-|-

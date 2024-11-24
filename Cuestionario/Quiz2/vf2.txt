@@ -1,0 +1,29 @@
+# Unidad 3:
+
+## Sistema de Tipo de datos:
+
+Tipos de datos son: \n Primitivos, estructurados, definidos por usuario y abstractos -|-V-|-
+Tipos de datos son: \n Primitivos, estructurados, definidios por usuario y lambda -|-F-|-
+
+Sobre el dato de tipo Primitivo, se consideran enteros, punto flotante, y caracteres -|-V-|-
+Sobre el dato de tipo Primitivo, se consideran enteros, punto flotante, y string -|-F-|- String no es primitivo
+Sobre el dato de tipo Primitivo, se consideran reales, punto flotante, y caracter -|-F-|-
+
+Sobre el dato de tipo Estructurado, se consideran arreglos y registros -|-V-|-
+Sobre el dato de tipo Estructurado, se consideran listas y registros -|-F-|- La lista no es estructurado, se considera "coleccion"
+Sobre el dato de tipo Estructurado, string no se considera -|-F-|- Se entiende un string como un array de caracteres
+
+## Tipo ordinales
+
+El tipo Ordinal de dato incluye aquellos como entero, caracter, booleanos, enumerados y/o subrango -|-V-|-
+El tipo Ordinal de dato incluye aquellos como entero, string, booleanos, enumerado y/o subrango -|-F-|- String no cuenta
+El tipo Ordinal de dato no incluye los enumerados y subrangos -|-F-|-
+
+En C y Java, existen diferente tipos de enteros tales como signed o long -|-V-|-
+En C y Java, existen diferente tipos de enteros tales como float y double -|-F-|- No son enteros, son representaciones de punto flotante
+En C y Java, existen diferente tipos de punto flotante, tales como float y double -|-V-|-
+
+Existen varias representaciones de numeros enteros. Comunes son el C-1 y C-2 -|-V-|-
+Los numeros complejos son representados como punto flotante en lenguajes como Python o Prolog -|-F-|-
+Los numeros complejos son representados como punto flotante en lenguajes como Python o Scheme -|-F-|-
+

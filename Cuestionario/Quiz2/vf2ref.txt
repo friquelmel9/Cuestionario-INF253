@@ -36,3 +36,16 @@
 ([2022-1] - Diaz Q2P3) Las colas, stacks y diccionarios corresponden a tipos de datos de la categoria colecciones ordenadas -|-F-|-
 ([2022-1] - Diaz Q2P4) La definicion de trasparencia referencial es: "dos tipos de datos son equivalentes si el operando de un tipo en una expresion puede ser sustituido por otro de manera explicita -|-F-|-
 ([2022-1] - Diaz Q2P5) El for en C es un eje,plo de bucles controlados por condicion -|-F-|-
+
+## ([2024-2] - Jose Luis Marti. Q2P)
+
+([2024-2] - Jose Luis Marti. Q2P1) Un sistema de tipos de datos permite verificar el uso correcto del lenguaje y detectar errores de tipos solo en lenguajes compilados -|-F-|-
+([2024-2] - Jose Luis Marti. Q2P2) La coercion, definida por el programador, ayuda a tener operaciones con operandos de tipos compatibles -|-F-|-
+([2024-2] - Jose Luis Marti. Q2P3) En la equivalencia de tipo nominal, los tipos pueden tener nombres distintos pero una estructura identica -|-F-|-
+([2024-2] - Jose Luis Marti. Q2P4) La tipificacion de datos estatica permite el interprete asignar memoria y generar codigo optimizado -|-F-|-
+([2024-2] - Jose Luis Marti. Q2P5) Segun el estandar IEEE 754, la representacion de un numero flotante considera tres partes: signo, parte entera y parte decimal de 23 o 52 bits, segun corresponde a su precision -|-F-|-
+([2024-2] - Jose Luis Marti. Q2P6) Los tipos subrango se implementan en base al tipo entero -|-V-|-
+([2024-2] - Jose Luis Marti. Q2P7) En las dos modalidades de arreglos dinamicos de stack, la memoria del arreglo es ligada de forma dinamica -|-F-|-
+([2024-2] - Jose Luis Marti. Q2P8) El tipo referencia es un tipo de variable que realiza desreferenciacion implicita en la asignacion, por lo que su uso es mas seguro -|-V-|-
+([2024-2] - Jose Luis Marti. Q2P9) El problema de dangling se presenta cuando un puntero apunta a una localizacion de memoria del heal que ha sido liberada -|-V-|-
+([2024-2] - Jose Luis Marti. Q2P10) Si solo se hace referencia a variables locales, no hay presencia de efectos laterales en las expresiones de control -|-V-|-
