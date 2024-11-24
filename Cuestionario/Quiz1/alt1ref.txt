@@ -203,3 +203,75 @@ d. En C++ se indican utilizando static.
 e. Todas las afirmaciones son correctas.
 end pregunta
 
+begin alt -|-b-|-
+
+([2024-2] - Jose Luis Marti. Q1P11)
+Cual de los siguientes no corresponde a un paradigma de la programacion?
+a. Imperativo
+b. Estatico
+c. Orientado a objeto
+d. Logico
+
+end alt
+begin alt -|-b-|-
+
+([2024-2] - Jose Luis Marti. Q1P12)
+Cual de los conceptos siguientes no esta definido como corresponde?
+a. Semantica: Estudio del significado de los signos linguistiscos y de sus combinaciones
+b. Lenguaje (formal): Conjunto de reglas que definen las secuencias correctas de los elementos de un lenguaje de programacion
+c. Alfabeto: Conjunto de simbolos, letras o tokens con el cual se puede formar la cadena de un lenguaje.
+d. Gramatica (formal): Estructura matematica con un conjunto de reglas de formacion que definen las cadenas de caracteres admisibles en un determinado lenguaje formal
+
+end alt
+begin alt -|-c-|-
+
+([2024-2] - Jose Luis Marti. Q1P13)
+Cual de los siguientes casos no se hace uso de la memoria estatica?
+a. Variable definida con el modificador sintactico
+b. Variable local compartida
+c. Parametro
+d. Variable global
+
+end alt
+begin pregunta-|-a-|-
+([2024-2] - Jose Luis Marti. Q1P14)
+A partir de las siguientes reglas de precedencia para operadores:
+
+Mayor Precedencia   , /, not
+                    +, -, -(unario)
+                    -, - (unario)
+                    =, /=, <, <=, >=, >
+                    and
+Menor Precedencia   or, xor
+
+Y considerando asociatividad de derecha a izquierda, ¿cuál es el orden correcto de evaluación de la expresión: a b – 1 + c?
+Seleccione una:
+a. ((a * b ){1} – (1 + c){2} ){3}
+b. (((a * (b-1) {1} ) {2} ) + c){3}
+c. ((a * (b - (1 + c){1} ) {2} ) {3})
+d. (((a * b){1} - 1){2} + c){3}
+
+Los numeros con {} son el orden en la cual  se evalua la expresion que tiene a la izquierda en parentsis
+end pregunta
+
+begin alt -|-d-|-
+
+([2024-2] - Jose Luis Marti. Q1P15)
+
+Considere la siguiente funcion en C, es cierto que...
+
+    char f(chara)
+    {
+        static int b = 0;
+        int c = strlen(a);
+        char d = malloc(c - b++);
+
+        return d ? strcpy(d, a+b) : NULL;
+    }
+
+a. c es una variable de stack y a una de heap
+b. b es una variable estatica y d una de heap
+c. c es una variable de heap y a una de heap
+d. c es una variable de stack yd una de heap
+
+end alt
