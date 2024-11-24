@@ -130,3 +130,76 @@ a. Puede ser sólo Imperativo o Funcional
 b. Puede ser sólo Imperativo, o funcional, o declarativo, u orientado a objetos. 
 c. Puede incorporar múltiples paradigmas end pregunta
 end pregunta
+
+begin pregunta-|-c-|-
+([2024-2] - Wladimir O.  Q1P1)
+
+Considere una grámática libre de contexto definida en base a los siguientes elementos:
+
+V: X,Y,Z
+Σ: a,b,c
+S: X
+        X  → Y|Z
+        aX → Z
+        Z  → ϵ
+        Y  → aX|bZ|cZ
+
+Indique la alternativa correcta:
+
+a. Estamos en presencia de eBNF en realidad. 
+b. Las reglas de producción indicadas en  son más bien expresiones regulares. 
+c. No es en realidad una grámatica libre de contexto. 
+d.  es el conjunto de símbolos no terminales. 
+e. Ninguna de las alternativas es correcta.
+end pregunta
+
+begin pregunta-|-d-|-
+([2024-2] - Wladimir O.  Q1P2)
+
+En base al siguiente fragmento de código escrito en C++:
+
+    extern int x; 
+    int y; 
+    int z = 0; 
+
+Indique la alternativa correcta:
+
+a. "x", "y" y "z" están declaradas, pero solo "z" esta definida. 
+b. "x", "y" y "z" están definidas, pero solo "z" esta declarada. 
+c. "x" y "y" están declaradas, y solo "z" esta definida. 
+d. "x", "y" y "z" están declaradas, pero solo "y" y "z" estan definidas. 
+e. Ninguna de las alternativas es correcta.
+end pregunta
+
+begin pregunta-|-e-|-
+([2024-2] - Wladimir O.  Q1P3)
+
+En base al siguiente fragmento de código escrito en C++:
+
+    void funcion1(){ 
+    static double x = 0; 
+    x = x + 1; 
+    cout <<"x: "<< x <<endl; 
+    }; 
+
+La "x" variable  es de tipo:
+
+a. Dinámica de stack, y solo visible dentro de la función. 
+b. Dinámica de stack, y visible desde fuera de la función. 
+c. Dinámica de heap, y visible desde fuera de la función. 
+d. Estática, y visible desde fuera de la función. 
+e. Estática, y solo visible dentro de la función.
+end pregunta
+
+begin pregunta-|-a-|-
+([2024-2] - Wladimir O.  Q1P5)
+
+Sobre las variables estáticas, es incorrecto afirmar que: 
+
+a. Son escencialmente útiles para implementar recursión. 
+b. Su memoria no se reasigna durante todo el tiempo de ejecución. 
+c. Se pueden utilizar en diferentes ámbitos. 
+d. En C++ se indican utilizando static. 
+e. Todas las afirmaciones son correctas.
+end pregunta
+

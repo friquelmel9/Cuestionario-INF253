@@ -42,15 +42,15 @@
 ([2022-1] - Jorge D. Q1P9) El orden de las etapas de compilacion es: Análisis Lexico -> Analisis Semanticos -> Anilisis Sintactico -> Generacion de cosdigo. -|-F-|-
 ([2022-1] - Jorge D. Q1P10) C es un lenguaje de scripting, de ligado de memoria implicito, y ambito dinamico. -|-F-|-
 
-### No se quien lo hizo ayuda
+### Wladimir O.
 
-([2024-2] - Q1P1) Una de las pricipales características de los lenguajes imperativos es que se declara lo qué se quiere hacer, no el cómo. -|-F-|-
-([2024-2] - Q1P2) Dentro de los lenguajes declarativos podemos encontrar a C, C++ y Java (entre otros). -|-F-|-
-([2024-2] - Q1P3) Los lenguajes funcionales son aquellos que se basan en el cálculo Lambda. -|-V-|-
-([2024-2] - Q1P4) Si bien la semántica implica el significado, esta se puede ver influenciada por la sintaxis. -|-V-|-
-([2024-2] - Q1P5) La sintaxis corresponde al proceso de dotar de un significado no ambiguo a la gramática. -|-F-|-
-([2024-2] - Q1P6) La Jerarquía de Chomsky ilustra como el aprender nuevos paradigmas nos puede llevar al nivel 3 del programador: poder escribir expresiones regulares. -|-F-|-
-([2024-2] - Q1P7) A diferencia C o C++, en Python se interpreta directamente el código fuente durante la ejecución. -|-V-|-
-([2024-2] - Q1P8) Una característica de la gramática libre de contexto es que debe ser representado por un automata finito. -|-F-|-
-([2024-2] - Q1P9) En las gramáticas libres de contexto el simbolo  representa representa una cadena vacía. -|-V-|-
-([2024-2] - Q1P10) Lenguajes orientados a objeto, como Java y C, son claros ejemplos de lenguajes imperativos. -|-F-|-
+([2024-2] - Wladimir O. Q1P1) Una de las pricipales características de los lenguajes imperativos es que se declara lo qué se quiere hacer, no el cómo. -|-F-|-
+([2024-2] - Wladimir O. Q1P2) Dentro de los lenguajes declarativos podemos encontrar a C, C++ y Java (entre otros). -|-F-|-
+([2024-2] - Wladimir O. Q1P3) Los lenguajes funcionales son aquellos que se basan en el cálculo Lambda. -|-V-|-
+([2024-2] - Wladimir O. Q1P4) Si bien la semántica implica el significado, esta se puede ver influenciada por la sintaxis. -|-V-|-
+([2024-2] - Wladimir O. Q1P5) La sintaxis corresponde al proceso de dotar de un significado no ambiguo a la gramática. -|-F-|-
+([2024-2] - Wladimir O. Q1P6) La Jerarquía de Chomsky ilustra como el aprender nuevos paradigmas nos puede llevar al nivel 3 del programador: poder escribir expresiones regulares. -|-F-|-
+([2024-2] - Wladimir O. Q1P7) A diferencia C o C++, en Python se interpreta directamente el código fuente durante la ejecución. -|-V-|-
+([2024-2] - Wladimir O. Q1P8) Una característica de la gramática libre de contexto es que debe ser representado por un automata finito. -|-F-|-
+([2024-2] - Wladimir O. Q1P9) En las gramáticas libres de contexto el simbolo  representa representa una cadena vacía. -|-V-|-
+([2024-2] - Wladimir O. Q1P10) Lenguajes orientados a objeto, como Java y C, son claros ejemplos de lenguajes imperativos. -|-F-|-
