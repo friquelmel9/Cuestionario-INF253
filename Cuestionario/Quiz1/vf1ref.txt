@@ -65,3 +65,8 @@
 ([2024-2] - Jose Luis Marti. Q1P8) La memoria del heap permite mantener objetos que se asignan y liberan automaticamente al activar o desactivar, respectivametne, un ambiente de ejecucion -|-F-|- No automatico
 ([2024-2] - Jose Luis Marti. Q1P9) En C++, una definicion especifica el nombre de la variable, liga tipo, y asigna memoria -|-V-|-
 ([2024-2] - Jose Luis Marti. Q1P10) En cuanto al tiempo de ligado, este sera dinamico cuando sucede en cualquier momento posterior al proceso de compilacion -|-F-|-
+
+([2021-x]  Jose Luis Marti C1P1) C es un lenguaje imperativo, que permite elementros de la programacion orientada al objeto -|-F-|-
+([2021-x]  Jose Luis Marti C1P2) Java es un lenguaje orientado al objeto, con ciertos elementos propios de un lenguaje imperativo -|-V-|-
+([2021-x]  Jose Luis Marti C1P3) Scheme es un lenguaje funcional, que incorpora elementos de programacion imperativa -|-V-|-
+([2021-x]  Jose Luis Marti C1P4) Python es un lenguaje scripting, que no permite la orientacion a objetos -|-F-|-

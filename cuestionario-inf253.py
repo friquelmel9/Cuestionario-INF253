@@ -223,6 +223,8 @@ def iniciarCertamen():
         os.system('cls')
         
     print("Certamen terminado")
+    print("Cantidad de vf correctas: "+str(correctasVf)+" de 20 totales")
+    print("Cantidad de alt correctas: "+str(correctasAlt)+" de 15 totales")
     print("Calculo de la nota no disponible")
     input("Pulse enter para continuar")
 

@@ -56,3 +56,6 @@
 ([2024-2] - Jose Luis Marti. Q5P8) En Prolog, es posible la definicion de nuevos operadores, cada uno de los cuales tendra asociado un nombre, precedencia, asociativa, y tipo de notacion (prefija, postfija, infija) -|-V-|-
 ([2024-2] - Jose Luis Marti. Q5P9) En algunas situaciones, el backtracking automatico es ineficiente, de ahi la conveniencia de usar el operador de corte en cierto casos -|-V-|-
 ([2024-2] - Jose Luis Marti. Q5P10) El uso del operador de corte puede influir solo en el significado declarativo -|-F-|-
+
+([2021-x]  Jose Luis Marti C1P19) En prolog, no hay posibilidad de evitar que se ejecute el backtracking en su totalidad -|-F-|- set! si permite esto
+([2021-x]  Jose Luis Marti C1P20) Dentro de las reglas de calce en Prolog, entre dos estructuras es suficiente que tengan el mismo functor y el mismo numero de componentes para realizar el calce -|-F-|-

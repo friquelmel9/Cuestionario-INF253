@@ -71,3 +71,9 @@
 (Quiz 3 P2 SJ - Jose Luis Marti p8) En la redefinicion de metodos por parte de una subclase, se debe respetar la firma, no asi el tipo del valor de retorno, el cual puede variar-|-F-|-
 (Quiz 3 P2 SJ - Jose Luis Marti p9) Dado que las referencias a objetos apuntan al stack, es muy flexible el hecho que una referencia a un tipo base direccione a una instancia de alguna subclase-|-F-|-
 (Quiz 3 P2 SJ - Jose Luis Marti p10) Al crear una instancia de una interfaz con el operador new, se ejecutara algunos de los posibles constructores que dicha interfaz tenga-|-F-|-
+
+([2021-x]  Jose Luis Marti C1P10) En Java para poder acceder a las variables de clase que son definidas mediante la palabra static, no es necesario instanciar las clases -|-V-|-
+([2021-x]  Jose Luis Marti C1P11) Las referencias a una clase hija pueden apuntar a objetos de su clase padre, pero no al revez -|-F-|- No serian objetos, sino metodos
+([2021-x]  Jose Luis Marti C1P12) Con respecto a la redefinicion de metodos en la herencia, un metodo no se puede ocultar en una subclase -|-F-|-
+([2021-x]  Jose Luis Marti C1P13) Un ejemplo de polimorfismo dinamico son los subprogramas genericos, donde estos utilizan un mismo codigo / comportamiento para distintos tipos de parametros -|-V-|-
+([2021-x]  Jose Luis Marti C1P14) Un ejemplo de polimorfismo estatico es la sobrecarga de operadores, donde un operador tiene el mismo comportamiento, sin importar los tipos de datos de sus operandos -|-F-|- Sobrecarga es cuando, dependiendo de lo que reciba, hara distinta operacion (creo)

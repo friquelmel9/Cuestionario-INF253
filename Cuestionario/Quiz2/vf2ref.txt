@@ -49,3 +49,8 @@
 ([2024-2] - Jose Luis Marti. Q2P8) El tipo referencia es un tipo de variable que realiza desreferenciacion implicita en la asignacion, por lo que su uso es mas seguro -|-V-|-
 ([2024-2] - Jose Luis Marti. Q2P9) El problema de dangling se presenta cuando un puntero apunta a una localizacion de memoria del heal que ha sido liberada -|-V-|-
 ([2024-2] - Jose Luis Marti. Q2P10) Si solo se hace referencia a variables locales, no hay presencia de efectos laterales en las expresiones de control -|-V-|-
+
+([2021-x]  Jose Luis Marti C1P5 MOD) Si las patentes vehiculares en chilse se pueden describir por la expresion regular \^[A-Z]{2}\.\d{2}\.\{2}$/, para anteponer un digito obligatorio se tendria que usar la expresion /^[1-9]*\ al inicio -|-F-|-
+([2021-x]  Jose Luis Marti C1P6) En un proceso de compilacion, la tabla de simbolos ayuda a resolver las ambiguedades de los arboles sintaticos -|-F-|- Son los parse-tree
+([2021-x]  Jose Luis Marti C1P7) La trasparencia referencial se refiere a que la evaluacion de una funcion siempre produce el mismo resultado -|-V-|-
+([2021-x]  Jose Luis Marti C1P8) Una de las desventajas de la declaracion implicita de los tipos de datos, es que hace mas lenta la ejecucion debido a la verificacion dinamica de estos -|-V-|-

@@ -1,0 +1,14 @@
+# Unidad 1
+
+En paradigmas de la programacion, imperativo es aquel de ejecucion secuencial, tales como procedural o Orientado a objetos -|-V-|-
+En paradigmas de la programacion, imperativo es aquel que se define como se quiere hacer o no, tales como procedural o Orientado a objetos -|-F-|-
+En paradigmas de la programacion, declarativo es aquel que se define como se quiere hacer o no, como el funcional o Logico -|-V-|-
+En paradigmas de la programacion, declarativo es aquel de ejecucion secuencial, como el funcional o Logico -|-F-|-
+
+Ejemplos de lenguajes procedural son Fortran, Algol, Pascal y C -|-V-|-
+Ejemplos de lenguajes procedural son Fortran, Algol, Pascal y C++ -|-F-|-
+Ejemplos de lenguaje orientado a Objeto son SmallTalk, C++ y Java -|-V-|-
+Ejemplos de lenguaje orientado a Objeto son Algol, C++ y Java -|-F-|-
+Ejemplos de lenguaje funcional son LISP, Scheme, Haskell -|-V-|-
+Ejemplos de lenguaje funcional son LISP, Scheme, Prolog -|-F-|-
+Ejemplos de lenguaje logico son Prolog, LISP -|-F-|-

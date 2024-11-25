@@ -260,7 +260,7 @@ begin alt -|-d-|-
 
 Considere la siguiente funcion en C, es cierto que...
 
-    char f(chara)
+    char f(char a)
     {
         static int b = 0;
         int c = strlen(a);
@@ -273,5 +273,32 @@ a. c es una variable de stack y a una de heap
 b. b es una variable estatica y d una de heap
 c. c es una variable de heap y a una de heap
 d. c es una variable de stack yd una de heap
+
+end alt
+begin alt -|-c-|-
+
+([2021-x]  Jose Luis Marti C1P21) Cual de los siguientes lenguajes no es fuertemente tipado?
+a. Pascal
+b. Java
+c. Prolog
+d. Python
+
+end alt
+begin alt -|-a-|-
+
+([2021-x]  Jose Luis Marti C1P22) Cual de los siguientes lenguajes usa comprobacion de tipos estatica?
+a. C
+b. Scheme
+c. Perl
+d. Python
+
+end alt
+begin alt -|-d-|-
+
+([2021]  Jose Luis Marti C1P23) Que mecanismo de recoleccion de basura se debe implantar en un lenguaje de programacion donde todo el ligado de memoria es estatico o dinamico de stack?
+a. Basado en contadores de referencias (enfoque impaciente)
+b. Basado en marcas y barrido (enfoque perezoso)
+c. Una combinacion de ambos, un esquema para la memoria estatica y el otro para el stack
+d. Ninguna de las anteriores
 
 end alt

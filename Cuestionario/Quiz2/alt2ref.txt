@@ -321,3 +321,105 @@ c. dangling
 d. Ambiguedad
 
 end alt
+begin alt -|-d-|-
+
+([2021]  Jose Luis Marti C1P24) 
+Cuales de las siguientes frases son ciertas sobre un metodo de recoleccion de basura impaciente?
+    I. Se ejecuta tan pronto se agota la memoria
+    II. Usa un contador de referencias
+    III. Se decrementa un contador cuando se pierde una referencia
+    IV. Requiere de mayor tiempo de ejecucion y uso de memoria que un recolector perezoso
+a. I y II
+b. I, II y III
+c. II y IV
+d. II, III y IV
+
+end alt
+begin alt -|-d-|-
+
+([2021]  Jose Luis Marti C1P25)
+En que situacion la instruccion malloc() de C podria generar un stack overflow?
+a. Un ciclo (loop) infinito (ej: for(;;) sin control de termino)
+b. Una funcion recursiva mal programada
+c. Una lista de nodos que crecio sin control 
+d. Nunca
+
+end alt
+begin alt -|-c-|-
+
+([2021]  Jose Luis Marti C1P26)
+En la siguiente funcion de C, es cierto que:
+
+    char *f(char *s)
+    {
+        static int k = 0
+        int a = strlen(s)
+        char *p = malloc(a - k++)
+        
+        return p ? strcpy(p, s+k): NULL;
+    }
+a. a es una variable de stack y s una de heap
+b. k es una variable estatica, y p una de heap
+c. a es una variable de stack, y *p una de heap
+d. a es una variable de heap y p una de heap
+
+end alt
+
+begin alt -|-d-|-
+
+([2021]  Jose Luis Marti C1P27)
+Tomar en cuenta el siguiente programa escrito en sintaxis tipo Javascript
+
+    // main
+    var x,y,z;
+    
+    function sub1() {
+        var a, y, z;
+        ...
+    }
+    
+    function sub2() {
+        var a, b, z;
+        ...
+    }
+    
+    function sub3() {
+        var a, x, w;
+        ...
+    }
+    
+Dada la siguiente secuencia en un ambito dinamico: main -> sub1() -> sub3() -> sub2(), cuales son todas las variables durante la ejecucion de sub2?
+
+a. a local, b local, x de main, y de main, z local
+b. a local, b local, x de main, y de sub1(), z local
+c. a local, b local, z local
+d. a local, b local, w de sub3(), x de sub3(), y de sub1(), z local
+
+end alt
+
+begin alt -|-a-|-
+
+([2021]  Jose Luis Marti C1P28)
+Cual de las siguientes afirmaciones no es correcta, dependiendo del tipo de paso por parametros?
+
+    void f(int a, int b)
+    {
+        a = 1;
+        b++;
+    }
+    
+    int main(void)
+    {
+        int i = 10;
+        int j = 20;
+        
+        f(i,j);
+        printf("%d $d", i, j);
+    }
+    
+a. Por resultado, la salida de printf() de la funcion main() es: 10 20
+b. Por referencia, la salida del printf() de la funcion f() es: 1 21
+c. Por valor, la salida del printf() de la funcion main() es: 10 20
+d. Por valor-resultado, la salida del printf() de la funcion f() es: 1 21
+
+end alt

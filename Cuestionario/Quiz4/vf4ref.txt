@@ -111,3 +111,8 @@
 ([2024-2] - Jose Luis Marti. Q4P8) Con la recursion de cola, es posible que el heap reutilice el mismo registro de activacion. de modo de disminuir el tiempo de ejecucion -|-F-|-
 ([2024-2] - Jose Luis Marti. Q4P9) Las listas de asociacion de Scheme son listas propias, cuyos elementos son todos de la forma clave - valor -|-V-|-
 ([2024-2] - Jose Luis Marti. Q4P10) La evaluacion perezosa se usa para ahorrar computacion, es decir, evitar calculos que no son necesarios de momento -|-V-|-
+
+([2021-x]  Jose Luis Marti C1P15) En general, la recursividad de cola es conveniente pues permite ahorrar memoria de stack -|-V-|-
+([2021-x]  Jose Luis Marti C1P16) En Scheme, las variables de nivel superior se definen mediante un define -|-V-|-
+([2021-x]  Jose Luis Marti C1P17) En la programacion funcional pura, la composicion de funciones debe considerar el uso adecuado de variables y operaciones de asignacion -|-F-|- Deberia no importar
+([2021-x]  Jose Luis Marti C1P18) En la programacion funcional, la repeticion debe ser lograda por recursion -|-V-|-
