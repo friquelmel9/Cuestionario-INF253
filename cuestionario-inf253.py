@@ -15,7 +15,6 @@ dict_vf_ref = dict()
 dict_alt_ref = dict()
 
 re_figvf = r'\[(\d+)\]'
-
 listVf_All = []
 listAlt_All = []
 isCertamen = False
@@ -179,7 +178,6 @@ def iniciarCertamen():
     listAlt = []
     
     for i in range(1,6):
-        print("unidad actual: "+str(i))
         getFig(i)
         getVf(i)
         getAlt(i)

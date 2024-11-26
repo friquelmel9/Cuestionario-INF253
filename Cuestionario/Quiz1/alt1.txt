@@ -1,0 +1,127 @@
+begin alt -|-b-|- La III es falsa por que se utiliza para la generacion del codigo, no previa a esta
+
+Cual de las siguientes definiciones respecto a la sintaxis son correctas?
+    I. Sintaxis lexica: Define reglas para los tokens (tales como identificadores, literales, operadores...)
+    II. Sintaxis concreta: Refiere a una representacion de un programa segun simbolos del alfabeto
+    III. Sintaxis abstracta: Solo lleva la informacion escencial del programa, util para usar previo a la generacion del codigo
+a. Solo II
+b. Solo I y II
+c. Solo II y III
+d. Todas las anteriores
+
+end alt
+
+begin alt -|-d-|- Tecnicamente la d no es incorrecta pues se puede definir informalmente, sin embargo, no es necesario hacerlo asi, de hecho se recomienda lo contrario.
+
+Con respecto a los tipos de la semantica, se puede decir...
+    I. La semantica estatica define restricciones sobre respecto a que textos son validos para la sintaxis
+    II. Ejemplos de semantica estatica son : Verificar que switch tenga rotulos diferentes, o que una variable sea identificada antes de usarla
+    III. La semantica dinamica define el comportamiento de los constructos del lenguaje
+    IV. La semantica dinamica ha de ser especificada de manera informal para mayor libertad del codigo
+a. Solo I y II
+b. Solo II y III
+c. Solo III y IV
+d. Solo I, II y III
+e. Todas las anteriores
+
+end alt
+
+begin alt -|-d-|- La II no se denota mediante sentencias explicitas, si no mediante objetos matematicos
+
+Con respecto a la semantica dinamica, los siguientes metodos de especificacion...
+    I. Semantica Operacional: Significado ha de ser establecido especificando los efectos de una ejecucion
+    II. Semantica Denotacional: Significado se denota mediante sentencias explicitas que denotan el efecto de la computacion
+    III. Semantica Axiomatica: Especifica propiedades de los efectos de afirmaciones logicas.
+    
+Cuales son verdad?
+a. Solo II
+b. Solo III
+c. Solo I y II
+d. Solo I y III
+e. Solo II y III
+
+end alt
+
+begin alt -|-c-|-
+
+Cual de las siguientes alternativas corresponde al orden correcto del proceso de compilacion?
+a. Programa fuente -> Analisis Sintactico -> Analisis Semantico -> Analisis Lexico -> Generacion del codigo -> Programa
+b. Programa fuente -> Analisis Semantico  -> Analisis Sintactico -> Analisis Lexico -> Generacion del codigo -> Programa
+c. Programa fuente -> Analisis Lexico -> Analisis Sintactico -> Analisis Semantico -> Generacion del codigo -> Programa
+d. Ninguna de las anteriores esta correcta, puesto que no existe el analisis semantico
+
+end alt
+
+begin alt -|-b-|-
+
+Con respecto a la jerarquia de Chomsky: Cual es el orden correcto de los lenguajes considerando de menor a mayor su tipo?
+a. Recursivamente Enumerables -> Sensibles al contextos -> Lenguajes regulares -> Independientes del contextos
+b. Recursivamente Enumerables -> Sensibles al contexto -> Independientes de Contexto -> Lenguajes regulares
+c. Sensibles al contexto -> Recursivamente enumerables -> Lenguajes regulares -> Independientes del contextos
+d. Sensibles al contexto -> Recursivamente enumerables -> Independientes de Contexto -> Lenguajes regulares
+
+end alt
+
+begin alt -|-a-|- Si pusiste la d, que problema tienes con esta gramatica...
+
+Considere la siguiente gramatica libre de contexto:
+
+    A -> X|Y
+    aX -> aX|Z
+    Y -> A|X|bb
+    
+Cuales es el problema de esta gramatica?
+a. Esta mal escrita puesto que posee un simbolo terminal en la parte de no terminales
+b. No esta definido la 4-tupla, por lo que no puede ser definida correctamente
+c. No tiene simbolo de partida S, el cual si o si debe ser este simbolo
+d. Esta fea
+
+end alt
+
+begin alt -|-a-|- I: Derecho puede ser o no un terminal. III. No necesariamente IV. Corresponde a EBNF, no BNF.
+
+Caracteristicas de la Backus-Naur Form (BNF) son...
+    I. Lado izquierdo es un simbolo terminal, mientras derecho corresponde a un no terminal
+    II. La expresion "|" indica alternar entre opciones
+    III. La ultima regla corresponde siempre a la que terminara la expresion
+    IV. Los parentesis permiten agrupar elementos
+    
+a. Solo II
+b. Solo I y II
+c. Solo II y IV
+d. Solo II, III y IV
+
+end alt
+
+begin alt -|-c-|- I. Derecho no necesariamente a de ser terminal. III. La llave puede ser 0
+
+Caracteristicas de la extended Backus-Naur Form (eBNF) son...
+    I. Lado izquierdo es un simbolo no terminal, mientras derecho corresponde a un terminal
+    II. Elementos opcionales son aquellos que se encuentran dentro parentesis cuadrados []
+    III. La llave {x} indica que la palabra a repetirse x veces, con x entre 1 o mas
+    IV. Los parentesis permiten agrupar elementos
+
+a. Solo I y II
+b. Solo I y IV
+c. Solo II y IV
+d. Solo I, II y IV
+
+end alt
+
+begin alt -|-e-|-
+
+Cuales de los siguientes no son definidos como tipos de tokens?
+    I. Palabras claves reservadas
+    II. Literales y constantes
+    III. Identificadores
+    IV. Simbolos de Operadores
+    V. Comentarios
+
+a. Solo II
+b. Solo III
+c. Solo IV
+d. Solo II y IV
+e. Ninguno esta mal definido
+f. Todos estan mal definidos
+
+end alt
