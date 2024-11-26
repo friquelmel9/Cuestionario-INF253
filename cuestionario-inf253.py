@@ -112,7 +112,7 @@ def getVf(unidad):
 def iniciarQuiz():
 
     os.system('cls')
-    unidad = int(input("¿Que unidad quieres realizar? [3-4-5]\n"))
+    unidad = int(input("¿Que quiz quiere hacer? [1-5]\n"))
 
     getFig(unidad)
     getVf(unidad)
