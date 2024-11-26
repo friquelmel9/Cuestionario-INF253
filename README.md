@@ -28,7 +28,9 @@ De donde obtener esta informacion:
 ## Derechos reservados
 
 Todas las preguntas estan implementadas en clase o de certamenes anteriores. 
-Me guardo el derecho a el funcionamiento de este cuestionario, como tambien a que cualquier error sea mi culpa, mas, no indique que esto sea
+Me guardo el derecho a el funcionamiento de este cuestionario, como tambien a que cualquier error sea mi culpa, mas, no indique que en caso de mala nota en alguna evaluacion darme la culpa
+
+Cualquier error, agradezco que se agregue en Issues del repositorio
 
 ## Agradecimientos
 
