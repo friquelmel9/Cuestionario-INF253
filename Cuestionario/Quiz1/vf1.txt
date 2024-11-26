@@ -12,3 +12,20 @@ Ejemplos de lenguaje orientado a Objeto son Algol, C++ y Java -|-F-|-
 Ejemplos de lenguaje funcional son LISP, Scheme, Haskell -|-V-|-
 Ejemplos de lenguaje funcional son LISP, Scheme, Prolog -|-F-|-
 Ejemplos de lenguaje logico son Prolog, LISP -|-F-|-
+
+# Unidad 2: Fundamentos de los lenguajes de programacion
+
+La sintaxis de un lenguaje de programacion es la descripcion precisa de todos los programas gramaticalmente correctos -|-V-|-
+La sintaxis de un lenguaje de programacion puede ser definido mediante BNF -|-V-|-
+La sintaxis de un lenguaje de programacion puede ser definido mediante expresiones regulares, mas no BNF -|-F-|-
+La sintaxis de un lenguaje establece estructura, mas no su significado -|-V-|-
+La sintaxis de un lenguaje establece su significado, mas no su estructura -|-F-|- Al revez
+
+La semantica de un lenguaje habla respecto al significado del lenguaje, a diferencia de la forma que es especificada por la sintaxis -|-V-|-
+La semantica de un lenguaje habla respecto a la forma del lenguaje, a diferencia del significado que es especificado por la sintaxis -|-F-|- Las referencias estan al revez
+
+La Backus-Naur Form (BNF) es un metalenguaje creado para especificar gramaticas libre de contexto -|-V-|-
+La Backus-Naur Form (BNF) es un metalenguaje creado para especificar lenguajes regulares -|-F-|- Es para gramaticas libre de contexto
+
+Las expresiones regulares permiten describir patrones de cadenas de caracteres, utiles para reconocer tokens -|-V-|-
+Las expresiones regulares permiten describir patrones de cadenas de caracteres, utiles para reconocer la semantica de un lenguaje -|-X-|-

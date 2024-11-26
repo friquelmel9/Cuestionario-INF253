@@ -3,8 +3,6 @@
 Prolog es un lenguaje basado en logica simbolica y programacion declarativa. -|-V-|-
 Prolog es un lenguaje basado en logica simbolica y programacion funcional. -|-F-|- Es programacion declarativa, no funcional
 Prolog es un lenguaje basado en logica simbolica y programacion imperativa. -|-F-|- Es programacion declarativa, no imperativa
-La idea de la programacion imperativa es que se especifica el que debe lograrse y no el como debe hacerse -|-V-|-
-La idea de la programacion imperativa es que como se debe hacer algo y no que debe lograr -|-F-|- Es al revez
 Aplicaciones de Lenguaje Prolog son pruebas Matematicas, Inteligencia Artificial y consultas a bases de datos -|-V-|-
 Aplicaciones de Lenguaje Prolog son funciones lambda, Inteligencia Artificial, y consultas a bases de datos -|-F-|-
 Aplicaciones de Lenguaje Prolog son pruebas Matematicas, Inteligencia Artificial, y creacion de bases de datos -|-X-|- Es consultar, mas no crear

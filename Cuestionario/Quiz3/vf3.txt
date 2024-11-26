@@ -22,7 +22,7 @@ Ejemplos de lenguajes con OO puros son ADA y C++-|-F-|-
 Ejemplos de lenguajes con extensiones para POO son ADA y C++-|-V-|-
 Ejemplos de lenguajes con extensiones para POO son ADA y C#-|-F-|-
 Ejemplos de lenguajes POO pero poseen estructura imperativa son Java y C#-|-V-|-
-Ejemplos de lenguajes POO pero poseen estructura imperativa son Java y C++-|-F-|-
+Ejemplos de lenguajes POO pero poseen estructura imperativa son Java y C++-|-V-|-
 Ejemplos de lenguajes POO pero poseen estructura imperativa son Java y C-|-F-|-
 Ejemplos de lenguajes que soporta POO son CLOSS-|-V-|-
 En Java, un objeto corresponde a la instancia concreta de una clase-|-V-|-

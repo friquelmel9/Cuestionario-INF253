@@ -293,7 +293,7 @@ c. c = a-b
 d. c = a*b
 
 end alt
-begin alt -|- -|-
+begin alt -|-X-|-
 
 ([2024-2] - Jose Luis Marti. Q2P14)
 A partir del siguiente codigo en C:

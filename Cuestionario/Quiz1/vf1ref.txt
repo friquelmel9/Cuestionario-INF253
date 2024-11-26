@@ -59,7 +59,7 @@
 ([2024-2] - Jose Luis Marti. Q1P2) Java y C son lenguajes de programacion que interpretan directamente el codigo fuente durante su ejecucion -|-F-|-
 ([2024-2] - Jose Luis Marti. Q1P3) La tendencia dentro del mundo de los lenguajes de programacion es que estos sean multiparadigmas, como es el caso de Python -|-V-|-
 ([2024-2] - Jose Luis Marti. Q1P4) Las expresiones regulares son una tecnica para especificar y reconocer tokens, importantes al momento de analisis semantico del codigo -|-F-|-
-([2024-2] - Jose Luis Marti. Q1P5) La notacion BNF es un metalenguaje que permite especificar formalmente gramaticas libres de contexto -|-F-|-
+([2024-2] - Jose Luis Marti. Q1P5) La notacion BNF es un metalenguaje que permite especificar formalmente gramaticas libres de contexto -|-V-|-
 ([2024-2] - Jose Luis Marti. Q1P6) Las variables dinamicas de stackk soportan recursion -|-V-|-
 ([2024-2] - Jose Luis Marti. Q1P7) Las variables dinamicas del stack son ligadas a memoria en el momento que la ejecucion alcanza el codigo ligado a la declaracion -|-V-|-
 ([2024-2] - Jose Luis Marti. Q1P8) La memoria del heap permite mantener objetos que se asignan y liberan automaticamente al activar o desactivar, respectivametne, un ambiente de ejecucion -|-F-|- No automatico

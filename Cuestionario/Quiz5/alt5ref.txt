@@ -142,7 +142,7 @@ g. X = c, Y = d
 h. X = a, Y = f
 end pregunta
 
-begin pregunta -|-d-|-
+begin pregunta -|-X-|-
 ([2022-1] - Salas Q5P4)
 figura:4
 
