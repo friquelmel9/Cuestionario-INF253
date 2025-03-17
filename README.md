@@ -1,6 +1,12 @@
 # Cuestionario-INF253
 Cuestionario .py recopilatorio del curso INF-253 de la universidad Federico Santa Maria.
 
+## Nuevo cuestionario: Cuestionario-INF253-Web
+
+Nuevo cuestionario (Ahora version web) se puede encontrar [aqui](https://github.com/friquelmel9/Cuestionario-INF253-web)
+Este cuestionario se mantendra mas que nada como recordatorio de lo que fue. No sera mas actualizado (al menos por mi parte)
+
+
 ## Instrucciones de uso
 
 Clonar el repositorio y andar el programa "cuestionario.py".
@@ -27,10 +33,7 @@ De donde obtener esta informacion:
 
 ## Derechos reservados
 
-Todas las preguntas estan implementadas en clase o de certamenes anteriores. 
-Me guardo el derecho a el funcionamiento de este cuestionario, como tambien a que cualquier error sea mi culpa, mas, no indique que en caso de mala nota en alguna evaluacion darme la culpa
-
-Cualquier error, agradezco que se agregue en Issues del repositorio
+El repositorio, pagina web, y contenido proporcionado en este documento tiene como finalidad informar y apoyar a sus estudios, pero no garantiza la ausencia de errores. En consecuencia, no asumimos responsabilidad alguna por problemas externos que puedan derivarse de su uso o interpretación. Se sugiere corroborar la información con fuentes complementarias, tales como las clases y documentos de esta.
 
 ## Agradecimientos
 
