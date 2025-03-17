@@ -3,7 +3,7 @@ Cuestionario .py recopilatorio del curso INF-253 de la universidad Federico Sant
 
 ## Nuevo cuestionario: Cuestionario-INF253-Web
 
-Nuevo cuestionario (Ahora version web) se puede encontrar [aqui](https://github.com/friquelmel9/Cuestionario-INF253-web)
+Nuevo cuestionario (Ahora version web) se puede encontrar en https://friquelmel9.github.io/Cuestionario-INF253-web/. [Link Repositorio](https://github.com/friquelmel9/Cuestionario-INF253-web)
 Este cuestionario se mantendra mas que nada como recordatorio de lo que fue. No sera mas actualizado (al menos por mi parte)
 
 
